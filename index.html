@@ -51,11 +51,20 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: transform 0.3s ease;
-            aspect-ratio: 16/9;
             cursor: pointer;
             border: 3px solid #667eea;
+            width: 100%;
+            max-height: 600px;
         }
-        .latest-image-container:hover { transform: scale(1.02); z-index: 10; }
+        .latest-image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: contain;
+            display: block;
+        }
+        .latest-image-container:hover { transform: scale(1.01); z-index: 10; }
+        .latest-image-container:hover .image-info { opacity: 1; }
         .images-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -122,9 +131,73 @@
             padding: 20px;
             opacity: 0.9;
         }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            animation: fadeIn 0.3s;
+        }
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            position: relative;
+            max-width: 95%;
+            max-height: 95%;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+            animation: zoomIn 0.3s;
+        }
+        .modal-image {
+            max-width: 100%;
+            max-height: 85vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+            display: block;
+        }
+        .modal-info {
+            text-align: center;
+            margin-top: 15px;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: #aaa;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .modal-close:hover {
+            color: #000;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
         @media (max-width: 768px) {
             .cameras { grid-template-columns: 1fr; }
             .images-grid { grid-template-columns: 1fr; }
+            .modal-content { padding: 10px; }
+            .modal-image { max-height: 80vh; }
         }
     </style>
 </head>
@@ -137,6 +210,14 @@
         <div class="footer">
             <p>Last updated: <span id="lastUpdate"></span></p>
             <p>Auto-refresh every 5 minutes</p>
+        </div>
+    </div>
+    
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div id="modalInfo" class="modal-info"></div>
         </div>
     </div>
     <script>
@@ -201,6 +282,9 @@
                         latestContainer.appendChild(badge);
                         latestContainer.appendChild(imgEl);
                         latestContainer.appendChild(info);
+                        latestContainer.onclick = function() {
+                            openModal(imgUrl, info.textContent);
+                        };
                         latestWrapper.appendChild(latestContainer);
                         section.appendChild(latestWrapper);
                     }
@@ -231,6 +315,9 @@
                             }
                             container.appendChild(imgEl);
                             container.appendChild(info);
+                            container.onclick = function() {
+                                openModal(imgUrl, info.textContent);
+                            };
                             imagesGrid.appendChild(container);
                         }
                         section.appendChild(imagesGrid);
@@ -258,6 +345,35 @@
             }
             return dateStr;
         }
+        function openModal(imageUrl, imageInfo) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+            const modalInfo = document.getElementById("modalInfo");
+            modalImg.src = imageUrl;
+            modalInfo.textContent = imageInfo;
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+        function closeModal() {
+            const modal = document.getElementById("imageModal");
+            modal.classList.remove("active");
+            document.body.style.overflow = "auto";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById("imageModal");
+            const closeBtn = document.querySelector(".modal-close");
+            closeBtn.onclick = closeModal;
+            modal.onclick = function(event) {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            };
+            document.addEventListener("keydown", function(event) {
+                if (event.key === "Escape") {
+                    closeModal();
+                }
+            });
+        });
         loadCameras();
         setInterval(loadCameras, 5 * 60 * 1000);
     </script>
