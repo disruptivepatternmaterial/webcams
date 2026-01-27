@@ -2,46 +2,26 @@
   "bowman_mtn": {
     "images": [
       "Bowman_Mtn_latest.jpg",
+      "Bowman_Mtn_20260127_153002.jpg",
       "Bowman_Mtn_20260127_150002.jpg",
-      "Bowman_Mtn_20260127_143001.jpg",
-      "Bowman_Mtn_20260127_140002.jpg"
+      "Bowman_Mtn_20260127_143001.jpg"
     ],
     "metadata": {
-      "Bowman_Mtn_20260127_103001.jpg": {
+      "Bowman_Mtn_20260127_150002.jpg": {
+        "temperature_celsius": 9.4,
+        "temperature_fahrenheit": 49.0,
+        "extracted_timestamp": "2026-01-27T15:11:32.109381",
+        "exif_datetime": "20260127_150002",
+        "image_width": 640,
+        "image_height": 360,
+        "Make": "VOSKER Camera",
+        "Model": "VKX"
+      },
+      "Bowman_Mtn_20260127_153002.jpg": {
         "temperature_celsius": null,
         "temperature_fahrenheit": null,
-        "extracted_timestamp": "2026-01-27T12:41:30.045215",
-        "exif_datetime": "20260127_103001",
-        "image_width": 640,
-        "image_height": 360,
-        "Make": "VOSKER Camera",
-        "Model": "VKX"
-      },
-      "Bowman_Mtn_20260127_143001.jpg": {
-        "temperature_celsius": 10.0,
-        "temperature_fahrenheit": 50.0,
-        "extracted_timestamp": "2026-01-27T14:41:37.363562",
-        "exif_datetime": "20260127_143001",
-        "image_width": 640,
-        "image_height": 360,
-        "Make": "VOSKER Camera",
-        "Model": "VKX"
-      },
-      "Bowman_Mtn_20260127_130001.jpg": {
-        "temperature_celsius": 12.2,
-        "temperature_fahrenheit": 54.0,
-        "extracted_timestamp": "2026-01-27T13:10:45.145671",
-        "exif_datetime": "20260127_130001",
-        "image_width": 640,
-        "image_height": 360,
-        "Make": "VOSKER Camera",
-        "Model": "VKX"
-      },
-      "Bowman_Mtn_20260127_110002.jpg": {
-        "temperature_celsius": null,
-        "temperature_fahrenheit": null,
-        "extracted_timestamp": "2026-01-27T12:40:49.783134",
-        "exif_datetime": "20260127_110002",
+        "extracted_timestamp": "2026-01-27T15:41:47.016972",
+        "exif_datetime": "20260127_153002",
         "image_width": 640,
         "image_height": 360,
         "Make": "VOSKER Camera",
@@ -57,11 +37,21 @@
         "Make": "VOSKER Camera",
         "Model": "VKX"
       },
-      "Bowman_Mtn_20260127_150002.jpg": {
-        "temperature_celsius": 9.4,
-        "temperature_fahrenheit": 49.0,
-        "extracted_timestamp": "2026-01-27T15:11:32.109381",
-        "exif_datetime": "20260127_150002",
+      "Bowman_Mtn_20260127_123002.jpg": {
+        "temperature_celsius": 10.6,
+        "temperature_fahrenheit": 51.0,
+        "extracted_timestamp": "2026-01-27T12:41:35.113670",
+        "exif_datetime": "20260127_123002",
+        "image_width": 640,
+        "image_height": 360,
+        "Make": "VOSKER Camera",
+        "Model": "VKX"
+      },
+      "Bowman_Mtn_20260127_143001.jpg": {
+        "temperature_celsius": 10.0,
+        "temperature_fahrenheit": 50.0,
+        "extracted_timestamp": "2026-01-27T14:41:37.363562",
+        "exif_datetime": "20260127_143001",
         "image_width": 640,
         "image_height": 360,
         "Make": "VOSKER Camera",
@@ -77,6 +67,16 @@
         "Make": "VOSKER Camera",
         "Model": "VKX"
       },
+      "Bowman_Mtn_20260127_110002.jpg": {
+        "temperature_celsius": null,
+        "temperature_fahrenheit": null,
+        "extracted_timestamp": "2026-01-27T12:40:49.783134",
+        "exif_datetime": "20260127_110002",
+        "image_width": 640,
+        "image_height": 360,
+        "Make": "VOSKER Camera",
+        "Model": "VKX"
+      },
       "Bowman_Mtn_20260127_113001.jpg": {
         "temperature_celsius": 10.6,
         "temperature_fahrenheit": 51.0,
@@ -87,21 +87,21 @@
         "Make": "VOSKER Camera",
         "Model": "VKX"
       },
-      "Bowman_Mtn_20260127_123002.jpg": {
-        "temperature_celsius": 10.6,
-        "temperature_fahrenheit": 51.0,
-        "extracted_timestamp": "2026-01-27T12:41:35.113670",
-        "exif_datetime": "20260127_123002",
-        "image_width": 640,
-        "image_height": 360,
-        "Make": "VOSKER Camera",
-        "Model": "VKX"
-      },
       "Bowman_Mtn_20260127_140002.jpg": {
         "temperature_celsius": 11.1,
         "temperature_fahrenheit": 52.0,
         "extracted_timestamp": "2026-01-27T14:11:28.851456",
         "exif_datetime": "20260127_140002",
+        "image_width": 640,
+        "image_height": 360,
+        "Make": "VOSKER Camera",
+        "Model": "VKX"
+      },
+      "Bowman_Mtn_20260127_130001.jpg": {
+        "temperature_celsius": 12.2,
+        "temperature_fahrenheit": 54.0,
+        "extracted_timestamp": "2026-01-27T13:10:45.145671",
+        "exif_datetime": "20260127_130001",
         "image_width": 640,
         "image_height": 360,
         "Make": "VOSKER Camera",
