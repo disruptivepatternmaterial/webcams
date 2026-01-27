@@ -112,6 +112,16 @@
             border: none;
             border-top: 2px solid #ddd;
         }
+        .images-text-block {
+            margin-top: 15px;
+            font-size: 0.95em;
+            color: #555;
+            text-align: left;
+            padding: 10px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
         .latest-badge {
             position: absolute;
             top: 5px;
@@ -253,16 +263,32 @@
                     let latestImage = null;
                     const olderImages = [];
                     
+                    // Find the latest image file
                     for (let i = 0; i < allImages.length; i++) {
                         const filename = allImages[i];
                         if (filename.toLowerCase().includes("latest")) {
                             latestImage = filename;
-                        } else {
-                            olderImages.push(filename);
+                            break;
                         }
                     }
                     
-                    // If no latest found, use first image as latest
+                    // Build olderImages array, excluding the latest image
+                    // Since list.json puts latest first, then the 3 most recent images,
+                    // the first non-latest image (index 1) is the same as latest, so skip it
+                    for (let i = 0; i < allImages.length; i++) {
+                        const filename = allImages[i];
+                        // Skip the latest file itself
+                        if (filename.toLowerCase().includes("latest")) {
+                            continue;
+                        }
+                        // If we have a latest file, skip index 1 (the actual image that matches latest)
+                        if (latestImage && i === 1) {
+                            continue; // Skip the first non-latest image as it's the same as latest
+                        }
+                        olderImages.push(filename);
+                    }
+                    
+                    // If no latest was found but we have images, use first as latest and remove from older
                     if (!latestImage && allImages.length > 0) {
                         latestImage = allImages[0];
                         olderImages.shift(); // Remove it from older images
@@ -300,6 +326,11 @@
                         };
                         latestWrapper.appendChild(latestContainer);
                         section.appendChild(latestWrapper);
+                        
+                        // Add horizontal divider after the latest image (before small images)
+                        const divider = document.createElement("hr");
+                        divider.className = "images-divider";
+                        section.appendChild(divider);
                     }
                     
                     // Show 2-3 older images below
@@ -333,18 +364,15 @@
                                 openModal(imgUrl, info.textContent);
                             };
                             imageWrapper.appendChild(container);
-                            // Add caption text under each image
-                            const caption = document.createElement("div");
-                            caption.className = "image-caption";
-                            caption.textContent = "[Placeholder text - edit me]";
-                            imageWrapper.appendChild(caption);
                             imagesGrid.appendChild(imageWrapper);
                         }
                         section.appendChild(imagesGrid);
-                        // Add horizontal divider after the images grid
-                        const divider = document.createElement("hr");
-                        divider.className = "images-divider";
-                        section.appendChild(divider);
+                        
+                        // Add single text block below all three small images
+                        const textBlock = document.createElement("div");
+                        textBlock.className = "images-text-block";
+                        textBlock.textContent = "[Placeholder text - edit me]";
+                        section.appendChild(textBlock);
                     }
                     camerasContainer.appendChild(section);
                 }
