@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Images</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .cameras {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .camera-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .camera-section:hover { transform: translateY(-5px); }
+        .camera-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .image-container {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+        }
+        .image-container:hover { transform: scale(1.05); z-index: 10; }
+        .image-container.latest { border: 3px solid #667eea; }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .image-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 10px;
+            font-size: 0.85em;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .image-container:hover .image-info { opacity: 1; }
+        .latest-badge {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.75em;
+            font-weight: bold;
+        }
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            padding: 40px;
+        }
+        .error {
+            color: #ff4444;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.9;
+        }
+        @media (max-width: 768px) {
+            .cameras { grid-template-columns: 1fr; }
+            .images-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📷 Webcam Images</h1>
+        <div id="cameras" class="cameras">
+            <div class="loading">Loading images...</div>
+        </div>
+        <div class="footer">
+            <p>Last updated: <span id="lastUpdate"></span></p>
+            <p>Auto-refresh every 5 minutes</p>
+        </div>
+    </div>
+    <script>
+        const baseUrl = "https://raw.githubusercontent.com/disruptivepatternmaterial/webcams/main";
+        async function loadCameras() {
+            try {
+                const response = await fetch(baseUrl + "/list.json");
+                const cameraData = await response.json();
+                const camerasContainer = document.getElementById("cameras");
+                camerasContainer.innerHTML = "";
+                for (const [cameraName, data] of Object.entries(cameraData)) {
+                    const section = document.createElement("div");
+                    section.className = "camera-section";
+                    const title = document.createElement("h2");
+                    title.className = "camera-title";
+                    title.textContent = formatCameraName(cameraName);
+                    section.appendChild(title);
+                    const imagesGrid = document.createElement("div");
+                    imagesGrid.className = "images-grid";
+                    const displayImages = data.images.slice(0, 3);
+                    for (let i = 0; i < displayImages.length; i++) {
+                        const filename = displayImages[i];
+                        const isLatest = filename.toLowerCase().includes("latest");
+                        const container = document.createElement("div");
+                        container.className = "image-container" + (isLatest ? " latest" : "");
+                        const imgUrl = baseUrl + "/" + cameraName + "/" + filename;
+                        const imgEl = document.createElement("img");
+                        imgEl.src = imgUrl;
+                        imgEl.alt = filename;
+                        imgEl.loading = "lazy";
+                        imgEl.onerror = function() { this.parentElement.style.display = "none"; };
+                        const info = document.createElement("div");
+                        info.className = "image-info";
+                        const meta = data.metadata[filename] || {};
+                        const dateStr = filename.match(/(\d{8}_\d{6})/);
+                        if (dateStr) {
+                            info.textContent = formatDate(dateStr[1]);
+                        } else if (isLatest) {
+                            info.textContent = "Latest";
+                        } else {
+                            info.textContent = filename;
+                        }
+                        if (isLatest) {
+                            const badge = document.createElement("div");
+                            badge.className = "latest-badge";
+                            badge.textContent = "LATEST";
+                            container.appendChild(badge);
+                        }
+                        container.appendChild(imgEl);
+                        container.appendChild(info);
+                        imagesGrid.appendChild(container);
+                    }
+                    section.appendChild(imagesGrid);
+                    camerasContainer.appendChild(section);
+                }
+                document.getElementById("lastUpdate").textContent = new Date().toLocaleString();
+            } catch (error) {
+                document.getElementById("cameras").innerHTML = 
+                    "<div class=\"error\">Error loading images: " + error.message + "</div>";
+            }
+        }
+        function formatCameraName(name) {
+            return name.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+        }
+        function formatDate(dateStr) {
+            if (dateStr.length === 15) {
+                const year = dateStr.substring(0, 4);
+                const month = dateStr.substring(4, 6);
+                const day = dateStr.substring(6, 8);
+                const hour = dateStr.substring(9, 11);
+                const min = dateStr.substring(11, 13);
+                const sec = dateStr.substring(13, 15);
+                return year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec;
+            }
+            return dateStr;
+        }
+        loadCameras();
+        setInterval(loadCameras, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
