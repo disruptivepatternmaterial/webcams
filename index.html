@@ -113,14 +113,16 @@
             border-top: 2px solid #ddd;
         }
         .images-text-block {
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 0.95em;
-            color: #555;
+            color: #333;
             text-align: left;
-            padding: 10px;
-            line-height: 1.6;
+            padding: 15px;
+            line-height: 1.8;
             background-color: #f9f9f9;
-            border-radius: 5px;
+            border-radius: 8px;
+            width: 100%;
+            box-sizing: border-box;
         }
         .latest-badge {
             position: absolute;
@@ -340,7 +342,6 @@
                         const displayOlder = olderImages.slice(0, 3); // Show up to 3 older images
                         for (let i = 0; i < displayOlder.length; i++) {
                             const filename = displayOlder[i];
-                            const imageWrapper = document.createElement("div");
                             const container = document.createElement("div");
                             container.className = "image-container";
                             const imgUrl = baseUrl + "/" + cameraName + "/" + filename;
@@ -363,15 +364,14 @@
                             container.onclick = function() {
                                 openModal(imgUrl, info.textContent);
                             };
-                            imageWrapper.appendChild(container);
-                            imagesGrid.appendChild(imageWrapper);
+                            imagesGrid.appendChild(container);
                         }
                         section.appendChild(imagesGrid);
                         
-                        // Add single text block below all three small images
+                        // Add single text block below all three small images (matching Bowman Mtn mockup)
                         const textBlock = document.createElement("div");
                         textBlock.className = "images-text-block";
-                        textBlock.textContent = "[Placeholder text - edit me]";
+                        textBlock.textContent = "lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text herer lots os text h";
                         section.appendChild(textBlock);
                     }
                     camerasContainer.appendChild(section);
