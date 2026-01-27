@@ -371,17 +371,21 @@
                         // Add single text block below all three small images (matching Bowman Mtn mockup)
                         const textBlock = document.createElement("div");
                         textBlock.className = "images-text-block";
-                        textBlock.textContent = "Bowman Mountain: location, information, ";
+                        // Set camera-specific text
+                        const cameraTexts = {
+                            'bowman_mtn': 'Bowman Mountain: location, information, etc...',
+                            'n_twin': 'N Twin: location, information, etc...',
+                            'westward_view': 'Westward View: location, information, etc...'
+                        };
+                        textBlock.textContent = cameraTexts[cameraName] || 'Camera information...';
                         section.appendChild(textBlock);
                     }
                     camerasContainer.appendChild(section);
                 }
                 document.getElementById("lastUpdate").textContent = new Date().toLocaleString();
             } catch (error) {
-                console.error("Error loading cameras:", error);
-                const camerasContainer = document.getElementById("cameras");
-                camerasContainer.innerHTML = 
-                    "<div class=\"error\">Error loading images: " + error.message + "<br>Check browser console for details.</div>";
+                document.getElementById("cameras").innerHTML = 
+                    "<div class=\"error\">Error loading images: " + error.message + "</div>";
             }
         }
         function formatCameraName(name) {
