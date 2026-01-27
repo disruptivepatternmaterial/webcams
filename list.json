@@ -2,9 +2,9 @@
   "bowman_mtn": {
     "images": [
       "Bowman_Mtn_latest.jpg",
+      "Bowman_Mtn_20260127_113001.jpg",
       "Bowman_Mtn_20260127_110002.jpg",
-      "Bowman_Mtn_20260127_103001.jpg",
-      "Bowman_Mtn_20260127_100001.jpg"
+      "Bowman_Mtn_20260127_103001.jpg"
     ],
     "metadata": {
       "Bowman_Mtn_20260116_180429.jpg": {
@@ -3246,6 +3246,16 @@
         "image_height": 360,
         "Make": "VOSKER Camera",
         "Model": "VKX"
+      },
+      "Bowman_Mtn_20260127_113001.jpg": {
+        "temperature_celsius": 10.6,
+        "temperature_fahrenheit": 51.0,
+        "extracted_timestamp": "2026-01-27T11:40:13.847789",
+        "exif_datetime": "20260127_113001",
+        "image_width": 640,
+        "image_height": 360,
+        "Make": "VOSKER Camera",
+        "Model": "VKX"
       }
     }
   },
@@ -3257,10 +3267,28 @@
       "N_Twin_20260126_140018.jpg"
     ],
     "metadata": {
-      "N_Twin_20260126_140018.jpg": {
+      "N_Twin_20260126_140018_thumb1295.jpg": {
         "temperature_celsius": null,
         "temperature_fahrenheit": null,
         "extracted_timestamp": "2026-01-27T08:26:25.261903",
+        "exif_datetime": null,
+        "image_width": 960,
+        "image_height": 540,
+        "source": "GardePro Mobile"
+      },
+      "N_Twin_20260126_220007_thumb1306.jpg": {
+        "temperature_celsius": null,
+        "temperature_fahrenheit": null,
+        "extracted_timestamp": "2026-01-27T08:26:22.098780",
+        "exif_datetime": null,
+        "image_width": 960,
+        "image_height": 540,
+        "source": "GardePro Mobile"
+      },
+      "N_Twin_20260127_140017_thumb1322.jpg": {
+        "temperature_celsius": null,
+        "temperature_fahrenheit": null,
+        "extracted_timestamp": "2026-01-27T08:26:23.155013",
         "exif_datetime": null,
         "image_width": 960,
         "image_height": 540,

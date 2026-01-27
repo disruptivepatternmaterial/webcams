@@ -99,6 +99,19 @@
             transition: opacity 0.3s ease;
         }
         .image-container:hover .image-info { opacity: 1; }
+        .image-caption {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+            padding: 5px;
+            line-height: 1.4;
+        }
+        .images-divider {
+            margin: 20px 0;
+            border: none;
+            border-top: 2px solid #ddd;
+        }
         .latest-badge {
             position: absolute;
             top: 5px;
@@ -296,6 +309,7 @@
                         const displayOlder = olderImages.slice(0, 3); // Show up to 3 older images
                         for (let i = 0; i < displayOlder.length; i++) {
                             const filename = displayOlder[i];
+                            const imageWrapper = document.createElement("div");
                             const container = document.createElement("div");
                             container.className = "image-container";
                             const imgUrl = baseUrl + "/" + cameraName + "/" + filename;
@@ -318,9 +332,19 @@
                             container.onclick = function() {
                                 openModal(imgUrl, info.textContent);
                             };
-                            imagesGrid.appendChild(container);
+                            imageWrapper.appendChild(container);
+                            // Add caption text under each image
+                            const caption = document.createElement("div");
+                            caption.className = "image-caption";
+                            caption.textContent = "[Placeholder text - edit me]";
+                            imageWrapper.appendChild(caption);
+                            imagesGrid.appendChild(imageWrapper);
                         }
                         section.appendChild(imagesGrid);
+                        // Add horizontal divider after the images grid
+                        const divider = document.createElement("hr");
+                        divider.className = "images-divider";
+                        section.appendChild(divider);
                     }
                     camerasContainer.appendChild(section);
                 }
