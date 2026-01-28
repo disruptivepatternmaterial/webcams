@@ -64,18 +64,6 @@
             display: block;
         }
         .latest-image-container:hover { transform: scale(1.01); }
-        .latest-image-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.6));
-            color: white;
-            padding: 12px 15px;
-            font-size: 0.95em;
-            font-weight: 500;
-            z-index: 10;
-        }
         .images-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -97,18 +85,6 @@
             height: 100%;
             object-fit: cover;
             display: block;
-        }
-        .image-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.6));
-            color: white;
-            padding: 10px;
-            font-size: 0.85em;
-            font-weight: 500;
-            z-index: 5;
         }
         .images-divider {
             margin: 20px 0;
@@ -285,7 +261,12 @@
                     const latestImage = actualImages[0];
                     
                     // Next 3 images for the grid (indices 1, 2, 3 - NOT including latest)
-                    const gridImages = actualImages.slice(1, 4); // Get exactly 3 images, excluding latest
+                    // Ensure we get exactly 3 images, padding with available ones if needed
+                    let gridImages = actualImages.slice(1, 4);
+                    // If we have fewer than 3, try to get more from the list
+                    if (gridImages.length < 3 && actualImages.length > gridImages.length + 1) {
+                        gridImages = actualImages.slice(1, Math.min(actualImages.length, 4));
+                    }
                     
                     // Show latest image large at top
                     if (latestImage) {
@@ -304,9 +285,9 @@
                             this.parentElement.parentElement.style.display = "none"; 
                         };
                         
-                        // Get metadata for latest image
+                        // Get metadata for latest image (for modal only)
                         const meta = getMetadata(data.metadata, latestImage);
-                        const info = createImageInfo(meta, latestImage, true);
+                        const infoText = createImageInfoText(meta, latestImage);
                         
                         const badge = document.createElement("div");
                         badge.className = "latest-badge";
@@ -314,9 +295,8 @@
                         
                         latestContainer.appendChild(badge);
                         latestContainer.appendChild(imgEl);
-                        latestContainer.appendChild(info);
                         latestContainer.onclick = function() {
-                            openModal(imgUrl, info.textContent);
+                            openModal(imgUrl, infoText);
                         };
                         
                         latestWrapper.appendChild(latestContainer);
@@ -333,7 +313,7 @@
                         const imagesGrid = document.createElement("div");
                         imagesGrid.className = "images-grid";
                         
-                        // Always show 3 columns, even if fewer images
+                        // Always show 3 columns
                         for (let i = 0; i < 3; i++) {
                             const container = document.createElement("div");
                             container.className = "image-container";
@@ -349,14 +329,13 @@
                                     this.parentElement.style.display = "none"; 
                                 };
                                 
-                                // Get metadata
+                                // Get metadata (for modal only)
                                 const meta = getMetadata(data.metadata, filename);
-                                const info = createImageInfo(meta, filename, false);
+                                const infoText = createImageInfoText(meta, filename);
                                 
                                 container.appendChild(imgEl);
-                                container.appendChild(info);
                                 container.onclick = function() {
-                                    openModal(imgUrl, info.textContent);
+                                    openModal(imgUrl, infoText);
                                 };
                             } else {
                                 // Empty placeholder if fewer than 3 images
@@ -411,10 +390,7 @@
             return {};
         }
         
-        function createImageInfo(meta, filename, isLatest) {
-            const info = document.createElement("div");
-            info.className = isLatest ? "latest-image-info" : "image-info";
-            
+        function createImageInfoText(meta, filename) {
             // Use metadata timestamp as source of truth (it's UTC, convert to local)
             let dateText = "";
             const timestamp = meta.timestamp || meta.extracted_timestamp;
@@ -488,8 +464,7 @@
                 displayText += " • " + temp_c.toFixed(1) + "°C";
             }
             
-            info.textContent = displayText;
-            return info;
+            return displayText;
         }
         
         function formatCameraName(name) {
