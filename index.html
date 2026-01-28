@@ -116,6 +116,31 @@
             color: #764ba2;
             text-decoration: underline;
         }
+        .general-info-section {
+            grid-column: 1 / -1;
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-top: 30px;
+        }
+        .general-info-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .general-info-text {
+            font-size: 0.9em;
+            color: #333;
+            text-align: left;
+            padding: 15px;
+            line-height: 1.8;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
         .latest-badge {
             position: absolute;
             top: 10px;
@@ -392,6 +417,17 @@
                     
                     camerasContainer.appendChild(section);
                 }
+                
+                // Add general information section after all cameras
+                const generalInfoSection = document.createElement("div");
+                generalInfoSection.className = "general-info-section";
+                generalInfoSection.innerHTML = `
+                    <h2 class="general-info-title">General Information</h2>
+                    <div class="general-info-text">
+                        <p>Add general information here that applies to all cameras...</p>
+                    </div>
+                `;
+                camerasContainer.appendChild(generalInfoSection);
                 
                 document.getElementById("lastUpdate").textContent = new Date().toLocaleString();
             } catch (error) {
