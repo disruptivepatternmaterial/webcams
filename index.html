@@ -122,7 +122,7 @@
             border-radius: 15px;
             padding: 25px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin-top: 30px;
+            margin-top: 0;
         }
         .general-info-title {
             font-size: 1.5em;
@@ -424,7 +424,13 @@
                 generalInfoSection.innerHTML = `
                     <h2 class="general-info-title">General Information</h2>
                     <div class="general-info-text">
-                        <p>Add general information here that applies to all cameras...</p>
+                        <p>Open items: </p>
+                        <ul>
+                            <li>Add Windy.com links for N Twin after getting that station online. It is up there, but I ran out of time to get it online.</li>
+                            <li>Install 1 more cam up higher on N Twin, maybe at 5000 feet.</li>
+                            <li>Considering do the same for S Twin along the Orsino Creek drainage, if I can get service.</li>
+                            <li>Experiment currently running: moving this all to LoRaWAN and deploying more sensors including a snow depth sensor.</li>
+                        </ul>
                     </div>
                 `;
                 camerasContainer.appendChild(generalInfoSection);
