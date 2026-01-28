@@ -302,7 +302,7 @@
                         // Try to find metadata - handle old filenames with image numbers
                         let meta = data.metadata[actualLatestFilename] || data.metadata[latestImage] || {};
                         // If not found, try matching by date/time pattern (for old filenames with numbers)
-                        if (!meta.timestamp && actualLatestFilename) {
+                        if ((!meta.timestamp && !meta.extracted_timestamp) && actualLatestFilename) {
                             const dateMatch = actualLatestFilename.match(/(\d{8}_\d{6})/);
                             if (dateMatch) {
                                 const datePattern = dateMatch[1];
@@ -315,10 +315,15 @@
                                 }
                             }
                         }
-                        // Try to get timestamp from metadata first
-                        if (meta.timestamp) {
-                            const date = new Date(meta.timestamp);
-                            info.textContent = date.toLocaleString();
+                        // Try to get timestamp from metadata first (handle both old and new formats)
+                        let timestamp = meta.timestamp || meta.extracted_timestamp;
+                        if (timestamp) {
+                            try {
+                                const date = new Date(timestamp);
+                                info.textContent = date.toLocaleString();
+                            } catch (e) {
+                                info.textContent = timestamp;
+                            }
                         } else {
                             const dateStr = actualLatestFilename.match(/(\d{8}_\d{6})/) || latestImage.match(/(\d{8}_\d{6})/);
                             if (dateStr) {
@@ -327,8 +332,14 @@
                                 info.textContent = "Latest";
                             }
                         }
-                        if (meta.temperature_c !== null && meta.temperature_c !== undefined) {
-                            info.textContent += " • " + meta.temperature_c.toFixed(1) + "°C";
+                        // Handle both old and new temperature format
+                        let temp_c = meta.temperature_c !== null && meta.temperature_c !== undefined 
+                            ? meta.temperature_c 
+                            : (meta.temperature_celsius !== null && meta.temperature_celsius !== undefined 
+                                ? meta.temperature_celsius 
+                                : null);
+                        if (temp_c !== null && temp_c !== undefined) {
+                            info.textContent += " • " + temp_c.toFixed(1) + "°C";
                         }
                         const badge = document.createElement("div");
                         badge.className = "latest-badge";
@@ -372,7 +383,7 @@
                             // Try to find metadata - handle old filenames with image numbers
                             let meta = data.metadata[filename] || {};
                             // If not found, try matching by date/time pattern (for old filenames with numbers)
-                            if (!meta.timestamp && filename) {
+                            if ((!meta.timestamp && !meta.extracted_timestamp) && filename) {
                                 const dateMatch = filename.match(/(\d{8}_\d{6})/);
                                 if (dateMatch) {
                                     const datePattern = dateMatch[1];
@@ -385,10 +396,15 @@
                                     }
                                 }
                             }
-                            // Try to get timestamp from metadata first
-                            if (meta.timestamp) {
-                                const date = new Date(meta.timestamp);
-                                info.textContent = date.toLocaleString();
+                            // Try to get timestamp from metadata first (handle both old and new formats)
+                            let timestamp = meta.timestamp || meta.extracted_timestamp;
+                            if (timestamp) {
+                                try {
+                                    const date = new Date(timestamp);
+                                    info.textContent = date.toLocaleString();
+                                } catch (e) {
+                                    info.textContent = timestamp;
+                                }
                             } else {
                                 const dateStr = filename.match(/(\d{8}_\d{6})/);
                                 if (dateStr) {
@@ -397,8 +413,14 @@
                                     info.textContent = filename;
                                 }
                             }
-                            if (meta.temperature_c !== null && meta.temperature_c !== undefined) {
-                                info.textContent += " • " + meta.temperature_c.toFixed(1) + "°C";
+                            // Handle both old and new temperature format
+                            let temp_c = meta.temperature_c !== null && meta.temperature_c !== undefined 
+                                ? meta.temperature_c 
+                                : (meta.temperature_celsius !== null && meta.temperature_celsius !== undefined 
+                                    ? meta.temperature_celsius 
+                                    : null);
+                            if (temp_c !== null && temp_c !== undefined) {
+                                info.textContent += " • " + temp_c.toFixed(1) + "°C";
                             }
                             container.appendChild(imgEl);
                             container.appendChild(info);
