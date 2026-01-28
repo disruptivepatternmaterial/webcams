@@ -103,6 +103,19 @@
             width: 100%;
             box-sizing: border-box;
         }
+        .windy-link {
+            display: block;
+            margin-top: 10px;
+            margin-left: 15px;
+            font-size: 0.76em;
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .windy-link:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
         .latest-badge {
             position: absolute;
             top: 10px;
@@ -357,6 +370,24 @@
                         };
                         textBlock.textContent = cameraTexts[cameraName] || 'Camera information...';
                         section.appendChild(textBlock);
+                        
+                        // Add Windy.com link below text
+                        const windyLinks = {
+                            'bowman_mtn': 'https://www.windy.com/station/pws-4ks5xFmh?48.720,-122.062,13,p:temp',
+                            'n_twin': '',  // Placeholder - no link yet
+                            'westward_view': 'https://www.windy.com/48.780/-122.450?48.764,-122.456,13,p:temp'
+                        };
+                        
+                        const windyUrl = windyLinks[cameraName];
+                        if (windyUrl) {
+                            const windyLink = document.createElement("a");
+                            windyLink.href = windyUrl;
+                            windyLink.target = "_blank";
+                            windyLink.rel = "noopener noreferrer";
+                            windyLink.textContent = "Link to weather station on Windy.com";
+                            windyLink.className = "windy-link";
+                            section.appendChild(windyLink);
+                        }
                     }
                     
                     camerasContainer.appendChild(section);
