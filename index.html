@@ -403,6 +403,8 @@
             
             if (dateMatch) {
                 let year, month, day, hour, min;
+                // First regex returns: [fullMatch, captureGroup] = length 2
+                // Second regex returns: [fullMatch, year, month, day, hour, min, sec] = length 7
                 if (dateMatch.length === 2) {
                     // First pattern matched: single group with YYYYMMDD_HHMMSS
                     const dateStr = dateMatch[1];
@@ -411,21 +413,37 @@
                     day = parseInt(dateStr.substring(6, 8));
                     hour = parseInt(dateStr.substring(9, 11));
                     min = dateStr.substring(11, 13);
-                } else {
+                } else if (dateMatch.length >= 7) {
                     // Second pattern matched: separate groups
                     year = dateMatch[1];
                     month = parseInt(dateMatch[2]);
                     day = parseInt(dateMatch[3]);
                     hour = parseInt(dateMatch[4]);
                     min = dateMatch[5];
+                } else {
+                    // Unexpected match format, try to extract from first group
+                    const dateStr = dateMatch[0];
+                    if (dateStr && dateStr.length >= 15) {
+                        year = dateStr.substring(0, 4);
+                        month = parseInt(dateStr.substring(4, 6));
+                        day = parseInt(dateStr.substring(6, 8));
+                        hour = parseInt(dateStr.substring(9, 11));
+                        min = dateStr.substring(11, 13);
+                    }
                 }
                 
-                const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-                const monthName = monthNames[month - 1];
-                const hour12 = hour === 0 ? 12 : (hour > 12 ? hour - 12 : hour);
-                const ampm = hour >= 12 ? 'PM' : 'AM';
-                
-                dateText = `${monthName} ${day}, ${year} at ${hour12}:${min} ${ampm}`;
+                // Validate we got valid values
+                if (year && month && day && hour !== undefined && min) {
+                    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                    const monthName = monthNames[month - 1];
+                    const hour12 = hour === 0 ? 12 : (hour > 12 ? hour - 12 : hour);
+                    const ampm = hour >= 12 ? 'PM' : 'AM';
+                    
+                    dateText = `${monthName} ${day}, ${year} at ${hour12}:${min} ${ampm}`;
+                } else {
+                    // Parsing failed, fall through to metadata
+                    dateMatch = null;
+                }
             } else {
                 // Fallback: try metadata timestamp (but this shouldn't happen with proper filenames)
                 const timestamp = meta.timestamp || meta.extracted_timestamp;
