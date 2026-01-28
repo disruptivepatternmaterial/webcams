@@ -261,39 +261,26 @@
                     title.textContent = formatCameraName(cameraName);
                     section.appendChild(title);
                     // Separate latest from older images
-                    const allImages = data.images.slice(0, 4); // Get up to 4 images
+                    // list.json structure: [latest_file, newest_actual, second_newest, third_newest]
+                    // The first image is the _latest.jpg file, the second is the actual newest image
                     let latestImage = null;
                     const olderImages = [];
                     
-                    // Find the latest image file
-                    for (let i = 0; i < allImages.length; i++) {
-                        const filename = allImages[i];
-                        if (filename.toLowerCase().includes("latest")) {
-                            latestImage = filename;
-                            break;
+                    // Find the _latest.jpg file (should be first in array)
+                    if (data.images.length > 0 && data.images[0].toLowerCase().includes("latest")) {
+                        latestImage = data.images[0];
+                        // Get the next 3 images (skip index 0 which is _latest.jpg, start from index 1)
+                        // These are the actual image files, with index 1 being the newest
+                        for (let i = 1; i < Math.min(data.images.length, 4); i++) {
+                            olderImages.push(data.images[i]);
                         }
-                    }
-                    
-                    // Build olderImages array, excluding the latest image
-                    // Since list.json puts latest first, then the 3 most recent images,
-                    // the first non-latest image (index 1) is the same as latest, so skip it
-                    for (let i = 0; i < allImages.length; i++) {
-                        const filename = allImages[i];
-                        // Skip the latest file itself
-                        if (filename.toLowerCase().includes("latest")) {
-                            continue;
+                    } else if (data.images.length > 0) {
+                        // No _latest.jpg found, use first image as latest
+                        latestImage = data.images[0];
+                        // Get next 3 images
+                        for (let i = 1; i < Math.min(data.images.length, 4); i++) {
+                            olderImages.push(data.images[i]);
                         }
-                        // If we have a latest file, skip index 1 (the actual image that matches latest)
-                        if (latestImage && i === 1) {
-                            continue; // Skip the first non-latest image as it's the same as latest
-                        }
-                        olderImages.push(filename);
-                    }
-                    
-                    // If no latest was found but we have images, use first as latest and remove from older
-                    if (!latestImage && allImages.length > 0) {
-                        latestImage = allImages[0];
-                        olderImages.shift(); // Remove it from older images
                     }
                     
                     // Show latest image large
@@ -310,12 +297,38 @@
                         imgEl.onerror = function() { this.parentElement.style.display = "none"; };
                         const info = document.createElement("div");
                         info.className = "image-info";
-                        const meta = data.metadata[latestImage] || {};
-                        const dateStr = latestImage.match(/(\d{8}_\d{6})/);
-                        if (dateStr) {
-                            info.textContent = formatDate(dateStr[1]);
+                        // Get the actual latest image filename (not _latest.jpg) for metadata lookup
+                        const actualLatestFilename = olderImages.length > 0 ? olderImages[0] : latestImage;
+                        // Try to find metadata - handle old filenames with image numbers
+                        let meta = data.metadata[actualLatestFilename] || data.metadata[latestImage] || {};
+                        // If not found, try matching by date/time pattern (for old filenames with numbers)
+                        if (!meta.timestamp && actualLatestFilename) {
+                            const dateMatch = actualLatestFilename.match(/(\d{8}_\d{6})/);
+                            if (dateMatch) {
+                                const datePattern = dateMatch[1];
+                                // Find metadata key that matches this date/time pattern
+                                for (const key in data.metadata) {
+                                    if (key.includes(datePattern)) {
+                                        meta = data.metadata[key];
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        // Try to get timestamp from metadata first
+                        if (meta.timestamp) {
+                            const date = new Date(meta.timestamp);
+                            info.textContent = date.toLocaleString();
                         } else {
-                            info.textContent = "Latest";
+                            const dateStr = actualLatestFilename.match(/(\d{8}_\d{6})/) || latestImage.match(/(\d{8}_\d{6})/);
+                            if (dateStr) {
+                                info.textContent = formatDate(dateStr[1]);
+                            } else {
+                                info.textContent = "Latest";
+                            }
+                        }
+                        if (meta.temperature_c !== null && meta.temperature_c !== undefined) {
+                            info.textContent += " • " + meta.temperature_c.toFixed(1) + "°C";
                         }
                         const badge = document.createElement("div");
                         badge.className = "latest-badge";
@@ -335,11 +348,15 @@
                         section.appendChild(divider);
                     }
                     
-                    // Show 2-3 older images below
+                    // Show 3 older images below (or as many as available, up to 3)
                     if (olderImages.length > 0) {
                         const imagesGrid = document.createElement("div");
                         imagesGrid.className = "images-grid";
                         const displayOlder = olderImages.slice(0, 3); // Show up to 3 older images
+                        // If we have fewer than 3, adjust grid columns
+                        if (displayOlder.length < 3) {
+                            imagesGrid.style.gridTemplateColumns = `repeat(${displayOlder.length}, 1fr)`;
+                        }
                         for (let i = 0; i < displayOlder.length; i++) {
                             const filename = displayOlder[i];
                             const container = document.createElement("div");
@@ -352,12 +369,36 @@
                             imgEl.onerror = function() { this.parentElement.style.display = "none"; };
                             const info = document.createElement("div");
                             info.className = "image-info";
-                            const meta = data.metadata[filename] || {};
-                            const dateStr = filename.match(/(\d{8}_\d{6})/);
-                            if (dateStr) {
-                                info.textContent = formatDate(dateStr[1]);
+                            // Try to find metadata - handle old filenames with image numbers
+                            let meta = data.metadata[filename] || {};
+                            // If not found, try matching by date/time pattern (for old filenames with numbers)
+                            if (!meta.timestamp && filename) {
+                                const dateMatch = filename.match(/(\d{8}_\d{6})/);
+                                if (dateMatch) {
+                                    const datePattern = dateMatch[1];
+                                    // Find metadata key that matches this date/time pattern
+                                    for (const key in data.metadata) {
+                                        if (key.includes(datePattern)) {
+                                            meta = data.metadata[key];
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            // Try to get timestamp from metadata first
+                            if (meta.timestamp) {
+                                const date = new Date(meta.timestamp);
+                                info.textContent = date.toLocaleString();
                             } else {
-                                info.textContent = filename;
+                                const dateStr = filename.match(/(\d{8}_\d{6})/);
+                                if (dateStr) {
+                                    info.textContent = formatDate(dateStr[1]);
+                                } else {
+                                    info.textContent = filename;
+                                }
+                            }
+                            if (meta.temperature_c !== null && meta.temperature_c !== undefined) {
+                                info.textContent += " • " + meta.temperature_c.toFixed(1) + "°C";
                             }
                             container.appendChild(imgEl);
                             container.appendChild(info);
