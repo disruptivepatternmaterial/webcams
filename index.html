@@ -392,17 +392,33 @@
         
         function createImageInfoText(meta, filename) {
             // ALWAYS use filename time - it matches what's displayed on the image itself
-            // Format: NAME_YYYYMMDD_HHMMSS.jpg
+            // Format: NAME_YYYYMMDD_HHMMSS.jpg or NAME_YYYYMMDD_HHMMSS_IMAGENUM.jpg
             let dateText = "";
-            const dateMatch = filename.match(/(\d{8}_\d{6})/);
+            
+            // Try multiple regex patterns to match date/time in filename
+            let dateMatch = filename.match(/(\d{8}_\d{6})/);  // Standard: YYYYMMDD_HHMMSS
+            if (!dateMatch) {
+                dateMatch = filename.match(/(\d{4})(\d{2})(\d{2})_(\d{2})(\d{2})(\d{2})/);  // Alternative pattern
+            }
             
             if (dateMatch) {
-                const dateStr = dateMatch[1];
-                const year = dateStr.substring(0, 4);
-                const month = parseInt(dateStr.substring(4, 6));
-                const day = parseInt(dateStr.substring(6, 8));
-                const hour = parseInt(dateStr.substring(9, 11));
-                const min = dateStr.substring(11, 13);
+                let year, month, day, hour, min;
+                if (dateMatch.length === 2) {
+                    // First pattern matched: single group with YYYYMMDD_HHMMSS
+                    const dateStr = dateMatch[1];
+                    year = dateStr.substring(0, 4);
+                    month = parseInt(dateStr.substring(4, 6));
+                    day = parseInt(dateStr.substring(6, 8));
+                    hour = parseInt(dateStr.substring(9, 11));
+                    min = dateStr.substring(11, 13);
+                } else {
+                    // Second pattern matched: separate groups
+                    year = dateMatch[1];
+                    month = parseInt(dateMatch[2]);
+                    day = parseInt(dateMatch[3]);
+                    hour = parseInt(dateMatch[4]);
+                    min = dateMatch[5];
+                }
                 
                 const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
                 const monthName = monthNames[month - 1];
@@ -415,18 +431,25 @@
                 const timestamp = meta.timestamp || meta.extracted_timestamp;
                 if (timestamp) {
                     try {
-                        // Parse UTC timestamp and convert to local time
-                        const date = new Date(timestamp);
-                        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-                        const monthName = monthNames[date.getMonth()];
-                        const day = date.getDate();
-                        const year = date.getFullYear();
-                        let hour = date.getHours();
-                        const min = String(date.getMinutes()).padStart(2, '0');
-                        const hour12 = hour === 0 ? 12 : (hour > 12 ? hour - 12 : hour);
-                        const ampm = hour >= 12 ? 'PM' : 'AM';
-                        
-                        dateText = `${monthName} ${day}, ${year} at ${hour12}:${min} ${ampm}`;
+                        // Parse UTC timestamp but DON'T convert - use as-is since filename is source of truth
+                        // Actually, if we're here, filename parsing failed, so extract time from UTC timestamp
+                        const dateMatch = timestamp.match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})/);
+                        if (dateMatch) {
+                            const year = dateMatch[1];
+                            const month = parseInt(dateMatch[2]);
+                            const day = parseInt(dateMatch[3]);
+                            const hour = parseInt(dateMatch[4]);
+                            const min = dateMatch[5];
+                            
+                            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                            const monthName = monthNames[month - 1];
+                            const hour12 = hour === 0 ? 12 : (hour > 12 ? hour - 12 : hour);
+                            const ampm = hour >= 12 ? 'PM' : 'AM';
+                            
+                            dateText = `${monthName} ${day}, ${year} at ${hour12}:${min} ${ampm}`;
+                        } else {
+                            dateText = "Image";
+                        }
                     } catch (e) {
                         dateText = "Image";
                     }
