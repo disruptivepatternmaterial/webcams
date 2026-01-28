@@ -234,7 +234,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>📷 Webcam Images</h1>
+        <h1>⛰ Webcam Images & Data 🏂</h1>
         <div id="cameras" class="cameras">
             <div class="loading">Loading images...</div>
         </div>
@@ -415,28 +415,48 @@
             const info = document.createElement("div");
             info.className = isLatest ? "latest-image-info" : "image-info";
             
-            // Get timestamp (handle both old and new formats)
-            let timestamp = meta.timestamp || meta.extracted_timestamp;
+            // Extract date/time from filename (most reliable - matches what user sees)
+            // Format: NAME_YYYYMMDD_HHMMSS.jpg
+            const dateMatch = filename.match(/(\d{8}_\d{6})/);
             let dateText = "";
             
-            if (timestamp) {
-                try {
-                    const date = new Date(timestamp);
-                    dateText = date.toLocaleString('en-US', {
-                        year: 'numeric',
-                        month: 'short',
-                        day: 'numeric',
-                        hour: '2-digit',
-                        minute: '2-digit'
-                    });
-                } catch (e) {
-                    dateText = timestamp;
-                }
+            if (dateMatch) {
+                const dateStr = dateMatch[1];
+                const year = dateStr.substring(0, 4);
+                const month = dateStr.substring(4, 6);
+                const day = dateStr.substring(6, 8);
+                const hour = parseInt(dateStr.substring(9, 11));
+                const min = dateStr.substring(11, 13);
+                
+                // Format: "Jan 27, 2026 at 9:52 PM"
+                const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                const monthName = monthNames[parseInt(month) - 1];
+                const hour12 = hour === 0 ? 12 : (hour > 12 ? hour - 12 : hour);
+                const ampm = hour >= 12 ? 'PM' : 'AM';
+                
+                dateText = `${monthName} ${parseInt(day)}, ${year} at ${hour12}:${min} ${ampm}`;
             } else {
-                // Fallback: extract from filename
-                const dateMatch = filename.match(/(\d{8}_\d{6})/);
-                if (dateMatch) {
-                    dateText = formatDate(dateMatch[1]);
+                // Fallback: try metadata timestamp (but don't convert timezone)
+                const timestamp = meta.timestamp || meta.extracted_timestamp;
+                if (timestamp) {
+                    // Parse UTC timestamp and display as-is (no timezone conversion)
+                    const dateMatch = timestamp.match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})/);
+                    if (dateMatch) {
+                        const year = dateMatch[1];
+                        const month = parseInt(dateMatch[2]);
+                        const day = parseInt(dateMatch[3]);
+                        const hour = parseInt(dateMatch[4]);
+                        const min = dateMatch[5];
+                        
+                        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                        const monthName = monthNames[month - 1];
+                        const hour12 = hour === 0 ? 12 : (hour > 12 ? hour - 12 : hour);
+                        const ampm = hour >= 12 ? 'PM' : 'AM';
+                        
+                        dateText = `${monthName} ${day}, ${year} at ${hour12}:${min} ${ampm}`;
+                    } else {
+                        dateText = "Image";
+                    }
                 } else {
                     dateText = "Image";
                 }
@@ -460,26 +480,6 @@
         
         function formatCameraName(name) {
             return name.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-        }
-        
-        function formatDate(dateStr) {
-            if (dateStr.length === 15) {
-                const year = dateStr.substring(0, 4);
-                const month = dateStr.substring(4, 6);
-                const day = dateStr.substring(6, 8);
-                const hour = dateStr.substring(9, 11);
-                const min = dateStr.substring(11, 13);
-                const sec = dateStr.substring(13, 15);
-                const date = new Date(year, parseInt(month)-1, day, hour, min, sec);
-                return date.toLocaleString('en-US', {
-                    year: 'numeric',
-                    month: 'short',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
-                });
-            }
-            return dateStr;
         }
         
         function openModal(imageUrl, imageInfo) {
