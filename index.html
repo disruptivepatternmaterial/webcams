@@ -484,7 +484,8 @@
             
             // Build display text
             let displayText = dateText;
-            if (temp_c !== null && temp_c !== undefined && !isNaN(temp_c)) {
+            // Check if temperature exists and is a valid number (including 0)
+            if (temp_c !== null && temp_c !== undefined && !isNaN(temp_c) && typeof temp_c === 'number') {
                 displayText += " • " + temp_c.toFixed(1) + "°C";
             }
             
