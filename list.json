@@ -12,40 +12,40 @@
         "timestamp": "2026-01-30T15:30:02Z",
         "temperature_c": null
       },
-      "Bowman_Mtn_20260130_123001.jpg": {
-        "timestamp": "2026-01-30T12:30:01Z",
-        "temperature_c": 5.0
-      },
       "Bowman_Mtn_20260130_120002.jpg": {
         "timestamp": "2026-01-30T12:00:02Z",
         "temperature_c": 3.9
-      },
-      "Bowman_Mtn_20260130_110002.jpg": {
-        "timestamp": "2026-01-30T11:00:02Z",
-        "temperature_c": 3.3
-      },
-      "Bowman_Mtn_20260130_143002.jpg": {
-        "timestamp": "2026-01-30T14:30:02Z",
-        "temperature_c": 5.0
       },
       "Bowman_Mtn_20260130_140001.jpg": {
         "timestamp": "2026-01-30T14:00:01Z",
         "temperature_c": 5.0
       },
-      "Bowman_Mtn_20260130_130001.jpg": {
-        "timestamp": "2026-01-30T13:00:01Z",
-        "temperature_c": 4.4
+      "Bowman_Mtn_20260130_123001.jpg": {
+        "timestamp": "2026-01-30T12:30:01Z",
+        "temperature_c": 5.0
       },
       "Bowman_Mtn_20260130_113001.jpg": {
         "timestamp": "2026-01-30T11:30:01Z",
         "temperature_c": 4.4
       },
+      "Bowman_Mtn_20260130_133002.jpg": {
+        "timestamp": "2026-01-30T13:30:02Z",
+        "temperature_c": 5.0
+      },
       "Bowman_Mtn_20260130_150001.jpg": {
         "timestamp": "2026-01-30T15:00:01Z",
         "temperature_c": 4.4
       },
-      "Bowman_Mtn_20260130_133002.jpg": {
-        "timestamp": "2026-01-30T13:30:02Z",
+      "Bowman_Mtn_20260130_110002.jpg": {
+        "timestamp": "2026-01-30T11:00:02Z",
+        "temperature_c": 3.3
+      },
+      "Bowman_Mtn_20260130_130001.jpg": {
+        "timestamp": "2026-01-30T13:00:01Z",
+        "temperature_c": 4.4
+      },
+      "Bowman_Mtn_20260130_143002.jpg": {
+        "timestamp": "2026-01-30T14:30:02Z",
         "temperature_c": 5.0
       }
     }
@@ -53,65 +53,85 @@
   "n_twin": {
     "images": [
       "N_Twin_latest.jpg",
+      "N_Twin_20260130_153000.jpg",
       "N_Twin_20260130_150000.jpg",
       "N_Twin_20260130_143000.jpg",
-      "N_Twin_20260130_140000.jpg",
-      "N_Twin_20260130_130000.jpg"
+      "N_Twin_20260130_140000.jpg"
     ],
     "metadata": {
-      "N_Twin_20260130_111316.jpg": {
-        "timestamp": "2026-01-30T11:13:16Z",
+      "N_Twin_20260130_123001.jpg": {
+        "timestamp": "2026-01-30T12:30:01Z",
         "temperature_c": 2.8
       },
-      "N_Twin_20260130_110949.jpg": {
-        "timestamp": "2026-01-30T11:09:49Z",
+      "N_Twin_20260130_143000.jpg": {
+        "timestamp": "2026-01-30T14:30:00Z",
+        "temperature_c": 5.0
+      },
+      "N_Twin_20260130_153000.jpg": {
+        "timestamp": "2026-01-30T15:30:00Z",
+        "temperature_c": 3.9
+      },
+      "N_Twin_20260130_120000.jpg": {
+        "timestamp": "2026-01-30T12:00:00Z",
         "temperature_c": 2.8
       },
-      "N_Twin_20260130_110838.jpg": {
-        "timestamp": "2026-01-30T11:08:38Z",
+      "N_Twin_20260130_113002.jpg": {
+        "timestamp": "2026-01-30T11:30:02Z",
         "temperature_c": 2.8
+      },
+      "N_Twin_20260130_140000.jpg": {
+        "timestamp": "2026-01-30T14:00:00Z",
+        "temperature_c": 5.0
+      },
+      "N_Twin_20260130_130000.jpg": {
+        "timestamp": "2026-01-30T13:00:00Z",
+        "temperature_c": 2.8
+      },
+      "N_Twin_20260130_150000.jpg": {
+        "timestamp": "2026-01-30T15:00:00Z",
+        "temperature_c": 3.9
       }
     }
   },
   "westward_view": {
     "images": [
       "Westward_View_latest.jpg",
+      "Westward_View_20260130_155801.jpg",
       "Westward_View_20260130_154257.jpg",
       "Westward_View_20260130_152756.jpg",
-      "Westward_View_20260130_151256.jpg",
-      "Westward_View_20260130_145232.jpg"
+      "Westward_View_20260130_151256.jpg"
     ],
     "metadata": {
       "Westward_View_20260130_145232.jpg": {
         "timestamp": "2026-01-30T14:52:32Z",
         "temperature_c": null
       },
-      "Westward_View_20260130_134244.jpg": {
-        "timestamp": "2026-01-30T13:42:44Z",
+      "Westward_View_20260130_152756.jpg": {
+        "timestamp": "2026-01-30T15:27:56Z",
         "temperature_c": null
       },
       "Westward_View_20260130_144252.jpg": {
         "timestamp": "2026-01-30T14:42:52Z",
         "temperature_c": null
       },
-      "Westward_View_20260130_152756.jpg": {
-        "timestamp": "2026-01-30T15:27:56Z",
+      "Westward_View_20260130_142748.jpg": {
+        "timestamp": "2026-01-30T14:27:48Z",
         "temperature_c": null
       },
-      "Westward_View_20260130_141241.jpg": {
-        "timestamp": "2026-01-30T14:12:41Z",
-        "temperature_c": null
-      },
-      "Westward_View_20260130_132739.jpg": {
-        "timestamp": "2026-01-30T13:27:39Z",
+      "Westward_View_20260130_134244.jpg": {
+        "timestamp": "2026-01-30T13:42:44Z",
         "temperature_c": null
       },
       "Westward_View_20260130_154257.jpg": {
         "timestamp": "2026-01-30T15:42:57Z",
         "temperature_c": null
       },
-      "Westward_View_20260130_142748.jpg": {
-        "timestamp": "2026-01-30T14:27:48Z",
+      "Westward_View_20260130_155801.jpg": {
+        "timestamp": "2026-01-30T15:58:01Z",
+        "temperature_c": null
+      },
+      "Westward_View_20260130_141241.jpg": {
+        "timestamp": "2026-01-30T14:12:41Z",
         "temperature_c": null
       },
       "Westward_View_20260130_151256.jpg": {
