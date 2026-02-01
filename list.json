@@ -8,33 +8,17 @@
       "Bowman_Mtn_20260131_173002.jpg"
     ],
     "metadata": {
-      "Bowman_Mtn_20260131_153002.jpg": {
-        "timestamp": "2026-01-31T23:30:02Z",
-        "temperature_c": 5.6
-      },
       "Bowman_Mtn_20260131_163001.jpg": {
         "timestamp": "2026-02-01T00:30:01Z",
         "temperature_c": 6.1
       },
-      "Bowman_Mtn_20260131_150001.jpg": {
-        "timestamp": "2026-01-31T23:00:01Z",
-        "temperature_c": 5.0
-      },
-      "Bowman_Mtn_20260131_143002.jpg": {
-        "timestamp": "2026-01-31T22:30:02Z",
-        "temperature_c": 5.0
-      },
-      "Bowman_Mtn_20260131_180649.jpg": {
-        "timestamp": "2026-02-01T02:06:49Z",
-        "temperature_c": null
+      "Bowman_Mtn_20260131_160001.jpg": {
+        "timestamp": "2026-02-01T00:00:01Z",
+        "temperature_c": 6.1
       },
       "Bowman_Mtn_20260131_180002.jpg": {
         "timestamp": "2026-02-01T02:00:02Z",
         "temperature_c": null
-      },
-      "Bowman_Mtn_20260131_170002.jpg": {
-        "timestamp": "2026-02-01T01:00:02Z",
-        "temperature_c": 5.6
       },
       "Bowman_Mtn_20260131_183650.jpg": {
         "timestamp": "2026-02-01T02:36:50Z",
@@ -44,12 +28,28 @@
         "timestamp": "2026-02-01T01:30:02Z",
         "temperature_c": null
       },
-      "Bowman_Mtn_20260131_160001.jpg": {
-        "timestamp": "2026-02-01T00:00:01Z",
-        "temperature_c": 6.1
+      "Bowman_Mtn_20260131_150001.jpg": {
+        "timestamp": "2026-01-31T23:00:01Z",
+        "temperature_c": 5.0
+      },
+      "Bowman_Mtn_20260131_143002.jpg": {
+        "timestamp": "2026-01-31T22:30:02Z",
+        "temperature_c": 5.0
       },
       "Bowman_Mtn_latest.jpg": {
-        "timestamp": "2026-02-01T03:28:47Z",
+        "timestamp": "2026-02-01T03:43:47Z",
+        "temperature_c": null
+      },
+      "Bowman_Mtn_20260131_153002.jpg": {
+        "timestamp": "2026-01-31T23:30:02Z",
+        "temperature_c": 5.6
+      },
+      "Bowman_Mtn_20260131_170002.jpg": {
+        "timestamp": "2026-02-01T01:00:02Z",
+        "temperature_c": 5.6
+      },
+      "Bowman_Mtn_20260131_180649.jpg": {
+        "timestamp": "2026-02-01T02:06:49Z",
         "temperature_c": null
       }
     }
@@ -57,69 +57,61 @@
   "n_twin": {
     "images": [
       "N_Twin_latest.jpg",
+      "N_Twin_20260131_190940.jpg",
+      "N_Twin_20260131_191857.jpg",
       "N_Twin_20260131_190002.jpg",
-      "N_Twin_20260131_183001.jpg",
-      "N_Twin_20260131_181224.jpg",
-      "N_Twin_20260131_175356.jpg"
+      "N_Twin_20260131_183001.jpg"
     ],
     "metadata": {
-      "N_Twin_20260131_180000.jpg": {
-        "timestamp": "2026-02-01T02:00:00Z",
+      "N_Twin_20260131_181224.jpg": {
+        "timestamp": "2026-02-01T02:12:24Z",
         "temperature_c": 5.0
       },
-      "N_Twin_20260131_173000.jpg": {
-        "timestamp": "2026-02-01T01:30:00Z",
+      "N_Twin_20260131_191857.jpg": {
+        "timestamp": "2026-02-01T03:18:57Z",
+        "temperature_c": 5.6
+      },
+      "N_Twin_20260131_190940.jpg": {
+        "timestamp": "2026-02-01T03:09:40Z",
+        "temperature_c": 5.6
+      },
+      "N_Twin_20260131_173752.jpg": {
+        "timestamp": "2026-02-01T01:37:52Z",
         "temperature_c": 3.9
-      },
-      "N_Twin_20260131_175356.jpg": {
-        "timestamp": "2026-02-01T01:53:56Z",
-        "temperature_c": 5.0
-      },
-      "N_Twin_20260131_160000.jpg": {
-        "timestamp": "2026-02-01T00:00:00Z",
-        "temperature_c": null
-      },
-      "N_Twin_20260131_190002.jpg": {
-        "timestamp": "2026-02-01T03:00:02Z",
-        "temperature_c": 5.6
-      },
-      "N_Twin_20260131_153001.jpg": {
-        "timestamp": "2026-01-31T23:30:01Z",
-        "temperature_c": null
-      },
-      "N_Twin_20260131_183001.jpg": {
-        "timestamp": "2026-02-01T02:30:01Z",
-        "temperature_c": 5.6
-      },
-      "N_Twin_20260131_163000.jpg": {
-        "timestamp": "2026-02-01T00:30:00Z",
-        "temperature_c": 5.0
       }
     }
   },
   "westward_view": {
     "images": [
       "Westward_View_latest.jpg",
+      "Westward_View_20260131_194347.jpg",
       "Westward_View_20260131_192847.jpg",
       "Westward_View_20260131_191347.jpg",
-      "Westward_View_20260131_185846.jpg",
-      "Westward_View_20260131_184349.jpg"
+      "Westward_View_20260131_185846.jpg"
     ],
     "metadata": {
-      "Westward_View_20260131_191347.jpg": {
-        "timestamp": "2026-02-01T03:13:47Z",
+      "Westward_View_20260131_194347.jpg": {
+        "timestamp": "2026-02-01T03:43:47Z",
+        "temperature_c": null
+      },
+      "Westward_View_20260131_174336.jpg": {
+        "timestamp": "2026-02-01T01:43:36Z",
         "temperature_c": null
       },
       "Westward_View_20260131_181345.jpg": {
         "timestamp": "2026-02-01T02:13:45Z",
         "temperature_c": null
       },
-      "Westward_View_20260131_185846.jpg": {
-        "timestamp": "2026-02-01T02:58:46Z",
+      "Westward_View_20260131_175837.jpg": {
+        "timestamp": "2026-02-01T01:58:37Z",
         "temperature_c": null
       },
-      "Westward_View_20260131_174336.jpg": {
-        "timestamp": "2026-02-01T01:43:36Z",
+      "Westward_View_20260131_184349.jpg": {
+        "timestamp": "2026-02-01T02:43:49Z",
+        "temperature_c": null
+      },
+      "Westward_View_20260131_182840.jpg": {
+        "timestamp": "2026-02-01T02:28:40Z",
         "temperature_c": null
       },
       "Westward_View_20260131_172830.jpg": {
@@ -130,20 +122,12 @@
         "timestamp": "2026-02-01T03:28:47Z",
         "temperature_c": null
       },
-      "Westward_View_20260131_175837.jpg": {
-        "timestamp": "2026-02-01T01:58:37Z",
+      "Westward_View_20260131_191347.jpg": {
+        "timestamp": "2026-02-01T03:13:47Z",
         "temperature_c": null
       },
-      "Westward_View_20260131_182840.jpg": {
-        "timestamp": "2026-02-01T02:28:40Z",
-        "temperature_c": null
-      },
-      "Westward_View_20260131_184349.jpg": {
-        "timestamp": "2026-02-01T02:43:49Z",
-        "temperature_c": null
-      },
-      "Westward_View_20260131_171359.jpg": {
-        "timestamp": "2026-02-01T01:13:59Z",
+      "Westward_View_20260131_185846.jpg": {
+        "timestamp": "2026-02-01T02:58:46Z",
         "temperature_c": null
       }
     }
