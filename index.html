@@ -354,12 +354,6 @@
             min-width: 140px;
             max-width: 220px;
         }
-        .banner-conditions-block .banner-forecast-time {
-            display: block;
-            margin-top: 4px;
-            font-size: 0.8em;
-            opacity: 0.85;
-        }
         .banner-conditions-block .banner-time { display: block; margin-top: 8px; font-size: 0.85em; opacity: 0.9; }
         .support-bar {
             text-align: center;
@@ -612,7 +606,6 @@
                 <div class="banner-stat banner-forecast"><span class="banner-stat-label">Tomorrow hike</span><span id="stat-hike-tomorrow" class="banner-stat-value">—</span><span id="stat-hike-tomorrow-syn" class="banner-stat-synopsis"></span></div>
             </div>
             <span id="banner-conditions-time" class="banner-time"></span>
-            <span id="banner-forecast-time" class="banner-forecast-time"></span>
         </div>
         <div class="support-bar" id="support-bar">
             <p class="support-bar-copy" id="support-bar-copy">These mountain webcams and sensors are intended to inform the community on backcountry conditions; this is a labor of love, and you can help support them via Buy Me a Coffee.</p>
@@ -672,6 +665,21 @@
                 return d.toLocaleString("en-US", { timeZone: "America/Los_Angeles", dateStyle: "medium", timeStyle: "short" });
             } catch (e) { return isoString; }
         }
+
+        let bannerSensorsUpdatedIso = null;
+        let bannerForecastUpdatedIso = null;
+
+        function renderBannerUpdatedLine() {
+            const timeEl = document.getElementById("banner-conditions-time");
+            if (!timeEl) return;
+            const bits = [];
+            const s = formatPacificTime(bannerSensorsUpdatedIso);
+            const f = formatPacificTime(bannerForecastUpdatedIso);
+            if (s) bits.push("sensors updated " + s + " PT");
+            if (f) bits.push("forecast updated " + f + " PT");
+            timeEl.textContent = bits.length ? "(" + bits.join(" and ") + ")" : "";
+        }
+
 
         // Base URL/path must point at the webcams directory (with trailing slash) so list.json and
         // image paths resolve correctly when the page is opened with or without trailing slash.
@@ -1041,12 +1049,12 @@
             const tomEl = document.getElementById("stat-hike-tomorrow");
             const todaySyn = document.getElementById("stat-hike-today-syn");
             const tomSyn = document.getElementById("stat-hike-tomorrow-syn");
-            const timeEl = document.getElementById("banner-forecast-time");
             if (todayEl) todayEl.textContent = staleText || "—";
             if (tomEl) tomEl.textContent = staleText ? "" : "—";
             if (todaySyn) todaySyn.textContent = "";
             if (tomSyn) tomSyn.textContent = "";
-            if (timeEl) timeEl.textContent = "";
+            bannerForecastUpdatedIso = null;
+            renderBannerUpdatedLine();
         }
 
         async function loadTwinsForecast() {
@@ -1054,7 +1062,6 @@
             const tomEl = document.getElementById("stat-hike-tomorrow");
             const todaySyn = document.getElementById("stat-hike-today-syn");
             const tomSyn = document.getElementById("stat-hike-tomorrow-syn");
-            const timeEl = document.getElementById("banner-forecast-time");
             if (!todayEl || !tomEl) return;
             try {
                 const response = await fetch(assetUrl("twins_forecast.json?t=" + Date.now()), { cache: "no-store" });
@@ -1084,10 +1091,8 @@
                     tomEl.textContent = "—";
                     if (tomSyn) tomSyn.textContent = "";
                 }
-                if (timeEl) {
-                    const t = formatPacificTime(data.generated_at);
-                    timeEl.textContent = t ? "(forecast updated " + t + " PT)" : "";
-                }
+                bannerForecastUpdatedIso = data.generated_at || null;
+                renderBannerUpdatedLine();
             } catch (e) {
                 renderForecastEmpty();
             }
@@ -1099,14 +1104,14 @@
             const airBowmanEl = document.getElementById("stat-air-bowman");
             const airNtwinEl = document.getElementById("stat-air-ntwin");
             const groundEl = document.getElementById("stat-ground-temp");
-            const timeEl = document.getElementById("banner-conditions-time");
             const renderEmpty = () => {
                 if (aqiBowmanEl) aqiBowmanEl.textContent = "—";
                 if (aqiNtwinEl) aqiNtwinEl.textContent = "—";
                 if (airBowmanEl) airBowmanEl.textContent = "—";
                 if (airNtwinEl) airNtwinEl.textContent = "—";
                 if (groundEl) groundEl.textContent = "—";
-                if (timeEl) timeEl.textContent = "";
+                bannerSensorsUpdatedIso = null;
+                renderBannerUpdatedLine();
             };
             try {
                 const response = await fetch(assetUrl("banner_conditions.json?t=" + Date.now()), { cache: "no-store" });
@@ -1124,10 +1129,8 @@
                 if (airBowmanEl) airBowmanEl.textContent = formatTempCell(bowmanTemp.value, bowmanTemp.unit);
                 if (airNtwinEl) airNtwinEl.textContent = formatTempCell(ntwinTemp.value, ntwinTemp.unit);
                 if (groundEl) groundEl.textContent = formatTempCell(ground.value, ground.unit);
-                if (timeEl) {
-                    const t = formatPacificTime(data && data.last_updated);
-                    timeEl.textContent = t ? "(updated " + t + " PT)" : "";
-                }
+                bannerSensorsUpdatedIso = (data && data.last_updated) || null;
+                renderBannerUpdatedLine();
 
                 const bowmanTempNum = bannerNumeric(bowmanTemp.value);
                 const ntwinTempNum = bannerNumeric(ntwinTemp.value);
