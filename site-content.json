@@ -1,0 +1,84 @@
+{
+  "_comment": "Edit this file to update page copy. Use {base} for links/files in the webcams directory (e.g. {base}MIDDLE-FORK-FIELD-GUIDE.pdf).",
+  "pageTitle": "Mountain Webcams & Conditions",
+  "heroSubhead": "Live mountain conditions from Bowman Mtn, the Twins, and West Ridge. Webcams, air quality, and ground temps — updated every 5 minutes.",
+  "supportBar": {
+    "copy": "These mountain webcams and sensors are intended to inform the community on backcountry conditions; this is a labor of love, and you can help support them via Buy Me a Coffee.",
+    "linkUrl": "https://buymeacoffee.com/tobidogger",
+    "linkLabel": "Support on Buy Me a Coffee"
+  },
+  "infoTabs": {
+    "general": {
+      "label": "General Information",
+      "paragraphs": [
+        "This project is a live mountain conditions feed for Bowman Ridge, N Twin, and the west ridge corridor along the Middle Fork Area. It exists to make route planning safer and more informed.",
+        "AQI is currently reported at two locations (Bowman Mtn and N Twin), with additional temperature context from ridge sensors and the Dailey Prairie ground station.",
+        "I keep a <a href=\"{base}MIDDLE-FORK-FIELD-GUIDE.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Middle Fork field guide</a> of area notes and references, compiled from available sources, not an official historical record. A companion write-up on <a href=\"{base}TWINS-WEATHER-AND-SENSORS-NARRATIVE.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Twins weather and sensors</a> covers how the ridge instruments relate to what you see on the cameras."
+      ]
+    },
+    "thanks": {
+      "label": "Thanks!",
+      "intro": "Thanks for your help in various ways:",
+      "items": [
+        "DM/ZE: for hiking with me and helping setup some of the equipment.",
+        "AG: for many hours of EE classes, HAHA!",
+        "DM: for hiking equipment in and cougar calm downs.",
+        "GL: for making it clear I needed snow tires, all hail nokian hakkapeliitta.",
+        "Everyone at the gym for good ideas!"
+      ]
+    },
+    "nerdy": {
+      "label": "Nerdy Stuff",
+      "paragraphs": [
+        "<strong>Basics:</strong> three types of equipment — gateways, sensors, and cameras. A cellular gateway relays LoRaWAN sensor packets to The Things Network. The cameras are trail cams (GardePro, Vosker, and a Tachyon on Bowman Ridge) that upload over cellular; this page is their gallery.",
+        "Sensors include off-the-shelf LoRaWAN units (battery and solar) and custom weather/AQI nodes built on Particle Boron MCUs. Newer Muon-based units add cellular alongside LoRaWAN for better reliability when coverage is thin. AQI on the ridge stations is mainly for summer smoke season.",
+        "There is also a seismic node — Mount Baker is an active volcano, so why not? More on how the instruments relate to the cameras: <a href=\"{base}TWINS-WEATHER-AND-SENSORS-NARRATIVE.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Twins weather and sensors</a>."
+      ]
+    }
+  },
+  "sidebarHighlight": {
+    "imageSrc": "mbhc-twins-hike.png",
+    "imageAlt": "N Twin from the Middle Fork skin track — MBHC Baked (1991)",
+    "linkUrl": "https://youtu.be/Jfb9JlRkU7U?t=1110",
+    "captionHtml": "N Twin — <a href=\"https://youtu.be/Jfb9JlRkU7U?t=1110\" target=\"_blank\" rel=\"noopener noreferrer\">MBHC&nbsp;Baked (1991)</a>: “the hardcore looking for the steeps, the backcountry…”"
+  },
+  "cameraOrder": [
+    "bowman_mtn",
+    "n_twin",
+    "w_ridge_n_twin",
+    "NWHighPoint",
+    "woods_cam_001"
+  ],
+  "cameraDisplayNames": {
+    "NWHighPoint": "Westward View",
+    "woods_cam_001": "Bowman Ridge"
+  },
+  "cameras": {
+    "bowman_mtn": {
+      "description": "Bowman Mountain: about 3200 feet, facing Baker and the Twins",
+      "windyUrl": "https://www.windy.com/station/pws-4ks5xFmh?48.720,-122.062,13,p:temp",
+      "defaultStatus": "Working"
+    },
+    "n_twin": {
+      "description": "N Twin: about 4200 feet, along the logging road up to the N Twin NW Ridge.",
+      "windyUrl": "https://www.windy.com/station/pws-A1QVv3Du?48.720,-122.062,13,p:temp",
+      "defaultStatus": "Battery Unstable"
+    },
+    "w_ridge_n_twin": {
+      "description": "W Ridge N Twin: about 4600 feet. Trail camera on West Ridge looking toward N Twin skin up track.",
+      "windyUrl": "https://www.windy.com/station/pws-UpjK9hSq?radar,48.722,-122.007,13,p:temp",
+      "defaultStatus": "Working"
+    },
+    "NWHighPoint": {
+      "description": "Westward View: about 3900 feet along Bowman Ridge looking towards Vancouver, BC (the valley West of Dailey Prairie)",
+      "windyUrl": "https://www.windy.com/station/pws-fwWd6XAK?48.705,-122.048,13,p:temp",
+      "defaultStatus": "Working"
+    },
+    "woods_cam_001": {
+      "description": "Bowman Ridge: about 4000 feet looking towards Twins and Baker above Middle Fork Borrow Pit.",
+      "windyUrl": "https://www.windy.com/station/pws-wOvn2H1z?48.695,-122.054,13,p:temp",
+      "defaultStatus": "Working"
+    }
+  },
+  "windyLinkLabel": "Link to weather station on Windy.com"
+}
