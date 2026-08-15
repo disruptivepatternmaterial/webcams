@@ -341,6 +341,7 @@
             font-size: 1.15em;
             font-weight: 700;
         }
+        .banner-stat-synopsis.red-flag { color: #b00020; font-weight: 700; }
         .banner-stat-synopsis {
             display: block;
             margin-top: 4px;
@@ -1083,10 +1084,16 @@
                 const tomDay = byDate[tomorrow] || null;
 
                 todayEl.textContent = formatHikeRange(todayDay.hike_lo, todayDay.hike_hi);
-                if (todaySyn) todaySyn.textContent = todayDay.synopsis || "";
+                if (todaySyn) {
+                    todaySyn.textContent = todayDay.synopsis || "";
+                    todaySyn.classList.toggle("red-flag", !!todayDay.red_flag);
+                }
                 if (tomDay) {
                     tomEl.textContent = formatHikeRange(tomDay.hike_lo, tomDay.hike_hi);
-                    if (tomSyn) tomSyn.textContent = tomDay.synopsis || "";
+                    if (tomSyn) {
+                    tomSyn.textContent = tomDay.synopsis || "";
+                    tomSyn.classList.toggle("red-flag", !!tomDay.red_flag);
+                }
                 } else {
                     tomEl.textContent = "—";
                     if (tomSyn) tomSyn.textContent = "";
