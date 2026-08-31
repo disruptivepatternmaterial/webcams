@@ -355,6 +355,34 @@
             min-width: 140px;
             max-width: 220px;
         }
+        /* Per-location cards: name on top, temp under it, AQI (or Fog) under
+           that — same footprint as one old single-value tile but carrying a
+           whole site. */
+        .banner-stat.banner-site { min-width: 96px; }
+        .banner-site-name {
+            display: block;
+            font-size: 0.72em;
+            font-weight: 700;
+            opacity: 0.92;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        .banner-site-row {
+            display: block;
+            margin-top: 2px;
+            font-size: 0.95em;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        .banner-site-row .banner-site-metric {
+            font-size: 0.68em;
+            font-weight: 500;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-right: 4px;
+        }
+        .banner-site-row.banner-site-fog { color: #ffd54f; font-weight: 700; }
         .banner-conditions-block .banner-time { display: block; margin-top: 8px; font-size: 0.85em; opacity: 0.9; }
         .support-bar {
             text-align: center;
@@ -598,11 +626,9 @@
         <p class="hero-subhead" id="hero-subhead">Live mountain conditions from Bowman Mtn, the Twins, and West Ridge. Webcams, air quality, and ground temps — updated every 5 minutes.</p>
         <div id="banner-conditions" class="banner-conditions-block" aria-live="polite">
             <div class="banner-stats">
-                <div class="banner-stat"><span class="banner-stat-label">AQI Bowman</span><span id="stat-aqi-bowman" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">AQI N Twin</span><span id="stat-aqi-ntwin" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">Air temp Bowman</span><span id="stat-air-bowman" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">Air temp N Twin</span><span id="stat-air-ntwin" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">Ground temp</span><span id="stat-ground-temp" class="banner-stat-value">—</span></div>
+                <!-- Per-location cards are rendered here from banner_conditions.json
+                     (sites array) by loadBannerConditions(). -->
+                <div id="banner-sites" style="display: contents;"></div>
                 <div class="banner-stat banner-forecast"><span class="banner-stat-label">Today hike</span><span id="stat-hike-today" class="banner-stat-value">—</span><span id="stat-hike-today-syn" class="banner-stat-synopsis"></span></div>
                 <div class="banner-stat banner-forecast"><span class="banner-stat-label">Tomorrow hike</span><span id="stat-hike-tomorrow" class="banner-stat-value">—</span><span id="stat-hike-tomorrow-syn" class="banner-stat-synopsis"></span></div>
             </div>
@@ -1105,18 +1131,82 @@
             }
         }
 
+        // One stacked card per location: name on top, temp under it, AQI (or
+        // "Fog") under that. Fog droplets read as particulates on the PM
+        // sensors, so while a station's fog indicator is on its AQI number is
+        // corrupted and the card says "Fog" instead of printing it.
+        function renderBannerSites(sites) {
+            const wrap = document.getElementById("banner-sites");
+            if (!wrap) return;
+            wrap.innerHTML = "";
+            sites.forEach(function(site) {
+                const card = document.createElement("div");
+                card.className = "banner-stat banner-site";
+
+                const name = document.createElement("span");
+                name.className = "banner-site-name";
+                name.textContent = site.label || site.id || "—";
+                if (site.elev_ft) name.title = site.elev_ft + " ft";
+                card.appendChild(name);
+
+                const temp = document.createElement("span");
+                temp.className = "banner-site-row";
+                const tempNum = bannerNumeric(site.temp_f);
+                temp.textContent = tempNum === null ? "—" : Math.round(tempNum) + " °F";
+                card.appendChild(temp);
+
+                if (site.ground_temp_f !== undefined) {
+                    const ground = document.createElement("span");
+                    ground.className = "banner-site-row";
+                    const groundNum = bannerNumeric(site.ground_temp_f);
+                    ground.innerHTML = '<span class="banner-site-metric">Ground</span>'
+                        + (groundNum === null ? "—" : Math.round(groundNum) + " °F");
+                    card.appendChild(ground);
+                }
+
+                if (site.fog === true || site.has_aqi) {
+                    const aqi = document.createElement("span");
+                    if (site.fog === true) {
+                        aqi.className = "banner-site-row banner-site-fog";
+                        aqi.textContent = "Fog";
+                        aqi.title = "Fog suspected — particulate readings unreliable";
+                    } else {
+                        aqi.className = "banner-site-row";
+                        aqi.innerHTML = '<span class="banner-site-metric">AQI</span>'
+                            + formatAqiCell(site.aqi);
+                    }
+                    card.appendChild(aqi);
+                }
+
+                wrap.appendChild(card);
+            });
+        }
+
+        // Older banner_conditions.json (pre-sites rollout): synthesize the
+        // same shape from the legacy keys so the page renders either file.
+        function sitesFromLegacy(data) {
+            const aqi = (data && data.aqi_by_site) || {};
+            const airTemp = (data && data.air_temp_by_site) || {};
+            const ground = (data && data.dailey_prairie_ground_temp) || {};
+            const toF = function(cell) {
+                const num = bannerNumeric(cell && cell.value);
+                if (num === null) return null;
+                return cell.unit === "°C" ? Math.round(num * 9 / 5 + 32) : Math.round(num);
+            };
+            return [
+                { id: "bowman_mtn", label: "Bowman Mtn", temp_f: toF(airTemp.bowman_mtn),
+                  aqi: bannerNumeric((aqi.bowman_mtn || {}).value), has_aqi: true, fog: false },
+                { id: "n_twin_west_ridge", label: "N Twin West Ridge", temp_f: toF(airTemp.n_twin),
+                  aqi: bannerNumeric((aqi.n_twin || {}).value), has_aqi: true, fog: false },
+                { id: "dailey_prairie", label: "Dailey Prairie", temp_f: null,
+                  ground_temp_f: toF(ground), aqi: null, has_aqi: false, fog: false }
+            ];
+        }
+
         async function loadBannerConditions() {
-            const aqiBowmanEl = document.getElementById("stat-aqi-bowman");
-            const aqiNtwinEl = document.getElementById("stat-aqi-ntwin");
-            const airBowmanEl = document.getElementById("stat-air-bowman");
-            const airNtwinEl = document.getElementById("stat-air-ntwin");
-            const groundEl = document.getElementById("stat-ground-temp");
             const renderEmpty = () => {
-                if (aqiBowmanEl) aqiBowmanEl.textContent = "—";
-                if (aqiNtwinEl) aqiNtwinEl.textContent = "—";
-                if (airBowmanEl) airBowmanEl.textContent = "—";
-                if (airNtwinEl) airNtwinEl.textContent = "—";
-                if (groundEl) groundEl.textContent = "—";
+                const wrap = document.getElementById("banner-sites");
+                if (wrap) wrap.innerHTML = "";
                 bannerSensorsUpdatedIso = null;
                 renderBannerUpdatedLine();
             };
@@ -1124,30 +1214,26 @@
                 const response = await fetch(assetUrl("banner_conditions.json?t=" + Date.now()), { cache: "no-store" });
                 if (!response.ok) { renderEmpty(); return; }
                 const data = await response.json();
-                const aqi = (data && data.aqi_by_site) || {};
-                const airTemp = (data && data.air_temp_by_site) || {};
-                const bowman = aqi.bowman_mtn || {};
-                const ntwin = aqi.n_twin || {};
-                const bowmanTemp = airTemp.bowman_mtn || {};
-                const ntwinTemp = airTemp.n_twin || {};
-                const ground = (data && data.dailey_prairie_ground_temp) || {};
-                if (aqiBowmanEl) aqiBowmanEl.textContent = formatAqiCell(bowman.value);
-                if (aqiNtwinEl) aqiNtwinEl.textContent = formatAqiCell(ntwin.value);
-                if (airBowmanEl) airBowmanEl.textContent = formatTempCell(bowmanTemp.value, bowmanTemp.unit);
-                if (airNtwinEl) airNtwinEl.textContent = formatTempCell(ntwinTemp.value, ntwinTemp.unit);
-                if (groundEl) groundEl.textContent = formatTempCell(ground.value, ground.unit);
+                const sites = (data && Array.isArray(data.sites) && data.sites.length)
+                    ? data.sites : sitesFromLegacy(data);
+                renderBannerSites(sites);
                 bannerSensorsUpdatedIso = (data && data.last_updated) || null;
                 renderBannerUpdatedLine();
 
-                const bowmanTempNum = bannerNumeric(bowmanTemp.value);
-                const ntwinTempNum = bannerNumeric(ntwinTemp.value);
-                const groundTempNum = bannerNumeric(ground.value);
+                // Chart history keeps its original five series (and its
+                // localStorage shape) fed from the new per-site data.
+                const byId = {};
+                sites.forEach(function(s) { byId[s.id] = s; });
+                const pick = function(id, key) {
+                    const s = byId[id];
+                    return s ? bannerNumeric(s[key]) : null;
+                };
                 bannerLatest = {
-                    bowmanAqi: bannerNumeric(bowman.value),
-                    ntwinAqi: bannerNumeric(ntwin.value),
-                    bowmanTempF: bowmanTempNum === null ? null : (bowmanTemp.unit === "°C" ? Number((bowmanTempNum * 9 / 5 + 32).toFixed(1)) : bowmanTempNum),
-                    ntwinTempF: ntwinTempNum === null ? null : (ntwinTemp.unit === "°C" ? Number((ntwinTempNum * 9 / 5 + 32).toFixed(1)) : ntwinTempNum),
-                    groundTempF: groundTempNum === null ? null : (ground.unit === "°C" ? Number((groundTempNum * 9 / 5 + 32).toFixed(1)) : groundTempNum),
+                    bowmanAqi: pick("bowman_mtn", "aqi"),
+                    ntwinAqi: pick("n_twin_west_ridge", "aqi"),
+                    bowmanTempF: pick("bowman_mtn", "temp_f"),
+                    ntwinTempF: pick("n_twin_west_ridge", "temp_f"),
+                    groundTempF: pick("dailey_prairie", "ground_temp_f"),
                     lastUpdated: data && data.last_updated ? data.last_updated : new Date().toISOString()
                 };
                 updateBannerHistory(bannerLatest);
