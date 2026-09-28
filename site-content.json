@@ -47,11 +47,13 @@
     "n_twin",
     "w_ridge_n_twin",
     "NWHighPoint",
-    "woods_cam_001"
+    "woods_cam_001",
+    "bowman_ridge_high_pt"
   ],
   "cameraDisplayNames": {
     "NWHighPoint": "Westward View",
-    "woods_cam_001": "Bowman Ridge"
+    "woods_cam_001": "Bowman Ridge",
+    "bowman_ridge_high_pt": "Bowman Ridge High Point"
   },
   "cameras": {
     "bowman_mtn": {
@@ -78,6 +80,10 @@
       "description": "Bowman Ridge: about 4000 feet looking towards Twins and Baker above Middle Fork Borrow Pit.",
       "windyUrl": "https://www.windy.com/station/pws-wOvn2H1z?48.695,-122.054,13,p:temp",
       "defaultStatus": "Working"
+    },
+    "bowman_ridge_high_pt": {
+      "defaultStatus": "Working",
+      "description": "Bowman Ridge High Point: Reconyx Connect cellular camera."
     }
   },
   "windyLinkLabel": "Link to weather station on Windy.com"
