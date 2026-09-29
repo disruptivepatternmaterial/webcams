@@ -42,13 +42,13 @@
     "linkUrl": "https://youtu.be/Jfb9JlRkU7U?t=1110",
     "captionHtml": "N Twin — <a href=\"https://youtu.be/Jfb9JlRkU7U?t=1110\" target=\"_blank\" rel=\"noopener noreferrer\">MBHC&nbsp;Baked (1991)</a>: “the hardcore looking for the steeps, the backcountry…”"
   },
+  "_cameraOrderNote": "bowman_ridge_high_pt (Reconyx) is left out of cameraOrder until the camera is fully installed. Its cameraDisplayNames and cameras entries are kept, so adding it back here is the only change needed to show it.",
   "cameraOrder": [
     "bowman_mtn",
     "n_twin",
     "w_ridge_n_twin",
     "NWHighPoint",
-    "woods_cam_001",
-    "bowman_ridge_high_pt"
+    "woods_cam_001"
   ],
   "cameraDisplayNames": {
     "NWHighPoint": "Westward View",
