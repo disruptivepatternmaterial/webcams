@@ -362,6 +362,7 @@
   "woods_cam_001": {
     "images": [
       "Woods_Cam_001_latest.jpg",
+      "Woods_Cam_001_20260930_140033.jpg",
       "Woods_Cam_001_20260930_130032.jpg",
       "Woods_Cam_001_20260930_123033.jpg",
       "Woods_Cam_001_20260930_120033.jpg",
@@ -373,14 +374,18 @@
       "Woods_Cam_001_20260930_090032.jpg",
       "Woods_Cam_001_20260930_083033.jpg",
       "Woods_Cam_001_20260930_080032.jpg",
-      "Woods_Cam_001_20260930_073031.jpg",
-      "Woods_Cam_001_20260930_070032.jpg"
+      "Woods_Cam_001_20260930_073031.jpg"
     ],
     "metadata": {
       "Woods_Cam_001_latest.jpg": {
-        "run_id": "01a0f3ab-9f3c-7fcd-b6fd-8e33812e0abe",
+        "run_id": "01a0f3e2-ba09-77fe-8596-afe863234a1d",
         "temperature_c": null,
-        "timestamp": "2026-09-30T20:00:32Z"
+        "timestamp": "2026-09-30T21:00:33Z"
+      },
+      "Woods_Cam_001_20260930_140033.jpg": {
+        "run_id": "01a0f3e2-ba09-77fe-8596-afe863234a1d",
+        "temperature_c": null,
+        "timestamp": "2026-09-30T21:00:33Z"
       },
       "Woods_Cam_001_20260930_130032.jpg": {
         "run_id": "01a0f3ab-9f3c-7fcd-b6fd-8e33812e0abe",
@@ -441,11 +446,6 @@
         "run_id": "01a0f27d-8249-72a7-b082-e890e9a205d2",
         "temperature_c": null,
         "timestamp": "2026-09-30T14:30:31Z"
-      },
-      "Woods_Cam_001_20260930_070032.jpg": {
-        "run_id": "01a0f261-f595-79cf-80d9-1745e1db9b93",
-        "temperature_c": null,
-        "timestamp": "2026-09-30T14:00:32Z"
       }
     }
   },
