@@ -1,9 +1,4 @@
 {
-  "N_Twin_20260930_080000.jpg": {
-    "run_id": "01a0f286-b1bb-786e-a66c-0b07ffe85445",
-    "temperature_c": null,
-    "timestamp": "2026-09-30T15:00:00Z"
-  },
   "N_Twin_20260930_083002.jpg": {
     "run_id": "01a0f2a2-3edd-743d-b9fe-be33d445562e",
     "temperature_c": null,
@@ -64,9 +59,14 @@
     "temperature_c": null,
     "timestamp": "2026-09-30T21:00:01Z"
   },
-  "N_Twin_latest.jpg": {
-    "run_id": "01a0f3d0-5b5c-7cfd-9000-fc4c61cf7cac",
+  "N_Twin_20260930_143001.jpg": {
+    "run_id": "01a0f3eb-e829-7d96-959b-ee490f6f6c21",
     "temperature_c": null,
-    "timestamp": "2026-09-30T21:00:01Z"
+    "timestamp": "2026-09-30T21:30:01Z"
+  },
+  "N_Twin_latest.jpg": {
+    "run_id": "01a0f3eb-e829-7d96-959b-ee490f6f6c21",
+    "temperature_c": null,
+    "timestamp": "2026-09-30T21:30:01Z"
   }
 }
