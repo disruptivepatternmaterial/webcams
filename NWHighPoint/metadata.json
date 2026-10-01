@@ -1,9 +1,4 @@
 {
-  "NWHighPoint_20261001_060001.jpg": {
-    "run_id": "01a0f8a3-956e-7ad3-80fe-f59d558a1111",
-    "temperature_c": null,
-    "timestamp": "2026-10-01T13:00:01Z"
-  },
   "NWHighPoint_20261001_063000.jpg": {
     "run_id": "01a0f75a-c78e-7dae-b760-70f8e44b8ec4",
     "temperature_c": null,
@@ -64,9 +59,14 @@
     "temperature_c": null,
     "timestamp": "2026-10-01T18:30:01Z"
   },
-  "NWHighPoint_latest.jpg": {
-    "run_id": "01a0f8a3-956f-7513-aad5-443797ff02a7",
+  "NWHighPoint_20261001_120000.jpg": {
+    "run_id": "01a0f8a3-956f-7cf1-8e78-b08367ca2d2a",
     "temperature_c": null,
-    "timestamp": "2026-10-01T18:30:01Z"
+    "timestamp": "2026-10-01T19:00:00Z"
+  },
+  "NWHighPoint_latest.jpg": {
+    "run_id": "01a0f8a3-956f-7cf1-8e78-b08367ca2d2a",
+    "temperature_c": null,
+    "timestamp": "2026-10-01T19:00:00Z"
   }
 }
