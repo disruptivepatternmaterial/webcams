@@ -1,15 +1,4 @@
 {
-  "Bowman_Ridge_High_Pt_20260924_120738.jpg": {
-    "content_sha256": "63893ca0b67c3c9d8328e62a269797607ff6ccfae61222f3f0fb2094efdc19ab",
-    "run_id": "01a0d494-8d00-78df-93d3-df4455c235ce",
-    "source": "reconyx",
-    "source_filename": "THM_0114.JPG",
-    "source_media_id": "b770eb54-c1ec-42e3-aa10-fdf5aa1bc913.jpg",
-    "temperature_c": 10.6,
-    "temperature_ocr_version": "reconyx-footer-v2",
-    "temperature_source": "overlay_ocr",
-    "timestamp": "2026-09-24T19:07:38Z"
-  },
   "Bowman_Ridge_High_Pt_20260925_120739.jpg": {
     "content_sha256": "f23659aa496f903f5784778d19db1fa798929980f51701daf450cfb6d26b8422",
     "run_id": "01a0d9ba-4d3e-7614-89a4-c08e00fe2028",
@@ -142,15 +131,26 @@
     "temperature_source": "overlay_ocr",
     "timestamp": "2026-10-06T19:07:38Z"
   },
-  "Bowman_Ridge_High_Pt_latest.jpg": {
-    "content_sha256": "f93351323628626db9e7e3eba4cc874b42f2c0377dacd681c61a4a3d13516190",
-    "run_id": "01a11260-cf91-7c33-b874-564a6c02d5df",
+  "Bowman_Ridge_High_Pt_20261007_120739.jpg": {
+    "content_sha256": "09a1ce66c3995c3b11ebf8680ef7b4de911886831882f28feaef71220366cc36",
+    "run_id": "01a11787-3918-7d35-9a70-626067ec3703",
     "source": "reconyx",
-    "source_filename": "THM_0126.JPG",
-    "source_media_id": "975cdbc6-1a95-4c92-b4b4-0bf82599e512.jpg",
-    "temperature_c": 20.6,
+    "source_filename": "THM_0127.JPG",
+    "source_media_id": "4f7a4b9f-73e4-45d2-b9df-2f12b45a2d14.jpg",
+    "temperature_c": 21.7,
     "temperature_ocr_version": "reconyx-footer-v2",
     "temperature_source": "overlay_ocr",
-    "timestamp": "2026-10-06T19:07:38Z"
+    "timestamp": "2026-10-07T19:07:39Z"
+  },
+  "Bowman_Ridge_High_Pt_latest.jpg": {
+    "content_sha256": "09a1ce66c3995c3b11ebf8680ef7b4de911886831882f28feaef71220366cc36",
+    "run_id": "01a11787-3918-7d35-9a70-626067ec3703",
+    "source": "reconyx",
+    "source_filename": "THM_0127.JPG",
+    "source_media_id": "4f7a4b9f-73e4-45d2-b9df-2f12b45a2d14.jpg",
+    "temperature_c": 21.7,
+    "temperature_ocr_version": "reconyx-footer-v2",
+    "temperature_source": "overlay_ocr",
+    "timestamp": "2026-10-07T19:07:39Z"
   }
 }
