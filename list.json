@@ -182,6 +182,8 @@
   "w_ridge_n_twin": {
     "images": [
       "W_Ridge_N_Twin_latest.jpg",
+      "W_Ridge_N_Twin_20261006_170003.jpg",
+      "W_Ridge_N_Twin_20261006_170001.jpg",
       "W_Ridge_N_Twin_20261006_163003.jpg",
       "W_Ridge_N_Twin_20261006_163001.jpg",
       "W_Ridge_N_Twin_20261006_160002.jpg",
@@ -192,15 +194,23 @@
       "W_Ridge_N_Twin_20261006_150916.jpg",
       "W_Ridge_N_Twin_20261006_150914.jpg",
       "W_Ridge_N_Twin_20261006_150912.jpg",
-      "W_Ridge_N_Twin_20261006_150909.jpg",
-      "W_Ridge_N_Twin_20261006_150907.jpg",
-      "W_Ridge_N_Twin_20261006_150905.jpg"
+      "W_Ridge_N_Twin_20261006_150909.jpg"
     ],
     "metadata": {
       "W_Ridge_N_Twin_latest.jpg": {
-        "run_id": "01a11340-5d42-7a48-824b-f0e5b4674b4b",
+        "run_id": "01a1135b-da4e-738f-a87d-4f3b4134e4d3",
         "temperature_c": null,
-        "timestamp": "2026-10-06T23:30:03Z"
+        "timestamp": "2026-10-07T00:00:03Z"
+      },
+      "W_Ridge_N_Twin_20261006_170003.jpg": {
+        "run_id": "01a1135b-da4e-738f-a87d-4f3b4134e4d3",
+        "temperature_c": null,
+        "timestamp": "2026-10-07T00:00:03Z"
+      },
+      "W_Ridge_N_Twin_20261006_170001.jpg": {
+        "run_id": "01a1135b-da4e-738f-a87d-4f3b4134e4d3",
+        "temperature_c": null,
+        "timestamp": "2026-10-07T00:00:01Z"
       },
       "W_Ridge_N_Twin_20261006_163003.jpg": {
         "run_id": "01a11340-5d42-7a48-824b-f0e5b4674b4b",
@@ -256,22 +266,13 @@
         "run_id": "01a11320-772a-70b3-af1d-1a7f63aec6e7",
         "temperature_c": null,
         "timestamp": "2026-10-06T22:09:09Z"
-      },
-      "W_Ridge_N_Twin_20261006_150907.jpg": {
-        "run_id": "01a11320-772a-70b3-af1d-1a7f63aec6e7",
-        "temperature_c": null,
-        "timestamp": "2026-10-06T22:09:07Z"
-      },
-      "W_Ridge_N_Twin_20261006_150905.jpg": {
-        "run_id": "01a11320-772a-70b3-af1d-1a7f63aec6e7",
-        "temperature_c": null,
-        "timestamp": "2026-10-06T22:09:05Z"
       }
     }
   },
   "NWHighPoint": {
     "images": [
       "NWHighPoint_latest.jpg",
+      "NWHighPoint_20261006_170001.jpg",
       "NWHighPoint_20261006_163001.jpg",
       "NWHighPoint_20261006_160000.jpg",
       "NWHighPoint_20261006_153001.jpg",
@@ -283,14 +284,18 @@
       "NWHighPoint_20261006_123001.jpg",
       "NWHighPoint_20261006_120001.jpg",
       "NWHighPoint_20261006_113000.jpg",
-      "NWHighPoint_20261006_110001.jpg",
-      "NWHighPoint_20261006_103000.jpg"
+      "NWHighPoint_20261006_110001.jpg"
     ],
     "metadata": {
       "NWHighPoint_latest.jpg": {
-        "run_id": "01a11340-5d42-7a48-824b-f0e5b4674b4b",
+        "run_id": "01a1135b-da4e-738f-a87d-4f3b4134e4d3",
         "temperature_c": null,
-        "timestamp": "2026-10-06T23:30:01Z"
+        "timestamp": "2026-10-07T00:00:01Z"
+      },
+      "NWHighPoint_20261006_170001.jpg": {
+        "run_id": "01a1135b-da4e-738f-a87d-4f3b4134e4d3",
+        "temperature_c": null,
+        "timestamp": "2026-10-07T00:00:01Z"
       },
       "NWHighPoint_20261006_163001.jpg": {
         "run_id": "01a11340-5d42-7a48-824b-f0e5b4674b4b",
@@ -351,11 +356,6 @@
         "run_id": "01a11212-03aa-7459-8325-f25f6ad67168",
         "temperature_c": null,
         "timestamp": "2026-10-06T18:00:01Z"
-      },
-      "NWHighPoint_20261006_103000.jpg": {
-        "run_id": "01a111f6-87c5-7e86-80de-e01178ff549d",
-        "temperature_c": null,
-        "timestamp": "2026-10-06T17:30:00Z"
       }
     }
   },
