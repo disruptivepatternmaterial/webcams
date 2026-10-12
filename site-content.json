@@ -1,7 +1,7 @@
 {
   "_comment": "Edit this file to update page copy. Use {base} for links/files in the webcams directory (e.g. {base}MIDDLE-FORK-FIELD-GUIDE.pdf).",
   "pageTitle": "Mountain Webcams & Conditions",
-  "heroSubhead": "Live mountain conditions from Bowman Mtn, the Twins, and West Ridge. Webcams, air quality, and ground temps — updated every 5 minutes.",
+  "heroSubhead": "Live mountain conditions from Bowman Mtn, the Twins, and West Ridge. Webcams, air quality, and ground temps \u2014 updated every 5 minutes.",
   "supportBar": {
     "copy": "These mountain webcams and sensors are intended to inform the community on backcountry conditions; this is a labor of love, and you can help support them via Buy Me a Coffee.",
     "linkUrl": "https://buymeacoffee.com/tobidogger",
@@ -30,17 +30,17 @@
     "nerdy": {
       "label": "Nerdy Stuff",
       "paragraphs": [
-        "<strong>Basics:</strong> three types of equipment — gateways, sensors, and cameras. A cellular gateway relays LoRaWAN sensor packets to The Things Network. The cameras are trail cams (GardePro, Vosker, and a Tachyon on Bowman Ridge) that upload over cellular; this page is their gallery.",
+        "<strong>Basics:</strong> three types of equipment \u2014 gateways, sensors, and cameras. A cellular gateway relays LoRaWAN sensor packets to The Things Network. The cameras are trail cams (GardePro, Vosker, and a Tachyon on Bowman Ridge) that upload over cellular; this page is their gallery.",
         "Sensors include off-the-shelf LoRaWAN units (battery and solar) and custom weather/AQI nodes built on Particle Boron MCUs. Newer Muon-based units add cellular alongside LoRaWAN for better reliability when coverage is thin. AQI on the ridge stations is mainly for summer smoke season.",
-        "There is also a seismic node — Mount Baker is an active volcano, so why not? More on how the instruments relate to the cameras: <a href=\"{base}TWINS-WEATHER-AND-SENSORS-NARRATIVE.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Twins weather and sensors</a>."
+        "There is also a seismic node \u2014 Mount Baker is an active volcano, so why not? More on how the instruments relate to the cameras: <a href=\"{base}TWINS-WEATHER-AND-SENSORS-NARRATIVE.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Twins weather and sensors</a>."
       ]
     }
   },
   "sidebarHighlight": {
     "imageSrc": "mbhc-twins-hike.png",
-    "imageAlt": "N Twin from the Middle Fork skin track — MBHC Baked (1991)",
+    "imageAlt": "N Twin from the Middle Fork skin track \u2014 MBHC Baked (1991)",
     "linkUrl": "https://youtu.be/Jfb9JlRkU7U?t=1110",
-    "captionHtml": "N Twin — <a href=\"https://youtu.be/Jfb9JlRkU7U?t=1110\" target=\"_blank\" rel=\"noopener noreferrer\">MBHC&nbsp;Baked (1991)</a>: “the hardcore looking for the steeps, the backcountry…”"
+    "captionHtml": "N Twin \u2014 <a href=\"https://youtu.be/Jfb9JlRkU7U?t=1110\" target=\"_blank\" rel=\"noopener noreferrer\">MBHC&nbsp;Baked (1991)</a>: \u201cthe hardcore looking for the steeps, the backcountry\u2026\u201d"
   },
   "_cameraOrderNote": "bowman_ridge_high_pt (Reconyx) is left out of cameraOrder until the camera is fully installed. Its cameraDisplayNames and cameras entries are kept, so adding it back here is the only change needed to show it.",
   "cameraOrder": [
