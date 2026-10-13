@@ -1,24 +1,4 @@
 {
-  "N_Twin_20261012_180000.jpg": {
-    "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
-    "temperature_c": null,
-    "timestamp": "2026-10-13T01:00:00Z"
-  },
-  "N_Twin_20261012_183555.jpg": {
-    "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
-    "temperature_c": null,
-    "timestamp": "2026-10-13T01:35:55Z"
-  },
-  "N_Twin_20261012_190003.jpg": {
-    "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
-    "temperature_c": null,
-    "timestamp": "2026-10-13T02:00:03Z"
-  },
-  "N_Twin_20261012_193000.jpg": {
-    "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
-    "temperature_c": null,
-    "timestamp": "2026-10-13T02:30:00Z"
-  },
   "N_Twin_20261012_200001.jpg": {
     "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
     "temperature_c": null,
@@ -28,6 +8,11 @@
     "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
     "temperature_c": null,
     "timestamp": "2026-10-13T03:30:00Z"
+  },
+  "N_Twin_20261012_210001.jpg": {
+    "run_id": "01a1355e-681f-7490-8672-0ee51bbcd4aa",
+    "temperature_c": null,
+    "timestamp": "2026-10-13T04:00:01Z"
   },
   "N_Twin_20261012_213001.jpg": {
     "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
@@ -49,6 +34,16 @@
     "temperature_c": null,
     "timestamp": "2026-10-13T11:30:01Z"
   },
+  "N_Twin_20261013_050000.jpg": {
+    "run_id": "01a1355e-681f-7490-8672-0ee51bbcd4aa",
+    "temperature_c": null,
+    "timestamp": "2026-10-13T12:00:00Z"
+  },
+  "N_Twin_20261013_053001.jpg": {
+    "run_id": "01a1355e-681f-7490-8672-0ee51bbcd4aa",
+    "temperature_c": null,
+    "timestamp": "2026-10-13T12:30:01Z"
+  },
   "N_Twin_20261013_060000.jpg": {
     "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
     "temperature_c": null,
@@ -64,9 +59,14 @@
     "temperature_c": null,
     "timestamp": "2026-10-13T14:00:00Z"
   },
-  "N_Twin_latest.jpg": {
-    "run_id": "01a13542-ecd6-7319-95bf-a6d1fd844118",
+  "N_Twin_20261013_073001.jpg": {
+    "run_id": "01a1355e-681f-7490-8672-0ee51bbcd4aa",
     "temperature_c": null,
-    "timestamp": "2026-10-13T14:00:00Z"
+    "timestamp": "2026-10-13T14:30:01Z"
+  },
+  "N_Twin_latest.jpg": {
+    "run_id": "01a1355e-681f-7490-8672-0ee51bbcd4aa",
+    "temperature_c": null,
+    "timestamp": "2026-10-13T14:30:01Z"
   }
 }
