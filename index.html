@@ -302,7 +302,9 @@
             border-radius: 4px;
         }
         .hero-subhead {
-            display: inline-block;
+            /* Own row under the title: as inline-block it slid up beside the
+               h1 once the text got short enough to fit. */
+            display: table;
             text-align: center;
             color: white;
             max-width: 900px;
@@ -907,6 +909,11 @@
             const num = bannerNumeric(value);
             return num === null ? "—" : String(num);
         }
+        function compassPoint(deg) {
+            const points = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
+            return points[Math.round((((deg % 360) + 360) % 360) / 45) % 8];
+        }
+
         function staleAgeSuffix(iso) {
             const ms = iso ? Date.parse(iso) : NaN;
             if (!Number.isFinite(ms)) return "";
@@ -1175,6 +1182,18 @@
                 const tempNum = bannerNumeric(site.temp_f);
                 temp.textContent = tempNum === null ? "—" : Math.round(tempNum) + " °F";
                 card.appendChild(temp);
+
+                if (site.wind_mph !== undefined) {
+                    const wind = document.createElement("span");
+                    wind.className = "banner-site-row";
+                    const windNum = bannerNumeric(site.wind_mph);
+                    const dirNum = bannerNumeric(site.wind_dir_deg);
+                    wind.innerHTML = '<span class="banner-site-metric">Wind</span>'
+                        + (windNum === null ? "—"
+                            : Math.round(windNum) + " mph" + (dirNum === null ? "" : " " + compassPoint(dirNum)));
+                    if (dirNum !== null) wind.title = "From " + Math.round(dirNum) + "°";
+                    card.appendChild(wind);
+                }
 
                 if (site.ground_temp_f !== undefined) {
                     const ground = document.createElement("span");
