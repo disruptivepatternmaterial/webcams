@@ -907,6 +907,13 @@
             const num = bannerNumeric(value);
             return num === null ? "—" : String(num);
         }
+        function staleAgeSuffix(iso) {
+            const ms = iso ? Date.parse(iso) : NaN;
+            if (!Number.isFinite(ms)) return "";
+            const hours = Math.floor((Date.now() - ms) / 3600000);
+            if (hours < 1) return "";
+            return hours < 48 ? " " + hours + "h" : " " + Math.floor(hours / 24) + "d";
+        }
         // HA reports Dailey ground temp in °C; the banner audience prefers °F.
         // Convert on display only — the JSON keeps the authoritative °C reading.
         function formatTempCell(value, unit) {
@@ -1148,6 +1155,20 @@
                 name.textContent = site.label || site.id || "—";
                 if (site.elev_ft) name.title = site.elev_ft + " ft";
                 card.appendChild(name);
+
+                // A site whose every reading is older than the publisher's
+                // cutoff arrives with stale=true and as_of = its newest
+                // reading. Say "offline" and how long, instead of a bare dash
+                // that reads as a momentary gap.
+                if (site.stale === true) {
+                    const off = document.createElement("span");
+                    off.className = "banner-site-row";
+                    off.textContent = "Offline" + staleAgeSuffix(site.as_of);
+                    if (site.as_of) off.title = "Last reading " + formatPacificTime(site.as_of);
+                    card.appendChild(off);
+                    wrap.appendChild(card);
+                    return;
+                }
 
                 const temp = document.createElement("span");
                 temp.className = "banner-site-row";
