@@ -357,6 +357,14 @@
             min-width: 140px;
             max-width: 220px;
         }
+        /* Avalanche tile: only present while NWAC publishes a forecast for the
+           zone (roughly late Nov to mid Apr). Danger words are NWAC's own. */
+        .banner-stat.banner-avalanche { min-width: 150px; max-width: 240px; }
+        .banner-stat.banner-avalanche[hidden] { display: none; }
+        .banner-avalanche .banner-stat-value a { color: inherit; text-decoration: underline dotted; }
+        .banner-avalanche.warning { background: #b00020; color: #fff; }
+        .banner-avalanche.danger-4, .banner-avalanche.danger-5 { background: rgba(176, 0, 32, 0.55); }
+        .banner-avalanche.danger-3 { background: rgba(255, 140, 0, 0.45); }
         /* Per-location cards: name on top, temp under it, AQI (or Fog) under
            that — same footprint as one old single-value tile but carrying a
            whole site. */
@@ -632,6 +640,7 @@
                 <div id="banner-sites" style="display: contents;"></div>
                 <div class="banner-stat banner-forecast"><span class="banner-stat-label">Today hike</span><span id="stat-hike-today" class="banner-stat-value">—</span><span id="stat-hike-today-syn" class="banner-stat-synopsis"></span></div>
                 <div class="banner-stat banner-forecast"><span class="banner-stat-label">Tomorrow hike</span><span id="stat-hike-tomorrow" class="banner-stat-value">—</span><span id="stat-hike-tomorrow-syn" class="banner-stat-synopsis"></span></div>
+                <div id="stat-avalanche" class="banner-stat banner-avalanche" hidden><span class="banner-stat-label">Avalanche danger</span><span id="stat-avalanche-value" class="banner-stat-value">—</span><span id="stat-avalanche-syn" class="banner-stat-synopsis"></span></div>
             </div>
             <span id="banner-conditions-time" class="banner-time"></span>
         </div>
@@ -1082,7 +1091,42 @@
             return lo === hi ? String(lo) : (lo + "\u2013" + hi);
         }
 
+        // NWAC danger for today (falls back to tomorrow's when today's product
+        // has expired late in the day). Nothing is shown when `valid` is false:
+        // off-season summary, expired product, or fetch failure.
+        function renderAvalanche(todayDay, tomDay) {
+            const tile = document.getElementById("stat-avalanche");
+            const valueEl = document.getElementById("stat-avalanche-value");
+            const synEl = document.getElementById("stat-avalanche-syn");
+            if (!tile || !valueEl || !synEl) return;
+            const pick = [todayDay, tomDay].map((d) => d && d.avalanche).find((a) => a && a.valid === true);
+            tile.className = "banner-stat banner-avalanche";
+            if (!pick) { tile.hidden = true; valueEl.textContent = "—"; synEl.textContent = ""; return; }
+            const word = pick.danger_word || (pick.danger_max != null ? String(pick.danger_max) : "See forecast");
+            valueEl.textContent = "";
+            if (pick.url) {
+                const link = document.createElement("a");
+                link.href = pick.url;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = word;
+                valueEl.appendChild(link);
+            } else {
+                valueEl.textContent = word;
+            }
+            if (pick.danger_max != null) tile.classList.add("danger-" + pick.danger_max);
+            if (pick.warning) tile.classList.add("warning");
+            const bits = [];
+            if (pick.warning) bits.push("Avalanche warning in effect");
+            if (Array.isArray(pick.problems) && pick.problems.length) bits.push(pick.problems.join(", "));
+            if (pick.zone) bits.push(pick.zone);
+            synEl.textContent = bits.join(" · ");
+            synEl.classList.toggle("red-flag", !!pick.warning);
+            tile.hidden = false;
+        }
+
         function renderForecastEmpty(staleText) {
+            renderAvalanche(null, null);
             const todayEl = document.getElementById("stat-hike-today");
             const tomEl = document.getElementById("stat-hike-tomorrow");
             const todaySyn = document.getElementById("stat-hike-today-syn");
@@ -1135,6 +1179,7 @@
                     tomEl.textContent = "—";
                     if (tomSyn) tomSyn.textContent = "";
                 }
+                renderAvalanche(todayDay, tomDay);
                 bannerForecastUpdatedIso = data.generated_at || null;
                 renderBannerUpdatedLine();
             } catch (e) {
