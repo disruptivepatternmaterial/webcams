@@ -6,29 +6,29 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 57
+      "value": 56
     }
   },
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 13
+      "value": 9
     },
     "n_twin": {
       "unit": null,
-      "value": 11
+      "value": 13
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "aab586df-3a1a-544b-ac28-93d5b8f136a6",
-  "last_updated": "2026-10-16T06:20:00Z",
+  "event_id": "37a9f3e6-c76c-56d3-8875-00fa80a5ac9b",
+  "last_updated": "2026-10-16T06:50:00Z",
   "sites": [
     {
-      "aqi": 13,
-      "as_of": "2026-10-16T06:01:03.395138Z",
+      "aqi": 9,
+      "as_of": "2026-10-16T06:31:03.229052Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -38,19 +38,19 @@
       "temp_f": 58
     },
     {
-      "aqi": 11,
-      "as_of": "2026-10-16T06:07:41.400308Z",
+      "aqi": 13,
+      "as_of": "2026-10-16T06:37:40.966311Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 57
+      "temp_f": 56
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T05:58:21.084369Z",
+      "as_of": "2026-10-16T06:28:20.762689Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -61,7 +61,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T06:08:19.088041Z",
+      "as_of": "2026-10-16T06:40:56.863775Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-16T06:00:05.790025Z",
+      "as_of": "2026-10-16T06:40:25.649044Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -81,11 +81,11 @@
       "stale": false,
       "temp_f": 56,
       "wind_dir_deg": 181,
-      "wind_mph": 3
+      "wind_mph": 4
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T06:13:55.353927Z",
+      "as_of": "2026-10-16T06:43:55.048688Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
