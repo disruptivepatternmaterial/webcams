@@ -302,7 +302,9 @@
             border-radius: 4px;
         }
         .hero-subhead {
-            display: inline-block;
+            /* Own row under the title: as inline-block it slid up beside the
+               h1 once the text got short enough to fit. */
+            display: table;
             text-align: center;
             color: white;
             max-width: 900px;
@@ -341,6 +343,56 @@
             font-size: 1.15em;
             font-weight: 700;
         }
+        .banner-stat-synopsis.red-flag { color: #b00020; font-weight: 700; }
+        .banner-stat-synopsis {
+            display: block;
+            margin-top: 4px;
+            font-size: 0.78em;
+            font-weight: 500;
+            line-height: 1.25;
+            max-width: 11rem;
+            opacity: 0.92;
+        }
+        .banner-stat.banner-forecast {
+            min-width: 140px;
+            max-width: 220px;
+        }
+        /* Avalanche tile: only present while NWAC publishes a forecast for the
+           zone (roughly late Nov to mid Apr). Danger words are NWAC's own. */
+        .banner-stat.banner-avalanche { min-width: 150px; max-width: 240px; }
+        .banner-stat.banner-avalanche[hidden] { display: none; }
+        .banner-avalanche .banner-stat-value a { color: inherit; text-decoration: underline dotted; }
+        .banner-avalanche.warning { background: #b00020; color: #fff; }
+        .banner-avalanche.danger-4, .banner-avalanche.danger-5 { background: rgba(176, 0, 32, 0.55); }
+        .banner-avalanche.danger-3 { background: rgba(255, 140, 0, 0.45); }
+        /* Per-location cards: name on top, temp under it, AQI (or Fog) under
+           that — same footprint as one old single-value tile but carrying a
+           whole site. */
+        .banner-stat.banner-site { min-width: 96px; }
+        .banner-site-name {
+            display: block;
+            font-size: 0.72em;
+            font-weight: 700;
+            opacity: 0.92;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        .banner-site-row {
+            display: block;
+            margin-top: 2px;
+            font-size: 0.95em;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        .banner-site-row .banner-site-metric {
+            font-size: 0.68em;
+            font-weight: 500;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-right: 4px;
+        }
+        .banner-site-row.banner-site-fog { color: #ffd54f; font-weight: 700; }
         .banner-conditions-block .banner-time { display: block; margin-top: 8px; font-size: 0.85em; opacity: 0.9; }
         .support-bar {
             text-align: center;
@@ -580,22 +632,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Mountain Webcams & Conditions</h1>
-        <p class="hero-subhead">Live mountain conditions from Bowman Mtn, the Twins, and West Ridge. Webcams, air quality, and ground temps — updated every 5 minutes.</p>
+        <h1 id="page-title">Mountain Webcams & Conditions</h1>
         <div id="banner-conditions" class="banner-conditions-block" aria-live="polite">
             <div class="banner-stats">
-                <div class="banner-stat"><span class="banner-stat-label">AQI Bowman</span><span id="stat-aqi-bowman" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">AQI N Twin</span><span id="stat-aqi-ntwin" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">AQI Bowman Ridge</span><span id="stat-aqi-ridge" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">Air temp Bowman</span><span id="stat-air-bowman" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">Air temp N Twin</span><span id="stat-air-ntwin" class="banner-stat-value">—</span></div>
-                <div class="banner-stat"><span class="banner-stat-label">Ground temp</span><span id="stat-ground-temp" class="banner-stat-value">—</span></div>
+                <!-- Per-location cards are rendered here from banner_conditions.json
+                     (sites array) by loadBannerConditions(). -->
+                <div id="banner-sites" style="display: contents;"></div>
+                <div class="banner-stat banner-forecast"><span class="banner-stat-label">Today hike</span><span id="stat-hike-today" class="banner-stat-value">—</span><span id="stat-hike-today-syn" class="banner-stat-synopsis"></span></div>
+                <div class="banner-stat banner-forecast"><span class="banner-stat-label">Tomorrow hike</span><span id="stat-hike-tomorrow" class="banner-stat-value">—</span><span id="stat-hike-tomorrow-syn" class="banner-stat-synopsis"></span></div>
+                <div id="stat-avalanche" class="banner-stat banner-avalanche" hidden><span class="banner-stat-label">Avalanche danger</span><span id="stat-avalanche-value" class="banner-stat-value">—</span><span id="stat-avalanche-syn" class="banner-stat-synopsis"></span></div>
             </div>
             <span id="banner-conditions-time" class="banner-time"></span>
         </div>
         <div class="support-bar" id="support-bar">
-            <p class="support-bar-copy">These mountain webcams and sensors are intended to inform the community on backcountry conditions; this is a labor of love, and you can help support them via Buy Me a Coffee.</p>
-            <a class="support-bar-link" href="https://buymeacoffee.com/tobidogger" target="_blank" rel="noopener noreferrer">Support on Buy Me a Coffee</a>
+            <p class="support-bar-copy" id="support-bar-copy">These mountain webcams and sensors are intended to inform the community on backcountry conditions; this is a labor of love, and you can help support them via Buy Me a Coffee.</p>
+            <a class="support-bar-link" id="support-bar-link" href="https://buymeacoffee.com/tobidogger" target="_blank" rel="noopener noreferrer">Support on Buy Me a Coffee</a>
         </div>
         <div id="cameras" class="cameras">
             <div class="loading">Loading images...</div>
@@ -609,37 +660,20 @@
             <div class="general-info-body">
                 <div class="general-info-tab-content">
                     <div id="panel-general" class="info-panel active" role="tabpanel">
-                        <div class="general-info-text">
-                            <p>This project is a live mountain conditions feed for Bowman Ridge, N Twin, and the west ridge corridor along the Middle Fork Area. It exists to make route planning safer and more informed.</p>
-                            <p>AQI is currently reported at Bowman Mtn, N Twin, and Bowman Ridge, with additional temperature context from ridge sensors and the Dailey Prairie ground station.</p>
-                            <p>I keep a <a href="webcams/MIDDLE-FORK-FIELD-GUIDE.pdf" target="_blank" rel="noopener noreferrer">Middle Fork field guide</a> of area notes and references, compiled from available sources, not an official historical record. A companion write-up on <a href="webcams/TWINS-WEATHER-AND-SENSORS-NARRATIVE.pdf" target="_blank" rel="noopener noreferrer">Twins weather and sensors</a> covers how the ridge instruments relate to what you see on the cameras.</p>
-                        </div>
+                        <div class="general-info-text" id="panel-general-content"></div>
                     </div>
                     <div id="panel-thanks" class="info-panel" role="tabpanel">
-                        <div class="general-info-text">
-                            <p>Thanks for your help in various ways:</p>
-                            <ul>
-                                <li>DM/ZE: for hiking with me and helping setup some of the equipment.</li>
-                                <li>AG: for many hours of EE classes, HAHA!</li>
-                                <li>DM: for hiking equipment in and cougar calm downs.</li>
-                                <li>GL: for making it clear I needed snow tires, all hail nokian hakkapeliitta.</li>
-                                <li>Everyone at the gym for good ideas!</li>
-                            </ul>
-                        </div>
+                        <div class="general-info-text" id="panel-thanks-content"></div>
                     </div>
                     <div id="panel-nerdy" class="info-panel" role="tabpanel">
-                        <div class="general-info-text">
-                            <p><strong>Basics:</strong> three types of equipment — gateways, sensors, and cameras. A cellular gateway relays LoRaWAN sensor packets to The Things Network. The cameras are trail cams (GardePro, Vosker, and a Tachyon on Bowman Ridge) that upload over cellular; this page is their gallery.</p>
-                            <p>Sensors include off-the-shelf LoRaWAN units (battery and solar) and custom weather/AQI nodes built on Particle Boron MCUs. Newer Muon-based units add cellular alongside LoRaWAN for better reliability when coverage is thin. AQI on the ridge stations is mainly for summer smoke season.</p>
-                            <p>There is also a seismic node — Mount Baker is an active volcano, so why not? More on how the instruments relate to the cameras: <a href="webcams/TWINS-WEATHER-AND-SENSORS-NARRATIVE.pdf" target="_blank" rel="noopener noreferrer">Twins weather and sensors</a>.</p>
-                        </div>
+                        <div class="general-info-text" id="panel-nerdy-content"></div>
                     </div>
                 </div>
-                <div class="general-info-image-card-fixed">
-                    <a href="https://youtu.be/Jfb9JlRkU7U?t=1110" target="_blank" rel="noopener noreferrer">
-                        <img src="webcams/mbhc-twins-hike.png" alt="N Twin from the Middle Fork skin track — MBHC Baked (1991)" loading="lazy">
+                <div class="general-info-image-card-fixed" id="sidebar-highlight">
+                    <a id="sidebar-highlight-link" href="https://youtu.be/Jfb9JlRkU7U?t=1110" target="_blank" rel="noopener noreferrer">
+                        <img id="sidebar-highlight-image" src="mbhc-twins-hike.png" alt="N Twin from the Middle Fork skin track — MBHC Baked (1991)" loading="lazy">
                     </a>
-                    <div class="general-info-image-caption-fixed">N Twin — <a href="https://youtu.be/Jfb9JlRkU7U?t=1110" target="_blank" rel="noopener noreferrer">MBHC&nbsp;Baked (1991)</a>: “the hardcore looking for the steeps, the backcountry…”</div>
+                    <div class="general-info-image-caption-fixed" id="sidebar-highlight-caption"></div>
                 </div>
             </div>
         </div>
@@ -649,7 +683,7 @@
             <p><a href="https://buymeacoffee.com/tobidogger" target="_blank" rel="noopener noreferrer" style="color:#fff;">Support this project</a></p>
         </div>
     </div>
-
+    
     <div id="imageModal" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
@@ -669,6 +703,21 @@
             } catch (e) { return isoString; }
         }
 
+        let bannerSensorsUpdatedIso = null;
+        let bannerForecastUpdatedIso = null;
+
+        function renderBannerUpdatedLine() {
+            const timeEl = document.getElementById("banner-conditions-time");
+            if (!timeEl) return;
+            const bits = [];
+            const s = formatPacificTime(bannerSensorsUpdatedIso);
+            const f = formatPacificTime(bannerForecastUpdatedIso);
+            if (s) bits.push("sensors updated " + s + " PT");
+            if (f) bits.push("forecast updated " + f + " PT");
+            timeEl.textContent = bits.length ? "(" + bits.join(" and ") + ")" : "";
+        }
+
+
         // Base URL/path must point at the webcams directory (with trailing slash) so list.json and
         // image paths resolve correctly when the page is opened with or without trailing slash.
         function basePath() {
@@ -687,6 +736,131 @@
         }
         function assetUrl(relativePath) {
             return new URL(relativePath, window.location.href).href;
+        }
+
+        let siteContent = null;
+        let siteContentPromise = null;
+
+        function contentBasePath() {
+            const bp = basePath();
+            if (bp.endsWith("/webcams/")) return bp;
+            return bp + (bp.endsWith("/") ? "" : "/") + "webcams/";
+        }
+
+        function contentAssetUrl(relativePath) {
+            if (basePath().endsWith("/webcams/")) return assetUrl(relativePath);
+            return assetUrl("webcams/" + relativePath);
+        }
+
+        function siteContentUrl() {
+            if (basePath().endsWith("/webcams/")) return assetUrl("site-content.json");
+            return assetUrl("webcams/site-content.json");
+        }
+
+        function expandContentHtml(html) {
+            return String(html || "").replace(/\{base\}/g, contentBasePath());
+        }
+
+        function renderParagraphs(paragraphs) {
+            return (paragraphs || []).map(function(p) {
+                return "<p>" + expandContentHtml(p) + "</p>";
+            }).join("");
+        }
+
+        async function loadSiteContent() {
+            if (siteContent) return siteContent;
+            if (!siteContentPromise) {
+                siteContentPromise = fetch(siteContentUrl() + "?t=" + Date.now(), { cache: "no-store" })
+                    .then(function(response) {
+                        if (!response.ok) throw new Error("site-content.json " + response.status);
+                        return response.json();
+                    })
+                    .then(function(data) {
+                        siteContent = data;
+                        return data;
+                    })
+                    .catch(function(error) {
+                        console.warn("site-content.json unavailable; using baked-in defaults", error);
+                        return null;
+                    });
+            }
+            return siteContentPromise;
+        }
+
+        function applySiteContent(content) {
+            if (!content) return;
+
+            const pageTitle = document.getElementById("page-title");
+            if (pageTitle && content.pageTitle) pageTitle.textContent = content.pageTitle;
+
+            const supportCopy = document.getElementById("support-bar-copy");
+            const supportLink = document.getElementById("support-bar-link");
+            if (supportCopy && content.supportBar && content.supportBar.copy) {
+                supportCopy.textContent = content.supportBar.copy;
+            }
+            if (supportLink && content.supportBar) {
+                if (content.supportBar.linkUrl) supportLink.href = content.supportBar.linkUrl;
+                if (content.supportBar.linkLabel) supportLink.textContent = content.supportBar.linkLabel;
+            }
+
+            const general = content.infoTabs && content.infoTabs.general;
+            const thanks = content.infoTabs && content.infoTabs.thanks;
+            const nerdy = content.infoTabs && content.infoTabs.nerdy;
+            const generalEl = document.getElementById("panel-general-content");
+            const thanksEl = document.getElementById("panel-thanks-content");
+            const nerdyEl = document.getElementById("panel-nerdy-content");
+            if (generalEl && general) generalEl.innerHTML = renderParagraphs(general.paragraphs);
+            if (thanksEl && thanks) {
+                thanksEl.innerHTML =
+                    "<p>" + expandContentHtml(thanks.intro || "") + "</p>" +
+                    "<ul>" + (thanks.items || []).map(function(item) {
+                        return "<li>" + expandContentHtml(item) + "</li>";
+                    }).join("") + "</ul>";
+            }
+            if (nerdyEl && nerdy) nerdyEl.innerHTML = renderParagraphs(nerdy.paragraphs);
+
+            document.querySelectorAll(".info-tab").forEach(function(btn) {
+                const tabKey = btn.getAttribute("data-tab");
+                const tab = content.infoTabs && content.infoTabs[tabKey];
+                if (tab && tab.label) btn.textContent = tab.label;
+            });
+
+            const highlight = content.sidebarHighlight;
+            if (highlight) {
+                const linkEl = document.getElementById("sidebar-highlight-link");
+                const imageEl = document.getElementById("sidebar-highlight-image");
+                const captionEl = document.getElementById("sidebar-highlight-caption");
+                if (linkEl && highlight.linkUrl) linkEl.href = highlight.linkUrl;
+                if (imageEl) {
+                    if (highlight.imageSrc) imageEl.src = contentAssetUrl(highlight.imageSrc);
+                    if (highlight.imageAlt) imageEl.alt = highlight.imageAlt;
+                }
+                if (captionEl && highlight.captionHtml) {
+                    captionEl.innerHTML = expandContentHtml(highlight.captionHtml);
+                }
+            }
+        }
+
+        function getCameraMeta(content, cameraName) {
+            const cameras = (content && content.cameras) || {};
+            return cameras[cameraName] || {};
+        }
+
+        function getCameraOrder(content) {
+            return (content && content.cameraOrder) || [
+                "bowman_mtn", "n_twin", "w_ridge_n_twin", "NWHighPoint", "woods_cam_001"
+            ];
+        }
+
+        function getCameraDisplayNames(content) {
+            return (content && content.cameraDisplayNames) || {
+                "NWHighPoint": "Westward View",
+                "woods_cam_001": "Bowman Ridge"
+            };
+        }
+
+        function getWindyLinkLabel(content) {
+            return (content && content.windyLinkLabel) || "Link to weather station on Windy.com";
         }
         function buildImageUrl(cameraName, filename, meta, refreshToken) {
             const base = basePath() + cameraName + "/" + filename;
@@ -741,6 +915,18 @@
             const num = bannerNumeric(value);
             return num === null ? "—" : String(num);
         }
+        function compassPoint(deg) {
+            const points = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
+            return points[Math.round((((deg % 360) + 360) % 360) / 45) % 8];
+        }
+
+        function staleAgeSuffix(iso) {
+            const ms = iso ? Date.parse(iso) : NaN;
+            if (!Number.isFinite(ms)) return "";
+            const hours = Math.floor((Date.now() - ms) / 3600000);
+            if (hours < 1) return "";
+            return hours < 48 ? " " + hours + "h" : " " + Math.floor(hours / 24) + "d";
+        }
         // HA reports Dailey ground temp in °C; the banner audience prefers °F.
         // Convert on display only — the JSON keeps the authoritative °C reading.
         function formatTempCell(value, unit) {
@@ -759,7 +945,6 @@
                 label: formatPacificTime(nextState.lastUpdated),
                 bowmanAqi: nextState.bowmanAqi,
                 ntwinAqi: nextState.ntwinAqi,
-                ridgeAqi: nextState.ridgeAqi,
                 bowmanTempF: nextState.bowmanTempF,
                 ntwinTempF: nextState.ntwinTempF,
                 groundTempF: nextState.groundTempF
@@ -805,8 +990,7 @@
                 type: "line",
                 data: { labels: [], datasets: [
                     { label: "Bowman AQI", data: [], borderColor: "#667eea", tension: 0.2, spanGaps: true },
-                    { label: "N Twin AQI", data: [], borderColor: "#764ba2", tension: 0.2, spanGaps: true },
-                    { label: "Bowman Ridge AQI", data: [], borderColor: "#16a34a", tension: 0.2, spanGaps: true }
+                    { label: "N Twin AQI", data: [], borderColor: "#764ba2", tension: 0.2, spanGaps: true }
                 ] },
                 options: Object.assign({}, chartOptions, { scales: Object.assign({}, chartOptions.scales, { y: { beginAtZero: true } }) })
             });
@@ -826,7 +1010,6 @@
                 aqiChartInstance.data.labels = labels;
                 aqiChartInstance.data.datasets[0].data = bannerHistory.map(function(p) { return p.bowmanAqi; });
                 aqiChartInstance.data.datasets[1].data = bannerHistory.map(function(p) { return p.ntwinAqi; });
-                aqiChartInstance.data.datasets[2].data = bannerHistory.map(function(p) { return p.ridgeAqi; });
                 aqiChartInstance.update("none");
 
                 tempChartInstance.data.labels = labels;
@@ -886,58 +1069,253 @@
             banner._chartClickBound = true;
         }
 
+
+        function pacificDateString(d) {
+            try {
+                return new Intl.DateTimeFormat("en-CA", {
+                    timeZone: "America/Los_Angeles",
+                    year: "numeric", month: "2-digit", day: "2-digit"
+                }).format(d instanceof Date ? d : new Date(d));
+            } catch (e) { return ""; }
+        }
+
+        function pacificTomorrowDateString() {
+            // Pacific calendar day for ~24h from now (DST-safe enough for a daily product).
+            return pacificDateString(new Date(Date.now() + 24 * 3600 * 1000));
+        }
+
+        function formatHikeRange(lo, hi) {
+            if (lo == null && hi == null) return "—";
+            if (lo == null) return String(hi);
+            if (hi == null) return String(lo);
+            return lo === hi ? String(lo) : (lo + "\u2013" + hi);
+        }
+
+        // NWAC danger for today (falls back to tomorrow's when today's product
+        // has expired late in the day). Nothing is shown when `valid` is false:
+        // off-season summary, expired product, or fetch failure.
+        function renderAvalanche(todayDay, tomDay) {
+            const tile = document.getElementById("stat-avalanche");
+            const valueEl = document.getElementById("stat-avalanche-value");
+            const synEl = document.getElementById("stat-avalanche-syn");
+            if (!tile || !valueEl || !synEl) return;
+            const pick = [todayDay, tomDay].map((d) => d && d.avalanche).find((a) => a && a.valid === true);
+            tile.className = "banner-stat banner-avalanche";
+            if (!pick) { tile.hidden = true; valueEl.textContent = "—"; synEl.textContent = ""; return; }
+            const word = pick.danger_word || (pick.danger_max != null ? String(pick.danger_max) : "See forecast");
+            valueEl.textContent = "";
+            if (pick.url) {
+                const link = document.createElement("a");
+                link.href = pick.url;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = word;
+                valueEl.appendChild(link);
+            } else {
+                valueEl.textContent = word;
+            }
+            if (pick.danger_max != null) tile.classList.add("danger-" + pick.danger_max);
+            if (pick.warning) tile.classList.add("warning");
+            const bits = [];
+            if (pick.warning) bits.push("Avalanche warning in effect");
+            if (Array.isArray(pick.problems) && pick.problems.length) bits.push(pick.problems.join(", "));
+            if (pick.zone) bits.push(pick.zone);
+            synEl.textContent = bits.join(" · ");
+            synEl.classList.toggle("red-flag", !!pick.warning);
+            tile.hidden = false;
+        }
+
+        function renderForecastEmpty(staleText) {
+            renderAvalanche(null, null);
+            const todayEl = document.getElementById("stat-hike-today");
+            const tomEl = document.getElementById("stat-hike-tomorrow");
+            const todaySyn = document.getElementById("stat-hike-today-syn");
+            const tomSyn = document.getElementById("stat-hike-tomorrow-syn");
+            if (todayEl) todayEl.textContent = staleText || "—";
+            if (tomEl) tomEl.textContent = staleText ? "" : "—";
+            if (todaySyn) todaySyn.textContent = "";
+            if (tomSyn) tomSyn.textContent = "";
+            bannerForecastUpdatedIso = null;
+            renderBannerUpdatedLine();
+        }
+
+        async function loadTwinsForecast() {
+            const todayEl = document.getElementById("stat-hike-today");
+            const tomEl = document.getElementById("stat-hike-tomorrow");
+            const todaySyn = document.getElementById("stat-hike-today-syn");
+            const tomSyn = document.getElementById("stat-hike-tomorrow-syn");
+            if (!todayEl || !tomEl) return;
+            try {
+                const response = await fetch(assetUrl("twins_forecast.json?t=" + Date.now()), { cache: "no-store" });
+                if (!response.ok) { renderForecastEmpty(); return; }
+                const data = await response.json();
+                const generated = data && data.generated_at ? new Date(data.generated_at) : null;
+                if (!generated || isNaN(generated.getTime())) { renderForecastEmpty(); return; }
+                const ageH = (Date.now() - generated.getTime()) / 3600000;
+                if (ageH > 36) { renderForecastEmpty("Forecast stale"); return; }
+
+                const byDate = {};
+                (Array.isArray(data.days) ? data.days : []).forEach((d) => {
+                    if (d && d.date) byDate[d.date] = d;
+                });
+                const today = pacificDateString(new Date());
+                const tomorrow = pacificTomorrowDateString();
+                const todayDay = byDate[today];
+                if (!todayDay) { renderForecastEmpty("Forecast stale"); return; }
+                const tomDay = byDate[tomorrow] || null;
+
+                todayEl.textContent = formatHikeRange(todayDay.hike_lo, todayDay.hike_hi);
+                if (todaySyn) {
+                    todaySyn.textContent = todayDay.synopsis || "";
+                    todaySyn.classList.toggle("red-flag", !!todayDay.red_flag);
+                }
+                if (tomDay) {
+                    tomEl.textContent = formatHikeRange(tomDay.hike_lo, tomDay.hike_hi);
+                    if (tomSyn) {
+                    tomSyn.textContent = tomDay.synopsis || "";
+                    tomSyn.classList.toggle("red-flag", !!tomDay.red_flag);
+                }
+                } else {
+                    tomEl.textContent = "—";
+                    if (tomSyn) tomSyn.textContent = "";
+                }
+                renderAvalanche(todayDay, tomDay);
+                bannerForecastUpdatedIso = data.generated_at || null;
+                renderBannerUpdatedLine();
+            } catch (e) {
+                renderForecastEmpty();
+            }
+        }
+
+        // One stacked card per location: name on top, temp under it, AQI (or
+        // "Fog") under that. Fog droplets read as particulates on the PM
+        // sensors, so while a station's fog indicator is on its AQI number is
+        // corrupted and the card says "Fog" instead of printing it.
+        function renderBannerSites(sites) {
+            const wrap = document.getElementById("banner-sites");
+            if (!wrap) return;
+            wrap.innerHTML = "";
+            sites.forEach(function(site) {
+                const card = document.createElement("div");
+                card.className = "banner-stat banner-site";
+
+                const name = document.createElement("span");
+                name.className = "banner-site-name";
+                name.textContent = site.label || site.id || "—";
+                if (site.elev_ft) name.title = site.elev_ft + " ft";
+                card.appendChild(name);
+
+                // A site whose every reading is older than the publisher's
+                // cutoff arrives with stale=true and as_of = its newest
+                // reading. Say "offline" and how long, instead of a bare dash
+                // that reads as a momentary gap.
+                if (site.stale === true) {
+                    const off = document.createElement("span");
+                    off.className = "banner-site-row";
+                    off.textContent = "Offline" + staleAgeSuffix(site.as_of);
+                    if (site.as_of) off.title = "Last reading " + formatPacificTime(site.as_of);
+                    card.appendChild(off);
+                    wrap.appendChild(card);
+                    return;
+                }
+
+                const temp = document.createElement("span");
+                temp.className = "banner-site-row";
+                const tempNum = bannerNumeric(site.temp_f);
+                temp.textContent = tempNum === null ? "—" : Math.round(tempNum) + " °F";
+                card.appendChild(temp);
+
+                if (site.wind_mph !== undefined) {
+                    const wind = document.createElement("span");
+                    wind.className = "banner-site-row";
+                    const windNum = bannerNumeric(site.wind_mph);
+                    const dirNum = bannerNumeric(site.wind_dir_deg);
+                    wind.innerHTML = '<span class="banner-site-metric">Wind</span>'
+                        + (windNum === null ? "—"
+                            : Math.round(windNum) + " mph" + (dirNum === null ? "" : " " + compassPoint(dirNum)));
+                    if (dirNum !== null) wind.title = "From " + Math.round(dirNum) + "°";
+                    card.appendChild(wind);
+                }
+
+                if (site.ground_temp_f !== undefined) {
+                    const ground = document.createElement("span");
+                    ground.className = "banner-site-row";
+                    const groundNum = bannerNumeric(site.ground_temp_f);
+                    ground.innerHTML = '<span class="banner-site-metric">Ground</span>'
+                        + (groundNum === null ? "—" : Math.round(groundNum) + " °F");
+                    card.appendChild(ground);
+                }
+
+                if (site.fog === true || site.has_aqi) {
+                    const aqi = document.createElement("span");
+                    if (site.fog === true) {
+                        aqi.className = "banner-site-row banner-site-fog";
+                        aqi.textContent = "Fog";
+                        aqi.title = "Fog suspected — particulate readings unreliable";
+                    } else {
+                        aqi.className = "banner-site-row";
+                        aqi.innerHTML = '<span class="banner-site-metric">AQI</span>'
+                            + formatAqiCell(site.aqi);
+                    }
+                    card.appendChild(aqi);
+                }
+
+                wrap.appendChild(card);
+            });
+        }
+
+        // Older banner_conditions.json (pre-sites rollout): synthesize the
+        // same shape from the legacy keys so the page renders either file.
+        function sitesFromLegacy(data) {
+            const aqi = (data && data.aqi_by_site) || {};
+            const airTemp = (data && data.air_temp_by_site) || {};
+            const ground = (data && data.dailey_prairie_ground_temp) || {};
+            const toF = function(cell) {
+                const num = bannerNumeric(cell && cell.value);
+                if (num === null) return null;
+                return cell.unit === "°C" ? Math.round(num * 9 / 5 + 32) : Math.round(num);
+            };
+            return [
+                { id: "bowman_mtn", label: "Bowman Mtn", temp_f: toF(airTemp.bowman_mtn),
+                  aqi: bannerNumeric((aqi.bowman_mtn || {}).value), has_aqi: true, fog: false },
+                { id: "n_twin_west_ridge", label: "N Twin West Ridge", temp_f: toF(airTemp.n_twin),
+                  aqi: bannerNumeric((aqi.n_twin || {}).value), has_aqi: true, fog: false },
+                { id: "dailey_prairie", label: "Dailey Prairie", temp_f: null,
+                  ground_temp_f: toF(ground), aqi: null, has_aqi: false, fog: false }
+            ];
+        }
+
         async function loadBannerConditions() {
-            const aqiBowmanEl = document.getElementById("stat-aqi-bowman");
-            const aqiNtwinEl = document.getElementById("stat-aqi-ntwin");
-            const aqiRidgeEl = document.getElementById("stat-aqi-ridge");
-            const airBowmanEl = document.getElementById("stat-air-bowman");
-            const airNtwinEl = document.getElementById("stat-air-ntwin");
-            const groundEl = document.getElementById("stat-ground-temp");
-            const timeEl = document.getElementById("banner-conditions-time");
             const renderEmpty = () => {
-                if (aqiBowmanEl) aqiBowmanEl.textContent = "—";
-                if (aqiNtwinEl) aqiNtwinEl.textContent = "—";
-                if (aqiRidgeEl) aqiRidgeEl.textContent = "—";
-                if (airBowmanEl) airBowmanEl.textContent = "—";
-                if (airNtwinEl) airNtwinEl.textContent = "—";
-                if (groundEl) groundEl.textContent = "—";
-                if (timeEl) timeEl.textContent = "";
+                const wrap = document.getElementById("banner-sites");
+                if (wrap) wrap.innerHTML = "";
+                bannerSensorsUpdatedIso = null;
+                renderBannerUpdatedLine();
             };
             try {
                 const response = await fetch(assetUrl("banner_conditions.json?t=" + Date.now()), { cache: "no-store" });
                 if (!response.ok) { renderEmpty(); return; }
                 const data = await response.json();
-                const aqi = (data && data.aqi_by_site) || {};
-                const airTemp = (data && data.air_temp_by_site) || {};
-                const bowman = aqi.bowman_mtn || {};
-                const ntwin = aqi.n_twin || {};
-                const ridge = Array.isArray(data && data.sites)
-                    ? data.sites.find(function(site) { return site && site.id === "bowman_ridge"; }) || {}
-                    : {};
-                const bowmanTemp = airTemp.bowman_mtn || {};
-                const ntwinTemp = airTemp.n_twin || {};
-                const ground = (data && data.dailey_prairie_ground_temp) || {};
-                if (aqiBowmanEl) aqiBowmanEl.textContent = formatAqiCell(bowman.value);
-                if (aqiNtwinEl) aqiNtwinEl.textContent = formatAqiCell(ntwin.value);
-                if (aqiRidgeEl) aqiRidgeEl.textContent = formatAqiCell(ridge.aqi);
-                if (airBowmanEl) airBowmanEl.textContent = formatTempCell(bowmanTemp.value, bowmanTemp.unit);
-                if (airNtwinEl) airNtwinEl.textContent = formatTempCell(ntwinTemp.value, ntwinTemp.unit);
-                if (groundEl) groundEl.textContent = formatTempCell(ground.value, ground.unit);
-                if (timeEl) {
-                    const t = formatPacificTime(data && data.last_updated);
-                    timeEl.textContent = t ? "(updated " + t + " PT)" : "";
-                }
+                const sites = (data && Array.isArray(data.sites) && data.sites.length)
+                    ? data.sites : sitesFromLegacy(data);
+                renderBannerSites(sites);
+                bannerSensorsUpdatedIso = (data && data.last_updated) || null;
+                renderBannerUpdatedLine();
 
-                const bowmanTempNum = bannerNumeric(bowmanTemp.value);
-                const ntwinTempNum = bannerNumeric(ntwinTemp.value);
-                const groundTempNum = bannerNumeric(ground.value);
+                // Chart history keeps its original five series (and its
+                // localStorage shape) fed from the new per-site data.
+                const byId = {};
+                sites.forEach(function(s) { byId[s.id] = s; });
+                const pick = function(id, key) {
+                    const s = byId[id];
+                    return s ? bannerNumeric(s[key]) : null;
+                };
                 bannerLatest = {
-                    bowmanAqi: bannerNumeric(bowman.value),
-                    ntwinAqi: bannerNumeric(ntwin.value),
-                    ridgeAqi: bannerNumeric(ridge.aqi),
-                    bowmanTempF: bowmanTempNum === null ? null : (bowmanTemp.unit === "°C" ? Number((bowmanTempNum * 9 / 5 + 32).toFixed(1)) : bowmanTempNum),
-                    ntwinTempF: ntwinTempNum === null ? null : (ntwinTemp.unit === "°C" ? Number((ntwinTempNum * 9 / 5 + 32).toFixed(1)) : ntwinTempNum),
-                    groundTempF: groundTempNum === null ? null : (ground.unit === "°C" ? Number((groundTempNum * 9 / 5 + 32).toFixed(1)) : groundTempNum),
+                    bowmanAqi: pick("bowman_mtn", "aqi"),
+                    ntwinAqi: pick("n_twin_west_ridge", "aqi"),
+                    bowmanTempF: pick("bowman_mtn", "temp_f"),
+                    ntwinTempF: pick("n_twin_west_ridge", "temp_f"),
+                    groundTempF: pick("dailey_prairie", "ground_temp_f"),
                     lastUpdated: data && data.last_updated ? data.last_updated : new Date().toISOString()
                 };
                 updateBannerHistory(bannerLatest);
@@ -985,7 +1363,7 @@
 
                 const prev = section.querySelector(".best-of-prev");
                 const next = section.querySelector(".best-of-next");
-                const scrollStep = 280;
+                const scrollStep = 210;
                 prev.addEventListener("click", function() {
                     track.scrollBy({ left: -scrollStep, behavior: "smooth" });
                 });
@@ -1001,7 +1379,12 @@
 
         async function loadCameras() {
             const camerasContainer = document.getElementById("cameras");
+            const content = await loadSiteContent();
+            applySiteContent(content);
             loadBannerConditions();
+            loadTwinsForecast();
+            cameraDisplayNames = getCameraDisplayNames(content);
+            const windyLinkLabel = getWindyLinkLabel(content);
             try {
                 const refreshToken = Date.now().toString();
                 const listUrl = assetUrl("list.json?t=" + refreshToken);
@@ -1014,36 +1397,30 @@
                 // Spec: fixed order, 5 cameras. NWHighPoint is the GardePro camera that
                 // replaced the local westward_view stream; the section is still labeled
                 // "Westward View" via formatCameraName/displayCameraName overrides below.
-                const cameraOrder = ['bowman_mtn', 'n_twin', 'w_ridge_n_twin', 'NWHighPoint', 'woods_cam_001'];
-                var statusByCamera = {
-                    'bowman_mtn': 'Working',
-                    'n_twin': 'Battery Unstable',
-                    'w_ridge_n_twin': 'Working',
-                    'NWHighPoint': 'Working',
-                    'woods_cam_001': 'Working'
-                };
+                const cameraOrder = getCameraOrder(content);
                 for (const cameraName of cameraOrder) {
                     const data = cameraData[cameraName];
                     if (!data) continue;
+                    const cameraMeta = getCameraMeta(content, cameraName);
                     const section = document.createElement("div");
                     section.className = "camera-section";
-
+                    
                     const title = document.createElement("h2");
                     title.className = "camera-title";
                     title.textContent = formatCameraName(cameraName);
                     section.appendChild(title);
 
-                    var statusText = (data.status != null && data.status !== "") ? data.status : (statusByCamera[cameraName] || "Working");
+                    var statusText = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Working");
                     var statusEl = document.createElement("p");
                     statusEl.className = "camera-status" + (statusText.toLowerCase().indexOf("dead") !== -1 || statusText.toLowerCase().indexOf("repair") !== -1 ? " camera-status--warning" : "");
                     statusEl.textContent = "Status: " + statusText;
                     section.appendChild(statusEl);
-
+                    
                     const allImages = data.images || [];
                     const actualImages = allImages.filter(img => !img.toLowerCase().includes('latest'));
-
+                    
                     if (actualImages.length === 0) {
-                        var statusTextEmpty = (data.status != null && data.status !== "") ? data.status : (statusByCamera[cameraName] || "Working");
+                        var statusTextEmpty = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Working");
                         var statusElEmpty = document.createElement("p");
                         statusElEmpty.className = "camera-status" + (statusTextEmpty.toLowerCase().indexOf("dead") !== -1 || statusTextEmpty.toLowerCase().indexOf("repair") !== -1 ? " camera-status--warning" : "");
                         statusElEmpty.textContent = "Status: " + statusTextEmpty;
@@ -1053,48 +1430,34 @@
                         placeholder.style.cssText = "text-align:center;color:#888;padding:40px;";
                         placeholder.textContent = "No images yet";
                         section.appendChild(placeholder);
-                        const cameraTexts = {
-                            'bowman_mtn': 'Bowman Mountain: about 3200 feet, facing Baker and the Twins',
-                            'n_twin': 'N Twin: about 4200 feet, along the logging road up to the N Twin NW Ridge.',
-                            'w_ridge_n_twin': 'W Ridge N Twin: about 4600 feet. Trail camera on West Ridge looking toward N Twin skin up track.',
-                            'NWHighPoint': 'Westward View: about 3900 feet along Bowman Ridge looking towards Vancouver, BC (the valley West of Dailey Prairie)',
-                            'woods_cam_001': 'Bowman Ridge: about 4000 feet looking towards Twins and Baker above Middle Fork Borrow Pit.'
-                        };
                         const textBlock = document.createElement("div");
                         textBlock.className = "images-text-block";
-                        textBlock.textContent = cameraTexts[cameraName] || '';
+                        textBlock.textContent = cameraMeta.description || "";
                         section.appendChild(textBlock);
-                        const windyLinks = {
-                            'bowman_mtn': 'https://www.windy.com/station/pws-4ks5xFmh?48.720,-122.062,13,p:temp',
-                            'n_twin': 'https://www.windy.com/station/pws-A1QVv3Du?48.720,-122.062,13,p:temp',
-                            'w_ridge_n_twin': 'https://www.windy.com/station/pws-UpjK9hSq?radar,48.722,-122.007,13,p:temp',
-                            'NWHighPoint': 'https://www.windy.com/station/pws-fwWd6XAK?48.705,-122.048,13,p:temp',
-                            'woods_cam_001': 'https://www.windy.com/station/pws-wOvn2H1z?48.695,-122.054,13,p:temp'
-                        };
-                        if (windyLinks[cameraName]) {
+                        if (cameraMeta.windyUrl) {
                             const a = document.createElement("a");
-                            a.href = windyLinks[cameraName];
+                            a.href = cameraMeta.windyUrl;
                             a.target = "_blank";
                             a.rel = "noopener noreferrer";
                             a.className = "windy-link";
-                            a.textContent = "Link to weather station on Windy.com";
+                            a.textContent = windyLinkLabel;
                             section.appendChild(a);
                         }
                         camerasContainer.appendChild(section);
                         continue;
                     }
-
+                    
                     // Latest image (first actual image, which is the newest)
                     const latestImage = actualImages[0];
-
+                    
                     // Next 12 images for the grid (indices 1-12 - NOT including latest)
                     let gridImages = actualImages.slice(1, 13);
-
+                    
                     // Show latest image large at top
                     if (latestImage) {
                         const latestWrapper = document.createElement("div");
                         latestWrapper.className = "latest-image-wrapper";
-
+                        
                         const latestContainer = document.createElement("div");
                         latestContainer.className = "latest-image-container";
 
@@ -1104,7 +1467,7 @@
                         imgEl.src = imgUrl;
                         imgEl.alt = latestImage;
                         imgEl.loading = "eager";
-                        imgEl.onerror = function() {
+                        imgEl.onerror = function() { 
                             this.style.display = "none";
                             if (this.parentElement && !this.parentElement.querySelector(".image-error")) {
                                 const err = document.createElement("div");
@@ -1114,15 +1477,15 @@
                                 this.parentElement.appendChild(err);
                             }
                         };
-
+                        
                         // Get metadata for latest image (for modal only)
                         const meta = latestMeta;
                         const infoText = createImageInfoText(meta, latestImage);
-
+                        
                         const badge = document.createElement("div");
                         badge.className = "latest-badge";
                         badge.textContent = "LATEST";
-
+                        
                         latestContainer.appendChild(badge);
                         latestContainer.appendChild(imgEl);
                         const allImagesForModal = actualImages.map((fn, idx) => ({
@@ -1133,31 +1496,31 @@
                         latestContainer.onclick = function() {
                             openModal(allImagesForModal, 0);
                         };
-
+                        
                         latestWrapper.appendChild(latestContainer);
                         section.appendChild(latestWrapper);
-
+                        
                         // Horizontal divider
                         const divider = document.createElement("hr");
                         divider.className = "images-divider";
                         section.appendChild(divider);
                     }
-
+                    
                     // Show up to 12 smaller images in grid (NOT including latest)
                     if (gridImages.length > 0) {
                         const imagesGrid = document.createElement("div");
                         imagesGrid.className = "images-grid";
-
+                        
                         const allImagesForModal = actualImages.map((fn) => ({
                             filename: fn,
                             url: buildImageUrl(cameraName, fn, getMetadata(data.metadata, fn), refreshToken),
                             infoText: createImageInfoText(getMetadata(data.metadata, fn), fn)
                         }));
-
+                        
                         for (let i = 0; i < 12; i++) {
                             const container = document.createElement("div");
                             container.className = "image-container";
-
+                            
                             if (i < gridImages.length) {
                                 const filename = gridImages[i];
                                 const imgUrl = buildImageUrl(cameraName, filename, getMetadata(data.metadata, filename), refreshToken);
@@ -1165,11 +1528,11 @@
                                 imgEl.src = imgUrl;
                                 imgEl.alt = filename;
                                 imgEl.loading = "lazy";
-                                imgEl.onerror = function() {
+                                imgEl.onerror = function() { 
                                     this.style.visibility = "hidden";
                                     this.style.minHeight = "80px";
                                 };
-
+                                
                                 const idx = actualImages.indexOf(filename);
                                 const modalIndex = idx >= 0 ? idx : i + 1;
                                 container.appendChild(imgEl);
@@ -1177,65 +1540,48 @@
                             } else {
                                 container.style.visibility = "hidden";
                             }
-
+                            
                             imagesGrid.appendChild(container);
                         }
-
+                        
                         section.appendChild(imagesGrid);
-
+                        
                         // Camera-specific text block below the grid
                         const textBlock = document.createElement("div");
                         textBlock.className = "images-text-block";
-                        const cameraTexts = {
-                            'bowman_mtn': 'Bowman Mountain: about 3200 feet, facing Baker and the Twins',
-                            'n_twin': 'N Twin: about 4200 feet, along the logging road up to the N Twin NW Ridge.',
-                            'w_ridge_n_twin': 'W Ridge N Twin: about 4600 feet. Trail camera on West Ridge looking toward N Twin skin up track.',
-                            'NWHighPoint': 'Westward View: about 3900 feet along Bowman Ridge looking towards Vancouver, BC (the valley West of Dailey Prairie)',
-                            'woods_cam_001': 'Bowman Ridge: about 4000 feet looking towards Twins and Baker above Middle Fork Borrow Pit.'
-                        };
-                        textBlock.textContent = cameraTexts[cameraName] || 'Camera information...';
+                        textBlock.textContent = cameraMeta.description || "Camera information...";
                         section.appendChild(textBlock);
 
-                        // Add Windy.com link below text
-                        const windyLinks = {
-                            'bowman_mtn': 'https://www.windy.com/station/pws-4ks5xFmh?48.720,-122.062,13,p:temp',
-                            'n_twin': 'https://www.windy.com/station/pws-A1QVv3Du?48.720,-122.062,13,p:temp',
-                            'w_ridge_n_twin': 'https://www.windy.com/station/pws-UpjK9hSq?radar,48.722,-122.007,13,p:temp',
-                            'NWHighPoint': 'https://www.windy.com/station/pws-fwWd6XAK?48.705,-122.048,13,p:temp',
-                            'woods_cam_001': 'https://www.windy.com/station/pws-wOvn2H1z?48.695,-122.054,13,p:temp'
-                        };
-
-                        const windyUrl = windyLinks[cameraName];
-                        if (windyUrl) {
+                        if (cameraMeta.windyUrl) {
                             const windyLink = document.createElement("a");
-                            windyLink.href = windyUrl;
+                            windyLink.href = cameraMeta.windyUrl;
                             windyLink.target = "_blank";
                             windyLink.rel = "noopener noreferrer";
-                            windyLink.textContent = "Link to weather station on Windy.com";
+                            windyLink.textContent = windyLinkLabel;
                             windyLink.className = "windy-link";
                             section.appendChild(windyLink);
                         }
                     }
-
+                    
                     camerasContainer.appendChild(section);
                 }
 
                 await renderBestOfCarousel(camerasContainer, refreshToken);
-
+                
                 document.getElementById("lastUpdate").textContent = new Date().toLocaleString();
             } catch (error) {
-                camerasContainer.innerHTML =
+                camerasContainer.innerHTML = 
                     "<div class=\"error\">Error loading images: " + (error.message || String(error)) + "</div>";
                 console.error("Error loading cameras:", error);
             }
         }
-
+        
         function getMetadata(metadata, filename) {
             // Try direct lookup first
             if (metadata && metadata[filename]) {
                 return metadata[filename];
             }
-
+            
             // Try matching by date/time pattern (for old filenames with image numbers)
             const dateMatch = filename.match(/(\d{8}_\d{6})/);
             if (dateMatch && metadata) {
@@ -1246,10 +1592,10 @@
                     }
                 }
             }
-
+            
             return {};
         }
-
+        
         function createImageInfoText(meta, filename) {
             // Prefer metadata.timestamp (stored as UTC); convert to Pacific so display matches image overlay (e.g. GardePro 07:00:08)
             let dateText = "";
@@ -1265,7 +1611,7 @@
             if (!dateMatch) {
                 dateMatch = filename.match(/(\d{4})(\d{2})(\d{2})_(\d{2})(\d{2})(\d{2})/);  // Alternative pattern
             }
-
+            
             if (dateMatch) {
                 let year, month, day, hour, min, sec;
                 if (dateMatch.length === 2) {
@@ -1305,18 +1651,15 @@
                 }
                 if (!dateText) dateText = "Image";
             }
-
+            
             // Temperature no longer displayed (pipeline no longer extracts it; user uses external sensors)
             // Build display text: date/time only
             let displayText = dateText;
-
+            
             return displayText;
         }
-
-        // Display-name overrides: the underlying data folder may differ from the section
-        // label shown to viewers. NWHighPoint is the GardePro camera that backs the
-        // section labeled "Westward View" on this page.
-        const cameraDisplayNames = {
+        
+        let cameraDisplayNames = {
             "NWHighPoint": "Westward View",
             "woods_cam_001": "Bowman Ridge"
         };
@@ -1324,16 +1667,16 @@
             if (cameraDisplayNames[name]) return cameraDisplayNames[name];
             return name.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
         }
-
+        
         function openModal(imagesArray, currentIndex) {
             const modal = document.getElementById("imageModal");
             const modalImg = document.getElementById("modalImage");
             const modalInfo = document.getElementById("modalInfo");
             const prevBtn = document.getElementById("modalPrev");
             const nextBtn = document.getElementById("modalNext");
-
+            
             modal._modalState = { images: imagesArray, index: currentIndex };
-
+            
             function showAtIndex(i) {
                 const entry = imagesArray[i];
                 if (!entry) return;
@@ -1343,7 +1686,7 @@
                 prevBtn.style.display = imagesArray.length > 1 ? "flex" : "none";
                 nextBtn.style.display = imagesArray.length > 1 ? "flex" : "none";
             }
-
+            
             prevBtn.onclick = function(e) {
                 e.stopPropagation();
                 const idx = modal._modalState.index;
@@ -1356,18 +1699,18 @@
                 const next = idx >= imagesArray.length - 1 ? 0 : idx + 1;
                 showAtIndex(next);
             };
-
+            
             showAtIndex(currentIndex);
             modal.classList.add("active");
             document.body.style.overflow = "hidden";
         }
-
+        
         function closeModal() {
             const modal = document.getElementById("imageModal");
             modal.classList.remove("active");
             document.body.style.overflow = "auto";
         }
-
+        
         document.addEventListener("DOMContentLoaded", function() {
             const modal = document.getElementById("imageModal");
             const closeBtn = document.querySelector(".modal-close");
@@ -1391,10 +1734,11 @@
             });
             initGeneralInfoTabs();
         });
-
+        
         loadCameras();
         setInterval(loadCameras, 5 * 60 * 1000);
         setInterval(loadBannerConditions, 5 * 60 * 1000);
+        setInterval(loadTwinsForecast, 5 * 60 * 1000);
     </script>
 </body>
 </html>
