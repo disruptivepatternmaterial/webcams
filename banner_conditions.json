@@ -6,29 +6,29 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 57
+      "value": 56
     }
   },
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 11
+      "value": 13
     },
     "n_twin": {
       "unit": null,
-      "value": 21
+      "value": 18
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "70309e53-4db8-503d-81fd-f24e9879c3a6",
-  "last_updated": "2026-10-16T13:38:00Z",
+  "event_id": "fabfa239-1030-551b-b91c-de5d9fb29798",
+  "last_updated": "2026-10-16T13:50:00Z",
   "sites": [
     {
-      "aqi": 11,
-      "as_of": "2026-10-16T13:00:45.251241Z",
+      "aqi": 13,
+      "as_of": "2026-10-16T13:30:46.655724Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -38,15 +38,15 @@
       "temp_f": 60
     },
     {
-      "aqi": 21,
-      "as_of": "2026-10-16T13:07:36.111707Z",
+      "aqi": 18,
+      "as_of": "2026-10-16T13:37:35.767717Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 57
+      "temp_f": 56
     },
     {
       "aqi": null,
@@ -61,7 +61,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T13:20:52.957446Z",
+      "as_of": "2026-10-16T13:40:52.738460Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T13:23:44.470320Z",
+      "as_of": "2026-10-16T13:43:58.980769Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -80,12 +80,12 @@
       "label": "Bowman Ridge",
       "stale": false,
       "temp_f": 58,
-      "wind_dir_deg": 181,
-      "wind_mph": 3
+      "wind_dir_deg": 149,
+      "wind_mph": 4
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T13:20:20.520757Z",
+      "as_of": "2026-10-16T13:43:51.225334Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
