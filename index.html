@@ -683,7 +683,7 @@
             <p><a href="https://buymeacoffee.com/tobidogger" target="_blank" rel="noopener noreferrer" style="color:#fff;">Support this project</a></p>
         </div>
     </div>
-    
+
     <div id="imageModal" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
@@ -1404,7 +1404,7 @@
                     const cameraMeta = getCameraMeta(content, cameraName);
                     const section = document.createElement("div");
                     section.className = "camera-section";
-                    
+
                     const title = document.createElement("h2");
                     title.className = "camera-title";
                     title.textContent = formatCameraName(cameraName);
@@ -1415,10 +1415,10 @@
                     statusEl.className = "camera-status" + (statusText.toLowerCase().indexOf("dead") !== -1 || statusText.toLowerCase().indexOf("repair") !== -1 ? " camera-status--warning" : "");
                     statusEl.textContent = "Status: " + statusText;
                     section.appendChild(statusEl);
-                    
+
                     const allImages = data.images || [];
                     const actualImages = allImages.filter(img => !img.toLowerCase().includes('latest'));
-                    
+
                     if (actualImages.length === 0) {
                         var statusTextEmpty = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Working");
                         var statusElEmpty = document.createElement("p");
@@ -1446,18 +1446,18 @@
                         camerasContainer.appendChild(section);
                         continue;
                     }
-                    
+
                     // Latest image (first actual image, which is the newest)
                     const latestImage = actualImages[0];
-                    
+
                     // Next 12 images for the grid (indices 1-12 - NOT including latest)
                     let gridImages = actualImages.slice(1, 13);
-                    
+
                     // Show latest image large at top
                     if (latestImage) {
                         const latestWrapper = document.createElement("div");
                         latestWrapper.className = "latest-image-wrapper";
-                        
+
                         const latestContainer = document.createElement("div");
                         latestContainer.className = "latest-image-container";
 
@@ -1467,7 +1467,7 @@
                         imgEl.src = imgUrl;
                         imgEl.alt = latestImage;
                         imgEl.loading = "eager";
-                        imgEl.onerror = function() { 
+                        imgEl.onerror = function() {
                             this.style.display = "none";
                             if (this.parentElement && !this.parentElement.querySelector(".image-error")) {
                                 const err = document.createElement("div");
@@ -1477,15 +1477,15 @@
                                 this.parentElement.appendChild(err);
                             }
                         };
-                        
+
                         // Get metadata for latest image (for modal only)
                         const meta = latestMeta;
                         const infoText = createImageInfoText(meta, latestImage);
-                        
+
                         const badge = document.createElement("div");
                         badge.className = "latest-badge";
                         badge.textContent = "LATEST";
-                        
+
                         latestContainer.appendChild(badge);
                         latestContainer.appendChild(imgEl);
                         const allImagesForModal = actualImages.map((fn, idx) => ({
@@ -1496,31 +1496,31 @@
                         latestContainer.onclick = function() {
                             openModal(allImagesForModal, 0);
                         };
-                        
+
                         latestWrapper.appendChild(latestContainer);
                         section.appendChild(latestWrapper);
-                        
+
                         // Horizontal divider
                         const divider = document.createElement("hr");
                         divider.className = "images-divider";
                         section.appendChild(divider);
                     }
-                    
+
                     // Show up to 12 smaller images in grid (NOT including latest)
                     if (gridImages.length > 0) {
                         const imagesGrid = document.createElement("div");
                         imagesGrid.className = "images-grid";
-                        
+
                         const allImagesForModal = actualImages.map((fn) => ({
                             filename: fn,
                             url: buildImageUrl(cameraName, fn, getMetadata(data.metadata, fn), refreshToken),
                             infoText: createImageInfoText(getMetadata(data.metadata, fn), fn)
                         }));
-                        
+
                         for (let i = 0; i < 12; i++) {
                             const container = document.createElement("div");
                             container.className = "image-container";
-                            
+
                             if (i < gridImages.length) {
                                 const filename = gridImages[i];
                                 const imgUrl = buildImageUrl(cameraName, filename, getMetadata(data.metadata, filename), refreshToken);
@@ -1528,11 +1528,11 @@
                                 imgEl.src = imgUrl;
                                 imgEl.alt = filename;
                                 imgEl.loading = "lazy";
-                                imgEl.onerror = function() { 
+                                imgEl.onerror = function() {
                                     this.style.visibility = "hidden";
                                     this.style.minHeight = "80px";
                                 };
-                                
+
                                 const idx = actualImages.indexOf(filename);
                                 const modalIndex = idx >= 0 ? idx : i + 1;
                                 container.appendChild(imgEl);
@@ -1540,12 +1540,12 @@
                             } else {
                                 container.style.visibility = "hidden";
                             }
-                            
+
                             imagesGrid.appendChild(container);
                         }
-                        
+
                         section.appendChild(imagesGrid);
-                        
+
                         // Camera-specific text block below the grid
                         const textBlock = document.createElement("div");
                         textBlock.className = "images-text-block";
@@ -1562,26 +1562,26 @@
                             section.appendChild(windyLink);
                         }
                     }
-                    
+
                     camerasContainer.appendChild(section);
                 }
 
                 await renderBestOfCarousel(camerasContainer, refreshToken);
-                
+
                 document.getElementById("lastUpdate").textContent = new Date().toLocaleString();
             } catch (error) {
-                camerasContainer.innerHTML = 
+                camerasContainer.innerHTML =
                     "<div class=\"error\">Error loading images: " + (error.message || String(error)) + "</div>";
                 console.error("Error loading cameras:", error);
             }
         }
-        
+
         function getMetadata(metadata, filename) {
             // Try direct lookup first
             if (metadata && metadata[filename]) {
                 return metadata[filename];
             }
-            
+
             // Try matching by date/time pattern (for old filenames with image numbers)
             const dateMatch = filename.match(/(\d{8}_\d{6})/);
             if (dateMatch && metadata) {
@@ -1592,10 +1592,10 @@
                     }
                 }
             }
-            
+
             return {};
         }
-        
+
         function createImageInfoText(meta, filename) {
             // Prefer metadata.timestamp (stored as UTC); convert to Pacific so display matches image overlay (e.g. GardePro 07:00:08)
             let dateText = "";
@@ -1611,7 +1611,7 @@
             if (!dateMatch) {
                 dateMatch = filename.match(/(\d{4})(\d{2})(\d{2})_(\d{2})(\d{2})(\d{2})/);  // Alternative pattern
             }
-            
+
             if (dateMatch) {
                 let year, month, day, hour, min, sec;
                 if (dateMatch.length === 2) {
@@ -1651,14 +1651,14 @@
                 }
                 if (!dateText) dateText = "Image";
             }
-            
+
             // Temperature no longer displayed (pipeline no longer extracts it; user uses external sensors)
             // Build display text: date/time only
             let displayText = dateText;
-            
+
             return displayText;
         }
-        
+
         let cameraDisplayNames = {
             "NWHighPoint": "Westward View",
             "woods_cam_001": "Bowman Ridge"
@@ -1667,16 +1667,16 @@
             if (cameraDisplayNames[name]) return cameraDisplayNames[name];
             return name.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
         }
-        
+
         function openModal(imagesArray, currentIndex) {
             const modal = document.getElementById("imageModal");
             const modalImg = document.getElementById("modalImage");
             const modalInfo = document.getElementById("modalInfo");
             const prevBtn = document.getElementById("modalPrev");
             const nextBtn = document.getElementById("modalNext");
-            
+
             modal._modalState = { images: imagesArray, index: currentIndex };
-            
+
             function showAtIndex(i) {
                 const entry = imagesArray[i];
                 if (!entry) return;
@@ -1686,7 +1686,7 @@
                 prevBtn.style.display = imagesArray.length > 1 ? "flex" : "none";
                 nextBtn.style.display = imagesArray.length > 1 ? "flex" : "none";
             }
-            
+
             prevBtn.onclick = function(e) {
                 e.stopPropagation();
                 const idx = modal._modalState.index;
@@ -1699,18 +1699,18 @@
                 const next = idx >= imagesArray.length - 1 ? 0 : idx + 1;
                 showAtIndex(next);
             };
-            
+
             showAtIndex(currentIndex);
             modal.classList.add("active");
             document.body.style.overflow = "hidden";
         }
-        
+
         function closeModal() {
             const modal = document.getElementById("imageModal");
             modal.classList.remove("active");
             document.body.style.overflow = "auto";
         }
-        
+
         document.addEventListener("DOMContentLoaded", function() {
             const modal = document.getElementById("imageModal");
             const closeBtn = document.querySelector(".modal-close");
@@ -1734,7 +1734,7 @@
             });
             initGeneralInfoTabs();
         });
-        
+
         loadCameras();
         setInterval(loadCameras, 5 * 60 * 1000);
         setInterval(loadBannerConditions, 5 * 60 * 1000);
