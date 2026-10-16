@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 58
+      "value": 59
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,19 +23,19 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "1e488b65-8f2e-5728-9592-3d7bc983d250",
-  "last_updated": "2026-10-16T15:22:00Z",
+  "event_id": "37401ab3-e0a6-51ef-a8a0-e804878a952d",
+  "last_updated": "2026-10-16T15:38:00Z",
   "sites": [
     {
       "aqi": 14,
-      "as_of": "2026-10-16T15:01:02Z",
+      "as_of": "2026-10-16T15:31:02Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 58
+      "temp_f": 59
     },
     {
       "aqi": 19,
@@ -50,42 +50,42 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T14:58:15.562797Z",
+      "as_of": "2026-10-16T15:28:15.095476Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 60
+      "temp_f": 59
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T15:08:13.894619Z",
+      "as_of": "2026-10-16T15:20:52.052547Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 61
+      "temp_f": 62
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T15:04:38.047766Z",
+      "as_of": "2026-10-16T15:24:47.596986Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 58,
-      "wind_dir_deg": 181,
-      "wind_mph": 3
+      "temp_f": 60,
+      "wind_dir_deg": 138,
+      "wind_mph": 4
     },
     {
       "aqi": null,
-      "as_of": "2026-10-16T15:13:50.390303Z",
+      "as_of": "2026-10-16T15:20:19.183947Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
