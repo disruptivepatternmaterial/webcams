@@ -12,23 +12,23 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 15
+      "value": 14
     },
     "n_twin": {
       "unit": null,
-      "value": 16
+      "value": 14
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 43
   },
-  "event_id": "41eba1b0-c639-5abc-9aac-c10b4da07e26",
-  "last_updated": "2026-10-17T02:22:00Z",
+  "event_id": "d76a03b7-b6a2-50eb-a00e-00a14c259090",
+  "last_updated": "2026-10-17T02:50:00Z",
   "sites": [
     {
-      "aqi": 15,
-      "as_of": "2026-10-17T02:01:03.886180Z",
+      "aqi": 14,
+      "as_of": "2026-10-17T02:31:03.931973Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -38,8 +38,8 @@
       "temp_f": 57
     },
     {
-      "aqi": 16,
-      "as_of": "2026-10-17T02:07:26.192549Z",
+      "aqi": 14,
+      "as_of": "2026-10-17T02:37:25.818918Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -50,29 +50,29 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-17T01:58:08.441712Z",
+      "as_of": "2026-10-17T02:28:08.349069Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 59
+      "temp_f": 58
     },
     {
       "aqi": null,
-      "as_of": "2026-10-17T02:08:06.573751Z",
+      "as_of": "2026-10-17T02:38:06.304487Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 61
+      "temp_f": 60
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-17T02:18:19.021333Z",
+      "as_of": "2026-10-17T02:39:48.883154Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -80,12 +80,12 @@
       "label": "Bowman Ridge",
       "stale": false,
       "temp_f": 58,
-      "wind_dir_deg": 181,
-      "wind_mph": 3
+      "wind_dir_deg": 154,
+      "wind_mph": 4
     },
     {
       "aqi": null,
-      "as_of": "2026-10-17T02:13:44.019037Z",
+      "as_of": "2026-10-17T02:20:11.655907Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 43,
