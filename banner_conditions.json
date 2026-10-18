@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 34
+      "value": 35
     }
   },
   "aqi_by_site": {
@@ -16,19 +16,19 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 2
+      "value": 4
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "3bf630b7-36f8-5ce9-aeb0-518bebceb80a",
-  "last_updated": "2026-10-18T15:38:00Z",
+  "event_id": "ce40c9f5-8394-5a49-adac-4125dcae2c20",
+  "last_updated": "2026-10-18T15:50:00Z",
   "sites": [
     {
       "aqi": 0,
-      "as_of": "2026-10-18T15:30:36Z",
+      "as_of": "2026-10-18T15:30:37.901685Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -38,15 +38,15 @@
       "temp_f": 37
     },
     {
-      "aqi": 2,
-      "as_of": "2026-10-18T15:06:59.322904Z",
+      "aqi": 4,
+      "as_of": "2026-10-18T15:36:59.001865Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 34
+      "temp_f": 35
     },
     {
       "aqi": null,
@@ -61,7 +61,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T15:07:44.689407Z",
+      "as_of": "2026-10-18T15:37:44.411335Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T15:27:47.211106Z",
+      "as_of": "2026-10-18T15:47:54.752895Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -80,12 +80,12 @@
       "label": "Bowman Ridge",
       "stale": false,
       "temp_f": 40,
-      "wind_dir_deg": 1,
-      "wind_mph": 6
+      "wind_dir_deg": 37,
+      "wind_mph": 2
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T15:19:47.061236Z",
+      "as_of": "2026-10-18T15:49:46.790647Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
@@ -93,7 +93,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 28
+      "temp_f": 29
     }
   ]
 }
