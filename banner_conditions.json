@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 36
+      "value": 35
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,23 +23,23 @@
     "unit": "\u00b0F",
     "value": 43
   },
-  "event_id": "ab62e4be-4e1c-5650-bcbd-250bfd4d917c",
-  "last_updated": "2026-10-18T10:50:00Z",
+  "event_id": "26deab75-02db-5422-8eba-c7d6b7657d34",
+  "last_updated": "2026-10-18T11:20:00Z",
   "sites": [
     {
       "aqi": 0,
-      "as_of": "2026-10-18T10:30:44.791602Z",
+      "as_of": "2026-10-18T11:00:41.147633Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 36
+      "temp_f": 35
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-18T10:37:02.437878Z",
+      "as_of": "2026-10-18T11:07:02.146712Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -50,42 +50,42 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T10:28:35.442142Z",
+      "as_of": "2026-10-18T10:58:34.849645Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 34
+      "temp_f": 35
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T10:37:47.260214Z",
+      "as_of": "2026-10-18T11:07:46.983771Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 35
+      "temp_f": 36
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T10:25:22.171217Z",
+      "as_of": "2026-10-18T11:05:41.183151Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 39,
+      "temp_f": 38,
       "wind_dir_deg": 1,
       "wind_mph": 6
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T10:38:42.536527Z",
+      "as_of": "2026-10-18T11:19:49.598000Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 43,
