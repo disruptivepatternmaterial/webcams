@@ -12,7 +12,7 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 1
+      "value": 0
     },
     "n_twin": {
       "unit": null,
@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "849b1085-7ea5-59f5-b709-966dd96e7023",
-  "last_updated": "2026-10-18T14:08:00Z",
+  "event_id": "ba050ee2-e255-5a39-ae5b-5858bff825e4",
+  "last_updated": "2026-10-18T14:20:00Z",
   "sites": [
     {
-      "aqi": 1,
-      "as_of": "2026-10-18T14:00:38Z",
+      "aqi": 0,
+      "as_of": "2026-10-18T14:00:39.321822Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-18T13:37:00.395724Z",
+      "as_of": "2026-10-18T14:07:00.011598Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -61,18 +61,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T13:37:45.550868Z",
+      "as_of": "2026-10-18T14:07:45.263645Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 38
+      "temp_f": 36
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T13:46:57.518033Z",
+      "as_of": "2026-10-18T14:07:06.136532Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -81,11 +81,11 @@
       "stale": false,
       "temp_f": 38,
       "wind_dir_deg": 1,
-      "wind_mph": 4
+      "wind_mph": 5
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T13:49:48.022169Z",
+      "as_of": "2026-10-18T14:19:48.040871Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
@@ -93,7 +93,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 28
+      "temp_f": 27
     }
   ]
 }
