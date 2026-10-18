@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 38
+      "value": 40
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,19 +23,19 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "f2d47cd3-dce5-54ce-8548-bce140626f56",
-  "last_updated": "2026-10-18T16:20:00Z",
+  "event_id": "a8ad9712-fac5-566d-9c34-8c7e03df53da",
+  "last_updated": "2026-10-18T16:38:00Z",
   "sites": [
     {
       "aqi": 0,
-      "as_of": "2026-10-18T16:00:38.705869Z",
+      "as_of": "2026-10-18T16:30:37Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 38
+      "temp_f": 40
     },
     {
       "aqi": 2,
@@ -50,7 +50,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T15:57:45.813651Z",
+      "as_of": "2026-10-18T16:27:45.479752Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -72,16 +72,16 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T16:07:58.292612Z",
+      "as_of": "2026-10-18T16:28:13.873207Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 40,
+      "temp_f": 42,
       "wind_dir_deg": 1,
-      "wind_mph": 2
+      "wind_mph": 3
     },
     {
       "aqi": null,
