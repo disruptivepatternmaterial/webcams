@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 37
+      "value": 36
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,25 +23,25 @@
     "unit": "\u00b0F",
     "value": 44
   },
-  "event_id": "47709914-c618-5590-b085-2763f7bde038",
-  "last_updated": "2026-10-18T05:50:00Z",
+  "event_id": "67ecf1c3-edb5-5863-ab2a-86d280d92933",
+  "last_updated": "2026-10-18T06:20:00Z",
   "sites": [
     {
       "aqi": 0,
-      "as_of": "2026-10-18T05:30:44.727897Z",
+      "as_of": "2026-10-18T06:00:39Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 37
+      "temp_f": 36
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-18T05:37:05.959384Z",
+      "as_of": "2026-10-18T06:07:05.678786Z",
       "elev_ft": 4721,
-      "fog": true,
+      "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
@@ -50,7 +50,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T05:30:37.773174Z",
+      "as_of": "2026-10-18T06:00:37.557031Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -61,7 +61,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T05:37:50.276535Z",
+      "as_of": "2026-10-18T06:07:49.840193Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T05:22:58.914510Z",
+      "as_of": "2026-10-18T06:03:18.018950Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -85,7 +85,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T05:38:44.982006Z",
+      "as_of": "2026-10-18T06:19:52.767034Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 44,
@@ -93,7 +93,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 32
+      "temp_f": 31
     }
   ]
 }
