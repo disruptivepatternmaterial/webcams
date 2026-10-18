@@ -6,13 +6,13 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 42
+      "value": 44
     }
   },
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 0
+      "value": 2
     },
     "n_twin": {
       "unit": null,
@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "75cbfc50-8296-5af6-be33-be97cb6ff73b",
-  "last_updated": "2026-10-18T18:38:00Z",
+  "event_id": "bf97df1d-d356-597e-9fe1-9e395ccbef22",
+  "last_updated": "2026-10-18T18:50:00Z",
   "sites": [
     {
-      "aqi": 0,
-      "as_of": "2026-10-18T18:30:37Z",
+      "aqi": 2,
+      "as_of": "2026-10-18T18:30:38.921649Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,14 +39,14 @@
     },
     {
       "aqi": 2,
-      "as_of": "2026-10-18T18:06:57.228963Z",
+      "as_of": "2026-10-18T18:36:56.804271Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 44
     },
     {
       "aqi": null,
@@ -61,31 +61,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T18:07:43.222092Z",
+      "as_of": "2026-10-18T18:37:42.925597Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 47
+      "temp_f": 49
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-18T18:29:11.078053Z",
+      "as_of": "2026-10-18T18:49:20.616781Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 58,
-      "wind_dir_deg": 1,
-      "wind_mph": 12
+      "temp_f": 59,
+      "wind_dir_deg": 196,
+      "wind_mph": 5
     },
     {
       "aqi": null,
-      "as_of": "2026-10-18T18:19:45.166861Z",
+      "as_of": "2026-10-18T18:49:44.840188Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
@@ -93,7 +93,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 35
+      "temp_f": 43
     }
   ]
 }
