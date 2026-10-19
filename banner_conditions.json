@@ -12,7 +12,7 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 5
+      "value": 6
     },
     "n_twin": {
       "unit": null,
@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "a98f8996-a156-57bc-bba4-5bdfdf912819",
-  "last_updated": "2026-10-19T11:22:00Z",
+  "event_id": "bd5e3c2b-2a18-5909-acab-ba4df049ef13",
+  "last_updated": "2026-10-19T11:52:00Z",
   "sites": [
     {
-      "aqi": 5,
-      "as_of": "2026-10-19T10:34:39.677452Z",
+      "aqi": 6,
+      "as_of": "2026-10-19T11:35:52.025278Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": 20,
-      "as_of": "2026-10-19T11:06:44.679702Z",
+      "as_of": "2026-10-19T11:36:44.295601Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -50,18 +50,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T10:57:34.396528Z",
+      "as_of": "2026-10-19T11:27:34.070946Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 43
+      "temp_f": 44
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T11:07:32.817857Z",
+      "as_of": "2026-10-19T11:37:32.486748Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T11:17:07.894490Z",
+      "as_of": "2026-10-19T11:37:11.362748Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -85,7 +85,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T11:19:34.015536Z",
+      "as_of": "2026-10-19T11:49:33.692022Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
