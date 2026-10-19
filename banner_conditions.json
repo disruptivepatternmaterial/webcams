@@ -16,19 +16,19 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 15
+      "value": 11
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "b766bb96-04a8-587a-804b-4c1c175b9b4b",
-  "last_updated": "2026-10-19T13:38:00Z",
+  "event_id": "5f0d32b3-c78a-5565-8fac-21e126e028ad",
+  "last_updated": "2026-10-19T13:52:00Z",
   "sites": [
     {
       "aqi": 7,
-      "as_of": "2026-10-19T12:37:04.408424Z",
+      "as_of": "2026-10-19T13:38:16.414257Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -38,8 +38,8 @@
       "temp_f": null
     },
     {
-      "aqi": 15,
-      "as_of": "2026-10-19T13:06:43.236366Z",
+      "aqi": 11,
+      "as_of": "2026-10-19T13:36:42.870406Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -61,7 +61,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T13:07:31.595522Z",
+      "as_of": "2026-10-19T13:37:31.283919Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T13:18:04.223909Z",
+      "as_of": "2026-10-19T13:38:14.645850Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -81,11 +81,11 @@
       "stale": false,
       "temp_f": 43,
       "wind_dir_deg": 1,
-      "wind_mph": 4
+      "wind_mph": 3
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T13:19:32.729083Z",
+      "as_of": "2026-10-19T13:49:32.420108Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
