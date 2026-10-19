@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 44
+      "value": 43
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,23 +23,23 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "f304b065-67de-529f-9671-31d02ce6806f",
-  "last_updated": "2026-10-19T05:50:00Z",
+  "event_id": "1290700c-5108-5b69-bff8-03298ad70805",
+  "last_updated": "2026-10-19T06:20:00Z",
   "sites": [
     {
       "aqi": 3,
-      "as_of": "2026-10-19T05:31:03.395450Z",
+      "as_of": "2026-10-19T06:01:02.913965Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 44
+      "temp_f": 43
     },
     {
       "aqi": 7,
-      "as_of": "2026-10-19T05:36:48.693176Z",
+      "as_of": "2026-10-19T06:06:48.373120Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -50,18 +50,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T05:27:37.651496Z",
+      "as_of": "2026-10-19T05:57:37.390331Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 43
+      "temp_f": 44
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T05:37:36.068967Z",
+      "as_of": "2026-10-19T06:07:35.764731Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T05:34:24.605549Z",
+      "as_of": "2026-10-19T06:14:43.804326Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -85,7 +85,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T05:49:37.562198Z",
+      "as_of": "2026-10-19T06:19:37.581552Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
