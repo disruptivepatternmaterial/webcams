@@ -6,29 +6,29 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 44
+      "value": 42
     }
   },
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 3
+      "value": 2
     },
     "n_twin": {
       "unit": null,
-      "value": 3
+      "value": 4
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "69095c9a-9511-511a-8aa0-9d86a3a0da10",
-  "last_updated": "2026-10-19T01:08:00Z",
+  "event_id": "929d0773-4398-5d6b-9e6c-02573eed0016",
+  "last_updated": "2026-10-19T01:20:00Z",
   "sites": [
     {
-      "aqi": 3,
-      "as_of": "2026-10-19T01:01:02Z",
+      "aqi": 2,
+      "as_of": "2026-10-19T01:01:03.667230Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -38,15 +38,15 @@
       "temp_f": 44
     },
     {
-      "aqi": 3,
-      "as_of": "2026-10-19T00:36:52.338143Z",
+      "aqi": 4,
+      "as_of": "2026-10-19T01:06:52.027214Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 44
+      "temp_f": 42
     },
     {
       "aqi": null,
@@ -61,31 +61,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T00:37:39.016647Z",
+      "as_of": "2026-10-19T01:07:38.700939Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 47
+      "temp_f": 45
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-19T00:59:16.812269Z",
+      "as_of": "2026-10-19T01:12:23.551310Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 45,
+      "temp_f": 44,
       "wind_dir_deg": 1,
       "wind_mph": 4
     },
     {
       "aqi": null,
-      "as_of": "2026-10-19T00:49:40.953681Z",
+      "as_of": "2026-10-19T01:19:40.464099Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
@@ -93,7 +93,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 40
     }
   ]
 }
