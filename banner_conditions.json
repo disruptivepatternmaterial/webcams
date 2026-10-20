@@ -12,23 +12,23 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 6
+      "value": 7
     },
     "n_twin": {
       "unit": null,
-      "value": 5
+      "value": 2
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "72147ddf-d2b3-596a-aa2c-0f3c8dba84e0",
-  "last_updated": "2026-10-20T06:34:00Z",
+  "event_id": "04ecf075-47e4-52ae-a363-74db5bf7de93",
+  "last_updated": "2026-10-20T07:04:00Z",
   "sites": [
     {
-      "aqi": 6,
-      "as_of": "2026-10-20T05:56:52.933436Z",
+      "aqi": 7,
+      "as_of": "2026-10-20T06:57:44.000408Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -38,8 +38,8 @@
       "temp_f": null
     },
     {
-      "aqi": 5,
-      "as_of": "2026-10-20T06:06:30.648016Z",
+      "aqi": 2,
+      "as_of": "2026-10-20T06:36:30.332276Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -50,18 +50,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T06:27:22.579918Z",
+      "as_of": "2026-10-20T06:57:22.289701Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 39
+      "temp_f": 37
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T06:07:21.428900Z",
+      "as_of": "2026-10-20T06:37:21.127742Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T06:26:10.843694Z",
+      "as_of": "2026-10-20T06:46:20.414878Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -81,11 +81,11 @@
       "stale": false,
       "temp_f": 44,
       "wind_dir_deg": 1,
-      "wind_mph": 5
+      "wind_mph": 6
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T06:22:20.319419Z",
+      "as_of": "2026-10-20T06:52:20.049610Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
