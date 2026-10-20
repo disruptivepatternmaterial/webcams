@@ -12,23 +12,23 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 4
+      "value": 2
     },
     "n_twin": {
       "unit": null,
-      "value": 5
+      "value": 11
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "29379a48-6e78-55de-9059-c0fc7326fb63",
-  "last_updated": "2026-10-20T10:38:00Z",
+  "event_id": "6bc38e28-c9c4-5176-93b5-0578d571ceb3",
+  "last_updated": "2026-10-20T11:12:00Z",
   "sites": [
     {
-      "aqi": 4,
-      "as_of": "2026-10-20T10:00:17.241825Z",
+      "aqi": 2,
+      "as_of": "2026-10-20T11:01:08.705131Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -38,8 +38,8 @@
       "temp_f": null
     },
     {
-      "aqi": 5,
-      "as_of": "2026-10-20T10:06:27.749644Z",
+      "aqi": 11,
+      "as_of": "2026-10-20T11:06:27.083530Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -50,7 +50,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T10:27:20.257868Z",
+      "as_of": "2026-10-20T10:57:19.939330Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -61,31 +61,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T10:07:19.023605Z",
+      "as_of": "2026-10-20T11:07:18.751641Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 43
+      "temp_f": 45
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T10:28:06.201330Z",
+      "as_of": "2026-10-20T11:08:24.374051Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 45,
+      "temp_f": 48,
       "wind_dir_deg": 1,
-      "wind_mph": 3
+      "wind_mph": 13
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T10:22:18.370075Z",
+      "as_of": "2026-10-20T10:52:18.107386Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
