@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 57
+      "value": 55
     }
   },
   "aqi_by_site": {
@@ -16,15 +16,15 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 15
+      "value": 17
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "e1d84264-5562-521c-84b5-28019c3ffaa2",
-  "last_updated": "2026-10-21T00:08:00Z",
+  "event_id": "ef0f3d62-519f-5a11-a389-32faaaefcc57",
+  "last_updated": "2026-10-21T00:22:00Z",
   "sites": [
     {
       "aqi": null,
@@ -38,15 +38,15 @@
       "temp_f": null
     },
     {
-      "aqi": 15,
-      "as_of": "2026-10-20T23:36:17.795389Z",
+      "aqi": 17,
+      "as_of": "2026-10-21T00:06:17.419806Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 57
+      "temp_f": 55
     },
     {
       "aqi": null,
@@ -61,31 +61,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T23:37:10.852856Z",
+      "as_of": "2026-10-21T00:07:10.561596Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 62
+      "temp_f": 60
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-20T23:54:26.660881Z",
+      "as_of": "2026-10-21T00:14:37.061801Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 67,
-      "wind_dir_deg": 149,
+      "temp_f": 64,
+      "wind_dir_deg": 181,
       "wind_mph": 3
     },
     {
       "aqi": null,
-      "as_of": "2026-10-20T23:49:10.103494Z",
+      "as_of": "2026-10-21T00:19:09.774959Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 40,
@@ -93,7 +93,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 48
+      "temp_f": 46
     }
   ]
 }
