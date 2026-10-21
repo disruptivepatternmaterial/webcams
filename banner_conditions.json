@@ -16,15 +16,15 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 11
+      "value": 9
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "4bb83e24-6123-57b3-9a51-a60c962a1bca",
-  "last_updated": "2026-10-21T04:22:00Z",
+  "event_id": "fda1e25c-7b3e-5b2d-ba8b-37892565c5dc",
+  "last_updated": "2026-10-21T04:52:00Z",
   "sites": [
     {
       "aqi": null,
@@ -38,8 +38,8 @@
       "temp_f": null
     },
     {
-      "aqi": 11,
-      "as_of": "2026-10-21T04:06:14.379447Z",
+      "aqi": 9,
+      "as_of": "2026-10-21T04:36:14.031919Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -50,7 +50,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-21T03:57:09.527312Z",
+      "as_of": "2026-10-21T04:27:09.775312Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -61,18 +61,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-21T04:07:08.046874Z",
+      "as_of": "2026-10-21T04:37:07.719856Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 56
+      "temp_f": 55
     },
     {
       "aqi": null,
-      "as_of": "2026-10-21T04:16:30.576301Z",
+      "as_of": "2026-10-21T04:36:45.276488Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -85,7 +85,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-21T04:19:07.181826Z",
+      "as_of": "2026-10-21T04:42:50.096846Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 40,
