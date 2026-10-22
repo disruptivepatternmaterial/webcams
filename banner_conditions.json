@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 47
+      "value": 46
     }
   },
   "aqi_by_site": {
@@ -16,15 +16,15 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 9
+      "value": 11
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
-    "value": 41
+    "value": 40
   },
-  "event_id": "dfb65451-508d-5132-a8fe-517ec5af1a8d",
-  "last_updated": "2026-10-22T07:50:00Z",
+  "event_id": "ad6f88ab-8453-56d3-a9b4-f2a14b23d472",
+  "last_updated": "2026-10-22T08:20:00Z",
   "sites": [
     {
       "aqi": null,
@@ -38,19 +38,19 @@
       "temp_f": null
     },
     {
-      "aqi": 9,
-      "as_of": "2026-10-22T07:35:53.803104Z",
+      "aqi": 11,
+      "as_of": "2026-10-22T08:05:53.448304Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 47
+      "temp_f": 46
     },
     {
       "aqi": null,
-      "as_of": "2026-10-22T07:26:52.527392Z",
+      "as_of": "2026-10-22T07:56:52.219348Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -61,7 +61,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-22T07:36:51.175442Z",
+      "as_of": "2026-10-22T08:06:50.871388Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,7 +72,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-22T07:29:22.932867Z",
+      "as_of": "2026-10-22T08:09:45.900781Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -81,19 +81,19 @@
       "stale": false,
       "temp_f": 47,
       "wind_dir_deg": 1,
-      "wind_mph": 15
+      "wind_mph": 10
     },
     {
       "aqi": null,
-      "as_of": "2026-10-22T07:18:49.391423Z",
+      "as_of": "2026-10-22T08:18:48.748385Z",
       "elev_ft": 3166,
       "fog": false,
-      "ground_temp_f": 41,
+      "ground_temp_f": 40,
       "has_aqi": false,
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 35
+      "temp_f": 34
     }
   ]
 }
