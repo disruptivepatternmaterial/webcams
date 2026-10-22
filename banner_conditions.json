@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 61
+      "value": 58
     }
   },
   "aqi_by_site": {
@@ -16,15 +16,15 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 18
+      "value": 16
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "5c0a56d6-2cd0-5f09-a19c-e64cda238b7f",
-  "last_updated": "2026-10-22T00:08:00Z",
+  "event_id": "6d68e45a-9229-5291-8bd0-77a486d73c3c",
+  "last_updated": "2026-10-22T00:20:00Z",
   "sites": [
     {
       "aqi": null,
@@ -38,15 +38,15 @@
       "temp_f": null
     },
     {
-      "aqi": 18,
-      "as_of": "2026-10-21T23:35:59.814931Z",
+      "aqi": 16,
+      "as_of": "2026-10-22T00:05:59.393316Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 61
+      "temp_f": 58
     },
     {
       "aqi": null,
@@ -61,31 +61,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-21T23:36:56.097089Z",
+      "as_of": "2026-10-22T00:06:56.177285Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 62
+      "temp_f": 60
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-21T23:45:43.683978Z",
+      "as_of": "2026-10-22T00:05:54.168009Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 65,
+      "temp_f": 59,
       "wind_dir_deg": 181,
       "wind_mph": 3
     },
     {
       "aqi": null,
-      "as_of": "2026-10-21T23:48:54.301603Z",
+      "as_of": "2026-10-22T00:18:54.033757Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 40,
@@ -93,7 +93,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 51
+      "temp_f": 49
     }
   ]
 }
