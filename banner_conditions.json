@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 42
+      "value": 43
     }
   },
   "aqi_by_site": {
@@ -16,15 +16,15 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 19
+      "value": 11
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "266d7b5c-5f25-5180-9c3b-eb0568a233e0",
-  "last_updated": "2026-10-22T15:38:00Z",
+  "event_id": "e11d7e72-e787-5d1b-b1df-16210296db80",
+  "last_updated": "2026-10-22T15:50:00Z",
   "sites": [
     {
       "aqi": null,
@@ -38,15 +38,15 @@
       "temp_f": null
     },
     {
-      "aqi": 19,
-      "as_of": "2026-10-22T15:05:48.282191Z",
+      "aqi": 11,
+      "as_of": "2026-10-22T15:35:47.943766Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 43
     },
     {
       "aqi": null,
@@ -61,31 +61,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-22T15:06:46.697822Z",
+      "as_of": "2026-10-22T15:36:46.580251Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 44
+      "temp_f": 45
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-22T15:13:32.592235Z",
+      "as_of": "2026-10-22T15:33:43.082612Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 45,
+      "temp_f": 46,
       "wind_dir_deg": 1,
-      "wind_mph": 5
+      "wind_mph": 9
     },
     {
       "aqi": null,
-      "as_of": "2026-10-22T15:18:44.220190Z",
+      "as_of": "2026-10-22T15:48:44.196885Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 40,
@@ -93,7 +93,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 32
+      "temp_f": 31
     }
   ]
 }
