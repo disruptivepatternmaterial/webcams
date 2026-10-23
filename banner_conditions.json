@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 34
+      "value": 33
     }
   },
   "aqi_by_site": {
@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "ae2feb1b-e5a6-5aef-bf32-7d7523dca645",
-  "last_updated": "2026-10-23T12:08:00Z",
+  "event_id": "721ac629-9393-5c0c-8444-7e5b98aa7d4c",
+  "last_updated": "2026-10-23T12:20:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,53 +39,53 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-23T11:35:33.547173Z",
+      "as_of": "2026-10-23T12:05:33.218756Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 34
+      "temp_f": 33
     },
     {
       "aqi": null,
-      "as_of": "2026-10-23T11:56:35.621011Z",
+      "as_of": "2026-10-23T12:18:25.860102Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 33
+      "temp_f": 32
     },
     {
       "aqi": null,
-      "as_of": "2026-10-23T11:42:18.999044Z",
+      "as_of": "2026-10-23T12:06:34.666101Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 33
+      "temp_f": 32
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-23T11:43:28.844435Z",
+      "as_of": "2026-10-23T12:03:37.522665Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 37,
-      "wind_dir_deg": 1,
-      "wind_mph": 5
+      "temp_f": 36,
+      "wind_dir_deg": 340,
+      "wind_mph": 6
     },
     {
       "aqi": null,
-      "as_of": "2026-10-23T11:48:30.759525Z",
+      "as_of": "2026-10-23T12:18:30.469282Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 40,
