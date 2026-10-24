@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 35
+      "value": 34
     }
   },
   "aqi_by_site": {
@@ -21,10 +21,10 @@
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
-    "value": 40
+    "value": 39
   },
-  "event_id": "19eb8199-6073-5f14-be03-30b99b6312d0",
-  "last_updated": "2026-10-24T04:50:00Z",
+  "event_id": "5252d938-8837-53a4-a3d1-fb22e09af1e2",
+  "last_updated": "2026-10-24T05:20:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,29 +39,29 @@
     },
     {
       "aqi": 2,
-      "as_of": "2026-10-24T04:35:21.403514Z",
+      "as_of": "2026-10-24T05:05:21.107938Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 35
+      "temp_f": 34
     },
     {
       "aqi": null,
-      "as_of": "2026-10-24T04:26:25.910467Z",
+      "as_of": "2026-10-24T04:56:25.660200Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 35
+      "temp_f": 36
     },
     {
       "aqi": null,
-      "as_of": "2026-10-24T04:36:24.838126Z",
+      "as_of": "2026-10-24T05:06:24.609909Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -72,23 +72,23 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-24T04:31:25.490052Z",
+      "as_of": "2026-10-24T05:11:44.583040Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 38,
+      "temp_f": 37,
       "wind_dir_deg": 1,
-      "wind_mph": 2
+      "wind_mph": 1
     },
     {
       "aqi": null,
-      "as_of": "2026-10-24T04:32:32.486852Z",
+      "as_of": "2026-10-24T05:18:19.798369Z",
       "elev_ft": 3166,
       "fog": false,
-      "ground_temp_f": 40,
+      "ground_temp_f": 39,
       "has_aqi": false,
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
