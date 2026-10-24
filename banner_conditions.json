@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 36
+      "value": 34
     }
   },
   "aqi_by_site": {
@@ -16,15 +16,15 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 10
+      "value": 9
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "c6881fce-013b-55c3-929b-c883c366bc51",
-  "last_updated": "2026-10-24T01:08:00Z",
+  "event_id": "1dcee158-6deb-5dd0-bff5-b11988479dac",
+  "last_updated": "2026-10-24T01:10:00Z",
   "sites": [
     {
       "aqi": null,
@@ -38,15 +38,15 @@
       "temp_f": null
     },
     {
-      "aqi": 10,
-      "as_of": "2026-10-24T00:35:24.251856Z",
+      "aqi": 9,
+      "as_of": "2026-10-24T01:05:23.900602Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 36
+      "temp_f": 34
     },
     {
       "aqi": null,
@@ -61,27 +61,27 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-24T00:36:27.180283Z",
+      "as_of": "2026-10-24T01:06:26.901158Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 44
+      "temp_f": 41
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-24T00:49:40.393389Z",
+      "as_of": "2026-10-24T01:09:49.972790Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 42,
+      "temp_f": 38,
       "wind_dir_deg": 1,
-      "wind_mph": 2
+      "wind_mph": 3
     },
     {
       "aqi": null,
