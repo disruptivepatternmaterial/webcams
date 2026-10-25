@@ -542,6 +542,7 @@
   "bowman_ridge_high_pt": {
     "images": [
       "Bowman_Ridge_High_Pt_latest.jpg",
+      "Bowman_Ridge_High_Pt_20261025_120739.jpg",
       "Bowman_Ridge_High_Pt_20261024_120739.jpg",
       "Bowman_Ridge_High_Pt_20261023_120739.jpg",
       "Bowman_Ridge_High_Pt_20261022_120739.jpg",
@@ -553,20 +554,30 @@
       "Bowman_Ridge_High_Pt_20261020_172854.jpg",
       "Bowman_Ridge_High_Pt_20261020_172853.jpg",
       "Bowman_Ridge_High_Pt_20261020_172852.jpg",
-      "Bowman_Ridge_High_Pt_20261020_172851.jpg",
-      "Bowman_Ridge_High_Pt_20261020_172850.jpg"
+      "Bowman_Ridge_High_Pt_20261020_172851.jpg"
     ],
     "metadata": {
       "Bowman_Ridge_High_Pt_latest.jpg": {
-        "content_sha256": "008ad99f9a64ba3c108107bdc635e6e6e3d440aed038adf77aefff1030de2ff6",
-        "run_id": "01a16f13-0edf-75b7-a614-06d902e05b01",
+        "content_sha256": "88974a501f85f2c98b2b1591ee7305da85400623af425c1eb085c80f42b3be28",
+        "run_id": "01a17439-bb70-7e7c-8f32-ce71e523f8bd",
         "source": "reconyx",
-        "source_filename": "THM_0183.JPG",
-        "source_media_id": "3c5d402e-97df-45fc-929a-cc8a1ecba217.jpg",
-        "temperature_c": 0.6,
+        "source_filename": "THM_0184.JPG",
+        "source_media_id": "39b82d58-088e-45bf-84ff-50e73910cc38.jpg",
+        "temperature_c": 5.0,
         "temperature_ocr_version": "reconyx-footer-v2",
         "temperature_source": "overlay_ocr",
-        "timestamp": "2026-10-24T19:07:39Z"
+        "timestamp": "2026-10-25T19:07:39Z"
+      },
+      "Bowman_Ridge_High_Pt_20261025_120739.jpg": {
+        "content_sha256": "88974a501f85f2c98b2b1591ee7305da85400623af425c1eb085c80f42b3be28",
+        "run_id": "01a17439-bb70-7e7c-8f32-ce71e523f8bd",
+        "source": "reconyx",
+        "source_filename": "THM_0184.JPG",
+        "source_media_id": "39b82d58-088e-45bf-84ff-50e73910cc38.jpg",
+        "temperature_c": 5.0,
+        "temperature_ocr_version": "reconyx-footer-v2",
+        "temperature_source": "overlay_ocr",
+        "timestamp": "2026-10-25T19:07:39Z"
       },
       "Bowman_Ridge_High_Pt_20261024_120739.jpg": {
         "content_sha256": "008ad99f9a64ba3c108107bdc635e6e6e3d440aed038adf77aefff1030de2ff6",
@@ -699,17 +710,6 @@
         "temperature_ocr_version": "reconyx-footer-v2",
         "temperature_source": null,
         "timestamp": "2026-10-21T00:28:51Z"
-      },
-      "Bowman_Ridge_High_Pt_20261020_172850.jpg": {
-        "content_sha256": "c54905a56a5273a8411d96f917bf8f5bceba387c16b1ac2d011610c17b30c95d",
-        "run_id": "01a15b9a-1197-70c4-953d-5b1b94ab0467",
-        "source": "reconyx",
-        "source_filename": "THM_0171.JPG",
-        "source_media_id": "036870ae-5b1f-45cc-86e4-02098aea4322.jpg",
-        "temperature_c": null,
-        "temperature_ocr_version": "reconyx-footer-v2",
-        "temperature_source": null,
-        "timestamp": "2026-10-21T00:28:50Z"
       }
     }
   }
