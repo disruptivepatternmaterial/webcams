@@ -2,11 +2,11 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 42
+      "value": 43
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 37
+      "value": 38
     }
   },
   "aqi_by_site": {
@@ -16,37 +16,37 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 7
+      "value": 4
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 39
   },
-  "event_id": "f107e9f5-a448-5a40-8478-60d2c046ad90",
-  "last_updated": "2026-10-25T06:08:00Z",
+  "event_id": "25becc1a-ea51-5117-8c4c-3b9f4095f1c0",
+  "last_updated": "2026-10-25T06:10:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-10-25T05:05:54.605751Z",
+      "as_of": "2026-10-25T06:03:37.273857Z",
       "elev_ft": 3355,
       "fog": null,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 43
     },
     {
-      "aqi": 7,
-      "as_of": "2026-10-25T05:57:25.718969Z",
+      "aqi": 4,
+      "as_of": "2026-10-25T06:05:03.356762Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 37,
+      "temp_f": 38,
       "wind_dir_deg": 237,
       "wind_mph": 12
     },
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-25T05:36:11.219985Z",
+      "as_of": "2026-10-25T06:06:10.186986Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-25T05:43:21.596070Z",
+      "as_of": "2026-10-25T06:03:32.037507Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -83,11 +83,11 @@
       "stale": false,
       "temp_f": 40,
       "wind_dir_deg": 1,
-      "wind_mph": 1
+      "wind_mph": 2
     },
     {
       "aqi": null,
-      "as_of": "2026-10-25T05:48:03.686773Z",
+      "as_of": "2026-10-25T06:02:19.862433Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 39,
