@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 43
+      "value": 45
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,23 +23,23 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "92b7c27a-a6c3-5eb5-8b12-47e22d51920f",
-  "last_updated": "2026-10-26T17:08:00Z",
+  "event_id": "eb04db7c-9da1-56da-ae84-e25503bdd018",
+  "last_updated": "2026-10-26T17:10:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-10-26T16:02:27.372239Z",
+      "as_of": "2026-10-26T17:09:59.091861Z",
       "elev_ft": 3355,
       "fog": null,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 43
+      "temp_f": 45
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-26T16:36:36.789211Z",
+      "as_of": "2026-10-26T17:06:44.530312Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -47,8 +47,8 @@
       "label": "N Twin West Ridge",
       "stale": false,
       "temp_f": 40,
-      "wind_dir_deg": 223,
-      "wind_mph": 0
+      "wind_dir_deg": 213,
+      "wind_mph": 2
     },
     {
       "aqi": null,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-26T16:35:50.029468Z",
+      "as_of": "2026-10-26T17:05:49.760255Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,20 +74,20 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-26T16:40:06.796779Z",
+      "as_of": "2026-10-26T17:02:05.526850Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 44,
+      "temp_f": 43,
       "wind_dir_deg": 1,
-      "wind_mph": 1
+      "wind_mph": 2
     },
     {
       "aqi": null,
-      "as_of": "2026-10-26T16:47:40.740094Z",
+      "as_of": "2026-10-26T17:02:02.111847Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
@@ -95,7 +95,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 40
+      "temp_f": 41
     }
   ]
 }
