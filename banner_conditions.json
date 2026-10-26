@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "ccdfb1fd-2b88-5997-9b79-a49a821532e4",
-  "last_updated": "2026-10-26T18:26:00Z",
+  "event_id": "85cc5ec5-be34-5c0e-8b4a-2c39d93bb114",
+  "last_updated": "2026-10-26T18:30:00Z",
   "sites": [
     {
       "aqi": null,
@@ -52,7 +52,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-26T17:55:49.901144Z",
+      "as_of": "2026-10-26T18:25:49.641421Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -74,16 +74,16 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-26T18:00:46.518829Z",
+      "as_of": "2026-10-26T18:20:55.460437Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 43,
-      "wind_dir_deg": 1,
-      "wind_mph": 0
+      "temp_f": 44,
+      "wind_dir_deg": 91,
+      "wind_mph": 1
     },
     {
       "aqi": null,
