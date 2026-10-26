@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 43
+      "value": 44
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -16,30 +16,30 @@
     },
     "n_twin": {
       "unit": null,
-      "value": 0
+      "value": 2
     }
   },
   "dailey_prairie_ground_temp": {
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "3c408a08-868f-53d0-a069-9e008e364286",
-  "last_updated": "2026-10-26T08:38:00Z",
+  "event_id": "32a4f385-f6de-5d3d-9622-25d8920b2d4c",
+  "last_updated": "2026-10-26T08:40:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-10-26T07:31:21.712045Z",
+      "as_of": "2026-10-26T08:33:02.196177Z",
       "elev_ft": 3355,
       "fog": null,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 43
+      "temp_f": 44
     },
     {
-      "aqi": 0,
-      "as_of": "2026-10-26T08:04:44.749488Z",
+      "aqi": 2,
+      "as_of": "2026-10-26T08:34:44.444524Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -47,7 +47,7 @@
       "label": "N Twin West Ridge",
       "stale": false,
       "temp_f": 38,
-      "wind_dir_deg": 198,
+      "wind_dir_deg": 172,
       "wind_mph": 3
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-26T08:05:55.047733Z",
+      "as_of": "2026-10-26T08:35:54.710295Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,20 +74,20 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-26T08:16:03.361635Z",
+      "as_of": "2026-10-26T08:36:15.012410Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 42,
+      "temp_f": 41,
       "wind_dir_deg": 1,
       "wind_mph": 2
     },
     {
       "aqi": null,
-      "as_of": "2026-10-26T08:17:46.308421Z",
+      "as_of": "2026-10-26T08:32:06.372778Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
