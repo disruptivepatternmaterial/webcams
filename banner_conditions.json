@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "7b4694a5-8a23-5145-9b7c-68f974bfb432",
-  "last_updated": "2026-10-27T01:48:00Z",
+  "event_id": "e11804d9-e507-578a-bc54-a7607667281b",
+  "last_updated": "2026-10-27T01:50:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": 14,
-      "as_of": "2026-10-27T01:38:57.596434Z",
+      "as_of": "2026-10-27T01:47:14.812343Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-27T01:25:10.913646Z",
+      "as_of": "2026-10-27T01:45:20.469154Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -87,7 +87,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-27T01:31:57.648288Z",
+      "as_of": "2026-10-27T01:47:34.748374Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
@@ -95,7 +95,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 39
+      "temp_f": 38
     }
   ]
 }
