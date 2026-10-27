@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "a099cdd9-50ae-58c8-8684-b908b0d3c150",
-  "last_updated": "2026-10-27T16:18:00Z",
+  "event_id": "374ca2d2-d06a-5eff-bab5-d243afaad4e5",
+  "last_updated": "2026-10-27T16:20:00Z",
   "sites": [
     {
       "aqi": null,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-27T16:05:36.382402Z",
+      "as_of": "2026-10-27T16:19:24.141285Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-27T16:01:31.167153Z",
+      "as_of": "2026-10-27T16:12:10.748835Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -83,11 +83,11 @@
       "stale": false,
       "temp_f": 37,
       "wind_dir_deg": 91,
-      "wind_mph": 2
+      "wind_mph": 6
     },
     {
       "aqi": null,
-      "as_of": "2026-10-27T16:01:50.237140Z",
+      "as_of": "2026-10-27T16:17:25.108599Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
