@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 30
+      "value": 31
     }
   },
   "aqi_by_site": {
@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "6e4a6d6a-bef7-5776-8b07-858e8b8231b8",
-  "last_updated": "2026-10-28T17:33:06.205369Z",
+  "event_id": "81acf005-8233-5ed9-b7e5-1e04c91832ed",
+  "last_updated": "2026-10-28T17:38:00Z",
   "sites": [
     {
       "aqi": 30,
@@ -39,14 +39,14 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T17:04:04.290030Z",
+      "as_of": "2026-10-28T17:34:03.945869Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 30,
+      "temp_f": 31,
       "wind_dir_deg": null,
       "wind_mph": null
     },
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T17:19:11.407218Z",
+      "as_of": "2026-10-28T17:35:22.396473Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-28T17:24:06.135094Z",
+      "as_of": "2026-10-28T17:30:48.533188Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -87,7 +87,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T17:17:08.960502Z",
+      "as_of": "2026-10-28T17:31:37.505045Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
