@@ -452,6 +452,9 @@
   "woods_cam_003": {
     "images": [
       "Woods_Cam_003_latest.jpg",
+      "Woods_Cam_003_20261027_170123.jpg",
+      "Woods_Cam_003_20261027_160122.jpg",
+      "Woods_Cam_003_20261027_150122.jpg",
       "Woods_Cam_003_20261027_140122.jpg",
       "Woods_Cam_003_20261027_130121.jpg",
       "Woods_Cam_003_20261027_120122.jpg",
@@ -461,16 +464,28 @@
       "Woods_Cam_003_20261027_080121.jpg",
       "Woods_Cam_003_20261026_130110.jpg",
       "Woods_Cam_003_20261026_120122.jpg",
-      "Woods_Cam_003_20261026_110110.jpg",
-      "Woods_Cam_003_20261026_100110.jpg",
-      "Woods_Cam_003_20261026_090110.jpg",
-      "Woods_Cam_003_20261026_080110.jpg"
+      "Woods_Cam_003_20261026_110110.jpg"
     ],
     "metadata": {
       "Woods_Cam_003_latest.jpg": {
-        "run_id": "01a17eee-ed18-7324-909b-0c67a1b64220",
+        "run_id": "01a17f93-ceda-707d-837a-6ffe0ede7e89",
         "temperature_c": null,
-        "timestamp": "2026-10-27T21:01:22Z"
+        "timestamp": "2026-10-28T00:01:23Z"
+      },
+      "Woods_Cam_003_20261027_170123.jpg": {
+        "run_id": "01a17f93-ceda-707d-837a-6ffe0ede7e89",
+        "temperature_c": null,
+        "timestamp": "2026-10-28T00:01:23Z"
+      },
+      "Woods_Cam_003_20261027_160122.jpg": {
+        "run_id": "01a17f93-ceda-707d-837a-6ffe0ede7e89",
+        "temperature_c": null,
+        "timestamp": "2026-10-27T23:01:22Z"
+      },
+      "Woods_Cam_003_20261027_150122.jpg": {
+        "run_id": "01a17f93-ceda-707d-837a-6ffe0ede7e89",
+        "temperature_c": null,
+        "timestamp": "2026-10-27T22:01:22Z"
       },
       "Woods_Cam_003_20261027_140122.jpg": {
         "run_id": "01a17eee-ed18-7324-909b-0c67a1b64220",
@@ -521,21 +536,6 @@
         "run_id": "01a17923-acf5-7536-ab86-3403504ca821",
         "temperature_c": null,
         "timestamp": "2026-10-26T18:01:10Z"
-      },
-      "Woods_Cam_003_20261026_100110.jpg": {
-        "run_id": "01a178ec-b592-7291-b81e-48da3c995981",
-        "temperature_c": null,
-        "timestamp": "2026-10-26T17:01:10Z"
-      },
-      "Woods_Cam_003_20261026_090110.jpg": {
-        "run_id": "01a178b5-bdc7-7eac-8fc7-f60cf5283c1a",
-        "temperature_c": null,
-        "timestamp": "2026-10-26T16:01:10Z"
-      },
-      "Woods_Cam_003_20261026_080110.jpg": {
-        "run_id": "01a1787e-c62e-750e-ab21-5c10fa85a6e4",
-        "temperature_c": null,
-        "timestamp": "2026-10-26T15:01:10Z"
       }
     }
   },
