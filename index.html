@@ -903,8 +903,7 @@
         }
 
         // Render the AQI + Dailey Prairie ground temperature banner from
-        // banner_conditions.json (written every 2 minutes by the Prefect
-        // banner-conditions-publish deployment on the BowmanMtn host).
+        // banner_conditions.json (written by Node-RED on the BowmanMtn host).
         // Data fidelity: a numeric 0 from a sensor is real data; null / unknown
         // / unavailable / non-finite values render as "—" but never as 0.
         function bannerNumeric(value) {
