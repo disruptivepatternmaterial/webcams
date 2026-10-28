@@ -6,13 +6,13 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 32
+      "value": 31
     }
   },
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 0
+      "value": 11
     },
     "n_twin": {
       "unit": null,
@@ -23,14 +23,14 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "d6b99809-ab64-5b58-8cc8-60582e2682d2",
-  "last_updated": "2026-10-28T19:08:00Z",
+  "event_id": "b3815b69-72b3-5212-a3d2-af59c3d29a02",
+  "last_updated": "2026-10-28T19:16:00Z",
   "sites": [
     {
-      "aqi": 0,
-      "as_of": "2026-10-28T18:31:10Z",
+      "aqi": 11,
+      "as_of": "2026-10-28T19:00:55.957108Z",
       "elev_ft": 3355,
-      "fog": false,
+      "fog": true,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
@@ -39,14 +39,14 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T18:46:47.417201Z",
+      "as_of": "2026-10-28T19:04:02.945556Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 32,
+      "temp_f": 31,
       "wind_dir_deg": null,
       "wind_mph": null
     },
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T18:59:10.498532Z",
+      "as_of": "2026-10-28T19:05:21.156417Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,20 +74,20 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-28T18:44:44.116630Z",
+      "as_of": "2026-10-28T19:04:54.567709Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 36,
+      "temp_f": 35,
       "wind_dir_deg": 1,
       "wind_mph": 0
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T18:47:07.945265Z",
+      "as_of": "2026-10-28T19:01:36.994347Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
@@ -95,7 +95,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 34
+      "temp_f": 33
     }
   ]
 }
