@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 31
+      "value": 30
     }
   },
   "aqi_by_site": {
@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "59d3c24b-2a02-5377-a143-30bdf8eed1f0",
-  "last_updated": "2026-10-28T03:08:00Z",
+  "event_id": "e45a9b0f-ebcb-55b4-9cb6-4ecc8a7e5434",
+  "last_updated": "2026-10-28T03:10:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,14 +39,14 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T02:46:57.972968Z",
+      "as_of": "2026-10-28T03:04:14.022807Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 31,
+      "temp_f": 30,
       "wind_dir_deg": null,
       "wind_mph": null
     },
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T02:59:18.733845Z",
+      "as_of": "2026-10-28T03:05:30.174884Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-28T02:57:16.079726Z",
+      "as_of": "2026-10-28T03:02:20.250155Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -87,7 +87,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T02:47:18.222068Z",
+      "as_of": "2026-10-28T03:01:44.965658Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
@@ -95,7 +95,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 36
+      "temp_f": 35
     }
   ]
 }
