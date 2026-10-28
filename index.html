@@ -638,8 +638,8 @@
                 <!-- Per-location cards are rendered here from banner_conditions.json
                      (sites array) by loadBannerConditions(). -->
                 <div id="banner-sites" style="display: contents;"></div>
-                <div class="banner-stat banner-forecast"><span id="stat-hike-today-label" class="banner-stat-label">Today hike, 5000 ft</span><span id="stat-hike-today" class="banner-stat-value">—</span><span id="stat-hike-today-syn" class="banner-stat-synopsis"></span></div>
-                <div class="banner-stat banner-forecast"><span id="stat-hike-tomorrow-label" class="banner-stat-label">Tomorrow hike, 5000 ft</span><span id="stat-hike-tomorrow" class="banner-stat-value">—</span><span id="stat-hike-tomorrow-syn" class="banner-stat-synopsis"></span></div>
+                <div class="banner-stat banner-forecast"><span class="banner-stat-label">Today hike</span><span id="stat-hike-today" class="banner-stat-value">—</span><span id="stat-hike-today-syn" class="banner-stat-synopsis"></span></div>
+                <div class="banner-stat banner-forecast"><span class="banner-stat-label">Tomorrow hike</span><span id="stat-hike-tomorrow" class="banner-stat-value">—</span><span id="stat-hike-tomorrow-syn" class="banner-stat-synopsis"></span></div>
                 <div id="stat-avalanche" class="banner-stat banner-avalanche" hidden><span class="banner-stat-label">Avalanche danger</span><span id="stat-avalanche-value" class="banner-stat-value">—</span><span id="stat-avalanche-syn" class="banner-stat-synopsis"></span></div>
             </div>
             <span id="banner-conditions-time" class="banner-time"></span>
@@ -1085,17 +1085,11 @@
             return pacificDateString(new Date(Date.now() + 24 * 3600 * 1000));
         }
 
-        function formatForecastLabel(prefix, day) {
-            const act = (day && day.activity === "ski") ? "ski" : "hike";
-            const band = (day && day.band_ft != null) ? day.band_ft : 5000;
-            return prefix + " " + act + ", " + band + " ft";
-        }
-
-        function formatForecastScore(day) {
-            const s = day
-                ? (day.score != null ? day.score : (day.hike_hi != null ? day.hike_hi : day.hike_lo))
-                : null;
-            return s == null ? "—" : (String(s) + "/10");
+        function formatHikeRange(lo, hi) {
+            if (lo == null && hi == null) return "—";
+            if (lo == null) return String(hi);
+            if (hi == null) return String(lo);
+            return lo === hi ? String(lo) : (lo + "\u2013" + hi);
         }
 
         // NWAC danger for today (falls back to tomorrow's when today's product
@@ -1147,8 +1141,6 @@
         }
 
         async function loadTwinsForecast() {
-            const todayLabelEl = document.getElementById("stat-hike-today-label");
-            const tomLabelEl = document.getElementById("stat-hike-tomorrow-label");
             const todayEl = document.getElementById("stat-hike-today");
             const tomEl = document.getElementById("stat-hike-tomorrow");
             const todaySyn = document.getElementById("stat-hike-today-syn");
@@ -1173,15 +1165,13 @@
                 if (!todayDay) { renderForecastEmpty("Forecast stale"); return; }
                 const tomDay = byDate[tomorrow] || null;
 
-                if (todayLabelEl) todayLabelEl.textContent = formatForecastLabel("Today", todayDay);
-                todayEl.textContent = formatForecastScore(todayDay);
+                todayEl.textContent = formatHikeRange(todayDay.hike_lo, todayDay.hike_hi);
                 if (todaySyn) {
                     todaySyn.textContent = todayDay.synopsis || "";
                     todaySyn.classList.toggle("red-flag", !!todayDay.red_flag);
                 }
                 if (tomDay) {
-                    if (tomLabelEl) tomLabelEl.textContent = formatForecastLabel("Tomorrow", tomDay);
-                    tomEl.textContent = formatForecastScore(tomDay);
+                    tomEl.textContent = formatHikeRange(tomDay.hike_lo, tomDay.hike_hi);
                     if (tomSyn) {
                     tomSyn.textContent = tomDay.synopsis || "";
                     tomSyn.classList.toggle("red-flag", !!tomDay.red_flag);
