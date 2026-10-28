@@ -11,7 +11,7 @@
       "label": "General Information",
       "paragraphs": [
         "This project is a live mountain conditions feed for Bowman Ridge, N Twin, and the west ridge corridor along the Middle Fork Area. It exists to make route planning safer and more informed.",
-        "AQI is currently reported at two locations (Bowman Mtn and N Twin), with additional temperature context from ridge sensors and the Dailey Prairie ground station.",
+        "This is an ongoing backcountry experiment: ridge sensors run on solar in harsh mountain weather and can ice up or drop out, and the elevation forecast is a model estimate. Treat these numbers as a supplement to official weather and avalanche forecasts, and rely on sound judgment in the outdoors.",
         "I keep a <a href=\"{base}MIDDLE-FORK-FIELD-GUIDE.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Middle Fork field guide</a> of area notes and references, compiled from available sources, not an official historical record. A companion write-up on <a href=\"{base}TWINS-WEATHER-AND-SENSORS-NARRATIVE.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Twins weather and sensors</a> covers how the ridge instruments relate to what you see on the cameras."
       ]
     },
@@ -64,7 +64,7 @@
     "n_twin": {
       "description": "N Twin: about 4200 feet, along the logging road up to the N Twin NW Ridge.",
       "windyUrl": "https://www.windy.com/station/pws-A1QVv3Du?48.720,-122.062,13,p:temp",
-      "defaultStatus": "Battery Unstable"
+      "defaultStatus": "Cell Unstable"
     },
     "w_ridge_n_twin": {
       "description": "W Ridge N Twin: about 4600 feet. Trail camera on West Ridge looking toward N Twin skin up track.",
