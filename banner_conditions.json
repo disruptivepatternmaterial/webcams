@@ -23,14 +23,14 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "b81c9406-1664-536c-824e-6fa10c888272",
-  "last_updated": "2026-10-28T14:02:00Z",
+  "event_id": "fd53232b-56e6-5298-8061-326984c48f18",
+  "last_updated": "2026-10-28T14:08:00Z",
   "sites": [
     {
       "aqi": 69,
-      "as_of": "2026-10-28T13:31:12.791089Z",
+      "as_of": "2026-10-28T14:00:55Z",
       "elev_ft": 3355,
-      "fog": false,
+      "fog": true,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
