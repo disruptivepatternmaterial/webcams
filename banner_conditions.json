@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": null
+      "value": 31
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -12,7 +12,7 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": null
+      "value": 62
     },
     "n_twin": {
       "unit": null,
@@ -23,23 +23,23 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "256fae5b-6940-5a6c-aeba-88b66510a9fa",
-  "last_updated": "2026-10-28T13:08:00Z",
+  "event_id": "65bb7c4e-4b6c-5cd3-8003-ac5c419fcda7",
+  "last_updated": "2026-10-28T13:10:00Z",
   "sites": [
     {
-      "aqi": null,
-      "as_of": null,
+      "aqi": 62,
+      "as_of": "2026-10-28T13:01:07.533506Z",
       "elev_ft": 3355,
-      "fog": null,
+      "fog": true,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
-      "stale": true,
-      "temp_f": null
+      "stale": false,
+      "temp_f": 31
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T12:46:51.467049Z",
+      "as_of": "2026-10-28T13:04:07.061692Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T12:59:13.219320Z",
+      "as_of": "2026-10-28T13:05:24.566387Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-28T12:41:52.209063Z",
+      "as_of": "2026-10-28T13:02:01.692780Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -87,7 +87,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-28T12:47:11.838635Z",
+      "as_of": "2026-10-28T13:01:39.662548Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
