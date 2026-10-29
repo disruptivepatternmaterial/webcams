@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 31
+      "value": 32
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,23 +23,23 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "0e098856-d64b-5865-bc4d-94060fe46d8d",
-  "last_updated": "2026-10-29T10:50:00Z",
+  "event_id": "02788f64-0738-5f28-adf7-5ad8d4ba96e4",
+  "last_updated": "2026-10-29T11:20:00Z",
   "sites": [
     {
       "aqi": 0,
-      "as_of": "2026-10-29T10:03:36.214050Z",
+      "as_of": "2026-10-29T11:01:42.417220Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 31
+      "temp_f": 32
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T10:46:36.830191Z",
+      "as_of": "2026-10-29T11:03:51.773623Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -52,7 +52,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T10:25:12.701667Z",
+      "as_of": "2026-10-29T10:55:12.448441Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -63,18 +63,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T10:41:01.949225Z",
+      "as_of": "2026-10-29T11:05:12.602294Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 31
+      "temp_f": 32
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-29T10:32:13.738262Z",
+      "as_of": "2026-10-29T11:12:32.842640Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -83,11 +83,11 @@
       "stale": false,
       "temp_f": 30,
       "wind_dir_deg": 91,
-      "wind_mph": 7
+      "wind_mph": 8
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T10:46:57.669640Z",
+      "as_of": "2026-10-29T11:16:57.391332Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
