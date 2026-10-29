@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "67598c91-6126-5fc2-a2d1-48446b7a806f",
-  "last_updated": "2026-10-29T14:50:00Z",
+  "event_id": "47b7c678-afdb-5289-ab0d-53cce317a8b9",
+  "last_updated": "2026-10-29T15:08:00Z",
   "sites": [
     {
       "aqi": 0,
@@ -52,14 +52,14 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T14:25:10.421218Z",
+      "as_of": "2026-10-29T14:55:10.143480Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 31
+      "temp_f": 30
     },
     {
       "aqi": null,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-29T14:34:07.441359Z",
+      "as_of": "2026-10-29T14:54:17.015472Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -83,7 +83,7 @@
       "stale": false,
       "temp_f": 31,
       "wind_dir_deg": 91,
-      "wind_mph": 4
+      "wind_mph": 1
     },
     {
       "aqi": null,
