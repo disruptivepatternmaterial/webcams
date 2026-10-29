@@ -12,7 +12,7 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 0
+      "value": null
     },
     "n_twin": {
       "unit": null,
@@ -23,11 +23,11 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "fdba95ce-7a91-5551-b2c0-59e6b6218b7d",
-  "last_updated": "2026-10-29T23:24:00Z",
+  "event_id": "84cfe827-2a16-5a2d-9bdb-ebe8184925e7",
+  "last_updated": "2026-10-29T23:38:00Z",
   "sites": [
     {
-      "aqi": 0,
+      "aqi": null,
       "as_of": "2026-10-29T22:32:38Z",
       "elev_ft": 3355,
       "fog": false,
@@ -52,7 +52,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T22:55:05.587728Z",
+      "as_of": "2026-10-29T23:25:05.249471Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
