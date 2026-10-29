@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "83f6d84d-a3db-5387-bf6e-cb131443ed24",
-  "last_updated": "2026-10-29T05:20:00Z",
+  "event_id": "50e4e516-f04f-58f8-af36-c2ab8b39ac30",
+  "last_updated": "2026-10-29T05:50:00Z",
   "sites": [
     {
       "aqi": 0,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T05:03:55.921669Z",
+      "as_of": "2026-10-29T05:46:40.103446Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -52,7 +52,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T04:55:15.820687Z",
+      "as_of": "2026-10-29T05:25:15.505459Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T05:05:15.556416Z",
+      "as_of": "2026-10-29T05:41:04.466425Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-29T05:09:40.036068Z",
+      "as_of": "2026-10-29T05:29:49.594594Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -82,12 +82,12 @@
       "label": "Bowman Ridge",
       "stale": false,
       "temp_f": 31,
-      "wind_dir_deg": 91,
-      "wind_mph": 1
+      "wind_dir_deg": 1,
+      "wind_mph": 0
     },
     {
       "aqi": null,
-      "as_of": "2026-10-29T05:17:01.166876Z",
+      "as_of": "2026-10-29T05:47:01.145626Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
