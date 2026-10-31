@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 43
+      "value": 44
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -12,7 +12,7 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 3
+      "value": 1
     },
     "n_twin": {
       "unit": null,
@@ -23,23 +23,23 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "58cd417e-2f65-5445-8900-4cd42b13a5b4",
-  "last_updated": "2026-10-31T20:08:00Z",
+  "event_id": "c0751acb-e52f-5094-984d-dd7a14b39211",
+  "last_updated": "2026-10-31T20:20:00Z",
   "sites": [
     {
-      "aqi": 3,
-      "as_of": "2026-10-31T19:31:04.195036Z",
+      "aqi": 1,
+      "as_of": "2026-10-31T20:01:11.239188Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 43
+      "temp_f": 44
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T19:33:12.200568Z",
+      "as_of": "2026-10-31T20:03:11.840783Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -52,25 +52,25 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T19:54:39.819095Z",
+      "as_of": "2026-10-31T20:00:37.366356Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 38
+      "temp_f": 37
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T19:34:40.155148Z",
+      "as_of": "2026-10-31T20:04:39.895996Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 46
+      "temp_f": 44
     },
     {
       "aqi": 0,
@@ -87,7 +87,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T19:46:21.279236Z",
+      "as_of": "2026-10-31T20:01:00.647624Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
@@ -95,7 +95,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 38
+      "temp_f": 37
     }
   ]
 }
