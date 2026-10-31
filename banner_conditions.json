@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "023d0466-11c1-57fb-ab94-f79f4943d55c",
-  "last_updated": "2026-10-31T03:38:00Z",
+  "event_id": "fbfe70e0-b463-5e07-8142-150b147c3077",
+  "last_updated": "2026-10-31T03:50:00Z",
   "sites": [
     {
       "aqi": 0,
-      "as_of": "2026-10-31T03:31:05Z",
+      "as_of": "2026-10-31T03:31:07.359141Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T03:28:09.813794Z",
+      "as_of": "2026-10-31T03:33:23.333453Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -52,7 +52,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T03:24:49.432077Z",
+      "as_of": "2026-10-31T03:30:46.210861Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T03:10:40.320742Z",
+      "as_of": "2026-10-31T03:34:49.230194Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-31T03:11:33.895192Z",
+      "as_of": "2026-10-31T03:31:43.449421Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -83,11 +83,11 @@
       "stale": false,
       "temp_f": 33,
       "wind_dir_deg": 271,
-      "wind_mph": 0
+      "wind_mph": 3
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T03:16:31.551456Z",
+      "as_of": "2026-10-31T03:46:31.237264Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
