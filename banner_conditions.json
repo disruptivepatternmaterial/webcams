@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 31
+      "value": 32
     }
   },
   "aqi_by_site": {
@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "fa2a703a-9d1b-514c-8c91-4b325d4499e0",
-  "last_updated": "2026-10-31T17:38:00Z",
+  "event_id": "8740372e-12db-57e2-9ec0-5c7b0df1d8c4",
+  "last_updated": "2026-10-31T17:50:00Z",
   "sites": [
     {
       "aqi": 0,
@@ -39,20 +39,20 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T17:03:13.957619Z",
+      "as_of": "2026-10-31T17:33:13.689464Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 31,
+      "temp_f": 32,
       "wind_dir_deg": null,
       "wind_mph": null
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T17:24:41.261133Z",
+      "as_of": "2026-10-31T17:30:38.727370Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -63,31 +63,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T17:04:41.638835Z",
+      "as_of": "2026-10-31T17:34:41.313552Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 33
+      "temp_f": 35
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-31T17:18:14.768636Z",
+      "as_of": "2026-10-31T17:38:24.348977Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 36,
-      "wind_dir_deg": 91,
+      "temp_f": 37,
+      "wind_dir_deg": 44,
       "wind_mph": 2
     },
     {
       "aqi": null,
-      "as_of": "2026-10-31T17:16:22.638297Z",
+      "as_of": "2026-10-31T17:40:33.949428Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 42,
@@ -95,7 +95,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 30
+      "temp_f": 31
     }
   ]
 }
