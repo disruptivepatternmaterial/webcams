@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 31
+      "value": 32
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,19 +23,19 @@
     "unit": "\u00b0F",
     "value": 42
   },
-  "event_id": "678def2d-276a-55af-b6ef-dc7863bf2e53",
-  "last_updated": "2026-10-30T23:52:00Z",
+  "event_id": "40f90e3f-c883-5b71-9bce-508400156d39",
+  "last_updated": "2026-10-31T00:08:00Z",
   "sites": [
     {
       "aqi": 74,
-      "as_of": "2026-10-30T23:33:04Z",
+      "as_of": "2026-10-31T00:03:04Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 31
+      "temp_f": 32
     },
     {
       "aqi": null,
@@ -52,7 +52,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-30T23:30:48.381941Z",
+      "as_of": "2026-10-30T23:54:51.220645Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
@@ -63,18 +63,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-10-30T23:34:51.503795Z",
+      "as_of": "2026-10-30T23:50:42.052984Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 34
+      "temp_f": 33
     },
     {
       "aqi": 0,
-      "as_of": "2026-10-30T23:49:53.313650Z",
+      "as_of": "2026-10-30T23:49:59.362108Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
