@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 35
+      "value": 34
     }
   },
   "aqi_by_site": {
@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "fd6033fb-1814-5f5f-a8be-25cd6c1503b8",
-  "last_updated": "2026-11-02T02:08:00Z",
+  "event_id": "dbd75ae0-8e43-5e28-a504-e9726a435231",
+  "last_updated": "2026-11-02T02:22:00Z",
   "sites": [
     {
       "aqi": 0,
@@ -39,14 +39,14 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T01:32:50.807921Z",
+      "as_of": "2026-11-02T02:02:50.474257Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 35,
+      "temp_f": 34,
       "wind_dir_deg": null,
       "wind_mph": null
     },
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T01:34:22.730158Z",
+      "as_of": "2026-11-02T02:04:22.434625Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-02T01:53:40.416864Z",
+      "as_of": "2026-11-02T02:13:50.817115Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
@@ -82,12 +82,12 @@
       "label": "Bowman Ridge",
       "stale": false,
       "temp_f": 37,
-      "wind_dir_deg": 58,
+      "wind_dir_deg": 91,
       "wind_mph": 2
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T01:46:02.301788Z",
+      "as_of": "2026-11-02T02:16:01.691428Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
