@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 37
+      "value": 35
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -12,7 +12,7 @@
   "aqi_by_site": {
     "bowman_mtn": {
       "unit": null,
-      "value": 4
+      "value": 2
     },
     "n_twin": {
       "unit": null,
@@ -23,23 +23,23 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "b42ec926-b2de-5de3-a4d2-875091bbdb9c",
-  "last_updated": "2026-11-02T09:52:00Z",
+  "event_id": "7e06043f-e510-5e66-bf06-a5d79e8dd81f",
+  "last_updated": "2026-11-02T10:22:00Z",
   "sites": [
     {
-      "aqi": 4,
-      "as_of": "2026-11-02T09:31:06.523724Z",
+      "aqi": 2,
+      "as_of": "2026-11-02T10:01:17.024406Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 37
+      "temp_f": 35
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T09:32:45.125743Z",
+      "as_of": "2026-11-02T10:02:44.757670Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -52,18 +52,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T09:24:18.136305Z",
+      "as_of": "2026-11-02T09:54:17.807069Z",
       "elev_ft": 4731,
       "fog": false,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 34
+      "temp_f": 35
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T09:34:18.150576Z",
+      "as_of": "2026-11-02T10:04:17.824685Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,20 +74,20 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-02T09:37:23.766719Z",
+      "as_of": "2026-11-02T10:17:38.981819Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 38,
-      "wind_dir_deg": 52,
+      "temp_f": 37,
+      "wind_dir_deg": 91,
       "wind_mph": 2
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T09:45:57.106328Z",
+      "as_of": "2026-11-02T10:15:56.684476Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
