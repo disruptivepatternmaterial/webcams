@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "cd070338-b574-548a-8123-d9ae4c5a54bf",
-  "last_updated": "2026-11-02T20:38:00Z",
+  "event_id": "2418a501-3aee-5bf7-b941-69111de6c643",
+  "last_updated": "2026-11-02T20:52:00Z",
   "sites": [
     {
       "aqi": 13,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T20:29:25.990524Z",
+      "as_of": "2026-11-02T20:32:37.204019Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T20:11:05.082102Z",
+      "as_of": "2026-11-02T20:34:11.878279Z",
       "elev_ft": 3750,
       "fog": false,
       "has_aqi": false,
@@ -74,20 +74,20 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-02T20:22:26.405149Z",
+      "as_of": "2026-11-02T20:42:34.995795Z",
       "elev_ft": 3990,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_ridge",
       "label": "Bowman Ridge",
       "stale": false,
-      "temp_f": 50,
-      "wind_dir_deg": 5,
-      "wind_mph": 13
+      "temp_f": 52,
+      "wind_dir_deg": 181,
+      "wind_mph": 14
     },
     {
       "aqi": null,
-      "as_of": "2026-11-02T20:15:50.389247Z",
+      "as_of": "2026-11-02T20:45:50.123026Z",
       "elev_ft": 3166,
       "fog": false,
       "ground_temp_f": 41,
@@ -95,7 +95,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 36
+      "temp_f": 38
     }
   ]
 }
