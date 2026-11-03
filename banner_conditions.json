@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 42
+      "value": 41
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,19 +23,19 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "4be80fe5-7952-57b0-ab70-5bc18c9e6f16",
-  "last_updated": "2026-11-03T14:52:00Z",
+  "event_id": "761eb170-04ee-5250-b22c-d35d17d2d024",
+  "last_updated": "2026-11-03T15:08:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-03T14:31:17Z",
+      "as_of": "2026-11-03T15:01:18Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 41
     },
     {
       "aqi": null,
@@ -52,14 +52,14 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T14:43:04.393026Z",
+      "as_of": "2026-11-03T14:54:00.577014Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 32
+      "temp_f": 41
     },
     {
       "aqi": null,
@@ -74,16 +74,16 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T14:31:16.099362Z",
+      "as_of": "2026-11-03T15:01:11Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
       "stale": false,
-      "temp_f": 45,
+      "temp_f": 43,
       "wind_dir_deg": 1,
-      "wind_mph": 5
+      "wind_mph": 4
     },
     {
       "aqi": 0,
