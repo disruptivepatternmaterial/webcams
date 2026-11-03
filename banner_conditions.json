@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 41
   },
-  "event_id": "c7800723-9031-559c-89cc-d173a8d1a3a6",
-  "last_updated": "2026-11-03T06:22:00Z",
+  "event_id": "eea1bd07-dc59-55ca-84dc-8406198dba84",
+  "last_updated": "2026-11-03T06:40:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:01:18Z",
+      "as_of": "2026-11-03T06:31:18Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -52,14 +52,14 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:13:10.175767Z",
+      "as_of": "2026-11-03T06:24:05.664712Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 32
+      "temp_f": 44
     },
     {
       "aqi": null,
@@ -74,14 +74,14 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:07:03.392812Z",
+      "as_of": "2026-11-03T06:27:11.965081Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
       "stale": false,
-      "temp_f": 45,
+      "temp_f": 44,
       "wind_dir_deg": 1,
       "wind_mph": 4
     },
