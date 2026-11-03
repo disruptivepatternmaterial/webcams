@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "761eb170-04ee-5250-b22c-d35d17d2d024",
-  "last_updated": "2026-11-03T15:08:00Z",
+  "event_id": "b9ded24f-6fed-5517-889e-2d02219222d6",
+  "last_updated": "2026-11-03T15:22:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T14:32:24.042695Z",
+      "as_of": "2026-11-03T15:02:23.735580Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -52,18 +52,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T14:54:00.577014Z",
+      "as_of": "2026-11-03T15:13:03.992262Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 41
+      "temp_f": 31
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T14:34:01.005051Z",
+      "as_of": "2026-11-03T15:04:00.867765Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
@@ -74,31 +74,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T15:01:11Z",
+      "as_of": "2026-11-03T15:11:35.149976Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
       "stale": false,
-      "temp_f": 43,
+      "temp_f": 44,
       "wind_dir_deg": 1,
       "wind_mph": 4
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-03T14:30:33.076854Z",
+      "as_of": "2026-11-03T15:00:32.233784Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 40
+      "temp_f": 41
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T14:45:38.935215Z",
+      "as_of": "2026-11-03T15:15:38.256561Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
@@ -106,7 +106,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 32
+      "temp_f": 31
     }
   ]
 }
