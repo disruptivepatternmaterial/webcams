@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "675ff1f7-1685-54d7-97b6-a25f35e023d4",
-  "last_updated": "2026-11-03T08:22:00Z",
+  "event_id": "f4689d7c-1a81-5e03-b5e1-7a77507f1eaf",
+  "last_updated": "2026-11-03T08:52:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-03T08:01:18Z",
+      "as_of": "2026-11-03T08:33:17Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T08:02:28.786860Z",
+      "as_of": "2026-11-03T08:32:28.462279Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -52,7 +52,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T08:13:08.792050Z",
+      "as_of": "2026-11-03T08:43:08.616819Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T08:04:04.984809Z",
+      "as_of": "2026-11-03T08:34:04.503484Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
@@ -74,20 +74,20 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T08:07:59.704379Z",
+      "as_of": "2026-11-03T08:48:18.755180Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
       "stale": false,
-      "temp_f": 43,
+      "temp_f": 45,
       "wind_dir_deg": 1,
-      "wind_mph": 2
+      "wind_mph": 4
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-03T08:00:36.087246Z",
+      "as_of": "2026-11-03T08:30:32.448809Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
@@ -98,7 +98,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T08:15:42.685607Z",
+      "as_of": "2026-11-03T08:45:42.625211Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
