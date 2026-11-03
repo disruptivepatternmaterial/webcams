@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 41
+      "value": 42
     }
   },
   "aqi_by_site": {
@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "f2207b89-4e07-5be2-b873-181437a90593",
-  "last_updated": "2026-11-03T11:22:00Z",
+  "event_id": "f234781b-dc34-53e1-804a-e15c6bd11cc1",
+  "last_updated": "2026-11-03T11:52:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-03T11:01:19Z",
+      "as_of": "2026-11-03T11:31:52Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,42 +39,42 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T11:02:26.685160Z",
+      "as_of": "2026-11-03T11:32:26.189827Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 41,
+      "temp_f": 42,
       "wind_dir_deg": null,
       "wind_mph": null
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T11:13:06.912873Z",
+      "as_of": "2026-11-03T11:43:06.609927Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 31
+      "temp_f": 32
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T11:04:03.048016Z",
+      "as_of": "2026-11-03T11:34:02.781163Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 44
+      "temp_f": 43
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T11:09:43.609685Z",
+      "as_of": "2026-11-03T11:49:53.691896Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
@@ -87,18 +87,18 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-03T11:00:46.923305Z",
+      "as_of": "2026-11-03T11:30:32.331242Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 40
+      "temp_f": 42
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T11:15:40.811330Z",
+      "as_of": "2026-11-03T11:45:40.507459Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
@@ -106,7 +106,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 30
+      "temp_f": 31
     }
   ]
 }
