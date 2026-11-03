@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 41
+      "value": 40
     }
   },
   "aqi_by_site": {
@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "b65c2715-aeaf-5172-9532-25dce33574ad",
-  "last_updated": "2026-11-03T10:22:00Z",
+  "event_id": "05a44580-8748-55d0-99ca-cf8b244fbc74",
+  "last_updated": "2026-11-03T10:52:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-03T10:01:18Z",
+      "as_of": "2026-11-03T10:31:17Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,20 +39,20 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T10:02:27.407347Z",
+      "as_of": "2026-11-03T10:32:26.999180Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 41,
+      "temp_f": 40,
       "wind_dir_deg": null,
       "wind_mph": null
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T10:13:07.441508Z",
+      "as_of": "2026-11-03T10:43:07.254652Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T10:04:03.843099Z",
+      "as_of": "2026-11-03T10:34:03.341498Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
@@ -74,7 +74,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T10:09:12.070730Z",
+      "as_of": "2026-11-03T10:49:30.280250Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
@@ -87,18 +87,18 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-03T10:00:32.702086Z",
+      "as_of": "2026-11-03T10:30:32.474333Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 39
+      "temp_f": 40
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T10:15:41.434073Z",
+      "as_of": "2026-11-03T10:45:41.155586Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
