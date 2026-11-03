@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "74cf8ce4-5def-51a4-8977-4f296d1cb799",
-  "last_updated": "2026-11-03T07:52:00Z",
+  "event_id": "675ff1f7-1685-54d7-97b6-a25f35e023d4",
+  "last_updated": "2026-11-03T08:22:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-03T07:31:18Z",
+      "as_of": "2026-11-03T08:01:18Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T07:32:29.149655Z",
+      "as_of": "2026-11-03T08:02:28.786860Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -52,7 +52,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T07:43:09.144296Z",
+      "as_of": "2026-11-03T08:13:08.792050Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -63,7 +63,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T07:34:05.059734Z",
+      "as_of": "2026-11-03T08:04:04.984809Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
@@ -74,31 +74,31 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T07:47:50.113073Z",
+      "as_of": "2026-11-03T08:07:59.704379Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
       "stale": false,
-      "temp_f": 44,
+      "temp_f": 43,
       "wind_dir_deg": 1,
-      "wind_mph": 4
+      "wind_mph": 2
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-03T07:30:33.875848Z",
+      "as_of": "2026-11-03T08:00:36.087246Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 40
+      "temp_f": 39
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T07:45:43.047912Z",
+      "as_of": "2026-11-03T08:15:42.685607Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
@@ -106,7 +106,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 31
+      "temp_f": 30
     }
   ]
 }
