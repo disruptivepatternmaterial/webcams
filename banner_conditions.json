@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 42
+      "value": 41
     }
   },
   "aqi_by_site": {
@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "a5539827-2333-5a65-b7f3-dffc3b8c3899",
-  "last_updated": "2026-11-03T06:52:00Z",
+  "event_id": "c361761d-d8bf-5fdf-a1ab-07f257eda78b",
+  "last_updated": "2026-11-03T07:22:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:31:18Z",
+      "as_of": "2026-11-03T07:01:30Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,66 +39,66 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:32:29.869434Z",
+      "as_of": "2026-11-03T07:02:29.483604Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "stale": false,
-      "temp_f": 42,
+      "temp_f": 41,
       "wind_dir_deg": null,
       "wind_mph": null
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:43:09.991053Z",
+      "as_of": "2026-11-03T07:13:09.464481Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 31
+      "temp_f": 32
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:34:05.679476Z",
+      "as_of": "2026-11-03T07:04:05.520849Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 46
+      "temp_f": 45
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:47:22.437757Z",
+      "as_of": "2026-11-03T07:07:31.941778Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
       "stale": false,
-      "temp_f": 44,
+      "temp_f": 45,
       "wind_dir_deg": 1,
       "wind_mph": 4
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-03T06:30:32.403360Z",
+      "as_of": "2026-11-03T07:00:32.193954Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 44
+      "temp_f": 40
     },
     {
       "aqi": null,
-      "as_of": "2026-11-03T06:45:43.637647Z",
+      "as_of": "2026-11-03T07:15:43.482900Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
