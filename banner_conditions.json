@@ -2,7 +2,7 @@
   "air_temp_by_site": {
     "bowman_mtn": {
       "unit": "\u00b0F",
-      "value": 42
+      "value": 41
     },
     "n_twin": {
       "unit": "\u00b0F",
@@ -23,23 +23,23 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "b5d7b2d8-fbb9-57e7-8f53-d6a3fe63e062",
-  "last_updated": "2026-11-04T06:52:00Z",
+  "event_id": "558bd054-bec0-5cc1-bcbc-e22bb1031601",
+  "last_updated": "2026-11-04T07:22:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:00:53Z",
+      "as_of": "2026-11-04T07:00:53Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 41
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:32:12.458830Z",
+      "as_of": "2026-11-04T07:02:12.046684Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -53,7 +53,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:39:22.269074Z",
+      "as_of": "2026-11-04T07:09:22.160424Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -65,18 +65,18 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:33:51.473857Z",
+      "as_of": "2026-11-04T07:03:51.192008Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 41
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:38:53.800434Z",
+      "as_of": "2026-11-04T07:19:12.022544Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
@@ -86,22 +86,22 @@
       "stale": false,
       "temp_f": 42,
       "wind_dir_deg": 1,
-      "wind_mph": 3
+      "wind_mph": 2
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-04T06:30:29.406944Z",
+      "as_of": "2026-11-04T07:00:29.238180Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 39
+      "temp_f": 41
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:45:28.265452Z",
+      "as_of": "2026-11-04T07:15:27.894532Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
