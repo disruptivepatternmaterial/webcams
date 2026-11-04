@@ -1,9 +1,10 @@
 {
-  "event_id": "fe780061-56de-500f-a210-d2dd30410481",
-  "last_updated": "2026-11-04T20:22:00Z",
+  "event_id": "5d825cbe-3961-51ca-a9d1-c8a92fd7020a",
+  "last_updated": "2026-11-04T20:38:00Z",
   "sites": [
     {
-      "as_of": null,
+      "aqi": [],
+      "as_of": "2026-11-04T15:30:53Z",
       "dropped": [],
       "elev_ft": [],
       "id": "bowman_mtn",
@@ -13,13 +14,25 @@
     },
     {
       "aqi": [
-        18
+        13
       ],
-      "as_of": "2026-11-04T20:21:07Z",
+      "as_of": "2026-11-04T20:29:13.980373Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "33.4 F disagrees with another sensor here (spread 17.6 F, over 6.7 F) and is furthest from the other locations: 14.2 F off their median of 47.7 F, 10 locations adjusted to 4642 ft at 2.27 F per 1000 ft"
+          "reason": "33.3 F disagrees with another sensor here (spread 17.0 F, over 6.7 F) and is furthest from the other locations: 13.9 F off their median of 47.2 F, 10 locations adjusted to 4642 ft at 2.27 F per 1000 ft"
+        },
+        {
+          "measurement": "air_temperature_f",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "aqi",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "fog",
+          "reason": "another device of the same unit is counted instead"
         }
       ],
       "elev_ft": [
@@ -41,7 +54,7 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-04T20:09:12.449472Z",
+      "as_of": "2026-11-04T20:23:42.948615Z",
       "dropped": [],
       "elev_ft": [
         4731
@@ -73,7 +86,7 @@
       ]
     },
     {
-      "as_of": "2026-11-04T20:05:34.663889Z",
+      "as_of": "2026-11-04T20:25:41.598911Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
@@ -92,11 +105,11 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        53
+        52
       ],
       "wind": [
         {
-          "dir_deg": 271,
+          "dir_deg": 181,
           "mph": 2
         }
       ]
