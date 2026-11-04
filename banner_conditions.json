@@ -6,7 +6,7 @@
     },
     "n_twin": {
       "unit": "\u00b0F",
-      "value": 41
+      "value": 40
     }
   },
   "aqi_by_site": {
@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "35625f38-656a-553a-a666-434b9b13e3c6",
-  "last_updated": "2026-11-04T01:38:00Z",
+  "event_id": "610b5c56-5baa-578b-932b-64bc70b11d90",
+  "last_updated": "2026-11-04T01:52:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": 8,
-      "as_of": "2026-11-04T01:02:16.350742Z",
+      "as_of": "2026-11-04T01:32:16.083426Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -47,13 +47,13 @@
       "label": "N Twin West Ridge",
       "snow_in": 3,
       "stale": false,
-      "temp_f": 41,
+      "temp_f": 40,
       "wind_dir_deg": null,
       "wind_mph": null
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T01:24:56.921970Z",
+      "as_of": "2026-11-04T01:39:25.913462Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -65,43 +65,43 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T01:03:54.732593Z",
+      "as_of": "2026-11-04T01:33:54.411770Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 44
+      "temp_f": 43
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T01:16:21.123153Z",
+      "as_of": "2026-11-04T01:36:30.708304Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
-      "snow_in": 7,
+      "snow_in": 8,
       "stale": false,
-      "temp_f": 45,
+      "temp_f": 44,
       "wind_dir_deg": 1,
-      "wind_mph": 5
+      "wind_mph": 4
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-04T01:00:31.793514Z",
+      "as_of": "2026-11-04T01:31:00.352623Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 43
+      "temp_f": 42
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T01:15:31.719223Z",
+      "as_of": "2026-11-04T01:45:31.596098Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
@@ -109,7 +109,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 35
+      "temp_f": 34
     }
   ]
 }
