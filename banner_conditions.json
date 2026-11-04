@@ -23,12 +23,12 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "69259298-432c-5027-b596-b300fb76fc3a",
-  "last_updated": "2026-11-04T05:22:00Z",
+  "event_id": "69b86bb0-fed3-5ead-9830-1b8382ae10bf",
+  "last_updated": "2026-11-04T05:52:00Z",
   "sites": [
     {
       "aqi": null,
-      "as_of": "2026-11-04T05:00:53Z",
+      "as_of": "2026-11-04T05:31:26Z",
       "elev_ft": 3355,
       "fog": false,
       "has_aqi": true,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T05:02:13.420304Z",
+      "as_of": "2026-11-04T05:32:13.127047Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -53,7 +53,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T05:09:23.392741Z",
+      "as_of": "2026-11-04T05:39:23.030771Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -61,47 +61,47 @@
       "label": "N Twin Approach",
       "snow_in": 7,
       "stale": false,
-      "temp_f": 33
+      "temp_f": 32
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T05:03:52.581084Z",
+      "as_of": "2026-11-04T05:33:52.110413Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 41
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T05:18:15.589919Z",
+      "as_of": "2026-11-04T05:38:25.144866Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
-      "snow_in": 11,
+      "snow_in": 7,
       "stale": false,
       "temp_f": 43,
       "wind_dir_deg": 1,
-      "wind_mph": 4
+      "wind_mph": 3
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-04T05:00:42.226587Z",
+      "as_of": "2026-11-04T05:30:28.975025Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 40
+      "temp_f": 39
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T05:15:29.216943Z",
+      "as_of": "2026-11-04T05:45:28.839689Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
