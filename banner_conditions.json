@@ -1,6 +1,6 @@
 {
-  "event_id": "2a10f12e-eeb6-5e27-8c20-c49f4c1bec7d",
-  "last_updated": "2026-11-04T16:12:00Z",
+  "event_id": "23f07b69-8acb-5491-9465-6be670e972b5",
+  "last_updated": "2026-11-04T16:22:00Z",
   "sites": [
     {
       "as_of": null,
@@ -18,7 +18,7 @@
         {
           "device_id": "la666152752",
           "measurement": "air_temperature_f",
-          "reason": "30.9 F disagrees with another sensor here (spread 8.1 F, over 6.7 F) and is furthest from the other locations: 7.0 F off their median of 38.0 F, 9 locations adjusted to 4642 ft at 1.61 F per 1000 ft"
+          "reason": "30.9 F disagrees with another sensor here (spread 8.1 F, over 6.7 F) and is furthest from the other locations: 7.6 F off their median of 38.5 F, 9 locations adjusted to 4642 ft at 1.61 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -44,7 +44,7 @@
         {
           "device_id": "la666054877",
           "measurement": "air_temperature_f",
-          "reason": "32.0 F disagrees with another sensor here (spread 7.6 F, over 6.7 F) and is furthest from the other locations: 5.8 F off their median of 37.8 F, 9 locations adjusted to 4731 ft at 1.61 F per 1000 ft"
+          "reason": "32.0 F disagrees with another sensor here (spread 7.6 F, over 6.7 F) and is furthest from the other locations: 6.3 F off their median of 38.3 F, 9 locations adjusted to 4731 ft at 1.61 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "as_of": "2026-11-04T16:09:44.255503Z",
+      "as_of": "2026-11-04T16:15:22.223604Z",
       "dropped": [],
       "elev_ft": [
         3166

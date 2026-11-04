@@ -1815,12 +1815,11 @@
         }
 
         // One stacked card per location: name on top, temp under it, then wind,
-        // ground, snow and AQI where the location measures them. Each value is the
-        // average of the devices at the location, so a list holds one number; a
-        // reading that failed the read path's checks is left out (listed under
-        // "dropped" in the file, never shown). Fog droplets read as particulates on
-        // the PM sensors, so a device whose fog indicator is on shows "Fog" instead
-        // of its AQI number.
+        // ground, snow and AQI where the location measures them. Devices at one
+        // location are listed, not averaged: one value when they agree after
+        // rounding, otherwise each, e.g. "33° / 41°F". Fog droplets read as
+        // particulates on the PM sensors, so a device whose fog indicator is on
+        // shows "Fog" instead of its AQI number.
         function bannerValues(values) {
             return (Array.isArray(values) ? values : [])
                 .map(bannerNumeric)
