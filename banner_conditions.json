@@ -1,6 +1,6 @@
 {
-  "event_id": "c1b2ac36-204c-522e-b376-3d24fc50abb0",
-  "last_updated": "2026-11-04T19:24:00Z",
+  "event_id": "c60d7293-1a27-5667-8f11-9a7ace6baaa3",
+  "last_updated": "2026-11-04T19:38:00Z",
   "sites": [
     {
       "as_of": null,
@@ -13,14 +13,14 @@
     },
     {
       "aqi": [
-        8
+        13
       ],
-      "as_of": "2026-11-04T19:22:30Z",
+      "as_of": "2026-11-04T19:36:41Z",
       "dropped": [
         {
           "device_id": "la666152752",
           "measurement": "air_temperature_f",
-          "reason": "32.2 F disagrees with another sensor here (spread 16.3 F, over 6.7 F) and is furthest from the other locations: 18.9 F off their median of 51.1 F, 10 locations adjusted to 4642 ft at 2.01 F per 1000 ft"
+          "reason": "32.9 F disagrees with another sensor here (spread 15.9 F, over 6.7 F) and is furthest from the other locations: 18.2 F off their median of 51.1 F, 10 locations adjusted to 4642 ft at 2.01 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -42,12 +42,12 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-04T19:09:13.279642Z",
+      "as_of": "2026-11-04T19:23:43.574648Z",
       "dropped": [
         {
           "device_id": "la666054877",
           "measurement": "air_temperature_f",
-          "reason": "57.6 F disagrees with another sensor here (spread 9.4 F, over 6.7 F) and is furthest from the other locations: 7.0 F off their median of 50.6 F, 10 locations adjusted to 4731 ft at 2.01 F per 1000 ft"
+          "reason": "57.6 F disagrees with another sensor here (spread 10.6 F, over 6.7 F) and is furthest from the other locations: 7.0 F off their median of 50.6 F, 10 locations adjusted to 4731 ft at 2.01 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -63,7 +63,7 @@
       ],
       "stale": false,
       "temp_f": [
-        48
+        47
       ]
     },
     {
@@ -80,13 +80,8 @@
       ]
     },
     {
-      "as_of": "2026-11-04T19:05:01.525002Z",
+      "as_of": "2026-11-04T19:25:10.229069Z",
       "dropped": [
-        {
-          "device_id": "918101386068110002",
-          "measurement": "air_temperature_f",
-          "reason": "62.2 F disagrees with another sensor here (spread 8.2 F, over 6.7 F) and is furthest from the other locations: 10.2 F off their median of 52.1 F, 10 locations adjusted to 3990 ft at 2.01 F per 1000 ft"
-        },
         {
           "device_id": "la666152751",
           "measurement": "snow_depth_in",
@@ -94,7 +89,8 @@
         }
       ],
       "elev_ft": [
-        3980
+        3980,
+        3990
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -104,12 +100,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        54
+        53
       ],
       "wind": [
         {
-          "dir_deg": 181,
-          "mph": 4
+          "dir_deg": 196,
+          "mph": 12
         }
       ]
     },
