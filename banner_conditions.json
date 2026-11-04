@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "6c6e4be7-4db2-5f99-961b-abc34015e9e1",
-  "last_updated": "2026-11-04T07:32:00Z",
+  "event_id": "baba95b1-ace2-5827-8da5-9cf83b26641f",
+  "last_updated": "2026-11-04T07:52:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T07:02:12.046684Z",
+      "as_of": "2026-11-04T07:32:11.728816Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -53,7 +53,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T07:24:52.831705Z",
+      "as_of": "2026-11-04T07:39:21.721658Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -65,7 +65,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T07:03:51.192008Z",
+      "as_of": "2026-11-04T07:33:51.204922Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
@@ -76,7 +76,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T07:19:12.022544Z",
+      "as_of": "2026-11-04T07:39:21.527440Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
@@ -86,22 +86,22 @@
       "stale": false,
       "temp_f": 42,
       "wind_dir_deg": 1,
-      "wind_mph": 2
+      "wind_mph": 3
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-04T07:00:29.238180Z",
+      "as_of": "2026-11-04T07:30:29.873388Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 41
+      "temp_f": 42
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T07:15:27.894532Z",
+      "as_of": "2026-11-04T07:45:27.584733Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
