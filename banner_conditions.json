@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "be3080cc-f1f1-588e-9d40-bf60b669ce7f",
-  "last_updated": "2026-11-04T03:38:00Z",
+  "event_id": "8dcce990-4fb2-5117-8b05-9cecd0cfb12f",
+  "last_updated": "2026-11-04T03:52:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T03:02:14.895534Z",
+      "as_of": "2026-11-04T03:32:14.540877Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -53,7 +53,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T03:24:55.488576Z",
+      "as_of": "2026-11-04T03:39:24.523816Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -65,7 +65,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T03:03:53.572691Z",
+      "as_of": "2026-11-04T03:33:53.225148Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
@@ -76,13 +76,13 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T03:17:18.365655Z",
+      "as_of": "2026-11-04T03:37:27.911784Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
-      "snow_in": 8,
+      "snow_in": 11,
       "stale": false,
       "temp_f": 44,
       "wind_dir_deg": 1,
@@ -101,7 +101,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T03:15:30.451749Z",
+      "as_of": "2026-11-04T03:45:30.370447Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
@@ -109,7 +109,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 32
+      "temp_f": 31
     }
   ]
 }
