@@ -1153,7 +1153,7 @@
                     </div>
                     <div id="elev-grid" class="elev-grid"></div>
                     <div id="elev-footer" class="elev-footer">
-                        <strong>On ground</strong> = total snowpack depth. <strong>24h</strong> = forecast new snow or rain for that day.
+                        <strong>On ground</strong> = total snowpack depth (<strong>measured</strong> where a cell says so; <strong>model</strong> elsewhere). <strong>24h</strong> = forecast new snow or rain for that day.
                     </div>
                 </section>
                 <div class="support-bar" id="support-bar">
@@ -1937,9 +1937,9 @@
                 const elev = bannerNumeric(s && s.elev_ft);
                 return s.location + (elev === null ? "" : " (" + elev + " ft)");
             });
-            footer.textContent = "On ground = total snowpack depth."
-                + (names.length ? " Snow-depth sensors: " + names.join(", ") + "." : "")
-                + " 24h = forecast new snow or rain for that day.";
+            footer.textContent = "On ground = total snowpack depth (measured where a cell says so"
+                + (names.length ? ", from the snow-depth sensors at " + names.join(", ") : "")
+                + "; model elsewhere). 24h = forecast new snow or rain for that day.";
         }
 
         // Chart history keeps its original five series (and its localStorage
