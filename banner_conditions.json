@@ -1,115 +1,144 @@
 {
-  "air_temp_by_site": {
-    "bowman_mtn": {
-      "unit": "\u00b0F",
-      "value": 40
-    },
-    "n_twin": {
-      "unit": "\u00b0F",
-      "value": 38
-    }
-  },
-  "aqi_by_site": {
-    "bowman_mtn": {
-      "unit": null,
-      "value": null
-    },
-    "n_twin": {
-      "unit": null,
-      "value": null
-    }
-  },
-  "dailey_prairie_ground_temp": {
-    "unit": "\u00b0F",
-    "value": 40
-  },
-  "event_id": "a72e9818-6241-5828-9d0e-0958876227fe",
-  "last_updated": "2026-11-04T09:22:00Z",
+  "event_id": "98951c2c-ea2f-559a-84ea-dd7d99828266",
+  "last_updated": "2026-11-04T09:36:00Z",
   "sites": [
     {
-      "aqi": null,
-      "as_of": "2026-11-04T09:01:26Z",
-      "elev_ft": 3355,
-      "fog": false,
-      "has_aqi": true,
+      "aqi": [
+        14
+      ],
+      "as_of": "2026-11-04T09:31:26Z",
+      "elev_ft": [
+        3294
+      ],
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
       "stale": false,
-      "temp_f": 40
+      "temp_f": [
+        40
+      ]
     },
     {
-      "aqi": null,
+      "aqi": [],
       "as_of": "2026-11-04T09:02:10.590015Z",
-      "elev_ft": 4721,
-      "fog": null,
-      "has_aqi": true,
+      "elev_ft": [
+        4721
+      ],
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
-      "snow_in": 3,
+      "snow_elev_ft": [
+        4724
+      ],
+      "snow_in": [
+        3
+      ],
       "stale": false,
-      "temp_f": 38,
-      "wind_dir_deg": null,
-      "wind_mph": null
+      "temp_f": [
+        38
+      ],
+      "wind": []
     },
     {
-      "aqi": null,
-      "as_of": "2026-11-04T09:09:20.540239Z",
-      "elev_ft": 4731,
-      "fog": null,
-      "has_aqi": false,
+      "as_of": "2026-11-04T09:24:51.378478Z",
+      "elev_ft": [
+        4731
+      ],
       "id": "n_twin_approach",
       "label": "N Twin Approach",
-      "snow_in": null,
+      "snow_elev_ft": [
+        4163
+      ],
+      "snow_in": [],
       "stale": false,
-      "temp_f": 31
+      "temp_f": [
+        31,
+        39
+      ]
     },
     {
-      "aqi": null,
       "as_of": "2026-11-04T09:03:50.023767Z",
-      "elev_ft": 3750,
-      "fog": null,
-      "has_aqi": false,
+      "elev_ft": [
+        3750
+      ],
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 41
+      "temp_f": [
+        41
+      ]
     },
     {
-      "aqi": null,
-      "as_of": "2026-11-04T09:00:00.711803Z",
-      "elev_ft": 3990,
-      "fog": null,
-      "has_aqi": false,
+      "as_of": "2026-11-04T09:20:04.433070Z",
+      "elev_ft": [
+        3990
+      ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
-      "snow_in": 7,
+      "snow_elev_ft": [
+        4003
+      ],
+      "snow_in": [
+        7
+      ],
       "stale": false,
-      "temp_f": 42,
-      "wind_dir_deg": 1,
-      "wind_mph": 2
+      "temp_f": [
+        42
+      ],
+      "wind": [
+        {
+          "dir_deg": 1,
+          "mph": 2
+        }
+      ]
     },
     {
-      "aqi": 0,
+      "aqi": [
+        0
+      ],
       "as_of": "2026-11-04T09:00:29.483568Z",
-      "elev_ft": 3380,
-      "fog": null,
-      "has_aqi": true,
+      "elev_ft": [
+        3379
+      ],
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 40
+      "temp_f": [
+        40
+      ],
+      "wind": [
+        {
+          "dir_deg": 176,
+          "mph": 2
+        }
+      ]
     },
     {
-      "aqi": null,
       "as_of": "2026-11-04T09:15:26.642755Z",
-      "elev_ft": 3166,
-      "fog": null,
-      "ground_temp_f": 40,
-      "has_aqi": false,
+      "elev_ft": [
+        3166
+      ],
+      "ground_temp_f": [
+        40
+      ],
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 29
+      "temp_f": [
+        29
+      ]
+    }
+  ],
+  "snow_sensors": [
+    {
+      "elev_ft": 4724,
+      "location": "N Twin West Ridge"
+    },
+    {
+      "elev_ft": 4163,
+      "location": "N Twin Approach"
+    },
+    {
+      "elev_ft": 4003,
+      "location": "Forest Lands High Point"
     }
   ]
 }
