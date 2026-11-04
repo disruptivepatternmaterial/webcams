@@ -1,21 +1,14 @@
 {
-  "event_id": "0a23da38-57c6-5a41-ba8e-5314f1273ddf",
-  "last_updated": "2026-11-04T15:22:00Z",
+  "event_id": "01a8fab1-0096-59a0-b503-1813165bb0c2",
+  "last_updated": "2026-11-04T15:38:00Z",
   "sites": [
     {
-      "aqi": [
-        0
-      ],
-      "as_of": "2026-11-04T15:00:53Z",
-      "elev_ft": [
-        3294
-      ],
+      "as_of": null,
+      "elev_ft": [],
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
-      "stale": false,
-      "temp_f": [
-        54
-      ]
+      "stale": true,
+      "temp_f": []
     },
     {
       "aqi": [],
@@ -38,7 +31,7 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-04T15:09:16.220398Z",
+      "as_of": "2026-11-04T15:24:47.260030Z",
       "elev_ft": [
         4731
       ],
@@ -51,7 +44,7 @@
       "stale": false,
       "temp_f": [
         31,
-        40
+        39
       ]
     },
     {
@@ -67,7 +60,7 @@
       ]
     },
     {
-      "as_of": "2026-11-04T15:03:07.096396Z",
+      "as_of": "2026-11-04T15:23:16.572563Z",
       "elev_ft": [
         3990
       ],
@@ -81,12 +74,12 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        41
       ],
       "wind": [
         {
           "dir_deg": 1,
-          "mph": 4
+          "mph": 3
         }
       ]
     },
