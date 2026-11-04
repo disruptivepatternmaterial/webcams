@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "8dcce990-4fb2-5117-8b05-9cecd0cfb12f",
-  "last_updated": "2026-11-04T03:52:00Z",
+  "event_id": "9ec0d26c-01ea-5e0a-8aab-3c52930544b8",
+  "last_updated": "2026-11-04T04:08:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,13 +39,13 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T03:32:14.540877Z",
+      "as_of": "2026-11-04T03:51:55.177783Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
-      "snow_in": 3,
+      "snow_in": 4,
       "stale": false,
       "temp_f": 39,
       "wind_dir_deg": null,
@@ -53,13 +53,13 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T03:39:24.523816Z",
+      "as_of": "2026-11-04T03:54:55.200054Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
-      "snow_in": 7,
+      "snow_in": null,
       "stale": false,
       "temp_f": 33
     },
@@ -76,7 +76,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T03:37:27.911784Z",
+      "as_of": "2026-11-04T03:57:37.464541Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
@@ -84,7 +84,7 @@
       "label": "Forest Lands High Point",
       "snow_in": 11,
       "stale": false,
-      "temp_f": 44,
+      "temp_f": 42,
       "wind_dir_deg": 1,
       "wind_mph": 2
     },
