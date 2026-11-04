@@ -1898,6 +1898,16 @@
                     card.appendChild(ground);
                 }
 
+                if (site.snow_in !== undefined) {
+                    const snow = document.createElement("span");
+                    snow.className = "banner-site-row";
+                    const snowNum = bannerNumeric(site.snow_in);
+                    snow.innerHTML = '<span class="banner-site-metric">Snow</span>'
+                        + (snowNum === null ? "—" : Math.round(snowNum) + " in");
+                    snow.title = "Measured snow depth";
+                    card.appendChild(snow);
+                }
+
                 if (site.fog === true || site.has_aqi) {
                     const aqi = document.createElement("span");
                     if (site.fog === true) {
