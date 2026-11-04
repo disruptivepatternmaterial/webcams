@@ -1,6 +1,6 @@
 {
-  "event_id": "f7c2b51d-4276-5873-9c53-b5d3146d73ea",
-  "last_updated": "2026-11-04T21:38:00Z",
+  "event_id": "74e0ce39-86e9-5ff4-9ac4-0d4fe5a095b3",
+  "last_updated": "2026-11-04T21:52:00Z",
   "sites": [
     {
       "aqi": [],
@@ -18,11 +18,11 @@
       "aqi": [
         14
       ],
-      "as_of": "2026-11-04T21:23:05.216977Z",
+      "as_of": "2026-11-04T21:32:01.552520Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "33.8 F disagrees with another sensor here (spread 12.6 F, over 6.7 F) and is furthest from the other locations: 12.2 F off their median of 46.0 F, 10 locations adjusted to 4642 ft at 2.52 F per 1000 ft"
+          "reason": "33.8 F disagrees with another sensor here (spread 12.2 F, over 6.7 F) and is furthest from the other locations: 11.4 F off their median of 45.2 F, 10 locations adjusted to 4642 ft at 2.52 F per 1000 ft"
         },
         {
           "measurement": "air_temperature_f",
@@ -51,12 +51,12 @@
       ],
       "stale": false,
       "temp_f": [
-        46
+        45
       ],
       "wind": []
     },
     {
-      "as_of": "2026-11-04T21:23:42.399653Z",
+      "as_of": "2026-11-04T21:39:11.340342Z",
       "dropped": [],
       "elev_ft": [
         4731
@@ -71,11 +71,11 @@
       ],
       "stale": false,
       "temp_f": [
-        47
+        45
       ]
     },
     {
-      "as_of": "2026-11-04T21:03:42.932432Z",
+      "as_of": "2026-11-04T21:33:42.671441Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -88,11 +88,11 @@
       ]
     },
     {
-      "as_of": "2026-11-04T21:26:08.272283Z",
+      "as_of": "2026-11-04T21:46:16.944014Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1550 mm came with signal strength 145, below this sensor's minimum of 200"
+          "reason": "distance 1530 mm came with signal strength 123, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -112,7 +112,7 @@
       "wind": [
         {
           "dir_deg": 1,
-          "mph": 13
+          "mph": 9
         }
       ]
     },
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "as_of": "2026-11-04T21:19:12.851422Z",
+      "as_of": "2026-11-04T21:49:12.644308Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -151,7 +151,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        44
+        43
       ]
     }
   ],
