@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webcam Images</title>
+    <title>Mountain Webcams &amp; Conditions</title>
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d25e9b51531342c8bf50d57f1627d4f9"}'></script>
     <!-- End Cloudflare Web Analytics -->
@@ -815,18 +815,6 @@
             font-weight: 700;
             line-height: 1.15;
         }
-        .elev-band-tag {
-            display: inline-block;
-            margin-top: 3px;
-            padding: 1px 6px;
-            border-radius: 4px;
-            font-size: 0.66em;
-            font-weight: 600;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            background: rgba(102, 126, 234, 0.55);
-            color: #fff;
-        }
         .elev-cell {
             display: grid;
             grid-template-columns: 54px 1fr;
@@ -836,9 +824,6 @@
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.16);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
-        }
-        .elev-cell-midridge {
-            border-color: rgba(255, 255, 255, 0.45);
         }
         .elev-score-pill {
             text-align: center;
@@ -1319,7 +1304,10 @@
             if (!content) return;
 
             const pageTitle = document.getElementById("page-title");
-            if (pageTitle && content.pageTitle) pageTitle.textContent = content.pageTitle;
+            if (content.pageTitle) {
+                document.title = content.pageTitle;
+                if (pageTitle) pageTitle.textContent = content.pageTitle;
+            }
 
             const supportCopy = document.getElementById("support-bar-copy");
             const supportLink = document.getElementById("support-bar-link");
@@ -1693,7 +1681,7 @@
             return parts.join(" · ");
         }
 
-        function renderElevationCell(band, day, isMidRidge, isToday) {
+        function renderElevationCell(band, day, isToday) {
             if (!band) return '<div class="elev-cell"></div>';
             const act = (day && day.activity === "ski") ? "Ski" : "Hike";
             const scoreVal = (day && day.activity === "ski" && band.ski != null) ? band.ski : band.hike;
@@ -1708,7 +1696,7 @@
             const fallingStr = formatFallingPrecip(band);
             const scoreText = scoreVal != null ? (scoreVal + "/10") : "—";
             return (
-                '<div class="elev-cell' + (isMidRidge ? " elev-cell-midridge" : "") + '" style="background: ' + bg + ';">' +
+                '<div class="elev-cell" style="background: ' + bg + ';">' +
                     '<div class="elev-score-pill">' +
                         '<span class="elev-score-num">' + scoreText + "</span>" +
                         '<span class="elev-score-cap">' + act + "</span>" +
@@ -1758,15 +1746,13 @@
             elevations.forEach(function(elev) {
                 const bToday = todayBands.find(function(b) { return b.elev_ft === elev; }) || null;
                 const bTom = tomBands.find(function(b) { return b.elev_ft === elev; }) || null;
-                const isMidRidge = elev === 5000;
                 const label = (bToday && bToday.label) ? bToday.label : (elev === 6000 ? "6000+ ft" : (elev + " ft"));
                 html +=
                     '<div class="elev-band-label">' +
                         '<span class="elev-band-ft">' + label + "</span>" +
-                        (isMidRidge ? '<span class="elev-band-tag">mid-ridge</span>' : "") +
                     "</div>" +
-                    renderElevationCell(bToday, todayDay, isMidRidge, true) +
-                    renderElevationCell(bTom, tomDay || todayDay, isMidRidge, false);
+                    renderElevationCell(bToday, todayDay, true) +
+                    renderElevationCell(bTom, tomDay || todayDay, false);
             });
             grid.innerHTML = html;
             section.hidden = false;
