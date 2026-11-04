@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "567ee6cc-8326-5776-867a-311cbdf2e07e",
-  "last_updated": "2026-11-04T00:38:00Z",
+  "event_id": "73094432-444a-565b-9890-d16abf1c05c4",
+  "last_updated": "2026-11-04T00:52:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": 8,
-      "as_of": "2026-11-04T00:02:17.087185Z",
+      "as_of": "2026-11-04T00:32:16.958034Z",
       "elev_ft": 4721,
       "fog": false,
       "has_aqi": true,
@@ -52,29 +52,29 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T00:24:57.649020Z",
+      "as_of": "2026-11-04T00:39:26.833430Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "stale": false,
-      "temp_f": 36
+      "temp_f": 35
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T00:03:55.410386Z",
+      "as_of": "2026-11-04T00:33:55.067854Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
       "id": "s_twin_approach",
       "label": "S Twin Approach",
       "stale": false,
-      "temp_f": 44
+      "temp_f": 45
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T00:15:52.528089Z",
+      "as_of": "2026-11-04T00:36:02.071664Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
@@ -87,18 +87,18 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-04T00:00:29.427681Z",
+      "as_of": "2026-11-04T00:30:43.624845Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 42
+      "temp_f": 43
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T00:15:32.387161Z",
+      "as_of": "2026-11-04T00:45:32.074281Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
@@ -106,7 +106,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 37
+      "temp_f": 36
     }
   ]
 }
