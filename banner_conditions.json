@@ -1,6 +1,6 @@
 {
-  "event_id": "23801d76-3795-5e0d-b5c2-19da1acb5621",
-  "last_updated": "2026-11-04T19:08:00Z",
+  "event_id": "751721f5-27c5-5018-bbf3-5b0385fb5be7",
+  "last_updated": "2026-11-04T19:22:00Z",
   "sites": [
     {
       "as_of": null,
@@ -12,16 +12,19 @@
       "temp_f": []
     },
     {
-      "aqi": [],
-      "as_of": "2026-11-04T18:53:07.561744Z",
+      "aqi": [
+        5
+      ],
+      "as_of": "2026-11-04T19:19:12.215113Z",
       "dropped": [
         {
           "device_id": "la666152752",
           "measurement": "air_temperature_f",
-          "reason": "32.2 F disagrees with another sensor here (spread 11.5 F, over 6.7 F) and is furthest from the other locations: 16.7 F off their median of 48.9 F, 9 locations adjusted to 4642 ft at 2.01 F per 1000 ft"
+          "reason": "32.2 F disagrees with another sensor here (spread 16.0 F, over 6.7 F) and is furthest from the other locations: 18.9 F off their median of 51.1 F, 10 locations adjusted to 4642 ft at 2.01 F per 1000 ft"
         }
       ],
       "elev_ft": [
+        4642,
         4721
       ],
       "id": "n_twin_west_ridge",
@@ -34,13 +37,19 @@
       ],
       "stale": false,
       "temp_f": [
-        44
+        48
       ],
       "wind": []
     },
     {
-      "as_of": "2026-11-04T18:59:16.010746Z",
-      "dropped": [],
+      "as_of": "2026-11-04T19:09:13.279642Z",
+      "dropped": [
+        {
+          "device_id": "la666054877",
+          "measurement": "air_temperature_f",
+          "reason": "57.6 F disagrees with another sensor here (spread 9.4 F, over 6.7 F) and is furthest from the other locations: 7.0 F off their median of 50.6 F, 10 locations adjusted to 4731 ft at 2.01 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
         4731
       ],
@@ -54,11 +63,11 @@
       ],
       "stale": false,
       "temp_f": [
-        47
+        48
       ]
     },
     {
-      "as_of": "2026-11-04T18:33:44.641132Z",
+      "as_of": "2026-11-04T19:03:44.165255Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -67,12 +76,17 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        51
+        53
       ]
     },
     {
-      "as_of": "2026-11-04T18:44:51.980955Z",
+      "as_of": "2026-11-04T19:05:01.525002Z",
       "dropped": [
+        {
+          "device_id": "918101386068110002",
+          "measurement": "air_temperature_f",
+          "reason": "62.2 F disagrees with another sensor here (spread 8.2 F, over 6.7 F) and is furthest from the other locations: 10.2 F off their median of 52.1 F, 10 locations adjusted to 3990 ft at 2.01 F per 1000 ft"
+        },
         {
           "device_id": "la666152751",
           "measurement": "snow_depth_in",
@@ -80,7 +94,7 @@
         }
       ],
       "elev_ft": [
-        3990
+        3980
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -90,12 +104,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        59
+        54
       ],
       "wind": [
         {
           "dir_deg": 181,
-          "mph": 5
+          "mph": 4
         }
       ]
     },
@@ -103,7 +117,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-04T18:30:28.381345Z",
+      "as_of": "2026-11-04T19:00:28.989760Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -112,17 +126,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        53
+        54
       ],
       "wind": [
         {
-          "dir_deg": 11,
-          "mph": 3
+          "dir_deg": 56,
+          "mph": 2
         }
       ]
     },
     {
-      "as_of": "2026-11-04T18:45:20.903159Z",
+      "as_of": "2026-11-04T19:19:13.956911Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -134,7 +148,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        37
+        43
       ]
     }
   ],
