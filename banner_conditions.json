@@ -1,6 +1,6 @@
 {
-  "event_id": "13b45987-d489-56f4-beb8-9389f54280fd",
-  "last_updated": "2026-11-04T17:52:00Z",
+  "event_id": "3d90a703-d417-57d2-aca5-f722a301b957",
+  "last_updated": "2026-11-04T18:08:00Z",
   "sites": [
     {
       "as_of": null,
@@ -13,12 +13,12 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-04T17:32:04.476945Z",
+      "as_of": "2026-11-04T17:53:08.234505Z",
       "dropped": [
         {
           "device_id": "la666152752",
           "measurement": "air_temperature_f",
-          "reason": "31.3 F disagrees with another sensor here (spread 9.7 F, over 6.7 F) and is furthest from the other locations: 9.3 F off their median of 40.6 F, 9 locations adjusted to 4642 ft at 2.86 F per 1000 ft"
+          "reason": "32.0 F disagrees with another sensor here (spread 9.0 F, over 6.7 F) and is furthest from the other locations: 10.8 F off their median of 42.8 F, 9 locations adjusted to 4642 ft at 2.20 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -39,7 +39,7 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-04T17:39:14.387197Z",
+      "as_of": "2026-11-04T17:54:45.886581Z",
       "dropped": [],
       "elev_ft": [
         4731
@@ -54,7 +54,7 @@
       ],
       "stale": false,
       "temp_f": [
-        38
+        39
       ]
     },
     {
