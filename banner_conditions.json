@@ -1,9 +1,10 @@
 {
-  "event_id": "cccab178-9570-54a5-a842-98d18003fed7",
-  "last_updated": "2026-11-04T16:08:00Z",
+  "event_id": "2a10f12e-eeb6-5e27-8c20-c49f4c1bec7d",
+  "last_updated": "2026-11-04T16:12:00Z",
   "sites": [
     {
       "as_of": null,
+      "dropped": [],
       "elev_ft": [],
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
@@ -12,7 +13,14 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-04T15:53:09.881118Z",
+      "as_of": "2026-11-04T16:02:05.557754Z",
+      "dropped": [
+        {
+          "device_id": "la666152752",
+          "measurement": "air_temperature_f",
+          "reason": "30.9 F disagrees with another sensor here (spread 8.1 F, over 6.7 F) and is furthest from the other locations: 7.0 F off their median of 38.0 F, 9 locations adjusted to 4642 ft at 1.61 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
         4721
       ],
@@ -31,7 +39,14 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-04T15:54:47.022098Z",
+      "as_of": "2026-11-04T16:09:15.468050Z",
+      "dropped": [
+        {
+          "device_id": "la666054877",
+          "measurement": "air_temperature_f",
+          "reason": "32.0 F disagrees with another sensor here (spread 7.6 F, over 6.7 F) and is furthest from the other locations: 5.8 F off their median of 37.8 F, 9 locations adjusted to 4731 ft at 1.61 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
         4731
       ],
@@ -49,7 +64,8 @@
       ]
     },
     {
-      "as_of": "2026-11-04T15:33:46.208204Z",
+      "as_of": "2026-11-04T16:03:45.924093Z",
+      "dropped": [],
       "elev_ft": [
         3750
       ],
@@ -61,7 +77,8 @@
       ]
     },
     {
-      "as_of": "2026-11-04T15:43:25.143967Z",
+      "as_of": "2026-11-04T16:03:34.687358Z",
+      "dropped": [],
       "elev_ft": [
         3990
       ],
@@ -75,12 +92,12 @@
       ],
       "stale": false,
       "temp_f": [
-        42
+        43
       ],
       "wind": [
         {
           "dir_deg": 1,
-          "mph": 3
+          "mph": 4
         }
       ]
     },
@@ -88,7 +105,8 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-04T15:30:29.284204Z",
+      "as_of": "2026-11-04T16:00:28.444157Z",
+      "dropped": [],
       "elev_ft": [
         3379
       ],
@@ -100,13 +118,14 @@
       ],
       "wind": [
         {
-          "dir_deg": 170,
+          "dir_deg": 163,
           "mph": 2
         }
       ]
     },
     {
-      "as_of": "2026-11-04T15:45:22.571539Z",
+      "as_of": "2026-11-04T16:09:44.255503Z",
+      "dropped": [],
       "elev_ft": [
         3166
       ],
