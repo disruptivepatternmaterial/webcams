@@ -1387,7 +1387,8 @@
         }
         const bannerHistory = [];
         const BANNER_HISTORY_LIMIT = 48;
-        // Point readings are current for 3 hours (the publisher's rule); so is the file.
+        // The page treats banner_conditions.json as offline once its last_updated is
+        // more than 3 hours old. Each reading's own freshness is the read path's rule.
         const BANNER_MAX_AGE_HOURS = 3;
         const BANNER_HISTORY_STORAGE_KEY = "webcam_banner_history_v1";
         let bannerLatest = null;
