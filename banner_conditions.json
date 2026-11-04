@@ -1,6 +1,6 @@
 {
-  "event_id": "2373fb16-1115-56f8-89e9-7fe897064dea",
-  "last_updated": "2026-11-04T16:54:00Z",
+  "event_id": "9fa3f04b-b8f7-5ba9-a082-97c6bb052f93",
+  "last_updated": "2026-11-04T17:08:00Z",
   "sites": [
     {
       "as_of": null,
@@ -13,12 +13,12 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-04T16:32:05.233408Z",
+      "as_of": "2026-11-04T16:53:08.998247Z",
       "dropped": [
         {
           "device_id": "la666152752",
           "measurement": "air_temperature_f",
-          "reason": "31.1 F disagrees with another sensor here (spread 8.8 F, over 6.7 F) and is furthest from the other locations: 9.0 F off their median of 40.1 F, 9 locations adjusted to 4642 ft at 1.61 F per 1000 ft"
+          "reason": "31.3 F disagrees with another sensor here (spread 8.6 F, over 6.7 F) and is furthest from the other locations: 8.4 F off their median of 39.7 F, 9 locations adjusted to 4642 ft at 2.86 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -39,12 +39,12 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-04T16:39:15.114009Z",
+      "as_of": "2026-11-04T16:59:17.672726Z",
       "dropped": [
         {
           "device_id": "la666054877",
           "measurement": "air_temperature_f",
-          "reason": "32.4 F disagrees with another sensor here (spread 8.3 F, over 6.7 F) and is furthest from the other locations: 7.6 F off their median of 40.0 F, 9 locations adjusted to 4731 ft at 1.61 F per 1000 ft"
+          "reason": "32.7 F disagrees with another sensor here (spread 8.1 F, over 6.7 F) and is furthest from the other locations: 6.7 F off their median of 39.4 F, 9 locations adjusted to 4731 ft at 2.86 F per 1000 ft"
         }
       ],
       "elev_ft": [
