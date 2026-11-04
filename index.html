@@ -892,7 +892,7 @@
             border: 1px solid rgba(56, 189, 248, 0.72);
             color: #e0f2fe;
         }
-        .elev-source-model {
+        .elev-source-model, .elev-source-snodas {
             background: rgba(255, 255, 255, 0.14);
             border: 1px solid rgba(255, 255, 255, 0.24);
             color: rgba(255, 255, 255, 0.88);
@@ -917,6 +917,11 @@
             font-size: 0.74em;
             opacity: 0.84;
             text-align: center;
+        }
+        .elev-summary {
+            margin: 8px 0 0;
+            font-size: 0.8em;
+            line-height: 1.4;
         }
         .left-column .support-bar {
             display: flex;
@@ -1155,6 +1160,7 @@
                     <div id="elev-footer" class="elev-footer">
                         <strong>On ground</strong> = total snowpack depth. <strong>24h</strong> = forecast new snow or rain for that day.
                     </div>
+                    <p id="elev-summary" class="elev-summary" hidden></p>
                 </section>
                 <div class="support-bar" id="support-bar">
                     <p class="support-bar-copy" id="support-bar-copy">These mountain webcams and sensors are intended to inform the community on backcountry conditions; this is a labor of love, and you can help support them via Buy Me a Coffee.</p>
@@ -1671,15 +1677,33 @@
             return newSnow === 0 && rain === 0 ? '0" new precip' : "—";
         }
 
-        function renderElevationCell(band, day, isToday) {
+        // Where a cell's snow depth came from: a sensor that passed the checks,
+        // NOAA's SNODAS analysis, or the forecast model. No value, no badge.
+        function snowSourceBadge(source) {
+            const badges = {
+                measured: { word: "measured", className: "elev-source-measured" },
+                snodas: { word: "SNODAS", className: "elev-source-snodas" },
+                model: { word: "model", className: "elev-source-model" }
+            };
+            const badge = badges[source];
+            return badge
+                ? '<span class="elev-source-badge ' + badge.className + '">' + badge.word + "</span>"
+                : "";
+        }
+
+        // NBM's snow level on a wet day; the freezing level on a dry one.
+        function levelLabel(day) {
+            if (!day || day.snow_level_ft == null) return "";
+            const word = day.snow_level_basis === "freezing_level" ? "Freezing level" : "Snow level";
+            return word + " ~" + day.snow_level_ft + " ft";
+        }
+
+        function renderElevationCell(band, day) {
             if (!band) return '<div class="elev-cell"></div>';
             const act = (day && day.activity === "ski") ? "Ski" : "Hike";
             const scoreVal = (day && day.activity === "ski" && band.ski != null) ? band.ski : band.hike;
             const bg = scoreBgColor(scoreVal);
             const groundStr = fmtInches(band.snow_in) + " on ground";
-            const isMeasured = isToday && band.snow_source === "measured";
-            const sourceClass = isMeasured ? "elev-source-measured" : "elev-source-model";
-            const sourceWord = isMeasured ? "measured" : "model";
             const highF = band.high_f != null ? Math.round(band.high_f) : "—";
             const lowF = band.low_f != null ? Math.round(band.low_f) : "—";
             const phase = band.phase || "";
@@ -1695,7 +1719,7 @@
                         '<div class="elev-metrics-row">' +
                             '<span class="elev-ground">' +
                                 groundStr +
-                                '<span class="elev-source-badge ' + sourceClass + '">' + sourceWord + "</span>" +
+                                (band.snow_in != null ? snowSourceBadge(band.snow_source) : "") +
                             "</span>" +
                             '<span class="elev-temp-phase">' +
                                 highF + "° / " + lowF + "°F" +
@@ -1721,8 +1745,8 @@
                 section.hidden = true;
                 return;
             }
-            const todaySub = todayDay.snow_level_ft != null ? ("Snow level ~" + todayDay.snow_level_ft + " ft") : "";
-            const tomSub = (tomDay && tomDay.snow_level_ft != null) ? ("Snow level ~" + tomDay.snow_level_ft + " ft") : "";
+            const todaySub = levelLabel(todayDay);
+            const tomSub = levelLabel(tomDay);
             let html =
                 "<div></div>" +
                 '<div class="elev-col-head">Today · ' + (todayDay.date || "") +
@@ -1741,16 +1765,26 @@
                     '<div class="elev-band-label">' +
                         '<span class="elev-band-ft">' + label + "</span>" +
                     "</div>" +
-                    renderElevationCell(bToday, todayDay, true) +
-                    renderElevationCell(bTom, tomDay || todayDay, false);
+                    renderElevationCell(bToday, todayDay) +
+                    renderElevationCell(bTom, tomDay || todayDay);
             });
             grid.innerHTML = html;
             section.hidden = false;
         }
 
+        // The forecast gateway's summary, exactly as the job published it.
+        function renderForecastSummary(summary) {
+            const el = document.getElementById("elev-summary");
+            if (!el) return;
+            const text = typeof summary === "string" ? summary.trim() : "";
+            el.textContent = text;
+            el.hidden = !text;
+        }
+
         function renderForecastEmpty(staleText) {
             renderAvalanche(null, null);
             renderElevationForecast(null, null);
+            renderForecastSummary(null);
             const todayEl = document.getElementById("stat-hike-today");
             const tomEl = document.getElementById("stat-hike-tomorrow");
             const todaySyn = document.getElementById("stat-hike-today-syn");
@@ -1808,6 +1842,7 @@
                 }
                 renderAvalanche(todayDay, tomDay);
                 renderElevationForecast(todayDay, tomDay);
+                renderForecastSummary(data.summary);
                 bannerForecastUpdatedIso = data.generated_at || null;
                 renderBannerUpdatedLine();
             } catch (e) {
