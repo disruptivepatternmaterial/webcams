@@ -23,8 +23,8 @@
     "unit": "\u00b0F",
     "value": 40
   },
-  "event_id": "ccd05f1d-0d96-55b2-9871-9f064b863fbc",
-  "last_updated": "2026-11-04T06:22:00Z",
+  "event_id": "b5d7b2d8-fbb9-57e7-8f53-d6a3fe63e062",
+  "last_updated": "2026-11-04T06:52:00Z",
   "sites": [
     {
       "aqi": null,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:02:12.760565Z",
+      "as_of": "2026-11-04T06:32:12.458830Z",
       "elev_ft": 4721,
       "fog": null,
       "has_aqi": true,
@@ -53,7 +53,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:09:22.830418Z",
+      "as_of": "2026-11-04T06:39:22.269074Z",
       "elev_ft": 4731,
       "fog": null,
       "has_aqi": false,
@@ -61,11 +61,11 @@
       "label": "N Twin Approach",
       "snow_in": 7,
       "stale": false,
-      "temp_f": 33
+      "temp_f": 32
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:03:51.802971Z",
+      "as_of": "2026-11-04T06:33:51.473857Z",
       "elev_ft": 3750,
       "fog": null,
       "has_aqi": false,
@@ -76,7 +76,7 @@
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:18:43.373603Z",
+      "as_of": "2026-11-04T06:38:53.800434Z",
       "elev_ft": 3990,
       "fog": null,
       "has_aqi": false,
@@ -90,18 +90,18 @@
     },
     {
       "aqi": 0,
-      "as_of": "2026-11-04T06:00:29.812978Z",
+      "as_of": "2026-11-04T06:30:29.406944Z",
       "elev_ft": 3380,
       "fog": null,
       "has_aqi": true,
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
       "stale": false,
-      "temp_f": 40
+      "temp_f": 39
     },
     {
       "aqi": null,
-      "as_of": "2026-11-04T06:15:28.537947Z",
+      "as_of": "2026-11-04T06:45:28.265452Z",
       "elev_ft": 3166,
       "fog": null,
       "ground_temp_f": 40,
@@ -109,7 +109,7 @@
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
-      "temp_f": 31
+      "temp_f": 30
     }
   ]
 }
