@@ -1,12 +1,12 @@
 {
-  "event_id": "36cfeb14-9485-5a9f-8099-d5210095a560",
-  "last_updated": "2026-11-05T19:08:00Z",
+  "event_id": "246df112-e953-56a6-9bbb-bc4e5d94dced",
+  "last_updated": "2026-11-05T19:22:00Z",
   "sites": [
     {
       "aqi": [
         28
       ],
-      "as_of": "2026-11-05T18:01:17.352379Z",
+      "as_of": "2026-11-05T19:03:26.028062Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        39
+        42
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T18:51:37.350300Z",
+      "as_of": "2026-11-05T19:12:28.244808Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,13 +49,13 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        37
       ],
       "wind": []
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T18:58:59.081666Z",
+      "as_of": "2026-11-05T19:12:36.780373Z",
       "dropped": [
         {
           "measurement": "aqi",
@@ -80,13 +80,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 307,
-          "mph": 3
+          "dir_deg": 274,
+          "mph": 2
         }
       ]
     },
     {
-      "as_of": "2026-11-05T18:56:25.869668Z",
+      "as_of": "2026-11-05T19:16:25.726535Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -95,15 +95,15 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        38
+        39
       ]
     },
     {
-      "as_of": "2026-11-05T19:01:12Z",
+      "as_of": "2026-11-05T19:16:27.457528Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1410 mm came with signal strength 90, below this sensor's minimum of 200"
+          "reason": "distance 1540 mm came with signal strength 93, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -118,7 +118,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        40
+        41
       ],
       "wind": [
         {
@@ -129,7 +129,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T18:01:52.266572Z",
+      "as_of": "2026-11-05T19:00:50.844190Z",
       "dropped": [
         {
           "measurement": "aqi",
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T18:49:01.761803Z",
+      "as_of": "2026-11-05T19:19:01.505817Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -165,7 +165,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        41
+        42
       ]
     }
   ],
