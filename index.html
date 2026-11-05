@@ -1400,6 +1400,11 @@
         // The page treats banner_conditions.json as offline once its last_updated is
         // more than 3 hours old. Each reading's own freshness is the read path's rule.
         const BANNER_MAX_AGE_HOURS = 3;
+        // The forecast file is stale once a scheduled run should have replaced it: the
+        // longest gap between two scheduled runs (19:20 to 01:50 UTC, R35), plus the
+        // longest run from its scheduled start to its end (3.4 min, 147 runs to
+        // 2026-11-05) and the longest GitHub Pages build (8.3 min, the last 92).
+        const FORECAST_MAX_AGE_HOURS = 6.5 + 3.4 / 60 + 8.3 / 60;
         const BANNER_HISTORY_STORAGE_KEY = "webcam_banner_history_v1";
         let bannerLatest = null;
         let chartsRender = null;
@@ -1866,7 +1871,7 @@
                 const generated = data && data.generated_at ? new Date(data.generated_at) : null;
                 if (!generated || isNaN(generated.getTime())) { renderForecastEmpty(); return; }
                 const ageH = (Date.now() - generated.getTime()) / 3600000;
-                if (ageH > 36) { renderForecastEmpty("Forecast stale"); return; }
+                if (ageH > FORECAST_MAX_AGE_HOURS) { renderForecastEmpty("Forecast stale"); return; }
 
                 const byDate = {};
                 (Array.isArray(data.days) ? data.days : []).forEach((d) => {
