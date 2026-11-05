@@ -1,6 +1,6 @@
 {
-  "event_id": "04f27049-b8af-5826-a220-3222093a8a4b",
-  "last_updated": "2026-11-05T09:16:00Z",
+  "event_id": "f0eea41b-7daf-54c8-9119-c6252a14674f",
+  "last_updated": "2026-11-05T09:22:00Z",
   "sites": [
     {
       "aqi": [
@@ -35,11 +35,11 @@
       "aqi": [
         14
       ],
-      "as_of": "2026-11-05T09:09:02.837965Z",
+      "as_of": "2026-11-05T09:12:34.742657Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "46.0 F disagrees with another sensor here (spread 10.9 F, over 6.7 F) and is furthest from the other locations: 8.4 F off their median of 37.6 F, 11 locations adjusted to 4642 ft at 0.98 F per 1000 ft"
+          "reason": "46.0 F disagrees with another sensor here (spread 10.7 F, over 6.7 F) and is furthest from the other locations: 8.4 F off their median of 37.6 F, 11 locations adjusted to 4642 ft at 0.98 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -64,7 +64,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-05T08:59:05.950369Z",
+      "as_of": "2026-11-05T09:12:36.796569Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -84,13 +84,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 28,
-          "mph": 2
+          "dir_deg": 9,
+          "mph": 7
         }
       ]
     },
     {
-      "as_of": "2026-11-05T08:56:31.291342Z",
+      "as_of": "2026-11-05T09:16:31.116035Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T09:01:11Z",
+      "as_of": "2026-11-05T09:11:41.141954Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -122,7 +122,7 @@
       "wind": [
         {
           "dir_deg": 1,
-          "mph": 12
+          "mph": 2
         }
       ]
     },
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T09:09:34.869231Z",
+      "as_of": "2026-11-05T09:19:06.668076Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -161,7 +161,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        40
+        39
       ]
     }
   ],

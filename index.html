@@ -1228,10 +1228,6 @@
 
         let bannerSensorsUpdatedIso = null;
         let bannerForecastUpdatedIso = null;
-        // Either file loading redraws the forecast table, so today's measured cells
-        // follow the boxes between forecast runs (renderForecastTable).
-        let forecastShown = null;
-        let bannerSnowBands = null;
 
         function renderBannerUpdatedLine() {
             const timeEl = document.getElementById("banner-conditions-time");
@@ -1683,56 +1679,16 @@
 
         // Where a cell's snow depth came from: a sensor that passed the checks,
         // NOAA's SNODAS analysis, or the forecast model. No value, no badge.
-        function snowSourceBadge(source, note) {
+        function snowSourceBadge(source) {
             const badges = {
                 measured: { word: "measured", className: "elev-source-measured" },
                 snodas: { word: "SNODAS", className: "elev-source-snodas" },
                 model: { word: "model", className: "elev-source-model" }
             };
             const badge = badges[source];
-            const title = note
-                ? ' title="' + String(note).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;") + '"'
-                : "";
             return badge
-                ? '<span class="elev-source-badge ' + badge.className + '"' + title + ">" + badge.word + "</span>"
+                ? '<span class="elev-source-badge ' + badge.className + '">' + badge.word + "</span>"
                 : "";
-        }
-
-        // SNODAS counts for today while its file is today's or yesterday's (UTC),
-        // the same files the forecast reads.
-        function snodasCurrent(dateText, nowMs) {
-            const dayMs = 24 * 3600 * 1000;
-            return dateText === new Date(nowMs).toISOString().slice(0, 10)
-                || dateText === new Date(nowMs - dayMs).toISOString().slice(0, 10);
-        }
-
-        // Today's snow on the ground, whichever forecast day is today when the page
-        // draws: the band's sensors as the boxes show them now (each reading kept by
-        // the read path's freshness check on its own time), else SNODAS, else the
-        // model's value for the day. A forecast file without `snodas` predates this:
-        // it keeps its own SNODAS or model depth, and a measured depth only ever
-        // comes from the boxes.
-        function todaySnowOnGround(band, snowBands, snodas, nowMs) {
-            const measured = (Array.isArray(snowBands) ? snowBands : []).find(function(entry) {
-                return entry && entry.band_ft === band.elev_ft && bannerNumeric(entry.snow_in) !== null;
-            });
-            if (measured) {
-                return { snow_in: measured.snow_in, snow_source: "measured",
-                         snow_note: "Measured " + formatPacificTime(measured.observed_at) };
-            }
-            if (snodas === undefined) {
-                return band.snow_source === "measured"
-                    ? { snow_in: null, snow_source: null, snow_note: "" }
-                    : { snow_in: band.snow_in, snow_source: band.snow_source, snow_note: "" };
-            }
-            const snodasDepth = snodas && snodas.snow_in && snodasCurrent(snodas.date, nowMs)
-                ? bannerNumeric(snodas.snow_in[String(band.elev_ft)])
-                : null;
-            if (snodasDepth !== null) {
-                return { snow_in: snodasDepth, snow_source: "snodas", snow_note: "SNODAS analysis of " + snodas.date };
-            }
-            const model = bannerNumeric(band.model_snow_in);
-            return { snow_in: model, snow_source: model === null ? null : "model", snow_note: "" };
         }
 
         // NBM's snow level on a wet day; the freezing level on a dry one.
@@ -1763,7 +1719,7 @@
                         '<div class="elev-metrics-row">' +
                             '<span class="elev-ground">' +
                                 groundStr +
-                                (band.snow_in != null ? snowSourceBadge(band.snow_source, band.snow_note) : "") +
+                                (band.snow_in != null ? snowSourceBadge(band.snow_source) : "") +
                             "</span>" +
                             '<span class="elev-temp-phase">' +
                                 highF + "° / " + lowF + "°F" +
@@ -1778,7 +1734,7 @@
             );
         }
 
-        function renderElevationForecast(todayDay, tomDay, todayGround) {
+        function renderElevationForecast(todayDay, tomDay) {
             const section = document.getElementById("elev-forecast");
             const grid = document.getElementById("elev-grid");
             if (!section || !grid) return;
@@ -1804,13 +1760,12 @@
             elevations.forEach(function(elev) {
                 const bToday = todayBands.find(function(b) { return b.elev_ft === elev; }) || null;
                 const bTom = tomBands.find(function(b) { return b.elev_ft === elev; }) || null;
-                const shownToday = (bToday && todayGround) ? Object.assign({}, bToday, todayGround(bToday)) : bToday;
                 const label = (bToday && bToday.label) ? bToday.label : (elev === 6000 ? "6000+ ft" : (elev + " ft"));
                 html +=
                     '<div class="elev-band-label">' +
                         '<span class="elev-band-ft">' + label + "</span>" +
                     "</div>" +
-                    renderElevationCell(shownToday, todayDay) +
+                    renderElevationCell(bToday, todayDay) +
                     renderElevationCell(bTom, tomDay || todayDay);
             });
             grid.innerHTML = html;
@@ -1826,17 +1781,7 @@
             el.hidden = !text;
         }
 
-        function renderForecastTable() {
-            if (!forecastShown) return;
-            const shown = forecastShown;
-            const nowMs = Date.now();
-            renderElevationForecast(shown.todayDay, shown.tomDay, function(band) {
-                return todaySnowOnGround(band, bannerSnowBands, shown.snodas, nowMs);
-            });
-        }
-
         function renderForecastEmpty(staleText) {
-            forecastShown = null;
             renderAvalanche(null, null);
             renderElevationForecast(null, null);
             renderForecastSummary(null);
@@ -1896,8 +1841,7 @@
                     if (tomSyn) tomSyn.textContent = "";
                 }
                 renderAvalanche(todayDay, tomDay);
-                forecastShown = { todayDay: todayDay, tomDay: tomDay, snodas: data.snodas };
-                renderForecastTable();
+                renderElevationForecast(todayDay, tomDay);
                 renderForecastSummary(data.summary);
                 bannerForecastUpdatedIso = data.generated_at || null;
                 renderBannerUpdatedLine();
@@ -2047,8 +1991,6 @@
                 if (wrap) wrap.innerHTML = "";
                 bannerSensorsUpdatedIso = null;
                 renderBannerUpdatedLine();
-                bannerSnowBands = null;
-                renderForecastTable();
             };
             try {
                 const response = await fetch(assetUrl("banner_conditions.json?t=" + Date.now()), { cache: "no-store" });
@@ -2065,8 +2007,6 @@
                 renderElevationFooter(data.snow_sensors);
                 bannerSensorsUpdatedIso = data.last_updated || null;
                 renderBannerUpdatedLine();
-                bannerSnowBands = fileCurrent && Array.isArray(data.snow_bands) ? data.snow_bands : null;
-                renderForecastTable();
 
                 const byId = {};
                 sites.forEach(function(s) { byId[s.id] = s; });
