@@ -1,12 +1,12 @@
 {
-  "event_id": "e6cbe063-3494-59a1-9909-c35f75f0f0a4",
-  "last_updated": "2026-11-05T03:52:00Z",
+  "event_id": "97e576ed-f21b-5499-9e06-213e477e878e",
+  "last_updated": "2026-11-05T04:08:00Z",
   "sites": [
     {
       "aqi": [
-        3
+        2
       ],
-      "as_of": "2026-11-05T03:31:24Z",
+      "as_of": "2026-11-05T04:01:35Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,18 +28,18 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        40
+        39
       ]
     },
     {
       "aqi": [
         14
       ],
-      "as_of": "2026-11-05T03:42:38.776257Z",
+      "as_of": "2026-11-05T03:52:59.681641Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "58.6 F disagrees with another sensor here (spread 23.6 F, over 6.7 F) and is furthest from the other locations: 20.7 F off their median of 38.0 F, 11 locations adjusted to 4642 ft at 1.57 F per 1000 ft"
+          "reason": "59.5 F disagrees with another sensor here (spread 24.5 F, over 6.7 F) and is furthest from the other locations: 21.6 F off their median of 38.0 F, 11 locations adjusted to 4642 ft at 1.19 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -62,9 +62,9 @@
     },
     {
       "aqi": [
-        14
+        5
       ],
-      "as_of": "2026-11-05T03:42:39.836511Z",
+      "as_of": "2026-11-05T03:58:54.102040Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -85,13 +85,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 6,
+          "dir_deg": 135,
           "mph": 3
         }
       ]
     },
     {
-      "as_of": "2026-11-05T03:36:34.173178Z",
+      "as_of": "2026-11-05T03:56:34.011897Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T03:49:08.547157Z",
+      "as_of": "2026-11-05T04:01:11Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -120,7 +120,7 @@
       ],
       "stale": false,
       "temp_f": [
-        38
+        37
       ],
       "wind": [
         {
