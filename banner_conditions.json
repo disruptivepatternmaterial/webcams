@@ -1,12 +1,12 @@
 {
-  "event_id": "22b02cc9-d4cf-573c-a97b-50b87a95e620",
-  "last_updated": "2026-11-05T15:24:00Z",
+  "event_id": "2ff911ee-4c63-5f01-99d1-8a3da096ff67",
+  "last_updated": "2026-11-05T15:38:00Z",
   "sites": [
     {
       "aqi": [
         "fog"
       ],
-      "as_of": "2026-11-05T15:01:30.745358Z",
+      "as_of": "2026-11-05T15:31:25Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -57,7 +57,7 @@
       "aqi": [
         6
       ],
-      "as_of": "2026-11-05T15:12:33.494670Z",
+      "as_of": "2026-11-05T15:23:31.664270Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,7 +73,7 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        35
       ],
       "wind": [
         {
