@@ -1,10 +1,10 @@
 {
-  "event_id": "efbd8f69-254d-59de-a859-b59a51cefcb2",
-  "last_updated": "2026-11-05T17:22:00Z",
+  "event_id": "919a4bff-47b4-5c3f-8c64-6ab0f2666983",
+  "last_updated": "2026-11-05T17:38:00Z",
   "sites": [
     {
       "aqi": [],
-      "as_of": "2026-11-05T17:01:01.279647Z",
+      "as_of": "2026-11-05T17:31:18Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -16,7 +16,7 @@
         },
         {
           "measurement": "aqi",
-          "reason": "the newest particle reading was flagged as fog, which optical sensors read as particles"
+          "reason": "fewer than 2 of the last 3 whole hours have a particle reading outside fog"
         },
         {
           "measurement": "fog",
@@ -57,9 +57,15 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T17:12:32.421624Z",
-      "dropped": [],
+      "as_of": "2026-11-05T17:28:26.861604Z",
+      "dropped": [
+        {
+          "measurement": "aqi",
+          "reason": "fewer than 2 of the last 3 whole hours have a particle reading outside fog"
+        }
+      ],
       "elev_ft": [
+        4163,
         4731
       ],
       "id": "n_twin_approach",
@@ -74,7 +80,12 @@
       "temp_f": [
         36
       ],
-      "wind": []
+      "wind": [
+        {
+          "dir_deg": 42,
+          "mph": 4
+        }
+      ]
     },
     {
       "as_of": "2026-11-05T17:16:26.801401Z",
