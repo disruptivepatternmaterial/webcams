@@ -1,6 +1,6 @@
 {
-  "event_id": "62da7eef-c418-5fbb-9608-62dbe4df9049",
-  "last_updated": "2026-11-05T17:10:00Z",
+  "event_id": "efbd8f69-254d-59de-a859-b59a51cefcb2",
+  "last_updated": "2026-11-05T17:22:00Z",
   "sites": [
     {
       "aqi": [],
@@ -35,7 +35,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T17:08:57.011460Z",
+      "as_of": "2026-11-05T17:12:29.230437Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,15 +57,9 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T16:59:00.277706Z",
-      "dropped": [
-        {
-          "measurement": "aqi",
-          "reason": "fewer than 2 of the last 3 whole hours have a particle reading outside fog"
-        }
-      ],
+      "as_of": "2026-11-05T17:12:32.421624Z",
+      "dropped": [],
       "elev_ft": [
-        4163,
         4731
       ],
       "id": "n_twin_approach",
@@ -80,15 +74,10 @@
       "temp_f": [
         36
       ],
-      "wind": [
-        {
-          "dir_deg": 7,
-          "mph": 3
-        }
-      ]
+      "wind": []
     },
     {
-      "as_of": "2026-11-05T17:03:31.277861Z",
+      "as_of": "2026-11-05T17:16:26.801401Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -101,7 +90,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T17:01:11Z",
+      "as_of": "2026-11-05T17:15:30.169437Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -147,7 +136,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T17:09:30.523366Z",
+      "as_of": "2026-11-05T17:19:02.726890Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -159,7 +148,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        39
+        40
       ]
     }
   ],
