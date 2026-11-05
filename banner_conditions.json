@@ -1,6 +1,6 @@
 {
-  "event_id": "c1320d00-4193-53ba-9d3d-ec64437ce9f8",
-  "last_updated": "2026-11-05T00:08:00Z",
+  "event_id": "cb597891-c295-551a-b624-478db5a1ddc1",
+  "last_updated": "2026-11-05T00:22:00Z",
   "sites": [
     {
       "aqi": [],
@@ -18,11 +18,11 @@
       "aqi": [
         14
       ],
-      "as_of": "2026-11-04T23:53:03.116209Z",
+      "as_of": "2026-11-05T00:01:59.781438Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "34.3 F disagrees with another sensor here (spread 11.6 F, over 6.7 F) and is furthest from the other locations: 8.9 F off their median of 43.3 F, 10 locations adjusted to 4642 ft at 2.38 F per 1000 ft"
+          "reason": "34.3 F disagrees with another sensor here (spread 11.6 F, over 6.7 F) and is furthest from the other locations: 8.1 F off their median of 42.4 F, 10 locations adjusted to 4642 ft at 2.38 F per 1000 ft"
         },
         {
           "measurement": "air_temperature_f",
@@ -56,7 +56,7 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-04T23:53:40.812644Z",
+      "as_of": "2026-11-05T00:17:41.025227Z",
       "dropped": [],
       "elev_ft": [
         4731
@@ -71,11 +71,11 @@
       ],
       "stale": false,
       "temp_f": [
-        43
+        42
       ]
     },
     {
-      "as_of": "2026-11-04T23:33:41.423006Z",
+      "as_of": "2026-11-05T00:03:41.191323Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -84,11 +84,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        47
+        46
       ]
     },
     {
-      "as_of": "2026-11-05T00:01:11Z",
+      "as_of": "2026-11-05T00:07:24.614262Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
@@ -107,7 +107,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        44
+        43
       ],
       "wind": [
         {
@@ -120,7 +120,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-04T23:30:26.776271Z",
+      "as_of": "2026-11-05T00:00:29.446094Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -129,17 +129,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        48
+        47
       ],
       "wind": [
         {
-          "dir_deg": 60,
-          "mph": 4
+          "dir_deg": 41,
+          "mph": 9
         }
       ]
     },
     {
-      "as_of": "2026-11-04T23:49:11.588479Z",
+      "as_of": "2026-11-05T00:19:11.284705Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -151,7 +151,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        42
+        41
       ]
     }
   ],
