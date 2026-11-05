@@ -1,12 +1,12 @@
 {
-  "event_id": "2c52c0c6-198e-5318-9125-625dc20c35e5",
-  "last_updated": "2026-11-05T03:22:00Z",
+  "event_id": "27e2aebd-6439-5e4b-9e1d-6522fb59cc11",
+  "last_updated": "2026-11-05T03:38:00Z",
   "sites": [
     {
       "aqi": [
-        10
+        3
       ],
-      "as_of": "2026-11-05T03:01:24.052245Z",
+      "as_of": "2026-11-05T03:31:24Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,18 +28,18 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        41
+        40
       ]
     },
     {
       "aqi": [
         14
       ],
-      "as_of": "2026-11-05T03:12:39.047453Z",
+      "as_of": "2026-11-05T03:23:00.105620Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "46.0 F disagrees with another sensor here (spread 14.0 F, over 6.7 F) and is furthest from the other locations: 7.4 F off their median of 38.6 F, 11 locations adjusted to 4642 ft at 1.57 F per 1000 ft"
+          "reason": "58.6 F disagrees with another sensor here (spread 23.2 F, over 6.7 F) and is furthest from the other locations: 20.7 F off their median of 38.0 F, 11 locations adjusted to 4642 ft at 1.57 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -56,15 +56,15 @@
       ],
       "stale": false,
       "temp_f": [
-        34
+        39
       ],
       "wind": []
     },
     {
       "aqi": [
-        17
+        14
       ],
-      "as_of": "2026-11-05T03:12:40.129533Z",
+      "as_of": "2026-11-05T03:27:43.309767Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -81,12 +81,12 @@
       ],
       "stale": false,
       "temp_f": [
-        39
+        38
       ],
       "wind": [
         {
-          "dir_deg": 133,
-          "mph": 4
+          "dir_deg": 6,
+          "mph": 3
         }
       ]
     },
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T03:08:50.316037Z",
+      "as_of": "2026-11-05T03:28:59.888108Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
@@ -128,7 +128,7 @@
       "wind": [
         {
           "dir_deg": 1,
-          "mph": 4
+          "mph": 2
         }
       ]
     },
