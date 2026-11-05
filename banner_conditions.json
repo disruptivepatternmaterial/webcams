@@ -1,12 +1,12 @@
 {
-  "event_id": "b3cad142-a75b-556c-97b9-5be7b683b1e1",
-  "last_updated": "2026-11-05T20:52:00Z",
+  "event_id": "d83f41fe-d407-596f-80af-22a8abeff38b",
+  "last_updated": "2026-11-05T21:08:00Z",
   "sites": [
     {
       "aqi": [
-        64
+        0
       ],
-      "as_of": "2026-11-05T20:31:00.519914Z",
+      "as_of": "2026-11-05T21:00:55Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        42
+        44
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T20:42:26.751348Z",
+      "as_of": "2026-11-05T20:51:35.943203Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         1
       ],
-      "as_of": "2026-11-05T20:42:35.879826Z",
+      "as_of": "2026-11-05T20:58:57.576528Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T20:36:24.949854Z",
+      "as_of": "2026-11-05T20:56:24.782839Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -96,11 +96,11 @@
       ]
     },
     {
-      "as_of": "2026-11-05T20:37:05.592522Z",
+      "as_of": "2026-11-05T21:01:11Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1520 mm came with signal strength 105, below this sensor's minimum of 200"
+          "reason": "distance 1540 mm came with signal strength 102, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -115,7 +115,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        41
+        43
       ],
       "wind": [
         {
@@ -166,13 +166,13 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-05T18:58:59.081666Z",
+      "observed_at": "2026-11-05T20:58:57.576528Z",
       "snow_in": 2.2
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-05T20:31:36.155771Z",
-      "snow_in": 3.2
+      "observed_at": "2026-11-05T20:51:35.943203Z",
+      "snow_in": 3.3
     }
   ],
   "snow_sensors": [
