@@ -1,15 +1,4 @@
 {
-  "Bowman_Ridge_High_Pt_20261023_120739.jpg": {
-    "content_sha256": "c18787c5304f00a93134289387ede15b975310bce08ff03ef215c61f2e9bc861",
-    "run_id": "01a169ec-eaf8-79e3-b8ab-1a35209a4205",
-    "source": "reconyx",
-    "source_filename": "THM_0182.JPG",
-    "source_media_id": "56d1ee9a-e8de-410e-9ffa-3c64d84c3027.jpg",
-    "temperature_c": 10.6,
-    "temperature_ocr_version": "reconyx-footer-v2",
-    "temperature_source": "overlay_ocr",
-    "timestamp": "2026-10-23T19:07:39Z"
-  },
   "Bowman_Ridge_High_Pt_20261024_120739.jpg": {
     "content_sha256": "008ad99f9a64ba3c108107bdc635e6e6e3d440aed038adf77aefff1030de2ff6",
     "run_id": "01a16f13-0edf-75b7-a614-06d902e05b01",
@@ -142,15 +131,26 @@
     "temperature_source": null,
     "timestamp": "2026-11-04T20:07:39Z"
   },
-  "Bowman_Ridge_High_Pt_latest.jpg": {
-    "content_sha256": "7253e688e7486e400bb4c32fe2d83f94ac50d04ae7d49e112d88cfb6899c48e0",
-    "run_id": "01a1a823-69c7-71aa-b709-9e51eef55aeb",
+  "Bowman_Ridge_High_Pt_20261105_120739.jpg": {
+    "content_sha256": "50d1847a6a86652933492683cf7eb52643a94a66c654069f66884c13b50ae99c",
+    "run_id": "01a1ad16-44a8-76b9-9242-0447e492c3f7",
     "source": "reconyx",
-    "source_filename": "THM_0194.JPG",
-    "source_media_id": "f7ef1e9a-6704-416b-a7b2-364daa1f8439.jpg",
+    "source_filename": "THM_0195.JPG",
+    "source_media_id": "9e689540-0d3d-4e6e-90fd-b2afdd1d98c0.jpg",
     "temperature_c": null,
     "temperature_ocr_version": "reconyx-footer-v2",
     "temperature_source": null,
-    "timestamp": "2026-11-04T20:07:39Z"
+    "timestamp": "2026-11-05T20:07:39Z"
+  },
+  "Bowman_Ridge_High_Pt_latest.jpg": {
+    "content_sha256": "50d1847a6a86652933492683cf7eb52643a94a66c654069f66884c13b50ae99c",
+    "run_id": "01a1ad16-44a8-76b9-9242-0447e492c3f7",
+    "source": "reconyx",
+    "source_filename": "THM_0195.JPG",
+    "source_media_id": "9e689540-0d3d-4e6e-90fd-b2afdd1d98c0.jpg",
+    "temperature_c": null,
+    "temperature_ocr_version": "reconyx-footer-v2",
+    "temperature_source": null,
+    "timestamp": "2026-11-05T20:07:39Z"
   }
 }

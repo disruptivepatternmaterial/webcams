@@ -1,12 +1,12 @@
 {
-  "event_id": "a6bf5834-1e18-5e7a-88d9-1feb05e98b17",
-  "last_updated": "2026-11-05T20:08:00Z",
+  "event_id": "6c36c50f-5ee2-5c1b-90bf-b1ebe6ab7686",
+  "last_updated": "2026-11-05T20:14:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-05T19:31:59.996276Z",
+      "as_of": "2026-11-05T20:03:25.957612Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        42
+        41
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T19:51:36.695086Z",
+      "as_of": "2026-11-05T20:08:54.807673Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        39
       ],
       "wind": []
     },
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-05T19:42:36.488642Z",
+      "as_of": "2026-11-05T20:04:21.737877Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -77,13 +77,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 15,
-          "mph": 1
+          "dir_deg": 357,
+          "mph": 2
         }
       ]
     },
     {
-      "as_of": "2026-11-05T19:56:25.317965Z",
+      "as_of": "2026-11-05T20:03:29.575105Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -128,7 +128,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-05T19:31:02.950649Z",
+      "as_of": "2026-11-05T20:00:59.609545Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -137,17 +137,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        44
+        43
       ],
       "wind": [
         {
-          "dir_deg": 0,
-          "mph": 0
+          "dir_deg": 236,
+          "mph": 3
         }
       ]
     },
     {
-      "as_of": "2026-11-05T19:49:01.251015Z",
+      "as_of": "2026-11-05T20:09:28.826692Z",
       "dropped": [],
       "elev_ft": [
         3166
