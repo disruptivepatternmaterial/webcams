@@ -1939,7 +1939,7 @@
         // frontend test pins. A reason not listed here still shows that the depth was
         // withheld, not missing.
         function snowWithheldWord(reason) {
-            if (/^distance -?\d+(?:\.\d+)? mm came with signal strength -?\d+(?:\.\d+)?, below this sensor's minimum of -?\d+(?:\.\d+)?$/.test(reason)) return "weak signal";
+            if (/^distance -?\d+(?:\.\d+)? mm came with signal strength -?\d+(?:\.\d+)?, below this sensor's minimum of -?\d+(?:\.\d+)?$/.test(reason)) return "unknown";
             if (/^distance -?\d+(?:\.\d+)? mm is the no-echo value, not a range the sensor can measure$/.test(reason)) return "no echo";
             if (/^-?\d+(?:\.\d+)? in is outside the MADIS snow cover range, 0 to 25 ft$/.test(reason)) return "out of range";
             return "withheld";
