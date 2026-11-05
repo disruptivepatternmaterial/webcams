@@ -1,12 +1,10 @@
 {
-  "event_id": "e2f09307-a6d5-5f5e-afec-9dfdfdbd5723",
-  "last_updated": "2026-11-05T17:08:00Z",
+  "event_id": "62da7eef-c418-5fbb-9608-62dbe4df9049",
+  "last_updated": "2026-11-05T17:10:00Z",
   "sites": [
     {
-      "aqi": [
-        "fog"
-      ],
-      "as_of": "2026-11-05T16:31:02.359371Z",
+      "aqi": [],
+      "as_of": "2026-11-05T17:01:01.279647Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -14,7 +12,7 @@
         },
         {
           "measurement": "aqi",
-          "reason": "the newest particle reading was flagged as fog, which optical sensors read as particles"
+          "reason": "fewer than 2 of the last 3 whole hours have a particle reading outside fog"
         },
         {
           "measurement": "aqi",
@@ -37,7 +35,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T16:42:29.598708Z",
+      "as_of": "2026-11-05T17:08:57.011460Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -90,7 +88,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T16:56:26.951888Z",
+      "as_of": "2026-11-05T17:03:31.277861Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -99,7 +97,7 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        36
+        37
       ]
     },
     {
@@ -149,7 +147,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T16:49:02.821621Z",
+      "as_of": "2026-11-05T17:09:30.523366Z",
       "dropped": [],
       "elev_ft": [
         3166
