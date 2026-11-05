@@ -1,6 +1,6 @@
 {
-  "event_id": "0d61a05b-b29b-50a3-b372-3b2685abb0e6",
-  "last_updated": "2026-11-04T23:52:00Z",
+  "event_id": "c1320d00-4193-53ba-9d3d-ec64437ce9f8",
+  "last_updated": "2026-11-05T00:08:00Z",
   "sites": [
     {
       "aqi": [],
@@ -18,11 +18,11 @@
       "aqi": [
         14
       ],
-      "as_of": "2026-11-04T23:32:00.089248Z",
+      "as_of": "2026-11-04T23:53:03.116209Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "34.2 F disagrees with another sensor here (spread 11.8 F, over 6.7 F) and is furthest from the other locations: 9.0 F off their median of 43.2 F, 10 locations adjusted to 4642 ft at 2.77 F per 1000 ft"
+          "reason": "34.3 F disagrees with another sensor here (spread 11.6 F, over 6.7 F) and is furthest from the other locations: 8.9 F off their median of 43.3 F, 10 locations adjusted to 4642 ft at 2.38 F per 1000 ft"
         },
         {
           "measurement": "air_temperature_f",
@@ -56,7 +56,7 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-04T23:39:09.915421Z",
+      "as_of": "2026-11-04T23:53:40.812644Z",
       "dropped": [],
       "elev_ft": [
         4731
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "as_of": "2026-11-04T23:47:15.071185Z",
+      "as_of": "2026-11-05T00:01:11Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
@@ -107,7 +107,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        45
+        44
       ],
       "wind": [
         {
