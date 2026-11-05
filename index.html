@@ -1915,9 +1915,10 @@
         // ground, snow and AQI where the location measures them. Each value is the
         // average of the devices at the location, so a list holds one number; a
         // reading that failed the read path's checks is left out (listed under
-        // "dropped" in the file, never shown). Fog droplets read as particulates on
-        // the PM sensors, so a device whose fog indicator is on shows "Fog" instead
-        // of its AQI number.
+        // "dropped" in the file). Only a snow row left with no depth says why, so a
+        // withheld depth does not pass for a missing one. Fog droplets read as
+        // particulates on the PM sensors, so a device whose fog indicator is on shows
+        // "Fog" instead of its AQI number.
         function bannerValues(values) {
             return (Array.isArray(values) ? values : [])
                 .map(bannerNumeric)
@@ -1928,9 +1929,30 @@
             if (!nums.length) return "—";
             return nums.length === 1 ? nums[0] + " °F" : nums.join("° / ") + "°F";
         }
-        function formatSnow(values) {
+        // The read path's reasons for each snow depth it withheld at the location.
+        function snowWithheldReasons(dropped) {
+            return (Array.isArray(dropped) ? dropped : [])
+                .filter(function(item) { return item && item.measurement === "snow_depth_in" && typeof item.reason === "string" && item.reason !== ""; })
+                .map(function(item) { return item.reason; });
+        }
+        // These match the read path's own wording of its three snow checks, which the
+        // frontend test pins. A reason not listed here still shows that the depth was
+        // withheld, not missing.
+        function snowWithheldWord(reason) {
+            if (/^distance -?\d+(?:\.\d+)? mm came with signal strength -?\d+(?:\.\d+)?, below this sensor's minimum of -?\d+(?:\.\d+)?$/.test(reason)) return "weak signal";
+            if (/^distance -?\d+(?:\.\d+)? mm is the no-echo value, not a range the sensor can measure$/.test(reason)) return "no echo";
+            if (/^-?\d+(?:\.\d+)? in is outside the MADIS snow cover range, 0 to 25 ft$/.test(reason)) return "out of range";
+            return "withheld";
+        }
+        function formatSnow(values, withheldReasons) {
             const nums = bannerValues(values);
-            return nums.length ? nums.join(" / ") + " in" : "—";
+            if (nums.length) return nums.join(" / ") + " in";
+            const words = [];
+            (Array.isArray(withheldReasons) ? withheldReasons : []).forEach(function(reason) {
+                const word = snowWithheldWord(reason);
+                if (words.indexOf(word) === -1) words.push(word);
+            });
+            return words.length ? words.join(" / ") : "—";
         }
         function formatWind(winds) {
             const parts = (Array.isArray(winds) ? winds : []).map(function(w) {
@@ -1999,9 +2021,11 @@
                 }
 
                 if (site.snow_in !== undefined) {
-                    const snow = bannerRow("Snow", formatSnow(site.snow_in));
+                    const withheld = bannerValues(site.snow_in).length ? [] : snowWithheldReasons(site.dropped);
+                    const snow = bannerRow("Snow", formatSnow(site.snow_in, withheld));
                     const snowElevations = bannerValues(site.snow_elev_ft);
-                    snow.title = "Measured snow depth" + (snowElevations.length ? " at " + snowElevations.join(" / ") + " ft" : "");
+                    snow.title = "Measured snow depth" + (snowElevations.length ? " at " + snowElevations.join(" / ") + " ft" : "")
+                        + (withheld.length ? " — not shown: " + withheld.join("; ") : "");
                     card.appendChild(snow);
                 }
 
