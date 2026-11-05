@@ -1,6 +1,6 @@
 {
-  "event_id": "27e2aebd-6439-5e4b-9e1d-6522fb59cc11",
-  "last_updated": "2026-11-05T03:38:00Z",
+  "event_id": "e6cbe063-3494-59a1-9909-c35f75f0f0a4",
+  "last_updated": "2026-11-05T03:52:00Z",
   "sites": [
     {
       "aqi": [
@@ -35,11 +35,11 @@
       "aqi": [
         14
       ],
-      "as_of": "2026-11-05T03:23:00.105620Z",
+      "as_of": "2026-11-05T03:42:38.776257Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "58.6 F disagrees with another sensor here (spread 23.2 F, over 6.7 F) and is furthest from the other locations: 20.7 F off their median of 38.0 F, 11 locations adjusted to 4642 ft at 1.57 F per 1000 ft"
+          "reason": "58.6 F disagrees with another sensor here (spread 23.6 F, over 6.7 F) and is furthest from the other locations: 20.7 F off their median of 38.0 F, 11 locations adjusted to 4642 ft at 1.57 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -64,7 +64,7 @@
       "aqi": [
         14
       ],
-      "as_of": "2026-11-05T03:27:43.309767Z",
+      "as_of": "2026-11-05T03:42:39.836511Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T03:16:34.410565Z",
+      "as_of": "2026-11-05T03:36:34.173178Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -100,17 +100,12 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        39
+        38
       ]
     },
     {
-      "as_of": "2026-11-05T03:28:59.888108Z",
-      "dropped": [
-        {
-          "measurement": "snow_depth_in",
-          "reason": "distance 1200 mm came with signal strength 89, below this sensor's minimum of 200"
-        }
-      ],
+      "as_of": "2026-11-05T03:49:08.547157Z",
+      "dropped": [],
       "elev_ft": [
         3980,
         3990
@@ -120,7 +115,9 @@
       "snow_elev_ft": [
         4003
       ],
-      "snow_in": [],
+      "snow_in": [
+        0
+      ],
       "stale": false,
       "temp_f": [
         38
@@ -128,7 +125,7 @@
       "wind": [
         {
           "dir_deg": 1,
-          "mph": 2
+          "mph": 3
         }
       ]
     },
@@ -136,7 +133,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-05T03:00:52.566843Z",
+      "as_of": "2026-11-05T03:30:52.982435Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -145,17 +142,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        41
+        40
       ],
       "wind": [
         {
-          "dir_deg": 358,
-          "mph": 10
+          "dir_deg": 7,
+          "mph": 6
         }
       ]
     },
     {
-      "as_of": "2026-11-05T03:19:09.742532Z",
+      "as_of": "2026-11-05T03:49:09.476683Z",
       "dropped": [],
       "elev_ft": [
         3166
