@@ -1,6 +1,6 @@
 {
-  "event_id": "cb597891-c295-551a-b624-478db5a1ddc1",
-  "last_updated": "2026-11-05T00:22:00Z",
+  "event_id": "93750f10-8b25-5d9d-96ec-e52411906d1d",
+  "last_updated": "2026-11-05T00:24:00Z",
   "sites": [
     {
       "aqi": [],
@@ -23,18 +23,6 @@
         {
           "measurement": "air_temperature_f",
           "reason": "34.3 F disagrees with another sensor here (spread 11.6 F, over 6.7 F) and is furthest from the other locations: 8.1 F off their median of 42.4 F, 10 locations adjusted to 4642 ft at 2.38 F per 1000 ft"
-        },
-        {
-          "measurement": "air_temperature_f",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "aqi",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "fog",
-          "reason": "another device of the same unit is counted instead"
         }
       ],
       "elev_ft": [
