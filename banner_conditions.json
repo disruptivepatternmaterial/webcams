@@ -1,10 +1,10 @@
 {
-  "event_id": "d1d97732-d5ff-5b5a-ba37-5b28077484cd",
-  "last_updated": "2026-11-05T17:52:00Z",
+  "event_id": "13491394-b305-5f64-9bd1-ea6660ee687d",
+  "last_updated": "2026-11-05T18:08:00Z",
   "sites": [
     {
       "aqi": [],
-      "as_of": "2026-11-05T17:31:20.078961Z",
+      "as_of": "2026-11-05T18:01:15Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -30,12 +30,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        38
+        39
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T17:42:28.855215Z",
+      "as_of": "2026-11-05T17:51:27.999621Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T17:42:32.174001Z",
+      "as_of": "2026-11-05T17:59:32.237288Z",
       "dropped": [
         {
           "measurement": "aqi",
@@ -82,13 +82,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 42,
-          "mph": 4
+          "dir_deg": 307,
+          "mph": 3
         }
       ]
     },
     {
-      "as_of": "2026-11-05T17:36:26.863945Z",
+      "as_of": "2026-11-05T17:56:26.426462Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T17:35:40.642581Z",
+      "as_of": "2026-11-05T18:01:11Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -115,7 +115,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        37
+        38
       ],
       "wind": [
         {
@@ -125,9 +125,7 @@
       ]
     },
     {
-      "aqi": [
-        0
-      ],
+      "aqi": [],
       "as_of": "2026-11-05T15:00:49.235432Z",
       "dropped": [],
       "elev_ft": [
@@ -135,16 +133,9 @@
       ],
       "id": "forest_lands_ridge",
       "label": "Forest Lands Ridge",
-      "stale": false,
-      "temp_f": [
-        38
-      ],
-      "wind": [
-        {
-          "dir_deg": 150,
-          "mph": 3
-        }
-      ]
+      "stale": true,
+      "temp_f": [],
+      "wind": []
     },
     {
       "as_of": "2026-11-05T17:49:02.300072Z",
@@ -171,8 +162,8 @@
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-05T15:51:29.705142Z",
-      "snow_in": 3.4
+      "observed_at": "2026-11-05T17:51:27.999621Z",
+      "snow_in": 3.3
     }
   ],
   "snow_sensors": [
