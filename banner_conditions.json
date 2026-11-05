@@ -1,6 +1,6 @@
 {
-  "event_id": "6744cfce-26e5-5792-aec6-76fa1dde01d2",
-  "last_updated": "2026-11-05T00:52:00Z",
+  "event_id": "f57840b1-1aa5-5f01-b942-a8fa3dcea4f8",
+  "last_updated": "2026-11-05T01:08:00Z",
   "sites": [
     {
       "aqi": [],
@@ -18,11 +18,11 @@
       "aqi": [
         14
       ],
-      "as_of": "2026-11-05T00:31:59.374613Z",
+      "as_of": "2026-11-05T00:53:02.334917Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "34.0 F disagrees with another sensor here (spread 12.0 F, over 6.7 F) and is furthest from the other locations: 7.2 F off their median of 41.1 F, 10 locations adjusted to 4642 ft at 2.38 F per 1000 ft"
+          "reason": "32.0 F disagrees with another sensor here (spread 14.0 F, over 6.7 F) and is furthest from the other locations: 10.0 F off their median of 42.0 F, 10 locations adjusted to 4642 ft at 1.87 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -44,11 +44,11 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-05T00:47:40.679050Z",
+      "as_of": "2026-11-05T00:59:11.686573Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "36.0 F disagrees with another sensor here (spread 7.6 F, over 6.7 F) and is furthest from the other locations: 5.0 F off their median of 40.9 F, 10 locations adjusted to 4731 ft at 2.38 F per 1000 ft"
+          "reason": "36.0 F disagrees with another sensor here (spread 7.2 F, over 6.7 F) and is furthest from the other locations: 5.9 F off their median of 41.8 F, 10 locations adjusted to 4731 ft at 1.87 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -64,7 +64,7 @@
       ],
       "stale": false,
       "temp_f": [
-        44
+        43
       ]
     },
     {
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T00:47:43.657604Z",
+      "as_of": "2026-11-05T01:01:11Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
@@ -100,7 +100,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        42
+        41
       ],
       "wind": [
         {
