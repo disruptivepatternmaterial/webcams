@@ -1,13 +1,26 @@
 {
-  "event_id": "3a6a78b4-b438-5480-8b2b-57c30565050f",
-  "last_updated": "2026-11-05T02:52:00Z",
+  "event_id": "c7de4809-9744-5fcf-9136-176be95967b5",
+  "last_updated": "2026-11-05T03:08:00Z",
   "sites": [
     {
       "aqi": [
-        12
+        10
       ],
-      "as_of": "2026-11-05T02:31:35.716456Z",
-      "dropped": [],
+      "as_of": "2026-11-05T03:01:22Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "aqi",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "fog",
+          "reason": "another device of the same unit is counted instead"
+        }
+      ],
       "elev_ft": [
         3296
       ],
@@ -15,7 +28,7 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        42
+        41
       ]
     },
     {
@@ -26,7 +39,7 @@
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "32.0 F disagrees with another sensor here (spread 14.0 F, over 6.7 F) and is furthest from the other locations: 7.0 F off their median of 39.0 F, 10 locations adjusted to 4642 ft at 1.91 F per 1000 ft"
+          "reason": "46.0 F disagrees with another sensor here (spread 14.0 F, over 6.7 F) and is furthest from the other locations: 7.5 F off their median of 38.5 F, 10 locations adjusted to 4642 ft at 1.57 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -43,7 +56,7 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        35
       ],
       "wind": []
     },
@@ -51,7 +64,7 @@
       "aqi": [
         17
       ],
-      "as_of": "2026-11-05T02:42:40.419233Z",
+      "as_of": "2026-11-05T02:59:10.199583Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -64,11 +77,11 @@
         4163
       ],
       "snow_in": [
-        7
+        6
       ],
       "stale": false,
       "temp_f": [
-        40
+        39
       ],
       "wind": [
         {
@@ -78,7 +91,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T02:33:39.655361Z",
+      "as_of": "2026-11-05T02:56:34.557099Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -87,11 +100,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        40
+        39
       ]
     },
     {
-      "as_of": "2026-11-05T02:48:39.941827Z",
+      "as_of": "2026-11-05T03:01:11Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
@@ -110,7 +123,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        40
+        38
       ],
       "wind": [
         {
