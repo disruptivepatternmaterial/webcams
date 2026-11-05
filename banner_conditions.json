@@ -1,12 +1,12 @@
 {
-  "event_id": "07adffe7-7ac7-567b-9979-9e5873ffabe6",
-  "last_updated": "2026-11-05T21:52:00Z",
+  "event_id": "de7a9adc-0f8a-5ebd-b9bc-cebf2e8b6e63",
+  "last_updated": "2026-11-05T22:08:00Z",
   "sites": [
     {
       "aqi": [
-        "fog"
+        14
       ],
-      "as_of": "2026-11-05T21:31:02.798290Z",
+      "as_of": "2026-11-05T22:03:13Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        41
+        40
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-05T21:42:26.058939Z",
+      "as_of": "2026-11-05T21:51:35.218658Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-05T21:36:24.786169Z",
+      "as_of": "2026-11-05T21:56:24.581781Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,15 +92,15 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        39
+        38
       ]
     },
     {
-      "as_of": "2026-11-05T21:37:34.146105Z",
+      "as_of": "2026-11-05T22:01:11Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1400 mm came with signal strength 88, below this sensor's minimum of 200"
+          "reason": "distance 1570 mm came with signal strength 70, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -115,7 +115,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        41
+        38
       ],
       "wind": [
         {
@@ -171,7 +171,7 @@
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-05T21:31:35.468714Z",
+      "observed_at": "2026-11-05T21:51:35.218658Z",
       "snow_in": 3.4
     }
   ],
