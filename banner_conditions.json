@@ -1,13 +1,26 @@
 {
-  "event_id": "da285f92-f3a1-57a4-897d-aa4977bc2484",
-  "last_updated": "2026-11-06T20:08:00Z",
+  "event_id": "67edea6f-e3db-56ad-9694-93e242774078",
+  "last_updated": "2026-11-06T20:14:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T19:03:03Z",
-      "dropped": [],
+      "as_of": "2026-11-06T20:01:04.480559Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "aqi",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "fog",
+          "reason": "another device of the same unit is counted instead"
+        }
+      ],
       "elev_ft": [
         3281
       ],
@@ -15,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        43
+        44
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-06T19:51:19.647294Z",
+      "as_of": "2026-11-06T20:08:42.602369Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -70,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-06T19:45:12.583163Z",
+      "as_of": "2026-11-06T20:05:12.182843Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -79,11 +92,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        45
+        44
       ]
     },
     {
-      "as_of": "2026-11-06T20:01:11Z",
+      "as_of": "2026-11-06T20:08:13.694301Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -103,8 +116,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 87,
-          "mph": 16
+          "dir_deg": 113,
+          "mph": 3
         }
       ]
     },
@@ -112,7 +125,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T19:30:49.414826Z",
+      "as_of": "2026-11-06T20:00:49.578721Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -121,17 +134,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        45
+        44
       ],
       "wind": [
         {
-          "dir_deg": 2,
-          "mph": 22
+          "dir_deg": 31,
+          "mph": 8
         }
       ]
     },
     {
-      "as_of": "2026-11-06T19:56:48.895655Z",
+      "as_of": "2026-11-06T20:09:15.696195Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -156,7 +169,7 @@
     {
       "band_ft": 5000,
       "observed_at": "2026-11-06T19:51:19.647294Z",
-      "snow_in": 3.5
+      "snow_in": 3.6
     }
   ],
   "snow_sensors": [
