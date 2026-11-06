@@ -1,12 +1,12 @@
 {
-  "event_id": "4ffa5218-98b3-5ccb-be32-35353e521e27",
-  "last_updated": "2026-11-06T03:20:00Z",
+  "event_id": "861e5046-2d37-54e6-99ba-9a676ca2066b",
+  "last_updated": "2026-11-06T03:38:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T03:01:03.160449Z",
+      "as_of": "2026-11-06T03:31:38Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "as_of": "2026-11-06T03:12:08.423473Z",
+      "as_of": "2026-11-06T03:20:16.389185Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -108,7 +108,7 @@
         4003
       ],
       "snow_in": [
-        5
+        13
       ],
       "stale": false,
       "temp_f": [
@@ -116,7 +116,7 @@
       ],
       "wind": [
         {
-          "dir_deg": 42,
+          "dir_deg": 1,
           "mph": 2
         }
       ]
@@ -164,7 +164,7 @@
     {
       "band_ft": 4000,
       "observed_at": "2026-11-06T03:12:08.423473Z",
-      "snow_in": 3.6
+      "snow_in": 7.5
     },
     {
       "band_ft": 5000,
