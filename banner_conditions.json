@@ -1,12 +1,12 @@
 {
-  "event_id": "e0bab711-63c1-5755-94dd-54d18b666d53",
-  "last_updated": "2026-11-06T10:50:00Z",
+  "event_id": "ce04446c-3ae0-5755-ac42-adbbd26708b9",
+  "last_updated": "2026-11-06T11:08:00Z",
   "sites": [
     {
       "aqi": [
-        5
+        0
       ],
-      "as_of": "2026-11-06T10:01:08.768832Z",
+      "as_of": "2026-11-06T11:01:24Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        42
+        39
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-06T10:38:49.473559Z",
+      "as_of": "2026-11-06T10:51:25.993381Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -96,11 +96,11 @@
       ]
     },
     {
-      "as_of": "2026-11-06T10:43:47.436771Z",
+      "as_of": "2026-11-06T11:01:12Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1470 mm came with signal strength 73, below this sensor's minimum of 200"
+          "reason": "distance 1540 mm came with signal strength 72, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -115,7 +115,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        39
+        38
       ],
       "wind": [
         {
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "as_of": "2026-11-06T10:39:20.854336Z",
+      "as_of": "2026-11-06T10:56:53.447714Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -159,7 +159,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        41
+        40
       ]
     }
   ],
@@ -167,12 +167,12 @@
     {
       "band_ft": 4000,
       "observed_at": "2026-11-06T08:58:48.935469Z",
-      "snow_in": 2.4
+      "snow_in": 2.2
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-06T10:31:26.226460Z",
-      "snow_in": 3.8
+      "observed_at": "2026-11-06T10:51:25.993381Z",
+      "snow_in": 3.7
     }
   ],
   "snow_sensors": [
