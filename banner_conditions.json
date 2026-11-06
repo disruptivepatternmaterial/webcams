@@ -1,6 +1,6 @@
 {
-  "event_id": "3bab41cf-c98a-5675-b5d5-b972fba29b53",
-  "last_updated": "2026-11-06T19:08:00Z",
+  "event_id": "f789f54f-b9c8-5c60-ae67-da77b9b2f874",
+  "last_updated": "2026-11-06T19:14:00Z",
   "sites": [
     {
       "aqi": [
@@ -20,7 +20,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-06T18:51:20.371003Z",
+      "as_of": "2026-11-06T19:08:43.367565Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -36,7 +36,7 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        41
       ],
       "wind": []
     },
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "as_of": "2026-11-06T18:45:12.980612Z",
+      "as_of": "2026-11-06T19:05:13.155649Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -79,11 +79,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        44
+        46
       ]
     },
     {
-      "as_of": "2026-11-06T19:01:11Z",
+      "as_of": "2026-11-06T19:07:45.146103Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -103,8 +103,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 103,
-          "mph": 6
+          "dir_deg": 80,
+          "mph": 13
         }
       ]
     },
@@ -112,7 +112,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T18:30:49.698208Z",
+      "as_of": "2026-11-06T19:00:51.709322Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -121,17 +121,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        43
+        44
       ],
       "wind": [
         {
-          "dir_deg": 14,
-          "mph": 16
+          "dir_deg": 63,
+          "mph": 25
         }
       ]
     },
     {
-      "as_of": "2026-11-06T18:56:49.384880Z",
+      "as_of": "2026-11-06T19:09:16.275514Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -143,7 +143,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        43
+        44
       ]
     }
   ],
@@ -156,7 +156,7 @@
     {
       "band_ft": 5000,
       "observed_at": "2026-11-06T18:51:20.371003Z",
-      "snow_in": 3.5
+      "snow_in": 3.6
     }
   ],
   "snow_sensors": [
