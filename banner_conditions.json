@@ -1,12 +1,12 @@
 {
-  "event_id": "ce04446c-3ae0-5755-ac42-adbbd26708b9",
-  "last_updated": "2026-11-06T11:08:00Z",
+  "event_id": "882adfdf-bcc7-596a-9c31-99b832569422",
+  "last_updated": "2026-11-06T11:20:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T11:01:24Z",
+      "as_of": "2026-11-06T11:01:27.419319Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-06T10:51:25.993381Z",
+      "as_of": "2026-11-06T11:13:26.301718Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,15 +49,15 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        34
       ],
       "wind": []
     },
     {
       "aqi": [
-        8
+        1
       ],
-      "as_of": "2026-11-06T10:42:27.646641Z",
+      "as_of": "2026-11-06T11:18:22.393273Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,17 +73,17 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        37
       ],
       "wind": [
         {
-          "dir_deg": 99,
-          "mph": 6
+          "dir_deg": 149,
+          "mph": 5
         }
       ]
     },
     {
-      "as_of": "2026-11-06T10:33:21.126846Z",
+      "as_of": "2026-11-06T11:03:20.837089Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,15 +92,15 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        40
+        38
       ]
     },
     {
-      "as_of": "2026-11-06T11:01:12Z",
+      "as_of": "2026-11-06T11:12:02.229671Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1540 mm came with signal strength 72, below this sensor's minimum of 200"
+          "reason": "distance 1600 mm came with signal strength 67, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -115,12 +115,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        38
+        37
       ],
       "wind": [
         {
-          "dir_deg": 59,
-          "mph": 4
+          "dir_deg": 1,
+          "mph": 3
         }
       ]
     },
@@ -128,7 +128,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T10:31:02.083739Z",
+      "as_of": "2026-11-06T11:00:48.437184Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -137,17 +137,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        42
+        40
       ],
       "wind": [
         {
-          "dir_deg": 83,
-          "mph": 13
+          "dir_deg": 21,
+          "mph": 19
         }
       ]
     },
     {
-      "as_of": "2026-11-06T10:56:53.447714Z",
+      "as_of": "2026-11-06T11:14:59.886194Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -159,7 +159,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        40
+        39
       ]
     }
   ],
@@ -171,7 +171,7 @@
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-06T10:51:25.993381Z",
+      "observed_at": "2026-11-06T11:11:26.157717Z",
       "snow_in": 3.7
     }
   ],
