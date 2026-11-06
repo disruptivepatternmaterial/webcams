@@ -1,12 +1,12 @@
 {
-  "event_id": "bbc9631b-902f-56c2-9ffb-1d4200f108c5",
-  "last_updated": "2026-11-06T16:50:00Z",
+  "event_id": "854877b2-7fbb-5914-9ef5-c767daa9b059",
+  "last_updated": "2026-11-06T17:08:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T15:00:58.368405Z",
+      "as_of": "2026-11-06T17:03:03Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        36
+        39
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-06T16:38:45.208455Z",
+      "as_of": "2026-11-06T16:51:21.753555Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T16:49:14.661330Z",
+      "as_of": "2026-11-06T16:58:43.630123Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -96,10 +96,14 @@
       ]
     },
     {
-      "as_of": "2026-11-06T16:46:38.297944Z",
-      "dropped": [],
+      "as_of": "2026-11-06T17:01:11Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "71.3 F disagrees with another sensor here (spread 35.4 F, over 6.7 F) and is furthest from the other locations: 33.2 F off their median of 38.1 F, 11 locations adjusted to 3980 ft at 2.86 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
-        3980,
         3990
       ],
       "id": "forest_lands_high_point",
@@ -108,11 +112,11 @@
         4003
       ],
       "snow_in": [
-        14
+        16
       ],
       "stale": false,
       "temp_f": [
-        35
+        36
       ],
       "wind": [
         {
@@ -144,7 +148,7 @@
       ]
     },
     {
-      "as_of": "2026-11-06T16:39:17.666989Z",
+      "as_of": "2026-11-06T16:56:50.414373Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -156,19 +160,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        38
+        39
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-06T16:31:58.178304Z",
-      "snow_in": 8.2
+      "observed_at": "2026-11-06T16:58:43.630123Z",
+      "snow_in": 8.9
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-06T16:31:21.968843Z",
+      "observed_at": "2026-11-06T16:51:21.753555Z",
       "snow_in": 3.6
     }
   ],
