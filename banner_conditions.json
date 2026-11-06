@@ -1,26 +1,13 @@
 {
-  "event_id": "eb3a5ecb-386b-501b-b1f6-f964ea9455a2",
-  "last_updated": "2026-11-06T18:00:00Z",
+  "event_id": "8f643ca9-da3b-52b1-aca3-96d4a1752cc0",
+  "last_updated": "2026-11-06T18:08:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-06T17:03:03Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "aqi",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "fog",
-          "reason": "another device of the same unit is counted instead"
-        }
-      ],
+      "as_of": "2026-11-06T18:03:02Z",
+      "dropped": [],
       "elev_ft": [
         3281
       ],
@@ -96,14 +83,10 @@
       ]
     },
     {
-      "as_of": "2026-11-06T17:51:59.191508Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "71.3 F disagrees with another sensor here (spread 33.9 F, over 6.7 F) and is furthest from the other locations: 32.1 F off their median of 39.2 F, 11 locations adjusted to 3980 ft at 2.20 F per 1000 ft"
-        }
-      ],
+      "as_of": "2026-11-06T18:01:11Z",
+      "dropped": [],
       "elev_ft": [
+        3980,
         3990
       ],
       "id": "forest_lands_high_point",
