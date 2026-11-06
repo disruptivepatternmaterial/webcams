@@ -1,26 +1,13 @@
 {
-  "event_id": "86cc7ed0-e338-5bdd-8c0d-5a79cc7e35de",
-  "last_updated": "2026-11-06T00:22:00Z",
+  "event_id": "5db2d937-f78d-5168-8eb2-46c66b9b6758",
+  "last_updated": "2026-11-06T00:38:00Z",
   "sites": [
     {
       "aqi": [
         14
       ],
       "as_of": "2026-11-05T22:03:13Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "aqi",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "fog",
-          "reason": "another device of the same unit is counted instead"
-        }
-      ],
+      "dropped": [],
       "elev_ft": [
         3281
       ],
