@@ -1,12 +1,12 @@
 {
-  "event_id": "d2de6ee7-cd99-5420-88c3-81287f599a0d",
-  "last_updated": "2026-11-07T19:24:00Z",
+  "event_id": "19c28b11-c537-5a96-82aa-e3eb1ca5807c",
+  "last_updated": "2026-11-07T19:38:00Z",
   "sites": [
     {
       "aqi": [
-        6
+        1
       ],
-      "as_of": "2026-11-07T19:00:58Z",
+      "as_of": "2026-11-07T19:31:26Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,7 +28,7 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        52
+        53
       ]
     },
     {
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T19:14:39.156641Z",
+      "as_of": "2026-11-07T19:26:36.704941Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -159,7 +159,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        43
+        44
       ]
     }
   ],
