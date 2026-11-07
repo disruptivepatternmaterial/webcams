@@ -1,12 +1,12 @@
 {
-  "event_id": "ecbfb66c-8dc3-5208-9e66-84cad77b1b62",
-  "last_updated": "2026-11-07T19:00:00Z",
+  "event_id": "05374d60-a6d9-54ac-9b2f-5b0f50da54e3",
+  "last_updated": "2026-11-07T19:08:00Z",
   "sites": [
     {
       "aqi": [
-        7
+        6
       ],
-      "as_of": "2026-11-07T18:31:40.357690Z",
+      "as_of": "2026-11-07T19:00:58Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -96,18 +96,15 @@
       ]
     },
     {
-      "as_of": "2026-11-07T18:59:02.600232Z",
+      "as_of": "2026-11-07T19:01:22Z",
       "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "39.4 F disagrees with another sensor here (spread 10.2 F, over 6.7 F) and is furthest from the other locations: 10.5 F off their median of 49.9 F, 11 locations adjusted to 3980 ft at 2.01 F per 1000 ft"
-        },
         {
           "measurement": "snow_depth_in",
           "reason": "distance 1480 mm came with signal strength 144, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
+        3980,
         3990
       ],
       "id": "forest_lands_high_point",
@@ -118,7 +115,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        50
+        48
       ],
       "wind": [
         {
