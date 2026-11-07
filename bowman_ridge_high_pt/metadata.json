@@ -1,37 +1,4 @@
 {
-  "Bowman_Ridge_High_Pt_20261106_120739.jpg": {
-    "content_sha256": "d7278320821f9dae5e2c11ce2d475e793a8f1dfbebf92edf3163f6864d6a7f92",
-    "run_id": "01a1b23d-25da-7a41-97d3-fcaac162b55e",
-    "source": "reconyx",
-    "source_filename": "THM_0205.JPG",
-    "source_media_id": "e934fd40-4b7c-4401-916a-bb3749bf7418.jpg",
-    "temperature_c": 2.8,
-    "temperature_ocr_version": "reconyx-footer-v2",
-    "temperature_source": "overlay_ocr",
-    "timestamp": "2026-11-06T20:07:39Z"
-  },
-  "Bowman_Ridge_High_Pt_20261107_100110.jpg": {
-    "content_sha256": "225872cea1d3cec3b2eb527dc5e3e9385088d73495b914cb05ded8fcf8ddc184",
-    "run_id": "01a1b6f5-7e2c-7a0d-8a4d-f77b9a40201b",
-    "source": "reconyx",
-    "source_filename": "THM_0206.JPG",
-    "source_media_id": "5cf66ed9-38a5-4a8e-97c3-7e0f979d18b5.jpg",
-    "temperature_c": 5.6,
-    "temperature_ocr_version": "reconyx-footer-v2",
-    "temperature_source": "overlay_ocr",
-    "timestamp": "2026-11-07T18:01:10Z"
-  },
-  "Bowman_Ridge_High_Pt_20261107_100111.jpg": {
-    "content_sha256": "90c20f266541914bc59442b52404433d31b0ed5ead793ebc9efa7ff7f3ba26e9",
-    "run_id": "01a1b6f5-7e2c-7a0d-8a4d-f77b9a40201b",
-    "source": "reconyx",
-    "source_filename": "THM_0207.JPG",
-    "source_media_id": "abfdaf2b-b60d-4b2d-b1f6-e24097d29a7b.jpg",
-    "temperature_c": 5.6,
-    "temperature_ocr_version": "reconyx-footer-v2",
-    "temperature_source": "overlay_ocr",
-    "timestamp": "2026-11-07T18:01:11Z"
-  },
   "Bowman_Ridge_High_Pt_20261107_100112.jpg": {
     "content_sha256": "d21d10a3e95defe65fd8542df4c4478953fc0d647162661df9e02ab369ae7062",
     "run_id": "01a1b6f5-7e2c-7a0d-8a4d-f77b9a40201b",
@@ -142,15 +109,48 @@
     "temperature_source": "overlay_ocr",
     "timestamp": "2026-11-07T18:18:33Z"
   },
-  "Bowman_Ridge_High_Pt_latest.jpg": {
-    "content_sha256": "22c33d4ad066e494702cc2e5513138391f78a4aef2847cf63b95a2ae3b500ace",
-    "run_id": "01a1b703-44d8-730e-8374-991e08a4c51f",
+  "Bowman_Ridge_High_Pt_20261107_105126.jpg": {
+    "content_sha256": "b368468ac27cd3db98a0f11cde5c403545bf86be7c6687562866848510aba53d",
+    "run_id": "01a1b71e-d1e4-7574-96d9-f282fd4af29d",
     "source": "reconyx",
-    "source_filename": "THM_0217.JPG",
-    "source_media_id": "e3aec097-6d74-4503-93b6-58d326733f5d.jpg",
+    "source_filename": "THM_0218.JPG",
+    "source_media_id": "548bada8-015b-4468-8217-c37ed65d76c7.jpg",
     "temperature_c": 6.7,
     "temperature_ocr_version": "reconyx-footer-v2",
     "temperature_source": "overlay_ocr",
-    "timestamp": "2026-11-07T18:18:33Z"
+    "timestamp": "2026-11-07T18:51:26Z"
+  },
+  "Bowman_Ridge_High_Pt_20261107_105127.jpg": {
+    "content_sha256": "ed2ac2fa57a710ae3c614f2562d248a0f3b5f2fa0b01fc58029b1d071c30ab02",
+    "run_id": "01a1b71e-d1e4-7574-96d9-f282fd4af29d",
+    "source": "reconyx",
+    "source_filename": "THM_0219.JPG",
+    "source_media_id": "e062cdff-a875-43d8-967a-5497a2842b38.jpg",
+    "temperature_c": 6.7,
+    "temperature_ocr_version": "reconyx-footer-v2",
+    "temperature_source": "overlay_ocr",
+    "timestamp": "2026-11-07T18:51:27Z"
+  },
+  "Bowman_Ridge_High_Pt_20261107_105128.jpg": {
+    "content_sha256": "c456e9e80b7faa2f48b1c9efea29ebea76020b4f9cb2ae726a5db5d71e7720ba",
+    "run_id": "01a1b71e-d1e4-7574-96d9-f282fd4af29d",
+    "source": "reconyx",
+    "source_filename": "THM_0220.JPG",
+    "source_media_id": "915675e6-cccf-4075-9a64-59e04b101c61.jpg",
+    "temperature_c": 6.7,
+    "temperature_ocr_version": "reconyx-footer-v2",
+    "temperature_source": "overlay_ocr",
+    "timestamp": "2026-11-07T18:51:28Z"
+  },
+  "Bowman_Ridge_High_Pt_latest.jpg": {
+    "content_sha256": "c456e9e80b7faa2f48b1c9efea29ebea76020b4f9cb2ae726a5db5d71e7720ba",
+    "run_id": "01a1b71e-d1e4-7574-96d9-f282fd4af29d",
+    "source": "reconyx",
+    "source_filename": "THM_0220.JPG",
+    "source_media_id": "915675e6-cccf-4075-9a64-59e04b101c61.jpg",
+    "temperature_c": 6.7,
+    "temperature_ocr_version": "reconyx-footer-v2",
+    "temperature_source": "overlay_ocr",
+    "timestamp": "2026-11-07T18:51:28Z"
   }
 }

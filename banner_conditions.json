@@ -1,6 +1,6 @@
 {
-  "event_id": "6b8144a7-6d50-5619-a317-333cedc615d1",
-  "last_updated": "2026-11-07T18:52:00Z",
+  "event_id": "ecbfb66c-8dc3-5208-9e66-84cad77b1b62",
+  "last_updated": "2026-11-07T19:00:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T18:38:25.859272Z",
+      "as_of": "2026-11-07T18:51:03.039520Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         9
       ],
-      "as_of": "2026-11-07T18:47:33.893959Z",
+      "as_of": "2026-11-07T18:58:38.018590Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -96,15 +96,15 @@
       ]
     },
     {
-      "as_of": "2026-11-07T18:38:53.014785Z",
+      "as_of": "2026-11-07T18:59:02.600232Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "39.4 F disagrees with another sensor here (spread 10.0 F, over 6.7 F) and is furthest from the other locations: 10.6 F off their median of 50.0 F, 11 locations adjusted to 3980 ft at 2.20 F per 1000 ft"
+          "reason": "39.4 F disagrees with another sensor here (spread 10.2 F, over 6.7 F) and is furthest from the other locations: 10.5 F off their median of 49.9 F, 11 locations adjusted to 3980 ft at 2.01 F per 1000 ft"
         },
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1580 mm came with signal strength 140, below this sensor's minimum of 200"
+          "reason": "distance 1480 mm came with signal strength 144, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -118,11 +118,11 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        49
+        50
       ],
       "wind": [
         {
-          "dir_deg": 47,
+          "dir_deg": 18,
           "mph": 6
         }
       ]
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T18:39:03.282685Z",
+      "as_of": "2026-11-07T18:56:36.991611Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -169,12 +169,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-07T18:38:38.206552Z",
+      "observed_at": "2026-11-07T18:58:38.018590Z",
       "snow_in": 1.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T18:31:03.300503Z",
+      "observed_at": "2026-11-07T18:51:03.039520Z",
       "snow_in": 2.3
     }
   ],
