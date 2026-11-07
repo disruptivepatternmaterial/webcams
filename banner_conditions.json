@@ -1,12 +1,12 @@
 {
-  "event_id": "a7b02778-176a-5f83-8197-9a5f9473fe9a",
-  "last_updated": "2026-11-07T17:52:00Z",
+  "event_id": "3d8175a9-6017-5c26-9e41-00b7681bc27b",
+  "last_updated": "2026-11-07T18:08:00Z",
   "sites": [
     {
       "aqi": [
-        0
+        8
       ],
-      "as_of": "2026-11-07T17:30:56Z",
+      "as_of": "2026-11-07T18:00:55Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        43
+        47
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T17:38:55.199695Z",
+      "as_of": "2026-11-07T17:51:03.789480Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         21
       ],
-      "as_of": "2026-11-07T17:44:43.597531Z",
+      "as_of": "2026-11-07T17:58:38.745454Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T17:34:00.405908Z",
+      "as_of": "2026-11-07T17:54:00.208226Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -96,15 +96,15 @@
       ]
     },
     {
-      "as_of": "2026-11-07T17:38:24.394744Z",
+      "as_of": "2026-11-07T18:01:21Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "37.4 F disagrees with another sensor here (spread 9.0 F, over 6.7 F) and is furthest from the other locations: 5.0 F off their median of 42.5 F, 11 locations adjusted to 3980 ft at 2.86 F per 1000 ft"
+          "reason": "39.4 F disagrees with another sensor here (spread 8.2 F, over 6.7 F) and is furthest from the other locations: 5.6 F off their median of 45.0 F, 11 locations adjusted to 3980 ft at 2.20 F per 1000 ft"
         },
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1410 mm came with signal strength 111, below this sensor's minimum of 200"
+          "reason": "distance 1300 mm came with signal strength 97, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -118,12 +118,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        46
+        48
       ],
       "wind": [
         {
-          "dir_deg": 308,
-          "mph": 2
+          "dir_deg": 91,
+          "mph": 6
         }
       ]
     },
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T17:39:03.751315Z",
+      "as_of": "2026-11-07T17:56:37.456288Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -162,19 +162,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        41
+        42
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-07T17:38:38.939023Z",
+      "observed_at": "2026-11-07T17:58:38.745454Z",
       "snow_in": 1.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T17:31:04.035233Z",
+      "observed_at": "2026-11-07T17:51:03.789480Z",
       "snow_in": 2.3
     }
   ],
