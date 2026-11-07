@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain Webcams &amp; Conditions</title>
+    <title>Webcam Images</title>
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d25e9b51531342c8bf50d57f1627d4f9"}'></script>
     <!-- End Cloudflare Web Analytics -->
@@ -815,6 +815,18 @@
             font-weight: 700;
             line-height: 1.15;
         }
+        .elev-band-tag {
+            display: inline-block;
+            margin-top: 3px;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-size: 0.66em;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            background: rgba(102, 126, 234, 0.55);
+            color: #fff;
+        }
         .elev-cell {
             display: grid;
             grid-template-columns: 54px 1fr;
@@ -824,6 +836,9 @@
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.16);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+        }
+        .elev-cell-midridge {
+            border-color: rgba(255, 255, 255, 0.45);
         }
         .elev-score-pill {
             text-align: center;
@@ -892,7 +907,7 @@
             border: 1px solid rgba(56, 189, 248, 0.72);
             color: #e0f2fe;
         }
-        .elev-source-model, .elev-source-snodas {
+        .elev-source-model {
             background: rgba(255, 255, 255, 0.14);
             border: 1px solid rgba(255, 255, 255, 0.24);
             color: rgba(255, 255, 255, 0.88);
@@ -917,11 +932,6 @@
             font-size: 0.74em;
             opacity: 0.84;
             text-align: center;
-        }
-        .elev-summary {
-            margin: 8px 0 0;
-            font-size: 0.8em;
-            line-height: 1.4;
         }
         .left-column .support-bar {
             display: flex;
@@ -1157,10 +1167,9 @@
                         </div>
                     </div>
                     <div id="elev-grid" class="elev-grid"></div>
-                    <div id="elev-footer" class="elev-footer">
-                        <strong>On ground</strong> = total snowpack depth. <strong>24h</strong> = forecast new snow or rain for that day.
+                    <div class="elev-footer">
+                        <strong>On ground</strong> = total snowpack depth (<strong>measured</strong> at 4000 ft High Point LiDAR &amp; 5000 ft North Twin ultrasonic; <strong>model</strong> elsewhere). <strong>24h</strong> = forecast new snow or rain for that day.
                     </div>
-                    <p id="elev-summary" class="elev-summary" hidden></p>
                 </section>
                 <div class="support-bar" id="support-bar">
                     <p class="support-bar-copy" id="support-bar-copy">These mountain webcams and sensors are intended to inform the community on backcountry conditions; this is a labor of love, and you can help support them via Buy Me a Coffee.</p>
@@ -1228,10 +1237,6 @@
 
         let bannerSensorsUpdatedIso = null;
         let bannerForecastUpdatedIso = null;
-        // Either file loading redraws the forecast table, so today's measured cells
-        // follow the boxes between forecast runs (renderForecastTable).
-        let forecastShown = null;
-        let bannerSnowBands = null;
 
         function renderBannerUpdatedLine() {
             const timeEl = document.getElementById("banner-conditions-time");
@@ -1314,10 +1319,7 @@
             if (!content) return;
 
             const pageTitle = document.getElementById("page-title");
-            if (content.pageTitle) {
-                document.title = content.pageTitle;
-                if (pageTitle) pageTitle.textContent = content.pageTitle;
-            }
+            if (pageTitle && content.pageTitle) pageTitle.textContent = content.pageTitle;
 
             const supportCopy = document.getElementById("support-bar-copy");
             const supportLink = document.getElementById("support-bar-link");
@@ -1397,14 +1399,6 @@
         }
         const bannerHistory = [];
         const BANNER_HISTORY_LIMIT = 48;
-        // The page treats banner_conditions.json as offline once its last_updated is
-        // more than 3 hours old. Each reading's own freshness is the read path's rule.
-        const BANNER_MAX_AGE_HOURS = 3;
-        // The forecast file is stale once a scheduled run should have replaced it: the
-        // longest gap between two scheduled runs (19:20 to 01:50 UTC, R35), plus the
-        // longest run from its scheduled start to its end (3.4 min, 147 runs to
-        // 2026-11-05) and the longest GitHub Pages build (8.3 min, the last 92).
-        const FORECAST_MAX_AGE_HOURS = 6.5 + 3.4 / 60 + 8.3 / 60;
         const BANNER_HISTORY_STORAGE_KEY = "webcam_banner_history_v1";
         let bannerLatest = null;
         let chartsRender = null;
@@ -1436,12 +1430,19 @@
                 : "Showing " + n + " stored banner readings (this browser, last " + BANNER_HISTORY_LIMIT + " updates).";
         }
 
+        // Render the AQI + Dailey Prairie ground temperature banner from
+        // banner_conditions.json (written every 2 minutes by the Prefect
+        // banner-conditions-publish deployment on the BowmanMtn host).
         // Data fidelity: a numeric 0 from a sensor is real data; null / unknown
         // / unavailable / non-finite values render as "—" but never as 0.
         function bannerNumeric(value) {
             if (value === null || value === undefined || value === "") return null;
             const num = Number(value);
             return Number.isFinite(num) ? num : null;
+        }
+        function formatAqiCell(value) {
+            const num = bannerNumeric(value);
+            return num === null ? "—" : String(num);
         }
         function compassPoint(deg) {
             const points = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
@@ -1454,6 +1455,14 @@
             const hours = Math.floor((Date.now() - ms) / 3600000);
             if (hours < 1) return "";
             return hours < 48 ? " " + hours + "h" : " " + Math.floor(hours / 24) + "d";
+        }
+        // HA reports Dailey ground temp in °C; the banner audience prefers °F.
+        // Convert on display only — the JSON keeps the authoritative °C reading.
+        function formatTempCell(value, unit) {
+            const num = bannerNumeric(value);
+            if (num === null) return "—";
+            if (unit === "°C") return (num * 9 / 5 + 32).toFixed(1) + " °F";
+            return unit ? num + " " + unit : String(num);
         }
         function updateBannerHistory(nextState) {
             if (!nextState || !nextState.lastUpdated) return;
@@ -1652,9 +1661,7 @@
         }
 
         function scoreBgColor(score) {
-            const num = bannerNumeric(score);
-            if (num === null) return "rgba(100, 116, 139, 0.45)";
-            const s = Math.max(0, Math.min(10, num));
+            const s = Math.max(0, Math.min(10, Number(score) || 0));
             const stops = [
                 { at: 0, r: 185, g: 28,  b: 28  },
                 { at: 5, r: 217, g: 119, b: 6   },
@@ -1671,95 +1678,37 @@
         }
 
         function fmtInches(val) {
-            const num = bannerNumeric(val);
-            if (num === null) return "—";
+            const num = Number(val);
+            if (!Number.isFinite(num)) return "—";
             return num.toFixed(1).replace(/\.0$/, "") + '"';
         }
 
         function formatFallingPrecip(band) {
-            const newSnow = bannerNumeric(band.new_snow_in);
-            const rain = bannerNumeric(band.rain_in);
             const parts = [];
+            const newSnow = Number(band && band.new_snow_in) || 0;
+            const rain = Number(band && band.rain_in) || 0;
             if (newSnow > 0) parts.push("+" + fmtInches(newSnow) + " new snow");
             if (rain > 0) parts.push(fmtInches(rain) + " rain");
-            if (parts.length) return parts.join(" · ");
-            return newSnow === 0 && rain === 0 ? '0" new precip' : "—";
+            if (!parts.length) parts.push('0" new precip');
+            return parts.join(" · ");
         }
 
-        // Where a cell's snow depth came from: a sensor that passed the checks,
-        // NOAA's SNODAS analysis, or the forecast model. No value, no badge.
-        function snowSourceBadge(source, note) {
-            const badges = {
-                measured: { word: "measured", className: "elev-source-measured" },
-                snodas: { word: "SNODAS", className: "elev-source-snodas" },
-                model: { word: "model", className: "elev-source-model" }
-            };
-            const badge = badges[source];
-            const title = note
-                ? ' title="' + String(note).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;") + '"'
-                : "";
-            return badge
-                ? '<span class="elev-source-badge ' + badge.className + '"' + title + ">" + badge.word + "</span>"
-                : "";
-        }
-
-        // SNODAS counts for today while its file is today's or yesterday's (UTC),
-        // the same files the forecast reads.
-        function snodasCurrent(dateText, nowMs) {
-            const dayMs = 24 * 3600 * 1000;
-            return dateText === new Date(nowMs).toISOString().slice(0, 10)
-                || dateText === new Date(nowMs - dayMs).toISOString().slice(0, 10);
-        }
-
-        // Today's snow on the ground, whichever forecast day is today when the page
-        // draws: the band's sensors as the boxes show them now (each reading kept by
-        // the read path's freshness check on its own time), else SNODAS, else the
-        // model's value for the day. A forecast file without `snodas` predates this:
-        // it keeps its own SNODAS or model depth, and a measured depth only ever
-        // comes from the boxes.
-        function todaySnowOnGround(band, snowBands, snodas, nowMs) {
-            const measured = (Array.isArray(snowBands) ? snowBands : []).find(function(entry) {
-                return entry && entry.band_ft === band.elev_ft && bannerNumeric(entry.snow_in) !== null;
-            });
-            if (measured) {
-                return { snow_in: measured.snow_in, snow_source: "measured",
-                         snow_note: "Measured " + formatPacificTime(measured.observed_at) };
-            }
-            if (snodas === undefined) {
-                return band.snow_source === "measured"
-                    ? { snow_in: null, snow_source: null, snow_note: "" }
-                    : { snow_in: band.snow_in, snow_source: band.snow_source, snow_note: "" };
-            }
-            const snodasDepth = snodas && snodas.snow_in && snodasCurrent(snodas.date, nowMs)
-                ? bannerNumeric(snodas.snow_in[String(band.elev_ft)])
-                : null;
-            if (snodasDepth !== null) {
-                return { snow_in: snodasDepth, snow_source: "snodas", snow_note: "SNODAS analysis of " + snodas.date };
-            }
-            const model = bannerNumeric(band.model_snow_in);
-            return { snow_in: model, snow_source: model === null ? null : "model", snow_note: "" };
-        }
-
-        // NBM's snow level on a wet day; the freezing level on a dry one.
-        function levelLabel(day) {
-            if (!day || day.snow_level_ft == null) return "";
-            const word = day.snow_level_basis === "freezing_level" ? "Freezing level" : "Snow level";
-            return word + " ~" + day.snow_level_ft + " ft";
-        }
-
-        function renderElevationCell(band, day) {
+        function renderElevationCell(band, day, isMidRidge, isToday) {
             if (!band) return '<div class="elev-cell"></div>';
             const act = (day && day.activity === "ski") ? "Ski" : "Hike";
             const scoreVal = (day && day.activity === "ski" && band.ski != null) ? band.ski : band.hike;
             const bg = scoreBgColor(scoreVal);
-            const groundStr = fmtInches(band.snow_in) + " on ground";
-            const highF = band.high_f != null ? Math.round(band.high_f) : "—";
-            const lowF = band.low_f != null ? Math.round(band.low_f) : "—";
+            const groundStr = fmtInches(band.snow_in != null ? band.snow_in : band.snow_depth_est_in) + " on ground";
+            const isMeasured = isToday && band.snow_source === "measured";
+            const sourceClass = isMeasured ? "elev-source-measured" : "elev-source-model";
+            const sourceWord = isMeasured ? "measured" : "model";
+            const highF = band.high_f != null ? Math.round(band.high_f) : (band.tmax_f != null ? Math.round(band.tmax_f) : "—");
+            const lowF = band.low_f != null ? Math.round(band.low_f) : (band.tmin_f != null ? Math.round(band.tmin_f) : "—");
             const phase = band.phase || "";
             const fallingStr = formatFallingPrecip(band);
             const scoreText = scoreVal != null ? (scoreVal + "/10") : "—";
             return (
-                '<div class="elev-cell" style="background: ' + bg + ';">' +
+                '<div class="elev-cell' + (isMidRidge ? " elev-cell-midridge" : "") + '" style="background: ' + bg + ';">' +
                     '<div class="elev-score-pill">' +
                         '<span class="elev-score-num">' + scoreText + "</span>" +
                         '<span class="elev-score-cap">' + act + "</span>" +
@@ -1768,7 +1717,7 @@
                         '<div class="elev-metrics-row">' +
                             '<span class="elev-ground">' +
                                 groundStr +
-                                (band.snow_in != null ? snowSourceBadge(band.snow_source, band.snow_note) : "") +
+                                '<span class="elev-source-badge ' + sourceClass + '">' + sourceWord + "</span>" +
                             "</span>" +
                             '<span class="elev-temp-phase">' +
                                 highF + "° / " + lowF + "°F" +
@@ -1783,7 +1732,7 @@
             );
         }
 
-        function renderElevationForecast(todayDay, tomDay, todayGround) {
+        function renderElevationForecast(todayDay, tomDay) {
             const section = document.getElementById("elev-forecast");
             const grid = document.getElementById("elev-grid");
             if (!section || !grid) return;
@@ -1794,8 +1743,8 @@
                 section.hidden = true;
                 return;
             }
-            const todaySub = levelLabel(todayDay);
-            const tomSub = levelLabel(tomDay);
+            const todaySub = todayDay.snow_level_ft != null ? ("Snow level ~" + todayDay.snow_level_ft + " ft") : "";
+            const tomSub = (tomDay && tomDay.snow_level_ft != null) ? ("Snow level ~" + tomDay.snow_level_ft + " ft") : "";
             let html =
                 "<div></div>" +
                 '<div class="elev-col-head">Today · ' + (todayDay.date || "") +
@@ -1809,42 +1758,23 @@
             elevations.forEach(function(elev) {
                 const bToday = todayBands.find(function(b) { return b.elev_ft === elev; }) || null;
                 const bTom = tomBands.find(function(b) { return b.elev_ft === elev; }) || null;
-                const shownToday = (bToday && todayGround) ? Object.assign({}, bToday, todayGround(bToday)) : bToday;
+                const isMidRidge = elev === 5000;
                 const label = (bToday && bToday.label) ? bToday.label : (elev === 6000 ? "6000+ ft" : (elev + " ft"));
                 html +=
                     '<div class="elev-band-label">' +
                         '<span class="elev-band-ft">' + label + "</span>" +
+                        (isMidRidge ? '<span class="elev-band-tag">mid-ridge</span>' : "") +
                     "</div>" +
-                    renderElevationCell(shownToday, todayDay) +
-                    renderElevationCell(bTom, tomDay || todayDay);
+                    renderElevationCell(bToday, todayDay, isMidRidge, true) +
+                    renderElevationCell(bTom, tomDay || todayDay, isMidRidge, false);
             });
             grid.innerHTML = html;
             section.hidden = false;
         }
 
-        // The forecast gateway's summary, exactly as the job published it.
-        function renderForecastSummary(summary) {
-            const el = document.getElementById("elev-summary");
-            if (!el) return;
-            const text = typeof summary === "string" ? summary.trim() : "";
-            el.textContent = text;
-            el.hidden = !text;
-        }
-
-        function renderForecastTable() {
-            if (!forecastShown) return;
-            const shown = forecastShown;
-            const nowMs = Date.now();
-            renderElevationForecast(shown.todayDay, shown.tomDay, function(band) {
-                return todaySnowOnGround(band, bannerSnowBands, shown.snodas, nowMs);
-            });
-        }
-
         function renderForecastEmpty(staleText) {
-            forecastShown = null;
             renderAvalanche(null, null);
             renderElevationForecast(null, null);
-            renderForecastSummary(null);
             const todayEl = document.getElementById("stat-hike-today");
             const tomEl = document.getElementById("stat-hike-tomorrow");
             const todaySyn = document.getElementById("stat-hike-today-syn");
@@ -1871,7 +1801,7 @@
                 const generated = data && data.generated_at ? new Date(data.generated_at) : null;
                 if (!generated || isNaN(generated.getTime())) { renderForecastEmpty(); return; }
                 const ageH = (Date.now() - generated.getTime()) / 3600000;
-                if (ageH > FORECAST_MAX_AGE_HOURS) { renderForecastEmpty("Forecast stale"); return; }
+                if (ageH > 36) { renderForecastEmpty("Forecast stale"); return; }
 
                 const byDate = {};
                 (Array.isArray(data.days) ? data.days : []).forEach((d) => {
@@ -1901,9 +1831,7 @@
                     if (tomSyn) tomSyn.textContent = "";
                 }
                 renderAvalanche(todayDay, tomDay);
-                forecastShown = { todayDay: todayDay, tomDay: tomDay, snodas: data.snodas };
-                renderForecastTable();
-                renderForecastSummary(data.summary);
+                renderElevationForecast(todayDay, tomDay);
                 bannerForecastUpdatedIso = data.generated_at || null;
                 renderBannerUpdatedLine();
             } catch (e) {
@@ -1911,68 +1839,10 @@
             }
         }
 
-        // One stacked card per location: name on top, temp under it, then wind,
-        // ground, snow and AQI where the location measures them. Each value is the
-        // average of the devices at the location, so a list holds one number; a
-        // reading that failed the read path's checks is left out (listed under
-        // "dropped" in the file). Only a snow row left with no depth says why, so a
-        // withheld depth does not pass for a missing one. Fog droplets read as
-        // particulates on the PM sensors, so a device whose fog indicator is on shows
-        // "Fog" instead of its AQI number.
-        function bannerValues(values) {
-            return (Array.isArray(values) ? values : [])
-                .map(bannerNumeric)
-                .filter(function(num) { return num !== null; });
-        }
-        function formatTemps(values) {
-            const nums = bannerValues(values);
-            if (!nums.length) return "—";
-            return nums.length === 1 ? nums[0] + " °F" : nums.join("° / ") + "°F";
-        }
-        // The read path's reasons for each snow depth it withheld at the location.
-        function snowWithheldReasons(dropped) {
-            return (Array.isArray(dropped) ? dropped : [])
-                .filter(function(item) { return item && item.measurement === "snow_depth_in" && typeof item.reason === "string" && item.reason !== ""; })
-                .map(function(item) { return item.reason; });
-        }
-        // These match the read path's own wording of its three snow checks, which the
-        // frontend test pins. A reason not listed here still shows that the depth was
-        // withheld, not missing.
-        function snowWithheldWord(reason) {
-            if (/^distance -?\d+(?:\.\d+)? mm came with signal strength -?\d+(?:\.\d+)?, below this sensor's minimum of -?\d+(?:\.\d+)?$/.test(reason)) return "unknown";
-            if (/^distance -?\d+(?:\.\d+)? mm is the no-echo value, not a range the sensor can measure$/.test(reason)) return "no echo";
-            if (/^-?\d+(?:\.\d+)? in is outside the MADIS snow cover range, 0 to 25 ft$/.test(reason)) return "out of range";
-            return "withheld";
-        }
-        function formatSnow(values, withheldReasons) {
-            const nums = bannerValues(values);
-            if (nums.length) return nums.join(" / ") + " in";
-            const words = [];
-            (Array.isArray(withheldReasons) ? withheldReasons : []).forEach(function(reason) {
-                const word = snowWithheldWord(reason);
-                if (words.indexOf(word) === -1) words.push(word);
-            });
-            return words.length ? words.join(" / ") : "—";
-        }
-        function formatWind(winds) {
-            const parts = (Array.isArray(winds) ? winds : []).map(function(w) {
-                const mph = bannerNumeric(w && w.mph);
-                const dir = bannerNumeric(w && w.dir_deg);
-                if (mph === null) return null;
-                return mph + " mph" + (dir === null ? "" : " " + compassPoint(dir));
-            }).filter(function(part) { return part !== null; });
-            return parts.length ? parts.join(" / ") : "—";
-        }
-        function bannerRow(label, text) {
-            const row = document.createElement("span");
-            row.className = "banner-site-row";
-            const metric = document.createElement("span");
-            metric.className = "banner-site-metric";
-            metric.textContent = label;
-            row.appendChild(metric);
-            row.appendChild(document.createTextNode(text));
-            return row;
-        }
+        // One stacked card per location: name on top, temp under it, AQI (or
+        // "Fog") under that. Fog droplets read as particulates on the PM
+        // sensors, so while a station's fog indicator is on its AQI number is
+        // corrupted and the card says "Fog" instead of printing it.
         function renderBannerSites(sites) {
             const wrap = document.getElementById("banner-sites");
             if (!wrap) return;
@@ -1984,8 +1854,7 @@
                 const name = document.createElement("span");
                 name.className = "banner-site-name";
                 name.textContent = site.label || site.id || "—";
-                const elevations = bannerValues(site.elev_ft);
-                if (elevations.length) name.title = elevations.join(" / ") + " ft";
+                if (site.elev_ft) name.title = site.elev_ft + " ft";
                 card.appendChild(name);
 
                 // A site whose every reading is older than the publisher's
@@ -2004,44 +1873,42 @@
 
                 const temp = document.createElement("span");
                 temp.className = "banner-site-row";
-                temp.textContent = formatTemps(site.temp_f);
+                const tempNum = bannerNumeric(site.temp_f);
+                temp.textContent = tempNum === null ? "—" : Math.round(tempNum) + " °F";
                 card.appendChild(temp);
 
-                if (site.wind !== undefined) {
-                    const wind = bannerRow("Wind", formatWind(site.wind));
-                    const directions = (Array.isArray(site.wind) ? site.wind : [])
-                        .map(function(w) { return bannerNumeric(w && w.dir_deg); })
-                        .filter(function(dir) { return dir !== null; });
-                    if (directions.length) wind.title = "From " + directions.join("° / ") + "°";
+                if (site.wind_mph !== undefined) {
+                    const wind = document.createElement("span");
+                    wind.className = "banner-site-row";
+                    const windNum = bannerNumeric(site.wind_mph);
+                    const dirNum = bannerNumeric(site.wind_dir_deg);
+                    wind.innerHTML = '<span class="banner-site-metric">Wind</span>'
+                        + (windNum === null ? "—"
+                            : Math.round(windNum) + " mph" + (dirNum === null ? "" : " " + compassPoint(dirNum)));
+                    if (dirNum !== null) wind.title = "From " + Math.round(dirNum) + "°";
                     card.appendChild(wind);
                 }
 
                 if (site.ground_temp_f !== undefined) {
-                    card.appendChild(bannerRow("Ground", formatTemps(site.ground_temp_f)));
+                    const ground = document.createElement("span");
+                    ground.className = "banner-site-row";
+                    const groundNum = bannerNumeric(site.ground_temp_f);
+                    ground.innerHTML = '<span class="banner-site-metric">Ground</span>'
+                        + (groundNum === null ? "—" : Math.round(groundNum) + " °F");
+                    card.appendChild(ground);
                 }
 
-                if (site.snow_in !== undefined) {
-                    const withheld = bannerValues(site.snow_in).length ? [] : snowWithheldReasons(site.dropped);
-                    const snow = bannerRow("Snow", formatSnow(site.snow_in, withheld));
-                    const snowElevations = bannerValues(site.snow_elev_ft);
-                    snow.title = "Measured snow depth" + (snowElevations.length ? " at " + snowElevations.join(" / ") + " ft" : "")
-                        + (withheld.length ? " — not shown: " + withheld.join("; ") : "");
-                    card.appendChild(snow);
-                }
-
-                if (site.aqi !== undefined) {
-                    const entries = Array.isArray(site.aqi) ? site.aqi : [];
-                    const numbers = bannerValues(entries.filter(function(v) { return v !== "fog"; }));
-                    const fog = entries.indexOf("fog") !== -1;
-                    let aqi;
-                    if (fog && !numbers.length) {
-                        aqi = document.createElement("span");
+                if (site.fog === true || site.has_aqi) {
+                    const aqi = document.createElement("span");
+                    if (site.fog === true) {
                         aqi.className = "banner-site-row banner-site-fog";
                         aqi.textContent = "Fog";
+                        aqi.title = "Fog suspected — particulate readings unreliable";
                     } else {
-                        aqi = bannerRow("AQI", (numbers.length ? numbers.join(" / ") : "—") + (fog ? " / Fog" : ""));
+                        aqi.className = "banner-site-row";
+                        aqi.innerHTML = '<span class="banner-site-metric">AQI</span>'
+                            + formatAqiCell(site.aqi);
                     }
-                    if (fog) aqi.title = "Fog suspected — particulate readings unreliable";
                     card.appendChild(aqi);
                 }
 
@@ -2049,25 +1916,25 @@
             });
         }
 
-        // The snow-depth sensors come from the banner file, so a sensor the
-        // registry adds or moves is listed here without a page change.
-        function renderElevationFooter(sensors) {
-            const footer = document.getElementById("elev-footer");
-            if (!footer) return;
-            const names = (Array.isArray(sensors) ? sensors : []).map(function(s) {
-                const elev = bannerNumeric(s && s.elev_ft);
-                return s.location + (elev === null ? "" : " (" + elev + " ft)");
-            });
-            footer.textContent = "On ground = total snowpack depth."
-                + (names.length ? " Snow-depth sensors: " + names.join(", ") + "." : "")
-                + " 24h = forecast new snow or rain for that day.";
-        }
-
-        // Chart history keeps its original five series (and its localStorage
-        // shape): a point only when the location shows a single value.
-        function singleValue(site, key) {
-            const values = site && Array.isArray(site[key]) ? site[key] : [];
-            return values.length === 1 ? bannerNumeric(values[0]) : null;
+        // Older banner_conditions.json (pre-sites rollout): synthesize the
+        // same shape from the legacy keys so the page renders either file.
+        function sitesFromLegacy(data) {
+            const aqi = (data && data.aqi_by_site) || {};
+            const airTemp = (data && data.air_temp_by_site) || {};
+            const ground = (data && data.dailey_prairie_ground_temp) || {};
+            const toF = function(cell) {
+                const num = bannerNumeric(cell && cell.value);
+                if (num === null) return null;
+                return cell.unit === "°C" ? Math.round(num * 9 / 5 + 32) : Math.round(num);
+            };
+            return [
+                { id: "bowman_mtn", label: "Bowman Mtn", temp_f: toF(airTemp.bowman_mtn),
+                  aqi: bannerNumeric((aqi.bowman_mtn || {}).value), has_aqi: true, fog: false },
+                { id: "n_twin_west_ridge", label: "N Twin West Ridge", temp_f: toF(airTemp.n_twin),
+                  aqi: bannerNumeric((aqi.n_twin || {}).value), has_aqi: true, fog: false },
+                { id: "dailey_prairie", label: "Dailey Prairie", temp_f: null,
+                  ground_temp_f: toF(ground), aqi: null, has_aqi: false, fog: false }
+            ];
         }
 
         async function loadBannerConditions() {
@@ -2076,36 +1943,32 @@
                 if (wrap) wrap.innerHTML = "";
                 bannerSensorsUpdatedIso = null;
                 renderBannerUpdatedLine();
-                bannerSnowBands = null;
-                renderForecastTable();
             };
             try {
                 const response = await fetch(assetUrl("banner_conditions.json?t=" + Date.now()), { cache: "no-store" });
                 if (!response.ok) { renderEmpty(); return; }
                 const data = await response.json();
-                if (!data || !Array.isArray(data.sites)) { renderEmpty(); return; }
-                // A file the publisher stopped refreshing must not pass for current readings.
-                const ageMs = Date.now() - Date.parse(data.last_updated);
-                const fileCurrent = ageMs <= BANNER_MAX_AGE_HOURS * 3600000;
-                const sites = fileCurrent ? data.sites : data.sites.map(function(s) {
-                    return Object.assign({}, s, { stale: true });
-                });
+                const sites = (data && Array.isArray(data.sites) && data.sites.length)
+                    ? data.sites : sitesFromLegacy(data);
                 renderBannerSites(sites);
-                renderElevationFooter(data.snow_sensors);
-                bannerSensorsUpdatedIso = data.last_updated || null;
+                bannerSensorsUpdatedIso = (data && data.last_updated) || null;
                 renderBannerUpdatedLine();
-                bannerSnowBands = fileCurrent && Array.isArray(data.snow_bands) ? data.snow_bands : null;
-                renderForecastTable();
 
+                // Chart history keeps its original five series (and its
+                // localStorage shape) fed from the new per-site data.
                 const byId = {};
                 sites.forEach(function(s) { byId[s.id] = s; });
+                const pick = function(id, key) {
+                    const s = byId[id];
+                    return s ? bannerNumeric(s[key]) : null;
+                };
                 bannerLatest = {
-                    bowmanAqi: singleValue(byId.bowman_mtn, "aqi"),
-                    ntwinAqi: singleValue(byId.n_twin_west_ridge, "aqi"),
-                    bowmanTempF: singleValue(byId.bowman_mtn, "temp_f"),
-                    ntwinTempF: singleValue(byId.n_twin_west_ridge, "temp_f"),
-                    groundTempF: singleValue(byId.dailey_prairie, "ground_temp_f"),
-                    lastUpdated: data.last_updated
+                    bowmanAqi: pick("bowman_mtn", "aqi"),
+                    ntwinAqi: pick("n_twin_west_ridge", "aqi"),
+                    bowmanTempF: pick("bowman_mtn", "temp_f"),
+                    ntwinTempF: pick("n_twin_west_ridge", "temp_f"),
+                    groundTempF: pick("dailey_prairie", "ground_temp_f"),
+                    lastUpdated: data && data.last_updated ? data.last_updated : new Date().toISOString()
                 };
                 updateBannerHistory(bannerLatest);
             } catch (e) {
