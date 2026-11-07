@@ -1,12 +1,12 @@
 {
-  "event_id": "e433d644-de05-59b2-85ca-9562d3a80628",
-  "last_updated": "2026-11-07T20:38:00Z",
+  "event_id": "22799cf9-c9f7-5e9d-8625-bfeb811a300f",
+  "last_updated": "2026-11-07T20:52:00Z",
   "sites": [
     {
       "aqi": [
         4
       ],
-      "as_of": "2026-11-07T20:31:06Z",
+      "as_of": "2026-11-07T20:31:10.365990Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T20:11:02.092867Z",
+      "as_of": "2026-11-07T20:38:24.337111Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        50
+        49
       ],
       "wind": []
     },
@@ -57,7 +57,7 @@
       "aqi": [
         4
       ],
-      "as_of": "2026-11-07T20:20:43.132260Z",
+      "as_of": "2026-11-07T20:42:07.469464Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T20:03:01.577651Z",
+      "as_of": "2026-11-07T20:33:01.198020Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,19 +92,19 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        54
+        53
       ]
     },
     {
-      "as_of": "2026-11-07T20:19:41.508268Z",
+      "as_of": "2026-11-07T20:39:50.400779Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "71.3 F disagrees with another sensor here (spread 21.0 F, over 6.7 F) and is furthest from the other locations: 19.4 F off their median of 51.9 F, 11 locations adjusted to 3980 ft at 2.27 F per 1000 ft"
+          "reason": "71.3 F disagrees with another sensor here (spread 19.9 F, over 6.7 F) and is furthest from the other locations: 19.8 F off their median of 51.5 F, 11 locations adjusted to 3980 ft at 2.27 F per 1000 ft"
         },
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1560 mm came with signal strength 163, below this sensor's minimum of 200"
+          "reason": "distance 1630 mm came with signal strength 168, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -118,12 +118,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        50
+        51
       ],
       "wind": [
         {
-          "dir_deg": 10,
-          "mph": 17
+          "dir_deg": 218,
+          "mph": 4
         }
       ]
     },
@@ -131,7 +131,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-07T20:00:47.718956Z",
+      "as_of": "2026-11-07T20:30:46.526426Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -144,13 +144,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 13,
-          "mph": 9
+          "dir_deg": 21,
+          "mph": 7
         }
       ]
     },
     {
-      "as_of": "2026-11-07T20:26:36.193303Z",
+      "as_of": "2026-11-07T20:39:02.103467Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -169,12 +169,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-07T20:18:36.962282Z",
+      "observed_at": "2026-11-07T20:38:36.725117Z",
       "snow_in": 1.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T20:11:02.092867Z",
+      "observed_at": "2026-11-07T20:31:01.827926Z",
       "snow_in": 2.3
     }
   ],
