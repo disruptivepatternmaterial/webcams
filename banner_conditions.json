@@ -1,26 +1,13 @@
 {
-  "event_id": "6a716012-1167-59a3-9d79-c33cd42b87ca",
-  "last_updated": "2026-11-07T11:22:00Z",
+  "event_id": "b55670a3-e845-5d32-8c26-5f9b222f6e44",
+  "last_updated": "2026-11-07T11:52:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
       "as_of": "2026-11-07T10:31:09.620968Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "aqi",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "fog",
-          "reason": "another device of the same unit is counted instead"
-        }
-      ],
+      "dropped": [],
       "elev_ft": [
         3281
       ],
@@ -33,7 +20,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T11:13:09.938311Z",
+      "as_of": "2026-11-07T11:38:31.153503Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -55,9 +42,9 @@
     },
     {
       "aqi": [
-        6
+        3
       ],
-      "as_of": "2026-11-07T11:18:43.397187Z",
+      "as_of": "2026-11-07T11:48:08.810808Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,17 +60,17 @@
       ],
       "stale": false,
       "temp_f": [
-        38
+        39
       ],
       "wind": [
         {
-          "dir_deg": 280,
-          "mph": 7
+          "dir_deg": 101,
+          "mph": 3
         }
       ]
     },
     {
-      "as_of": "2026-11-07T11:05:03.947044Z",
+      "as_of": "2026-11-07T11:45:03.605129Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -96,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T11:15:23.144656Z",
+      "as_of": "2026-11-07T11:35:33.553719Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -114,8 +101,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 59,
-          "mph": 5
+          "dir_deg": 91,
+          "mph": 2
         }
       ]
     },
@@ -123,7 +110,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-07T11:01:04.858589Z",
+      "as_of": "2026-11-07T11:30:47.860100Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -136,13 +123,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 130,
-          "mph": 2
+          "dir_deg": 334,
+          "mph": 3
         }
       ]
     },
     {
-      "as_of": "2026-11-07T11:14:43.902555Z",
+      "as_of": "2026-11-07T11:39:07.022515Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -161,12 +148,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-07T11:18:43.397187Z",
-      "snow_in": 1.8
+      "observed_at": "2026-11-07T11:38:43.263424Z",
+      "snow_in": 1.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T11:11:08.632706Z",
+      "observed_at": "2026-11-07T11:31:08.379521Z",
       "snow_in": 2.5
     }
   ],
