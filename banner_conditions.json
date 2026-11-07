@@ -1,12 +1,12 @@
 {
-  "event_id": "b7cbf685-e6d2-57a0-80c0-4814a4e2ad1e",
-  "last_updated": "2026-11-07T21:52:00Z",
+  "event_id": "2c29eb26-476d-5d84-8115-73e0d76479f7",
+  "last_updated": "2026-11-07T22:08:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-07T21:30:55Z",
+      "as_of": "2026-11-07T22:00:56Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        50
+        53
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T21:43:52.245492Z",
+      "as_of": "2026-11-07T21:51:00.883583Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-07T21:42:06.831261Z",
+      "as_of": "2026-11-07T21:58:35.768067Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,12 +73,12 @@
       ],
       "stale": false,
       "temp_f": [
-        49
+        50
       ],
       "wind": [
         {
-          "dir_deg": 172,
-          "mph": 11
+          "dir_deg": 182,
+          "mph": 3
         }
       ]
     },
@@ -96,11 +96,11 @@
       ]
     },
     {
-      "as_of": "2026-11-07T21:40:18.799083Z",
+      "as_of": "2026-11-07T22:01:11Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1370 mm came with signal strength 89, below this sensor's minimum of 200"
+          "reason": "distance 1580 mm came with signal strength 111, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -115,7 +115,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        49
+        48
       ],
       "wind": [
         {
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T21:39:01.542903Z",
+      "as_of": "2026-11-07T21:56:35.401832Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -159,19 +159,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        45
+        46
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-07T21:38:36.019432Z",
-      "snow_in": 2.0
+      "observed_at": "2026-11-07T21:58:35.768067Z",
+      "snow_in": 2.2
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T21:31:01.107299Z",
+      "observed_at": "2026-11-07T21:51:00.883583Z",
       "snow_in": 2.3
     }
   ],
