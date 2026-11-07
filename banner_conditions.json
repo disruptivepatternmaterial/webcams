@@ -1,12 +1,12 @@
 {
-  "event_id": "c3f79bd2-5762-50e8-8352-f74a6bbd5502",
-  "last_updated": "2026-11-07T18:30:00Z",
+  "event_id": "1c211592-5334-586c-af1d-6fcf12a8db8c",
+  "last_updated": "2026-11-07T18:38:00Z",
   "sites": [
     {
       "aqi": [
-        8
+        7
       ],
-      "as_of": "2026-11-07T18:00:55Z",
+      "as_of": "2026-11-07T18:31:36Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,7 +28,7 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        47
+        52
       ]
     },
     {
@@ -100,7 +100,7 @@
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "39.4 F disagrees with another sensor here (spread 9.3 F, over 6.7 F) and is furthest from the other locations: 7.4 F off their median of 46.8 F, 11 locations adjusted to 3980 ft at 2.20 F per 1000 ft"
+          "reason": "39.4 F disagrees with another sensor here (spread 9.3 F, over 6.7 F) and is furthest from the other locations: 9.0 F off their median of 48.4 F, 11 locations adjusted to 3980 ft at 2.20 F per 1000 ft"
         },
         {
           "measurement": "snow_depth_in",
