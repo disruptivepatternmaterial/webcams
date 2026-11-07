@@ -1,12 +1,12 @@
 {
-  "event_id": "10a13339-c475-53e8-92a2-2243d2c7ad9a",
-  "last_updated": "2026-11-07T17:08:00Z",
+  "event_id": "e86dd5a6-d916-5c41-b66e-839c2e299acd",
+  "last_updated": "2026-11-07T17:22:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-07T17:00:55Z",
+      "as_of": "2026-11-07T17:00:58.563546Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T16:51:04.911675Z",
+      "as_of": "2026-11-07T17:19:05.725319Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,15 +49,15 @@
       ],
       "stale": false,
       "temp_f": [
-        45
+        46
       ],
       "wind": []
     },
     {
       "aqi": [
-        7
+        12
       ],
-      "as_of": "2026-11-07T16:42:40.858027Z",
+      "as_of": "2026-11-07T17:18:39.136593Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,17 +73,17 @@
       ],
       "stale": false,
       "temp_f": [
-        42
+        45
       ],
       "wind": [
         {
-          "dir_deg": 158,
-          "mph": 5
+          "dir_deg": 182,
+          "mph": 8
         }
       ]
     },
     {
-      "as_of": "2026-11-07T16:54:00.785670Z",
+      "as_of": "2026-11-07T17:14:00.861440Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,23 +92,23 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        49
+        50
       ]
     },
     {
-      "as_of": "2026-11-07T16:58:06.205047Z",
+      "as_of": "2026-11-07T17:18:14.850870Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "37.4 F disagrees with another sensor here (spread 7.0 F, over 6.7 F) and is furthest from the other locations: 3.7 F off their median of 41.1 F, 11 locations adjusted to 3980 ft at 2.86 F per 1000 ft"
+          "reason": "45.3 F disagrees with another sensor here (spread 7.9 F, over 6.7 F) and is furthest from the other locations: 4.2 F off their median of 41.1 F, 11 locations adjusted to 3990 ft at 2.86 F per 1000 ft"
         },
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1260 mm came with signal strength 90, below this sensor's minimum of 200"
+          "reason": "distance 1420 mm came with signal strength 104, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
-        3990
+        3980
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -118,12 +118,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        44
+        37
       ],
       "wind": [
         {
           "dir_deg": 1,
-          "mph": 5
+          "mph": 3
         }
       ]
     },
@@ -131,7 +131,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-07T16:30:46.646572Z",
+      "as_of": "2026-11-07T17:00:47.417682Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -140,17 +140,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        43
+        47
       ],
       "wind": [
         {
-          "dir_deg": 10,
-          "mph": 1
+          "dir_deg": 23,
+          "mph": 2
         }
       ]
     },
     {
-      "as_of": "2026-11-07T16:56:38.004437Z",
+      "as_of": "2026-11-07T17:14:39.966490Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -162,19 +162,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        39
+        40
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-07T16:38:39.652652Z",
+      "observed_at": "2026-11-07T17:18:39.136593Z",
       "snow_in": 1.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T16:51:04.911675Z",
+      "observed_at": "2026-11-07T17:11:04.266465Z",
       "snow_in": 2.4
     }
   ],
