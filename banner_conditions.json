@@ -1,6 +1,6 @@
 {
-  "event_id": "62e21367-fb55-5922-b385-faec21eeddd2",
-  "last_updated": "2026-11-07T17:38:00Z",
+  "event_id": "a7b02778-176a-5f83-8197-9a5f9473fe9a",
+  "last_updated": "2026-11-07T17:52:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T17:19:05.725319Z",
+      "as_of": "2026-11-07T17:38:55.199695Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,15 +49,15 @@
       ],
       "stale": false,
       "temp_f": [
-        46
+        47
       ],
       "wind": []
     },
     {
       "aqi": [
-        12
+        21
       ],
-      "as_of": "2026-11-07T17:18:39.136593Z",
+      "as_of": "2026-11-07T17:44:43.597531Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,17 +73,17 @@
       ],
       "stale": false,
       "temp_f": [
-        45
+        47
       ],
       "wind": [
         {
-          "dir_deg": 182,
-          "mph": 8
+          "dir_deg": 343,
+          "mph": 9
         }
       ]
     },
     {
-      "as_of": "2026-11-07T17:14:00.861440Z",
+      "as_of": "2026-11-07T17:34:00.405908Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,19 +92,19 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        50
+        52
       ]
     },
     {
-      "as_of": "2026-11-07T17:18:14.850870Z",
+      "as_of": "2026-11-07T17:38:24.394744Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "37.4 F disagrees with another sensor here (spread 7.9 F, over 6.7 F) and is furthest from the other locations: 5.0 F off their median of 42.5 F, 11 locations adjusted to 3980 ft at 2.86 F per 1000 ft"
+          "reason": "37.4 F disagrees with another sensor here (spread 9.0 F, over 6.7 F) and is furthest from the other locations: 5.0 F off their median of 42.5 F, 11 locations adjusted to 3980 ft at 2.86 F per 1000 ft"
         },
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1420 mm came with signal strength 104, below this sensor's minimum of 200"
+          "reason": "distance 1410 mm came with signal strength 111, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -118,12 +118,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        45
+        46
       ],
       "wind": [
         {
-          "dir_deg": 1,
-          "mph": 3
+          "dir_deg": 308,
+          "mph": 2
         }
       ]
     },
@@ -131,7 +131,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-07T17:00:47.417682Z",
+      "as_of": "2026-11-07T17:30:46.955787Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -140,17 +140,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        47
+        46
       ],
       "wind": [
         {
-          "dir_deg": 23,
-          "mph": 2
+          "dir_deg": 90,
+          "mph": 7
         }
       ]
     },
     {
-      "as_of": "2026-11-07T17:26:37.739256Z",
+      "as_of": "2026-11-07T17:39:03.751315Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -169,13 +169,13 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-07T17:18:39.136593Z",
+      "observed_at": "2026-11-07T17:38:38.939023Z",
       "snow_in": 1.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T17:11:04.266465Z",
-      "snow_in": 2.4
+      "observed_at": "2026-11-07T17:31:04.035233Z",
+      "snow_in": 2.3
     }
   ],
   "snow_sensors": [
