@@ -1,6 +1,6 @@
 {
-  "event_id": "98ca2fcb-34e5-546d-8d15-3d6f2503b29b",
-  "last_updated": "2026-11-07T18:14:00Z",
+  "event_id": "769b5527-dc44-5172-9a11-f6ea76ac5fd6",
+  "last_updated": "2026-11-07T18:22:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T18:08:26.290516Z",
+      "as_of": "2026-11-07T18:11:03.740229Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -55,9 +55,9 @@
     },
     {
       "aqi": [
-        21
+        15
       ],
-      "as_of": "2026-11-07T17:58:38.745454Z",
+      "as_of": "2026-11-07T18:18:38.689689Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,12 +73,12 @@
       ],
       "stale": false,
       "temp_f": [
-        47
+        50
       ],
       "wind": [
         {
-          "dir_deg": 343,
-          "mph": 9
+          "dir_deg": 349,
+          "mph": 13
         }
       ]
     },
@@ -96,15 +96,15 @@
       ]
     },
     {
-      "as_of": "2026-11-07T18:01:21Z",
+      "as_of": "2026-11-07T18:18:43.526993Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "39.4 F disagrees with another sensor here (spread 8.2 F, over 6.7 F) and is furthest from the other locations: 5.7 F off their median of 45.1 F, 11 locations adjusted to 3980 ft at 2.20 F per 1000 ft"
+          "reason": "39.4 F disagrees with another sensor here (spread 9.3 F, over 6.7 F) and is furthest from the other locations: 5.7 F off their median of 45.1 F, 11 locations adjusted to 3980 ft at 2.20 F per 1000 ft"
         },
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1300 mm came with signal strength 97, below this sensor's minimum of 200"
+          "reason": "distance 1520 mm came with signal strength 118, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -118,12 +118,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        48
+        49
       ],
       "wind": [
         {
-          "dir_deg": 91,
-          "mph": 6
+          "dir_deg": 24,
+          "mph": 17
         }
       ]
     },
@@ -150,13 +150,13 @@
       ]
     },
     {
-      "as_of": "2026-11-07T18:09:03.563678Z",
+      "as_of": "2026-11-07T18:14:39.334475Z",
       "dropped": [],
       "elev_ft": [
         3166
       ],
       "ground_temp_f": [
-        41
+        42
       ],
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
@@ -169,12 +169,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-07T17:58:38.745454Z",
+      "observed_at": "2026-11-07T18:18:38.689689Z",
       "snow_in": 1.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T17:51:03.789480Z",
+      "observed_at": "2026-11-07T18:11:03.740229Z",
       "snow_in": 2.3
     }
   ],
