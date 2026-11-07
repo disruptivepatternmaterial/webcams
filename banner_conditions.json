@@ -1,12 +1,12 @@
 {
-  "event_id": "e86dd5a6-d916-5c41-b66e-839c2e299acd",
-  "last_updated": "2026-11-07T17:22:00Z",
+  "event_id": "62e21367-fb55-5922-b385-faec21eeddd2",
+  "last_updated": "2026-11-07T17:38:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-07T17:00:58.563546Z",
+      "as_of": "2026-11-07T17:30:56Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,7 +28,7 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        41
+        43
       ]
     },
     {
@@ -100,7 +100,7 @@
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "45.3 F disagrees with another sensor here (spread 7.9 F, over 6.7 F) and is furthest from the other locations: 4.2 F off their median of 41.1 F, 11 locations adjusted to 3990 ft at 2.86 F per 1000 ft"
+          "reason": "37.4 F disagrees with another sensor here (spread 7.9 F, over 6.7 F) and is furthest from the other locations: 5.0 F off their median of 42.5 F, 11 locations adjusted to 3980 ft at 2.86 F per 1000 ft"
         },
         {
           "measurement": "snow_depth_in",
@@ -108,7 +108,7 @@
         }
       ],
       "elev_ft": [
-        3980
+        3990
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -118,7 +118,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        37
+        45
       ],
       "wind": [
         {
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T17:14:39.966490Z",
+      "as_of": "2026-11-07T17:26:37.739256Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -162,7 +162,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        40
+        41
       ]
     }
   ],
