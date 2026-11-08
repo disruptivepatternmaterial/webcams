@@ -2,6 +2,9 @@
   "bowman_mtn": {
     "images": [
       "Bowman_Mtn_latest.jpg",
+      "Bowman_Mtn_20261107_162235.jpg",
+      "Bowman_Mtn_20261107_162234.jpg",
+      "Bowman_Mtn_20261107_162233.jpg",
       "Bowman_Mtn_20261107_160711.jpg",
       "Bowman_Mtn_20261107_160710.jpg",
       "Bowman_Mtn_20261107_160709.jpg",
@@ -11,16 +14,28 @@
       "Bowman_Mtn_20261107_153029.jpg",
       "Bowman_Mtn_20261107_153028.jpg",
       "Bowman_Mtn_20261107_153027.jpg",
-      "Bowman_Mtn_20261107_152250.jpg",
-      "Bowman_Mtn_20261107_152249.jpg",
-      "Bowman_Mtn_20261107_152248.jpg",
-      "Bowman_Mtn_20261107_150002.jpg"
+      "Bowman_Mtn_20261107_152250.jpg"
     ],
     "metadata": {
       "Bowman_Mtn_latest.jpg": {
-        "run_id": "01a1b837-d9b2-752e-811f-514be8bc91a1",
+        "run_id": "01a1b845-a095-719b-b181-9104de23b601",
         "temperature_c": null,
-        "timestamp": "2026-11-08T00:07:11Z"
+        "timestamp": "2026-11-08T00:22:35Z"
+      },
+      "Bowman_Mtn_20261107_162235.jpg": {
+        "run_id": "01a1b845-a095-719b-b181-9104de23b601",
+        "temperature_c": null,
+        "timestamp": "2026-11-08T00:22:35Z"
+      },
+      "Bowman_Mtn_20261107_162234.jpg": {
+        "run_id": "01a1b845-a095-719b-b181-9104de23b601",
+        "temperature_c": null,
+        "timestamp": "2026-11-08T00:22:34Z"
+      },
+      "Bowman_Mtn_20261107_162233.jpg": {
+        "run_id": "01a1b845-a095-719b-b181-9104de23b601",
+        "temperature_c": null,
+        "timestamp": "2026-11-08T00:22:33Z"
       },
       "Bowman_Mtn_20261107_160711.jpg": {
         "run_id": "01a1b837-d9b2-752e-811f-514be8bc91a1",
@@ -71,21 +86,6 @@
         "run_id": "01a1b80e-8682-7218-9d69-1339b961ee71",
         "temperature_c": null,
         "timestamp": "2026-11-07T23:22:50Z"
-      },
-      "Bowman_Mtn_20261107_152249.jpg": {
-        "run_id": "01a1b80e-8682-7218-9d69-1339b961ee71",
-        "temperature_c": null,
-        "timestamp": "2026-11-07T23:22:49Z"
-      },
-      "Bowman_Mtn_20261107_152248.jpg": {
-        "run_id": "01a1b80e-8682-7218-9d69-1339b961ee71",
-        "temperature_c": null,
-        "timestamp": "2026-11-07T23:22:48Z"
-      },
-      "Bowman_Mtn_20261107_150002.jpg": {
-        "run_id": "01a1b800-bfc8-7b2e-bc9c-9fa83908ca97",
-        "temperature_c": null,
-        "timestamp": "2026-11-07T23:00:02Z"
       }
     }
   },
