@@ -1,13 +1,26 @@
 {
-  "event_id": "c9278763-d877-5391-b9ef-e952a0c66ff0",
-  "last_updated": "2026-11-08T06:20:00Z",
+  "event_id": "bce2eeeb-4eb4-51fb-baa1-4790417cc786",
+  "last_updated": "2026-11-08T14:38:00Z",
   "sites": [
     {
       "aqi": [
-        0
+        61
       ],
-      "as_of": "2026-11-08T05:31:03.871538Z",
-      "dropped": [],
+      "as_of": "2026-11-08T14:31:02Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "aqi",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "fog",
+          "reason": "another device of the same unit is counted instead"
+        }
+      ],
       "elev_ft": [
         3281
       ],
@@ -15,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        44
+        38
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-08T06:08:17.138077Z",
+      "as_of": "2026-11-08T14:22:40.381751Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -36,15 +49,15 @@
       ],
       "stale": false,
       "temp_f": [
-        41
+        35
       ],
       "wind": []
     },
     {
       "aqi": [
-        0
+        2
       ],
-      "as_of": "2026-11-08T06:12:02.047242Z",
+      "as_of": "2026-11-08T14:11:56.904796Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -60,17 +73,17 @@
       ],
       "stale": false,
       "temp_f": [
-        43
+        37
       ],
       "wind": [
         {
-          "dir_deg": 137,
-          "mph": 3
+          "dir_deg": 167,
+          "mph": 2
         }
       ]
     },
     {
-      "as_of": "2026-11-08T06:05:53.229324Z",
+      "as_of": "2026-11-08T14:25:48.879588Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -79,17 +92,12 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        43
+        37
       ]
     },
     {
-      "as_of": "2026-11-08T06:11:30.624483Z",
-      "dropped": [
-        {
-          "measurement": "snow_depth_in",
-          "reason": "distance 1580 mm came with signal strength 75, below this sensor's minimum of 200"
-        }
-      ],
+      "as_of": "2026-11-08T14:28:16.370170Z",
+      "dropped": [],
       "elev_ft": [
         3980,
         3990
@@ -102,12 +110,12 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        43
+        38
       ],
       "wind": [
         {
-          "dir_deg": 181,
-          "mph": 2
+          "dir_deg": 55,
+          "mph": 5
         }
       ]
     },
@@ -115,7 +123,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-08T04:30:45.216844Z",
+      "as_of": "2026-11-08T14:00:47.212411Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -124,17 +132,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        46
+        40
       ],
       "wind": [
         {
-          "dir_deg": 9,
-          "mph": 15
+          "dir_deg": 348,
+          "mph": 6
         }
       ]
     },
     {
-      "as_of": "2026-11-08T06:14:31.179453Z",
+      "as_of": "2026-11-08T14:21:26.765974Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -146,20 +154,20 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        46
+        41
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-08T05:18:32.407096Z",
-      "snow_in": 3.9
+      "observed_at": "2026-11-08T10:58:28.341122Z",
+      "snow_in": 4.3
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-08T04:50:55.690675Z",
-      "snow_in": 2.2
+      "observed_at": "2026-11-08T14:10:49.025502Z",
+      "snow_in": 2.1
     }
   ],
   "snow_sensors": [
