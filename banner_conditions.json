@@ -1,12 +1,12 @@
 {
-  "event_id": "c4f4ed2f-ab48-54b7-9f40-17607a583ece",
-  "last_updated": "2026-11-08T23:24:00Z",
+  "event_id": "b0b9001f-ec45-55ef-8e96-fa8c74a7a7dc",
+  "last_updated": "2026-11-08T23:36:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-08T23:01:18.532715Z",
+      "as_of": "2026-11-08T23:30:56Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        45
+        38
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-08T23:10:52.933359Z",
+      "as_of": "2026-11-08T23:22:34.194604Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        37
+        36
       ],
       "wind": []
     },
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-08T23:05:43.996916Z",
+      "as_of": "2026-11-08T23:25:44.080877Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,7 +92,7 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        38
+        37
       ]
     },
     {
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "as_of": "2026-11-08T23:14:25.968148Z",
+      "as_of": "2026-11-08T23:21:22.323424Z",
       "dropped": [],
       "elev_ft": [
         3166
