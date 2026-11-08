@@ -1,6 +1,6 @@
 {
-  "event_id": "ed35cde7-8543-5fbe-859c-747c6b5956ef",
-  "last_updated": "2026-11-08T03:54:00Z",
+  "event_id": "dd7752d3-537e-512b-ad48-3be080127632",
+  "last_updated": "2026-11-08T04:08:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-08T03:38:19.040131Z",
+      "as_of": "2026-11-08T03:52:47.797900Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        46
+        45
       ],
       "wind": []
     },
@@ -57,7 +57,7 @@
       "aqi": [
         9
       ],
-      "as_of": "2026-11-08T03:42:03.210330Z",
+      "as_of": "2026-11-08T03:58:31.345494Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -96,11 +96,11 @@
       ]
     },
     {
-      "as_of": "2026-11-08T03:43:10.369416Z",
+      "as_of": "2026-11-08T04:01:11Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1660 mm came with signal strength 159, below this sensor's minimum of 200"
+          "reason": "distance 1360 mm came with signal strength 106, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -115,7 +115,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        48
+        46
       ],
       "wind": [
         {
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "as_of": "2026-11-08T03:38:58.186559Z",
+      "as_of": "2026-11-08T03:51:32.256582Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -159,19 +159,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        50
+        49
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-08T03:38:31.650704Z",
+      "observed_at": "2026-11-08T03:58:31.345494Z",
       "snow_in": 3.9
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-08T03:30:56.625234Z",
+      "observed_at": "2026-11-08T03:50:56.410044Z",
       "snow_in": 2.2
     }
   ],
