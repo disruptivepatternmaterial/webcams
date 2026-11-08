@@ -1,6 +1,6 @@
 {
-  "event_id": "649e287e-c50c-51c5-94b9-b264e2ad0fed",
-  "last_updated": "2026-11-07T23:52:00Z",
+  "event_id": "bb508846-2c95-5bae-8719-3c8f3b3e2041",
+  "last_updated": "2026-11-08T00:08:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-07T23:38:22.044365Z",
+      "as_of": "2026-11-07T23:50:59.353337Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -55,9 +55,9 @@
     },
     {
       "aqi": [
-        1
+        3
       ],
-      "as_of": "2026-11-07T23:42:05.651199Z",
+      "as_of": "2026-11-07T23:58:58.512420Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,11 +73,11 @@
       ],
       "stale": false,
       "temp_f": [
-        52
+        51
       ],
       "wind": [
         {
-          "dir_deg": 0,
+          "dir_deg": 171,
           "mph": 7
         }
       ]
@@ -96,11 +96,11 @@
       ]
     },
     {
-      "as_of": "2026-11-07T23:41:16.858188Z",
+      "as_of": "2026-11-08T00:01:11Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1650 mm came with signal strength 145, below this sensor's minimum of 200"
+          "reason": "distance 1560 mm came with signal strength 151, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -115,7 +115,7 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        52
+        51
       ],
       "wind": [
         {
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "as_of": "2026-11-07T23:39:00.417840Z",
+      "as_of": "2026-11-07T23:56:34.320727Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -171,7 +171,7 @@
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-07T23:30:59.609292Z",
+      "observed_at": "2026-11-07T23:50:59.353337Z",
       "snow_in": 2.3
     }
   ],
