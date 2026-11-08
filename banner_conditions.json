@@ -1,12 +1,12 @@
 {
-  "event_id": "b6f5b11f-9d6b-5a58-8149-55eafcb28ec2",
-  "last_updated": "2026-11-08T02:08:00Z",
+  "event_id": "b4892a14-4256-5db5-a900-f5c6081fa837",
+  "last_updated": "2026-11-08T02:22:00Z",
   "sites": [
     {
       "aqi": [
         9
       ],
-      "as_of": "2026-11-08T02:00:53Z",
+      "as_of": "2026-11-08T02:00:57.524891Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-08T01:50:57.847573Z",
+      "as_of": "2026-11-08T02:10:57.615785Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         11
       ],
-      "as_of": "2026-11-08T01:42:04.820912Z",
+      "as_of": "2026-11-08T02:18:32.652175Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -77,13 +77,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 149,
-          "mph": 14
+          "dir_deg": 62,
+          "mph": 4
         }
       ]
     },
     {
-      "as_of": "2026-11-08T01:32:58.114720Z",
+      "as_of": "2026-11-08T02:02:57.888055Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,15 +92,15 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        52
+        51
       ]
     },
     {
-      "as_of": "2026-11-08T02:01:11Z",
+      "as_of": "2026-11-08T02:11:33.824095Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
-          "reason": "distance 1610 mm came with signal strength 164, below this sensor's minimum of 200"
+          "reason": "distance 1470 mm came with signal strength 171, below this sensor's minimum of 200"
         }
       ],
       "elev_ft": [
@@ -119,8 +119,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 350,
-          "mph": 13
+          "dir_deg": 256,
+          "mph": 5
         }
       ]
     },
@@ -128,7 +128,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-08T01:30:46.570939Z",
+      "as_of": "2026-11-08T02:00:47.742023Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -141,13 +141,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 64,
-          "mph": 9
+          "dir_deg": 86,
+          "mph": 3
         }
       ]
     },
     {
-      "as_of": "2026-11-08T01:56:33.253671Z",
+      "as_of": "2026-11-08T02:14:33.876760Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -166,12 +166,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-08T01:18:33.244841Z",
-      "snow_in": 2.8
+      "observed_at": "2026-11-08T02:18:32.652175Z",
+      "snow_in": 3.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-08T01:50:57.847573Z",
+      "observed_at": "2026-11-08T02:10:57.615785Z",
       "snow_in": 2.3
     }
   ],
