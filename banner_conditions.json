@@ -1,6 +1,6 @@
 {
-  "event_id": "f1ac3c19-ebae-50d4-88db-f0c53c5c6e56",
-  "last_updated": "2026-11-09T02:52:00Z",
+  "event_id": "c8948ac5-c955-5135-a0d8-095d46a8f773",
+  "last_updated": "2026-11-09T03:06:00Z",
   "sites": [
     {
       "aqi": [
@@ -32,8 +32,7 @@
       ]
     },
     {
-      "aqi": [],
-      "as_of": "2026-11-09T02:38:07.516630Z",
+      "as_of": "2026-11-09T02:52:31.726125Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -50,8 +49,7 @@
       "stale": false,
       "temp_f": [
         33
-      ],
-      "wind": []
+      ]
     },
     {
       "aqi": [
@@ -96,7 +94,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T02:41:33.350582Z",
+      "as_of": "2026-11-09T03:01:12Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -108,7 +106,7 @@
         4003
       ],
       "snow_in": [
-        16
+        0
       ],
       "stale": false,
       "temp_f": [
@@ -144,7 +142,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T02:38:45.435495Z",
+      "as_of": "2026-11-09T02:51:20.358339Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -163,13 +161,13 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-09T02:37:21.955665Z",
+      "observed_at": "2026-11-09T02:57:30.713792Z",
       "snow_in": 2.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-09T02:30:50.543396Z",
-      "snow_in": 2.4
+      "observed_at": "2026-11-09T02:50:50.277598Z",
+      "snow_in": 2.5
     }
   ],
   "snow_sensors": [
@@ -183,10 +181,6 @@
     },
     {
       "elev_ft": 4003,
-      "location": "Forest Lands High Point"
-    },
-    {
-      "elev_ft": null,
       "location": "Forest Lands High Point"
     }
   ]
