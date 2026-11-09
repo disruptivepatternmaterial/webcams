@@ -1,12 +1,12 @@
 {
-  "event_id": "678e4cdd-7938-5c5c-83db-6f787552885e",
-  "last_updated": "2026-11-09T13:52:00Z",
+  "event_id": "b9c12118-0319-5f99-9ea6-f00b5f78b3e6",
+  "last_updated": "2026-11-09T14:02:00Z",
   "sites": [
     {
       "aqi": [
-        3
+        6
       ],
-      "as_of": "2026-11-09T13:31:10.619584Z",
+      "as_of": "2026-11-09T14:00:53Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        37
+        38
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-09T13:37:59.609360Z",
+      "as_of": "2026-11-09T13:52:24.237126Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -94,7 +94,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T13:46:48.364133Z",
+      "as_of": "2026-11-09T14:01:18Z",
       "dropped": [
         {
           "measurement": "snow_depth_in",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T13:38:39.487888Z",
+      "as_of": "2026-11-09T13:51:14.878176Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -166,12 +166,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-09T13:37:24.063371Z",
+      "observed_at": "2026-11-09T13:57:23.969085Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-09T13:30:42.827603Z",
+      "observed_at": "2026-11-09T13:50:42.589354Z",
       "snow_in": 3.3
     }
   ],
