@@ -2178,7 +2178,26 @@
 
         function isCameraWarningStatus(statusText) {
             const s = String(statusText || "").toLowerCase();
-            return s.indexOf("dead") !== -1 || s.indexOf("repair") !== -1 || s.indexOf("unstable") !== -1 || s.indexOf("bench") !== -1;
+            return s.indexOf("dead") !== -1 || s.indexOf("repair") !== -1 || s.indexOf("unstable") !== -1 || s.indexOf("bench") !== -1
+                || s.indexOf("no picture") !== -1 || s.indexOf("missing") !== -1 || s.indexOf("failed") !== -1;
+        }
+
+        // Short Pacific time for a card: "Nov 9, 6:30 AM".
+        function formatCardTime(isoString) {
+            if (!isoString) return "";
+            try {
+                return new Date(isoString).toLocaleString("en-US", { timeZone: "America/Los_Angeles", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+            } catch (e) { return ""; }
+        }
+
+        // What an empty card says: when the people check last passed nothing, and how many wait.
+        function emptyCardText(data) {
+            const waiting = Number(data && data.waiting) || 0;
+            if (waiting > 0) {
+                const since = formatCardTime(data.oldest_waiting_capture);
+                return "No picture has passed the people check" + (since ? " since " + since + " PT" : "") + "; " + waiting + " waiting";
+            }
+            return "No pictures yet";
         }
 
         async function loadCameras() {
@@ -2201,18 +2220,25 @@
                 camerasContainer.innerHTML = "";
                 if (bestOfMount) bestOfMount.innerHTML = "";
                 const cameraOrder = getCameraOrder(content);
+                let newestCaptureIso = null;
                 for (const cameraName of cameraOrder) {
-                    const data = cameraData[cameraName];
-                    if (!data) continue;
+                    // A camera missing from list.json is shown as missing, not silently dropped.
+                    const data = cameraData[cameraName] || { images: [], metadata: {}, status: "Missing from list.json", waiting: 0 };
                     const cameraMeta = getCameraMeta(content, cameraName);
-                    const statusText = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Working");
-                    const isWarn = isCameraWarningStatus(statusText);
+                    // The status comes from list.json (regenerate_list.py writes it from the folders);
+                    // the old default "Working" said so even on an empty card.
+                    const statusText = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Status unknown");
                     const displayTitle = formatCameraName(cameraName);
                     const elevLabel = extractCameraElevLabel(cameraMeta.description);
-                    const pillLabel = elevLabel ? (displayTitle + " · " + elevLabel) : displayTitle;
 
                     const allImages = data.images || [];
                     const actualImages = allImages.filter(img => !img.toLowerCase().includes("latest"));
+                    const isWarn = isCameraWarningStatus(statusText) || actualImages.length === 0 || (Number(data.waiting) || 0) >= 3;
+                    const newestMeta = actualImages.length > 0 ? getMetadata(data.metadata, actualImages[0]) : null;
+                    const newestIso = data.newest_capture || (newestMeta && newestMeta.timestamp) || null;
+                    if (newestIso && (!newestCaptureIso || newestIso > newestCaptureIso)) newestCaptureIso = newestIso;
+                    const newestLabel = formatCardTime(newestIso);
+                    const pillLabel = (elevLabel ? (displayTitle + " · " + elevLabel) : displayTitle) + (newestLabel ? " · " + newestLabel : "");
                     const allImagesForModal = actualImages.map(function(fn) {
                         return {
                             filename: fn,
@@ -2237,6 +2263,10 @@
                         imgEl.loading = "eager";
                         imgEl.onerror = function() {
                             this.style.display = "none";
+                            const failed = document.createElement("div");
+                            failed.style.cssText = "display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:0.85em;";
+                            failed.textContent = "Picture failed to load: " + latestImage;
+                            viewport.insertBefore(failed, viewport.firstChild);
                         };
                         viewport.appendChild(imgEl);
                         viewport.onclick = function() {
@@ -2245,7 +2275,7 @@
                     } else {
                         const empty = document.createElement("div");
                         empty.style.cssText = "display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:0.85em;";
-                        empty.textContent = "No images yet";
+                        empty.textContent = emptyCardText(data);
                         viewport.appendChild(empty);
                     }
 
@@ -2312,7 +2342,9 @@
                     await renderBestOfCarousel(bestOfMount, refreshToken);
                 }
 
-                document.getElementById("lastUpdate").textContent = new Date().toLocaleString();
+                document.getElementById("lastUpdate").textContent = newestCaptureIso
+                    ? (formatPacificTime(newestCaptureIso) + " PT (newest picture)")
+                    : "no picture time in list.json";
             } catch (error) {
                 camerasContainer.innerHTML =
                     "<div class=\"error\">Error loading images: " + (error.message || String(error)) + "</div>";
