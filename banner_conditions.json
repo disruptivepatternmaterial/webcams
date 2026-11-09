@@ -1,12 +1,12 @@
 {
-  "event_id": "2e677a82-01e3-5a2d-b6de-83f3c36097a1",
-  "last_updated": "2026-11-09T17:38:00Z",
+  "event_id": "b507759e-a8c9-5e53-9f4b-5741c7f7de66",
+  "last_updated": "2026-11-09T17:50:00Z",
   "sites": [
     {
       "aqi": [
         2
       ],
-      "as_of": "2026-11-09T17:31:16Z",
+      "as_of": "2026-11-09T17:31:21.337028Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-09T17:10:40.202957Z",
+      "as_of": "2026-11-09T17:37:56.709965Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        38
       ],
       "wind": []
     },
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T17:02:35.347096Z",
+      "as_of": "2026-11-09T17:32:35.024904Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -90,11 +90,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        41
+        42
       ]
     },
     {
-      "as_of": "2026-11-09T17:28:33.365969Z",
+      "as_of": "2026-11-09T17:37:21.586121Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -123,7 +123,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T17:00:44.466384Z",
+      "as_of": "2026-11-09T17:30:42.305144Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -132,17 +132,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        41
+        43
       ],
       "wind": [
         {
-          "dir_deg": 56,
-          "mph": 5
+          "dir_deg": 23,
+          "mph": 2
         }
       ]
     },
     {
-      "as_of": "2026-11-09T17:21:13.067740Z",
+      "as_of": "2026-11-09T17:38:37.388354Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -154,19 +154,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        38
+        39
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-09T17:17:21.808828Z",
+      "observed_at": "2026-11-09T17:37:21.586121Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-09T17:10:40.202957Z",
+      "observed_at": "2026-11-09T17:30:39.996615Z",
       "snow_in": 3.1
     }
   ],
