@@ -1,12 +1,12 @@
 {
-  "event_id": "60f8f0cb-8e56-5984-a0ac-7e094a335a68",
-  "last_updated": "2026-11-09T23:00:00Z",
+  "event_id": "c8d0942e-e6b8-5f8a-a624-9de595b528bf",
+  "last_updated": "2026-11-09T23:08:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T22:31:07.235752Z",
+      "as_of": "2026-11-09T23:01:17Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        40
+        38
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-09T22:48:29.289191Z",
+      "as_of": "2026-11-09T22:50:36.121495Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -96,10 +96,14 @@
       ]
     },
     {
-      "as_of": "2026-11-09T22:37:18.379876Z",
-      "dropped": [],
+      "as_of": "2026-11-09T23:01:12Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "29.0 F disagrees with another sensor here (spread 8.8 F, over 6.7 F) and is furthest from the other locations: 9.2 F off their median of 38.2 F, 11 locations adjusted to 3980 ft at 2.77 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
-        3980,
         3990
       ],
       "id": "forest_lands_high_point",
@@ -116,8 +120,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 91,
-          "mph": 2
+          "dir_deg": 26,
+          "mph": 8
         }
       ]
     },
@@ -144,7 +148,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T22:38:34.577479Z",
+      "as_of": "2026-11-09T22:51:10.201851Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -163,12 +167,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-09T22:37:18.379876Z",
+      "observed_at": "2026-11-09T22:57:18.208320Z",
       "snow_in": 2.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-09T22:30:36.385093Z",
+      "observed_at": "2026-11-09T22:50:36.121495Z",
       "snow_in": 2.2
     }
   ],
