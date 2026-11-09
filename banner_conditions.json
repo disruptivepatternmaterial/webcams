@@ -1,6 +1,6 @@
 {
-  "event_id": "9c55def5-01a7-526f-94de-c4f23dfacbc2",
-  "last_updated": "2026-11-09T18:50:00Z",
+  "event_id": "ea150081-7738-502d-bf99-c7bb8788cf6f",
+  "last_updated": "2026-11-09T19:00:00Z",
   "sites": [
     {
       "aqi": [
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T18:37:21.173296Z",
+      "as_of": "2026-11-09T18:49:10.614513Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -116,8 +116,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 61,
-          "mph": 4
+          "dir_deg": 58,
+          "mph": 6
         }
       ]
     },
@@ -169,7 +169,7 @@
     {
       "band_ft": 5000,
       "observed_at": "2026-11-09T18:30:39.238915Z",
-      "snow_in": 3.0
+      "snow_in": 3.1
     }
   ],
   "snow_sensors": [
