@@ -1,12 +1,12 @@
 {
-  "event_id": "cc232960-1229-5cff-b9c7-7e93ff96f72d",
-  "last_updated": "2026-11-09T23:20:00Z",
+  "event_id": "90a377b9-27ef-5f13-a4d9-2289a95be629",
+  "last_updated": "2026-11-09T23:32:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T23:01:18.918424Z",
+      "as_of": "2026-11-09T23:31:18Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-09T23:07:52.579152Z",
+      "as_of": "2026-11-09T23:10:35.935257Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T22:41:36.105695Z",
+      "as_of": "2026-11-09T23:24:24.339649Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,12 +73,12 @@
       ],
       "stale": false,
       "temp_f": [
-        38
+        37
       ],
       "wind": [
         {
-          "dir_deg": 0,
-          "mph": 9
+          "dir_deg": 198,
+          "mph": 2
         }
       ]
     },
@@ -96,11 +96,11 @@
       ]
     },
     {
-      "as_of": "2026-11-09T23:01:12Z",
+      "as_of": "2026-11-09T23:17:18.367458Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "29.0 F disagrees with another sensor here (spread 8.8 F, over 6.7 F) and is furthest from the other locations: 9.2 F off their median of 38.2 F, 11 locations adjusted to 3980 ft at 2.77 F per 1000 ft"
+          "reason": "29.0 F disagrees with another sensor here (spread 9.3 F, over 6.7 F) and is furthest from the other locations: 9.2 F off their median of 38.2 F, 11 locations adjusted to 3980 ft at 2.77 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -120,8 +120,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 26,
-          "mph": 8
+          "dir_deg": 1,
+          "mph": 26
         }
       ]
     },
@@ -148,7 +148,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T23:08:34.314769Z",
+      "as_of": "2026-11-09T23:21:09.982707Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -167,12 +167,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-09T22:57:18.208320Z",
+      "observed_at": "2026-11-09T23:17:18.367458Z",
       "snow_in": 2.6
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-09T22:50:36.121495Z",
+      "observed_at": "2026-11-09T23:10:35.935257Z",
       "snow_in": 2.2
     }
   ],
