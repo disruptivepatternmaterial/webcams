@@ -1,6 +1,6 @@
 {
-  "event_id": "e08b8502-8526-5e16-a847-e9602ea3e324",
-  "last_updated": "2026-11-09T01:52:00Z",
+  "event_id": "82bf41a4-f6c9-556a-b141-423067a6bc8d",
+  "last_updated": "2026-11-09T02:06:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-09T01:38:08.276458Z",
+      "as_of": "2026-11-09T01:52:32.421261Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T01:41:04.680702Z",
+      "as_of": "2026-11-09T02:01:26Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -104,11 +104,9 @@
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
-      "snow_elev_ft": [
-        4003
-      ],
+      "snow_elev_ft": [],
       "snow_in": [
-        3
+        33
       ],
       "stale": false,
       "temp_f": [
@@ -144,7 +142,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T01:38:45.973050Z",
+      "as_of": "2026-11-09T01:51:20.824166Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -163,12 +161,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-09T01:31:30.586649Z",
-      "snow_in": 3.5
+      "observed_at": "2026-11-08T21:58:33.840494Z",
+      "snow_in": 3.9
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-09T01:30:51.236955Z",
+      "observed_at": "2026-11-09T01:50:50.981146Z",
       "snow_in": 2.3
     }
   ],
@@ -182,7 +180,7 @@
       "location": "N Twin Approach"
     },
     {
-      "elev_ft": 4003,
+      "elev_ft": null,
       "location": "Forest Lands High Point"
     }
   ]
