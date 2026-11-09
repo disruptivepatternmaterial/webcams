@@ -1,12 +1,12 @@
 {
-  "event_id": "cf1c0d55-c75c-5852-b634-19de6e53925a",
-  "last_updated": "2026-11-09T23:10:00Z",
+  "event_id": "cc232960-1229-5cff-b9c7-7e93ff96f72d",
+  "last_updated": "2026-11-09T23:20:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T23:01:17Z",
+      "as_of": "2026-11-09T23:01:18.918424Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-09T22:50:36.121495Z",
+      "as_of": "2026-11-09T23:07:52.579152Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T22:47:31.147806Z",
+      "as_of": "2026-11-09T23:02:31.790583Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,7 +92,7 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        39
+        40
       ]
     },
     {
@@ -129,7 +129,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T22:30:42.863948Z",
+      "as_of": "2026-11-09T23:00:42.685966Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -138,17 +138,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        40
+        39
       ],
       "wind": [
         {
-          "dir_deg": 149,
+          "dir_deg": 68,
           "mph": 1
         }
       ]
     },
     {
-      "as_of": "2026-11-09T22:51:10.201851Z",
+      "as_of": "2026-11-09T23:08:34.314769Z",
       "dropped": [],
       "elev_ft": [
         3166
