@@ -1,12 +1,12 @@
 {
-  "event_id": "dc79eadd-cab2-5b4f-9e59-78c77a995200",
-  "last_updated": "2026-11-09T04:22:00Z",
+  "event_id": "b59aa46d-d928-5b76-a2f5-008391b36ad3",
+  "last_updated": "2026-11-09T04:52:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T04:01:04.212298Z",
+      "as_of": "2026-11-09T04:30:57Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -32,7 +32,8 @@
       ]
     },
     {
-      "as_of": "2026-11-09T04:10:49.327311Z",
+      "aqi": [],
+      "as_of": "2026-11-09T04:38:06.114871Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -48,14 +49,15 @@
       ],
       "stale": false,
       "temp_f": [
-        32
-      ]
+        33
+      ],
+      "wind": []
     },
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T04:02:51.603361Z",
+      "as_of": "2026-11-09T04:32:51.316654Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -79,7 +81,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T04:05:41.801625Z",
+      "as_of": "2026-11-09T04:45:41.330571Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,8 +94,13 @@
       ]
     },
     {
-      "as_of": "2026-11-09T04:17:29.856290Z",
-      "dropped": [],
+      "as_of": "2026-11-09T04:42:29.609911Z",
+      "dropped": [
+        {
+          "measurement": "snow_depth_in",
+          "reason": "another device of the same unit is counted instead"
+        }
+      ],
       "elev_ft": [
         3980,
         3990
@@ -112,8 +119,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 91,
-          "mph": 3
+          "dir_deg": 108,
+          "mph": 4
         }
       ]
     },
@@ -121,7 +128,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-09T04:00:43.198300Z",
+      "as_of": "2026-11-09T04:30:46.145464Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -130,7 +137,7 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        36
+        35
       ],
       "wind": [
         {
@@ -140,7 +147,7 @@
       ]
     },
     {
-      "as_of": "2026-11-09T04:14:22.885492Z",
+      "as_of": "2026-11-09T04:38:44.735944Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -159,12 +166,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-09T04:17:29.856290Z",
+      "observed_at": "2026-11-09T04:37:29.656275Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-09T04:10:49.327311Z",
+      "observed_at": "2026-11-09T04:30:49.113573Z",
       "snow_in": 2.9
     }
   ],
