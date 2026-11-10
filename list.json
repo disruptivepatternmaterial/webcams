@@ -88,10 +88,10 @@
         "timestamp": "2026-11-10T15:00:03Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 1 newer picture waiting for the people check",
     "newest_capture": "2026-11-10T21:00:02Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 1,
+    "oldest_waiting_capture": "2026-11-10T21:30:03Z"
   },
   "n_twin": {
     "images": [
