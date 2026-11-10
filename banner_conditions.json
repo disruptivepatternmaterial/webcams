@@ -1,6 +1,6 @@
 {
-  "event_id": "d532b0ec-c9e8-5138-ad4d-7b4bfe815b5a",
-  "last_updated": "2026-11-10T15:50:00Z",
+  "event_id": "d15f6fe6-bcb6-5d98-869b-a8bfde7c3b38",
+  "last_updated": "2026-11-10T16:00:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-10T15:37:40.476001Z",
+      "as_of": "2026-11-10T15:48:17.704360Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-10T15:32:30.688856Z",
+      "as_of": "2026-11-10T15:41:26.672737Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -71,17 +71,17 @@
       "snow_in": [],
       "stale": false,
       "temp_f": [
-        38
+        39
       ],
       "wind": [
         {
-          "dir_deg": 90,
-          "mph": 9
+          "dir_deg": 183,
+          "mph": 11
         }
       ]
     },
     {
-      "as_of": "2026-11-10T15:32:22.487183Z",
+      "as_of": "2026-11-10T15:45:21.956132Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -90,7 +90,7 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        38
+        39
       ]
     },
     {
