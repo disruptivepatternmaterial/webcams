@@ -370,10 +370,10 @@
         "timestamp": "2026-11-10T17:30:00Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 6 newer pictures waiting for the people check",
     "newest_capture": "2026-11-10T21:00:00Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 6,
+    "oldest_waiting_capture": "2026-11-10T21:20:57Z"
   },
   "woods_cam_001": {
     "images": [
