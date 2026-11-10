@@ -1,12 +1,12 @@
 {
-  "event_id": "433e8adb-579d-57d6-bdaa-a05f3b078766",
-  "last_updated": "2026-11-10T23:24:00Z",
+  "event_id": "81d1f6d7-3c79-5640-bcaa-c97a9ff7043c",
+  "last_updated": "2026-11-10T23:36:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-10T23:00:57Z",
+      "as_of": "2026-11-10T23:30:55Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "as_of": "2026-11-10T23:05:17.882068Z",
+      "as_of": "2026-11-10T23:25:18.174452Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -90,11 +90,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        44
+        45
       ]
     },
     {
-      "as_of": "2026-11-10T23:17:02.858058Z",
+      "as_of": "2026-11-10T23:22:42.000244Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -115,7 +115,7 @@
       "wind": [
         {
           "dir_deg": 91,
-          "mph": 3
+          "mph": 7
         }
       ]
     },
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "as_of": "2026-11-10T23:13:54.238471Z",
+      "as_of": "2026-11-10T23:20:57.576999Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -154,7 +154,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        45
+        46
       ]
     }
   ],
