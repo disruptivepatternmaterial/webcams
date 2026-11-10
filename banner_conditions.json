@@ -1,12 +1,12 @@
 {
-  "event_id": "d15f6fe6-bcb6-5d98-869b-a8bfde7c3b38",
-  "last_updated": "2026-11-10T16:00:00Z",
+  "event_id": "3d29a377-61ce-54de-8deb-bd52ff9ae8f8",
+  "last_updated": "2026-11-10T16:08:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-10T15:30:55Z",
+      "as_of": "2026-11-10T16:01:06Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        37
+        38
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-10T15:48:17.704360Z",
+      "as_of": "2026-11-10T15:50:24.091276Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -94,7 +94,7 @@
       ]
     },
     {
-      "as_of": "2026-11-10T15:39:03.467766Z",
+      "as_of": "2026-11-10T16:01:11Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -110,12 +110,12 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        37
       ],
       "wind": [
         {
-          "dir_deg": 20,
-          "mph": 5
+          "dir_deg": 42,
+          "mph": 4
         }
       ]
     },
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "as_of": "2026-11-10T15:38:25.270095Z",
+      "as_of": "2026-11-10T15:51:01.479790Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -154,19 +154,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        39
+        40
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-10T15:37:07.649491Z",
+      "observed_at": "2026-11-10T15:57:07.460176Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-10T15:30:24.321005Z",
+      "observed_at": "2026-11-10T15:50:24.091276Z",
       "snow_in": 2.2
     }
   ],
