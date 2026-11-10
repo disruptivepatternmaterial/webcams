@@ -1,12 +1,12 @@
 {
-  "event_id": "449229f2-2ec7-584a-a463-76c8fced3a11",
-  "last_updated": "2026-11-10T04:30:00Z",
+  "event_id": "b2b07626-581b-5c45-a4b7-8aac8c36affc",
+  "last_updated": "2026-11-10T04:38:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-10T04:00:58.362109Z",
+      "as_of": "2026-11-10T04:30:55Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,7 +28,7 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        43
+        44
       ]
     },
     {
@@ -55,9 +55,9 @@
     },
     {
       "aqi": [
-        "fog"
+        0
       ],
-      "as_of": "2026-11-10T04:11:33.023576Z",
+      "as_of": "2026-11-10T04:29:47.402290Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -77,13 +77,13 @@
       ],
       "wind": [
         {
-          "dir_deg": 172,
-          "mph": 8
+          "dir_deg": 13,
+          "mph": 3
         }
       ]
     },
     {
-      "as_of": "2026-11-10T04:05:28.627375Z",
+      "as_of": "2026-11-10T04:25:28.060506Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,7 +92,7 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        42
+        43
       ]
     },
     {
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "as_of": "2026-11-10T04:14:07.178451Z",
+      "as_of": "2026-11-10T04:21:07.358506Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -169,7 +169,7 @@
     {
       "band_ft": 5000,
       "observed_at": "2026-11-10T04:10:32.353819Z",
-      "snow_in": 2.1
+      "snow_in": 2.0
     }
   ],
   "snow_sensors": [
