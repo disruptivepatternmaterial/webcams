@@ -1,37 +1,4 @@
 {
-  "Bowman_Ridge_High_Pt_20261111_024940.jpg": {
-    "content_sha256": "504137365e8e9ec7be5280ba99215823e590625e15ba337d76af4d3ca5121462",
-    "run_id": "01a1ca00-2133-7c56-b120-8e9276cca135",
-    "source": "reconyx",
-    "source_filename": "THM_0356.JPG",
-    "source_media_id": "cd9361eb-f633-441e-8020-732732debec3.jpg",
-    "temperature_c": 5.6,
-    "temperature_ocr_version": "reconyx-footer-v2",
-    "temperature_source": "overlay_ocr",
-    "timestamp": "2026-11-11T10:49:40Z"
-  },
-  "Bowman_Ridge_High_Pt_20261111_025349.jpg": {
-    "content_sha256": "216a740c2471840c6ef746539c0b078fad78b0a3d4ddcab87bf24b3d222db762",
-    "run_id": "01a1ca00-2133-7c56-b120-8e9276cca135",
-    "source": "reconyx",
-    "source_filename": "THM_0357.JPG",
-    "source_media_id": "c7f2c4c5-3af4-4900-a674-7c90b61667c3.jpg",
-    "temperature_c": 6.7,
-    "temperature_ocr_version": "reconyx-footer-v2",
-    "temperature_source": "overlay_ocr",
-    "timestamp": "2026-11-11T10:53:49Z"
-  },
-  "Bowman_Ridge_High_Pt_20261111_025350.jpg": {
-    "content_sha256": "eab620b3100e8746ea4ca5836f04d66c7e97a8cabea7009d5a4f6eb6f7c67d71",
-    "run_id": "01a1ca00-2133-7c56-b120-8e9276cca135",
-    "source": "reconyx",
-    "source_filename": "THM_0358.JPG",
-    "source_media_id": "8586d99c-345f-4170-a4d8-f4c47c31954b.jpg",
-    "temperature_c": 6.7,
-    "temperature_ocr_version": "reconyx-footer-v2",
-    "temperature_source": "overlay_ocr",
-    "timestamp": "2026-11-11T10:53:50Z"
-  },
   "Bowman_Ridge_High_Pt_20261111_025351.jpg": {
     "content_sha256": "e9d9f4b2d96369587b867f750c8d3372f4c3bf8f4bb01ce91350843fd8237630",
     "run_id": "01a1ca00-2133-7c56-b120-8e9276cca135",
@@ -142,15 +109,48 @@
     "temperature_source": "overlay_ocr",
     "timestamp": "2026-11-11T12:30:09Z"
   },
-  "Bowman_Ridge_High_Pt_latest.jpg": {
-    "content_sha256": "f35b5ac53a0e2b69a013571deedc0df9a3159ab052cc1c18664cc735e78208a0",
-    "run_id": "01a1ca52-cb8d-79b8-8ef5-48d9cc3117e3",
+  "Bowman_Ridge_High_Pt_20261111_053805.jpg": {
+    "content_sha256": "e5ede3f2ecf6346c95bb569c7b63a07fa9dd974f9795fcb3d1ae41054a5c4159",
+    "run_id": "01a1ca97-ad09-7c4b-ab93-54bef3a8aa69",
     "source": "reconyx",
-    "source_filename": "THM_0368.JPG",
-    "source_media_id": "ea897693-1024-47af-861e-2eee174caa14.jpg",
-    "temperature_c": 6.7,
+    "source_filename": "THM_0369.JPG",
+    "source_media_id": "ba699209-203f-480c-bd8b-bdd393e94107.jpg",
+    "temperature_c": 5.6,
     "temperature_ocr_version": "reconyx-footer-v2",
     "temperature_source": "overlay_ocr",
-    "timestamp": "2026-11-11T12:30:09Z"
+    "timestamp": "2026-11-11T13:38:05Z"
+  },
+  "Bowman_Ridge_High_Pt_20261111_053806.jpg": {
+    "content_sha256": "1176074211f0449f9451af7d7f5d35accd5f3942b8d040158d45bb23c2626467",
+    "run_id": "01a1ca97-ad09-7c4b-ab93-54bef3a8aa69",
+    "source": "reconyx",
+    "source_filename": "THM_0370.JPG",
+    "source_media_id": "21689e5c-6a39-43f5-9179-6a5f31dea9c8.jpg",
+    "temperature_c": 5.6,
+    "temperature_ocr_version": "reconyx-footer-v2",
+    "temperature_source": "overlay_ocr",
+    "timestamp": "2026-11-11T13:38:06Z"
+  },
+  "Bowman_Ridge_High_Pt_20261111_053807.jpg": {
+    "content_sha256": "141c3681ef796259fb98a16734073de6ca3c0a08bc590126943074a9971b6c5e",
+    "run_id": "01a1ca97-ad09-7c4b-ab93-54bef3a8aa69",
+    "source": "reconyx",
+    "source_filename": "THM_0371.JPG",
+    "source_media_id": "6939fad2-ea7f-4312-995d-acb50f60429e.jpg",
+    "temperature_c": 5.6,
+    "temperature_ocr_version": "reconyx-footer-v2",
+    "temperature_source": "overlay_ocr",
+    "timestamp": "2026-11-11T13:38:07Z"
+  },
+  "Bowman_Ridge_High_Pt_latest.jpg": {
+    "content_sha256": "141c3681ef796259fb98a16734073de6ca3c0a08bc590126943074a9971b6c5e",
+    "run_id": "01a1ca97-ad09-7c4b-ab93-54bef3a8aa69",
+    "source": "reconyx",
+    "source_filename": "THM_0371.JPG",
+    "source_media_id": "6939fad2-ea7f-4312-995d-acb50f60429e.jpg",
+    "temperature_c": 5.6,
+    "temperature_ocr_version": "reconyx-footer-v2",
+    "temperature_source": "overlay_ocr",
+    "timestamp": "2026-11-11T13:38:07Z"
   }
 }
