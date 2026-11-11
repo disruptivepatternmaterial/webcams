@@ -1,12 +1,12 @@
 {
-  "event_id": "28e4c883-ca18-57a7-8ac0-ff128fdbabf9",
-  "last_updated": "2026-11-11T18:56:00Z",
+  "event_id": "5968a459-4997-52e5-809b-d00e9dff61e6",
+  "last_updated": "2026-11-11T19:08:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-11T18:31:04.527981Z",
+      "as_of": "2026-11-11T19:03:01Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        53
+        54
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-11T18:37:20.181237Z",
+      "as_of": "2026-11-11T18:50:04.504709Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-11T18:32:14.296588Z",
+      "as_of": "2026-11-11T18:58:15.072537Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "as_of": "2026-11-11T18:36:50.322674Z",
+      "as_of": "2026-11-11T19:01:12Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -112,11 +112,11 @@
       ],
       "stale": false,
       "temp_f": [
-        50
+        51
       ],
       "wind": [
         {
-          "dir_deg": 236,
+          "dir_deg": 81,
           "mph": 7
         }
       ]
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "as_of": "2026-11-11T18:38:10.159411Z",
+      "as_of": "2026-11-11T18:51:47.240823Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -156,19 +156,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        52
+        53
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-11T18:36:50.322674Z",
+      "observed_at": "2026-11-11T18:58:15.072537Z",
       "snow_in": 3.1
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-11T18:30:04.759099Z",
+      "observed_at": "2026-11-11T18:50:04.504709Z",
       "snow_in": 2.1
     }
   ],
