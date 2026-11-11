@@ -1,12 +1,12 @@
 {
-  "event_id": "b2a5ea0d-59e1-595a-910b-7f9de9ba6792",
-  "last_updated": "2026-11-11T12:22:00Z",
+  "event_id": "fb4db700-7acd-5e30-9c77-cc08f89a6b5c",
+  "last_updated": "2026-11-11T12:32:00Z",
   "sites": [
     {
       "aqi": [
-        0
+        1
       ],
-      "as_of": "2026-11-11T12:00:59.708520Z",
+      "as_of": "2026-11-11T12:30:56Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "as_of": "2026-11-11T12:16:54.411385Z",
+      "as_of": "2026-11-11T12:28:54.791583Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -116,8 +116,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 130,
-          "mph": 4
+          "dir_deg": 181,
+          "mph": 3
         }
       ]
     },
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "as_of": "2026-11-11T12:13:45.444072Z",
+      "as_of": "2026-11-11T12:20:50.725130Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -156,7 +156,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        48
+        49
       ]
     }
   ],
