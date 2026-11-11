@@ -1,12 +1,12 @@
 {
-  "event_id": "a6cd46f8-7349-5bc5-831d-2e21eac85850",
-  "last_updated": "2026-11-11T16:22:00Z",
+  "event_id": "0b73b6dd-617d-5b4f-9e01-97b45854f9a1",
+  "last_updated": "2026-11-11T16:34:00Z",
   "sites": [
     {
       "aqi": [
-        2
+        1
       ],
-      "as_of": "2026-11-11T16:01:10.307617Z",
+      "as_of": "2026-11-11T16:30:53Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "as_of": "2026-11-11T16:13:42.735494Z",
+      "as_of": "2026-11-11T16:20:48.559449Z",
       "dropped": [],
       "elev_ft": [
         3166
