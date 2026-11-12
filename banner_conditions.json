@@ -1,6 +1,6 @@
 {
-  "event_id": "70a3cb67-3e0b-585a-8358-b1c6c6e47e4f",
-  "last_updated": "2026-11-12T03:52:00Z",
+  "event_id": "3c1319bd-9a96-5fdf-b728-97a64a749e43",
+  "last_updated": "2026-11-12T03:54:00Z",
   "sites": [
     {
       "aqi": [
@@ -65,7 +65,9 @@
       ],
       "id": "n_twin_approach",
       "label": "N Twin Approach",
-      "snow_elev_ft": [],
+      "snow_elev_ft": [
+        4163
+      ],
       "snow_in": [
         7
       ],
@@ -176,12 +178,12 @@
       "location": "N Twin West Ridge"
     },
     {
-      "elev_ft": 4003,
-      "location": "Forest Lands High Point"
+      "elev_ft": 4163,
+      "location": "N Twin Approach"
     },
     {
-      "elev_ft": null,
-      "location": "N Twin Approach"
+      "elev_ft": 4003,
+      "location": "Forest Lands High Point"
     }
   ]
 }
