@@ -2,6 +2,7 @@
   "bowman_mtn": {
     "images": [
       "Bowman_Mtn_latest.jpg",
+      "Bowman_Mtn_20261112_101131.jpg",
       "Bowman_Mtn_20261112_094130.jpg",
       "Bowman_Mtn_20261112_091130.jpg",
       "Bowman_Mtn_20261112_090103.jpg",
@@ -13,14 +14,18 @@
       "Bowman_Mtn_20261112_082403.jpg",
       "Bowman_Mtn_20261112_082402.jpg",
       "Bowman_Mtn_20261112_082401.jpg",
-      "Bowman_Mtn_20261112_081751.jpg",
-      "Bowman_Mtn_20261112_081750.jpg"
+      "Bowman_Mtn_20261112_081751.jpg"
     ],
     "metadata": {
       "Bowman_Mtn_latest.jpg": {
-        "run_id": "01a1d09f-f0a3-7dda-9a6c-3a291a28951c",
+        "run_id": "01a1d0bb-7f7a-75ce-808e-39e747680368",
         "temperature_c": null,
-        "timestamp": "2026-11-12T17:41:30Z"
+        "timestamp": "2026-11-12T18:11:31Z"
+      },
+      "Bowman_Mtn_20261112_101131.jpg": {
+        "run_id": "01a1d0bb-7f7a-75ce-808e-39e747680368",
+        "temperature_c": null,
+        "timestamp": "2026-11-12T18:11:31Z"
       },
       "Bowman_Mtn_20261112_094130.jpg": {
         "run_id": "01a1d09f-f0a3-7dda-9a6c-3a291a28951c",
@@ -81,15 +86,10 @@
         "run_id": "01a1d04d-4543-72df-8507-d386992e22a1",
         "temperature_c": null,
         "timestamp": "2026-11-12T16:17:51Z"
-      },
-      "Bowman_Mtn_20261112_081750.jpg": {
-        "run_id": "01a1d04d-4543-72df-8507-d386992e22a1",
-        "temperature_c": null,
-        "timestamp": "2026-11-12T16:17:50Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-12T17:41:30Z",
+    "newest_capture": "2026-11-12T18:11:31Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
@@ -276,10 +276,10 @@
         "timestamp": "2026-11-12T15:30:04Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 2 newer pictures waiting for the people check",
     "newest_capture": "2026-11-12T17:30:04Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 2,
+    "oldest_waiting_capture": "2026-11-12T18:00:01Z"
   },
   "NWHighPoint": {
     "images": [
@@ -370,10 +370,10 @@
         "timestamp": "2026-11-12T15:30:02Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 1 newer picture waiting for the people check",
     "newest_capture": "2026-11-12T17:30:03Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 1,
+    "oldest_waiting_capture": "2026-11-12T18:00:02Z"
   },
   "woods_cam_001": {
     "images": [
