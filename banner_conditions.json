@@ -1,12 +1,12 @@
 {
-  "event_id": "cbc11d66-a8ba-511b-a0e7-db35c89ac14a",
-  "last_updated": "2026-11-12T00:08:00Z",
+  "event_id": "e7d77505-6f88-58e5-9cad-d0f30c08584b",
+  "last_updated": "2026-11-12T00:20:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-12T00:00:55Z",
+      "as_of": "2026-11-12T00:00:57.490041Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-11T23:59:58.766798Z",
+      "as_of": "2026-11-12T00:07:15.979026Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-11T23:58:11.386988Z",
+      "as_of": "2026-11-12T00:02:10.962178Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-11T23:32:03.125126Z",
+      "as_of": "2026-11-12T00:02:02.766070Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,7 +92,7 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        52
+        51
       ]
     },
     {
@@ -125,7 +125,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-11T23:30:40.479377Z",
+      "as_of": "2026-11-12T00:00:40.676714Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -134,17 +134,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        54
+        53
       ],
       "wind": [
         {
-          "dir_deg": 4,
-          "mph": 5
+          "dir_deg": 7,
+          "mph": 15
         }
       ]
     },
     {
-      "as_of": "2026-11-11T23:38:07.199248Z",
+      "as_of": "2026-11-12T00:08:06.892722Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -156,7 +156,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        53
+        52
       ]
     }
   ],
