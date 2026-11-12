@@ -1,24 +1,4 @@
 {
-  "NWHighPoint_20261111_200003.jpg": {
-    "run_id": "01a1cd9c-2330-79ee-aa18-b0913cfcb001",
-    "temperature_c": null,
-    "timestamp": "2026-11-12T04:00:03Z"
-  },
-  "NWHighPoint_20261111_203000.jpg": {
-    "run_id": "01a1cdb7-fb4c-7595-ac6a-8feca87604d0",
-    "temperature_c": null,
-    "timestamp": "2026-11-12T04:30:00Z"
-  },
-  "NWHighPoint_20261111_203001.jpg": {
-    "run_id": "01a1cdd3-899f-7486-b5de-b53a61ea3e4e",
-    "temperature_c": null,
-    "timestamp": "2026-11-12T04:30:01Z"
-  },
-  "NWHighPoint_20261111_203002.jpg": {
-    "run_id": "01a1cdb7-fb4c-7595-ac6a-8feca87604d0",
-    "temperature_c": null,
-    "timestamp": "2026-11-12T04:30:02Z"
-  },
   "NWHighPoint_20261111_210001.jpg": {
     "run_id": "01a1cdd3-899f-7486-b5de-b53a61ea3e4e",
     "temperature_c": null,
@@ -59,14 +39,34 @@
     "temperature_c": null,
     "timestamp": "2026-11-12T11:30:02Z"
   },
+  "NWHighPoint_20261112_033003.jpg": {
+    "run_id": "01a1cf6e-fd9c-737d-877f-99d8f7ad0b47",
+    "temperature_c": null,
+    "timestamp": "2026-11-12T11:30:03Z"
+  },
   "NWHighPoint_20261112_040002.jpg": {
     "run_id": "01a1cf53-6f69-70fd-8ecc-618835d426b4",
     "temperature_c": null,
     "timestamp": "2026-11-12T12:00:02Z"
   },
-  "NWHighPoint_latest.jpg": {
-    "run_id": "01a1cf53-6f69-70fd-8ecc-618835d426b4",
+  "NWHighPoint_20261112_040004.jpg": {
+    "run_id": "01a1cf6e-fd9c-737d-877f-99d8f7ad0b47",
     "temperature_c": null,
-    "timestamp": "2026-11-12T12:00:02Z"
+    "timestamp": "2026-11-12T12:00:04Z"
+  },
+  "NWHighPoint_20261112_043001.jpg": {
+    "run_id": "01a1cf6e-fd9c-737d-877f-99d8f7ad0b47",
+    "temperature_c": null,
+    "timestamp": "2026-11-12T12:30:01Z"
+  },
+  "NWHighPoint_20261112_043002.jpg": {
+    "run_id": "01a1cf6e-fd9c-737d-877f-99d8f7ad0b47",
+    "temperature_c": null,
+    "timestamp": "2026-11-12T12:30:02Z"
+  },
+  "NWHighPoint_latest.jpg": {
+    "run_id": "01a1cf6e-fd9c-737d-877f-99d8f7ad0b47",
+    "temperature_c": null,
+    "timestamp": "2026-11-12T12:30:02Z"
   }
 }
