@@ -276,10 +276,10 @@
         "timestamp": "2026-11-12T12:29:53Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 5 newer pictures waiting for the people check",
     "newest_capture": "2026-11-12T14:30:03Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 5,
+    "oldest_waiting_capture": "2026-11-12T15:00:01Z"
   },
   "NWHighPoint": {
     "images": [
@@ -370,10 +370,10 @@
         "timestamp": "2026-11-12T13:00:01Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 4 newer pictures waiting for the people check",
     "newest_capture": "2026-11-12T15:00:01Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 4,
+    "oldest_waiting_capture": "2026-11-12T15:00:02Z"
   },
   "woods_cam_001": {
     "images": [
