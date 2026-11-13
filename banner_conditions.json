@@ -1,12 +1,12 @@
 {
-  "event_id": "1183c7df-be30-515f-8b6a-18304de3a497",
-  "last_updated": "2026-11-13T22:24:00Z",
+  "event_id": "5fe471d7-4cd0-57a8-ae72-b1a3792d28a7",
+  "last_updated": "2026-11-13T22:36:00Z",
   "sites": [
     {
       "aqi": [
-        46
+        79
       ],
-      "as_of": "2026-11-13T22:00:58Z",
+      "as_of": "2026-11-13T22:30:57Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        45
+        44
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-13T22:19:09.282253Z",
+      "as_of": "2026-11-13T22:29:26.530422Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        45
+        44
       ],
       "wind": []
     },
@@ -57,7 +57,7 @@
       "aqi": [
         26
       ],
-      "as_of": "2026-11-13T22:11:47.437105Z",
+      "as_of": "2026-11-13T22:28:41.074068Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,7 +73,7 @@
       ],
       "stale": false,
       "temp_f": [
-        45
+        44
       ],
       "wind": [
         {
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-13T22:01:34.806475Z",
+      "as_of": "2026-11-13T22:22:37.249495Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,7 +92,7 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        44
+        43
       ]
     },
     {
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "as_of": "2026-11-13T22:13:05.558887Z",
+      "as_of": "2026-11-13T22:23:19.408955Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -156,7 +156,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        48
+        47
       ]
     }
   ],
@@ -168,7 +168,7 @@
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-13T22:09:26.767554Z",
+      "observed_at": "2026-11-13T22:29:26.530422Z",
       "snow_in": 1.2
     }
   ],
