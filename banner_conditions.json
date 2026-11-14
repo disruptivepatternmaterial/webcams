@@ -1,12 +1,12 @@
 {
-  "event_id": "dee33790-9b31-54d6-858f-a36a91ed141d",
-  "last_updated": "2026-11-14T01:52:00Z",
+  "event_id": "c42ee5b8-9c0b-5eb5-85f5-1466b3077e82",
+  "last_updated": "2026-11-14T02:04:00Z",
   "sites": [
     {
       "aqi": [
-        161
+        0
       ],
-      "as_of": "2026-11-14T01:31:08.261814Z",
+      "as_of": "2026-11-14T02:01:03Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        40
+        39
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-14T01:49:24.175091Z",
+      "as_of": "2026-11-14T01:59:21.704234Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-14T01:41:44.951990Z",
+      "as_of": "2026-11-14T01:58:39.097057Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -73,7 +73,7 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        39
       ],
       "wind": [
         {
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "as_of": "2026-11-14T01:36:14.361284Z",
+      "as_of": "2026-11-14T02:01:12Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -112,12 +112,12 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        39
       ],
       "wind": [
         {
-          "dir_deg": 1,
-          "mph": 2
+          "dir_deg": 66,
+          "mph": 3
         }
       ]
     },
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "as_of": "2026-11-14T01:37:38.465012Z",
+      "as_of": "2026-11-14T01:53:17.563113Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -156,14 +156,14 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        43
+        42
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-14T01:41:44.951990Z",
+      "observed_at": "2026-11-14T01:56:14.154147Z",
       "snow_in": 0.0
     },
     {
