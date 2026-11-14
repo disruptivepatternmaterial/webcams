@@ -1,12 +1,12 @@
 {
-  "event_id": "1c7409cb-b7a9-5936-9352-d91d7e7beb61",
-  "last_updated": "2026-11-14T04:38:00Z",
+  "event_id": "e5330622-7a14-5a12-9dba-a1ce745595a6",
+  "last_updated": "2026-11-14T04:50:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-14T04:31:15Z",
+      "as_of": "2026-11-14T04:31:18.822087Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-14T04:29:22.275443Z",
+      "as_of": "2026-11-14T04:36:36.306157Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-14T04:28:37.765543Z",
+      "as_of": "2026-11-14T04:31:38.724427Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-14T04:22:33.974899Z",
+      "as_of": "2026-11-14T04:31:31.025954Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "as_of": "2026-11-14T04:17:01.667495Z",
+      "as_of": "2026-11-14T04:37:11.217824Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -116,8 +116,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 1,
-          "mph": 0
+          "dir_deg": 139,
+          "mph": 2
         }
       ]
     },
@@ -125,8 +125,13 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-14T04:00:36.532277Z",
-      "dropped": [],
+      "as_of": "2026-11-14T04:30:35.902874Z",
+      "dropped": [
+        {
+          "measurement": "wind_speed_mph",
+          "reason": "39.6 mph changed 31.1 mph per hour against its previous readings, over the MADIS wind speed limit of 20 kt (23.0 mph) per hour"
+        }
+      ],
       "elev_ft": [
         3379
       ],
@@ -134,17 +139,12 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        39
+        38
       ],
-      "wind": [
-        {
-          "dir_deg": 37,
-          "mph": 8
-        }
-      ]
+      "wind": []
     },
     {
-      "as_of": "2026-11-14T04:23:16.327749Z",
+      "as_of": "2026-11-14T04:37:36.815274Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -163,7 +163,7 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-14T04:16:12.831505Z",
+      "observed_at": "2026-11-14T04:36:12.455226Z",
       "snow_in": 0.0
     },
     {
