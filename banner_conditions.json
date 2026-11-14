@@ -1,6 +1,6 @@
 {
-  "event_id": "8126b2a5-a903-5e76-8353-791a0b09d1f2",
-  "last_updated": "2026-11-14T05:08:00Z",
+  "event_id": "31e54829-8559-5a63-b1a2-2082b8aa0d00",
+  "last_updated": "2026-11-14T05:20:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-14T04:59:19.551722Z",
+      "as_of": "2026-11-14T05:09:21.804225Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -57,7 +57,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-14T04:58:37.740457Z",
+      "as_of": "2026-11-14T05:01:38.356092Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "as_of": "2026-11-14T04:42:33.822493Z",
+      "as_of": "2026-11-14T05:02:33.646612Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -125,13 +125,8 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-14T04:30:35.902874Z",
-      "dropped": [
-        {
-          "measurement": "wind_speed_mph",
-          "reason": "39.6 mph changed 31.1 mph per hour against its previous readings, over the MADIS wind speed limit of 20 kt (23.0 mph) per hour"
-        }
-      ],
+      "as_of": "2026-11-14T05:00:36.647581Z",
+      "dropped": [],
       "elev_ft": [
         3379
       ],
@@ -139,12 +134,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        38
+        39
       ],
-      "wind": []
+      "wind": [
+        {
+          "dir_deg": 52,
+          "mph": 4
+        }
+      ]
     },
     {
-      "as_of": "2026-11-14T04:53:16.064156Z",
+      "as_of": "2026-11-14T05:07:36.556398Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -168,7 +168,7 @@
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-14T04:49:22.035708Z",
+      "observed_at": "2026-11-14T05:09:21.804225Z",
       "snow_in": 1.1
     }
   ],
