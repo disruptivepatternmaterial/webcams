@@ -190,7 +190,9 @@
   "w_ridge_n_twin": {
     "images": [
       "W_Ridge_N_Twin_latest.jpg",
+      "W_Ridge_N_Twin_20261114_050003.jpg",
       "W_Ridge_N_Twin_20261114_043001.jpg",
+      "W_Ridge_N_Twin_20261114_043000.jpg",
       "W_Ridge_N_Twin_20261114_040002.jpg",
       "W_Ridge_N_Twin_20261114_040001.jpg",
       "W_Ridge_N_Twin_20261114_040000.jpg",
@@ -200,20 +202,28 @@
       "W_Ridge_N_Twin_20261114_030005.jpg",
       "W_Ridge_N_Twin_20261114_030004.jpg",
       "W_Ridge_N_Twin_20261114_030003.jpg",
-      "W_Ridge_N_Twin_20261113_210003.jpg",
-      "W_Ridge_N_Twin_20261113_210002.jpg",
-      "W_Ridge_N_Twin_20261113_203002.jpg"
+      "W_Ridge_N_Twin_20261113_210003.jpg"
     ],
     "metadata": {
       "W_Ridge_N_Twin_latest.jpg": {
-        "run_id": "01a1d9bc-054a-718e-9f41-3285412ad056",
+        "run_id": "01a1d9d7-7fba-7fd4-b2ad-079eb07d761b",
         "temperature_c": null,
-        "timestamp": "2026-11-14T12:30:01Z"
+        "timestamp": "2026-11-14T13:00:03Z"
+      },
+      "W_Ridge_N_Twin_20261114_050003.jpg": {
+        "run_id": "01a1d9d7-7fba-7fd4-b2ad-079eb07d761b",
+        "temperature_c": null,
+        "timestamp": "2026-11-14T13:00:03Z"
       },
       "W_Ridge_N_Twin_20261114_043001.jpg": {
         "run_id": "01a1d9bc-054a-718e-9f41-3285412ad056",
         "temperature_c": null,
         "timestamp": "2026-11-14T12:30:01Z"
+      },
+      "W_Ridge_N_Twin_20261114_043000.jpg": {
+        "run_id": "01a1d9d7-7fba-7fd4-b2ad-079eb07d761b",
+        "temperature_c": null,
+        "timestamp": "2026-11-14T12:30:00Z"
       },
       "W_Ridge_N_Twin_20261114_040002.jpg": {
         "run_id": "01a1d9a0-8a5a-71fe-a5be-d1b24e1b450f",
@@ -264,26 +274,17 @@
         "run_id": "01a1d969-953b-7789-aa40-b1c41d7aa0fa",
         "temperature_c": null,
         "timestamp": "2026-11-14T05:00:03Z"
-      },
-      "W_Ridge_N_Twin_20261113_210002.jpg": {
-        "run_id": "01a1d969-953b-7789-aa40-b1c41d7aa0fa",
-        "temperature_c": null,
-        "timestamp": "2026-11-14T05:00:02Z"
-      },
-      "W_Ridge_N_Twin_20261113_203002.jpg": {
-        "run_id": "01a1d83b-4faf-7bc3-b00c-125f604c7ac3",
-        "temperature_c": null,
-        "timestamp": "2026-11-14T04:30:02Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-14T12:30:01Z",
+    "newest_capture": "2026-11-14T13:00:03Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
   "NWHighPoint": {
     "images": [
       "NWHighPoint_latest.jpg",
+      "NWHighPoint_20261114_050001.jpg",
       "NWHighPoint_20261114_043001.jpg",
       "NWHighPoint_20261114_043000.jpg",
       "NWHighPoint_20261114_040003.jpg",
@@ -295,14 +296,18 @@
       "NWHighPoint_20261114_030008.jpg",
       "NWHighPoint_20261114_030007.jpg",
       "NWHighPoint_20261113_210002.jpg",
-      "NWHighPoint_20261113_210001.jpg",
-      "NWHighPoint_20261113_210000.jpg"
+      "NWHighPoint_20261113_210001.jpg"
     ],
     "metadata": {
       "NWHighPoint_latest.jpg": {
-        "run_id": "01a1d9bc-054a-718e-9f41-3285412ad056",
+        "run_id": "01a1d9d7-7fba-7fd4-b2ad-079eb07d761b",
         "temperature_c": null,
-        "timestamp": "2026-11-14T12:30:01Z"
+        "timestamp": "2026-11-14T13:00:01Z"
+      },
+      "NWHighPoint_20261114_050001.jpg": {
+        "run_id": "01a1d9d7-7fba-7fd4-b2ad-079eb07d761b",
+        "temperature_c": null,
+        "timestamp": "2026-11-14T13:00:01Z"
       },
       "NWHighPoint_20261114_043001.jpg": {
         "run_id": "01a1d9bc-054a-718e-9f41-3285412ad056",
@@ -363,15 +368,10 @@
         "run_id": "01a1d81f-d4c9-7ab4-8568-9cc16c0ce7f7",
         "temperature_c": null,
         "timestamp": "2026-11-14T05:00:01Z"
-      },
-      "NWHighPoint_20261113_210000.jpg": {
-        "run_id": "01a1d81f-d4c9-7ab4-8568-9cc16c0ce7f7",
-        "temperature_c": null,
-        "timestamp": "2026-11-14T05:00:00Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-14T12:30:01Z",
+    "newest_capture": "2026-11-14T13:00:01Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
