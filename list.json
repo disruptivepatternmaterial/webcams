@@ -276,10 +276,10 @@
         "timestamp": "2026-11-14T03:30:02Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 6 newer pictures waiting for the people check",
     "newest_capture": "2026-11-14T11:00:05Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 6,
+    "oldest_waiting_capture": "2026-11-14T11:30:00Z"
   },
   "NWHighPoint": {
     "images": [
