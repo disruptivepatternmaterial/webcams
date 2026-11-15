@@ -1,6 +1,6 @@
 {
-  "event_id": "7664f750-345a-5be2-b725-1ee793ba18b2",
-  "last_updated": "2026-11-15T13:08:00Z",
+  "event_id": "ecfdb05f-2cf7-5edc-9e33-add2e2ae0e0d",
+  "last_updated": "2026-11-15T13:20:00Z",
   "sites": [
     {
       "aqi": [],
@@ -17,7 +17,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-15T12:58:56.743457Z",
+      "as_of": "2026-11-15T13:08:59.275173Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -33,7 +33,7 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        37
       ],
       "wind": []
     },
@@ -41,7 +41,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-15T12:45:15.358223Z",
+      "as_of": "2026-11-15T13:08:19.650513Z",
       "dropped": [],
       "elev_ft": [
         4163,
@@ -57,7 +57,7 @@
       ],
       "stale": false,
       "temp_f": [
-        39
+        40
       ],
       "wind": [
         {
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "as_of": "2026-11-15T12:51:16.357401Z",
+      "as_of": "2026-11-15T13:01:12.245217Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -84,7 +84,7 @@
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "71.3 F disagrees with another sensor here (spread 31.2 F, over 6.7 F) and is furthest from the other locations: 31.1 F off their median of 40.2 F, 10 locations adjusted to 3980 ft at 1.07 F per 1000 ft"
+          "reason": "71.3 F disagrees with another sensor here (spread 31.2 F, over 6.7 F) and is furthest from the other locations: 31.1 F off their median of 40.3 F, 10 locations adjusted to 3980 ft at 1.07 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "as_of": "2026-11-15T12:37:59.928796Z",
+      "as_of": "2026-11-15T13:07:59.404719Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -156,7 +156,7 @@
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-15T12:48:59.746083Z",
+      "observed_at": "2026-11-15T13:08:59.275173Z",
       "snow_in": 2.0
     }
   ],
