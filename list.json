@@ -284,6 +284,8 @@
   "NWHighPoint": {
     "images": [
       "NWHighPoint_latest.jpg",
+      "NWHighPoint_20261115_133003.jpg",
+      "NWHighPoint_20261115_133000.jpg",
       "NWHighPoint_20261115_130003.jpg",
       "NWHighPoint_20261115_130002.jpg",
       "NWHighPoint_20261115_130000.jpg",
@@ -294,15 +296,23 @@
       "NWHighPoint_20261115_120001.jpg",
       "NWHighPoint_20261115_113003.jpg",
       "NWHighPoint_20261115_113001.jpg",
-      "NWHighPoint_20261115_113000.jpg",
-      "NWHighPoint_20261115_110003.jpg",
-      "NWHighPoint_20261115_110002.jpg"
+      "NWHighPoint_20261115_113000.jpg"
     ],
     "metadata": {
       "NWHighPoint_latest.jpg": {
-        "run_id": "01a1e0b5-3f15-73a7-a2ac-2249310c05ed",
+        "run_id": "01a1e0d0-b9d7-7f05-837a-1b673d67f4b3",
         "temperature_c": null,
-        "timestamp": "2026-11-15T21:00:03Z"
+        "timestamp": "2026-11-15T21:30:03Z"
+      },
+      "NWHighPoint_20261115_133003.jpg": {
+        "run_id": "01a1e0d0-b9d7-7f05-837a-1b673d67f4b3",
+        "temperature_c": null,
+        "timestamp": "2026-11-15T21:30:03Z"
+      },
+      "NWHighPoint_20261115_133000.jpg": {
+        "run_id": "01a1e0d0-b9d7-7f05-837a-1b673d67f4b3",
+        "temperature_c": null,
+        "timestamp": "2026-11-15T21:30:00Z"
       },
       "NWHighPoint_20261115_130003.jpg": {
         "run_id": "01a1e0b5-3f15-73a7-a2ac-2249310c05ed",
@@ -358,20 +368,10 @@
         "run_id": "01a1e062-cfc3-750b-b9d9-0331f3f357e8",
         "temperature_c": null,
         "timestamp": "2026-11-15T19:30:00Z"
-      },
-      "NWHighPoint_20261115_110003.jpg": {
-        "run_id": "01a1e047-55af-749b-8e4b-0391b7da7209",
-        "temperature_c": null,
-        "timestamp": "2026-11-15T19:00:03Z"
-      },
-      "NWHighPoint_20261115_110002.jpg": {
-        "run_id": "01a1e047-55af-749b-8e4b-0391b7da7209",
-        "temperature_c": null,
-        "timestamp": "2026-11-15T19:00:02Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-15T21:00:03Z",
+    "newest_capture": "2026-11-15T21:30:03Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
