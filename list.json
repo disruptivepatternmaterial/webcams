@@ -190,25 +190,40 @@
   "w_ridge_n_twin": {
     "images": [
       "W_Ridge_N_Twin_latest.jpg",
+      "W_Ridge_N_Twin_20261116_120233.jpg",
+      "W_Ridge_N_Twin_20261116_120232.jpg",
+      "W_Ridge_N_Twin_20261116_120230.jpg",
       "W_Ridge_N_Twin_20261116_113005.jpg",
       "W_Ridge_N_Twin_20261116_113004.jpg",
       "W_Ridge_N_Twin_20261116_113002.jpg",
       "W_Ridge_N_Twin_20261116_110003.jpg",
       "W_Ridge_N_Twin_20261116_110001.jpg",
+      "W_Ridge_N_Twin_20261116_110000.jpg",
       "W_Ridge_N_Twin_20261116_103005.jpg",
       "W_Ridge_N_Twin_20261116_103003.jpg",
       "W_Ridge_N_Twin_20261116_103002.jpg",
-      "W_Ridge_N_Twin_20261116_100004.jpg",
-      "W_Ridge_N_Twin_20261116_100003.jpg",
-      "W_Ridge_N_Twin_20261116_100002.jpg",
-      "W_Ridge_N_Twin_20261116_093003.jpg",
-      "W_Ridge_N_Twin_20261116_093002.jpg"
+      "W_Ridge_N_Twin_20261116_100004.jpg"
     ],
     "metadata": {
       "W_Ridge_N_Twin_latest.jpg": {
-        "run_id": "01a1e588-e0c9-7806-a0b9-098e201149e3",
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
         "temperature_c": null,
-        "timestamp": "2026-11-16T19:30:05Z"
+        "timestamp": "2026-11-16T20:02:33Z"
+      },
+      "W_Ridge_N_Twin_20261116_120233.jpg": {
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
+        "temperature_c": null,
+        "timestamp": "2026-11-16T20:02:33Z"
+      },
+      "W_Ridge_N_Twin_20261116_120232.jpg": {
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
+        "temperature_c": null,
+        "timestamp": "2026-11-16T20:02:32Z"
+      },
+      "W_Ridge_N_Twin_20261116_120230.jpg": {
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
+        "temperature_c": null,
+        "timestamp": "2026-11-16T20:02:30Z"
       },
       "W_Ridge_N_Twin_20261116_113005.jpg": {
         "run_id": "01a1e588-e0c9-7806-a0b9-098e201149e3",
@@ -235,6 +250,11 @@
         "temperature_c": null,
         "timestamp": "2026-11-16T19:00:01Z"
       },
+      "W_Ridge_N_Twin_20261116_110000.jpg": {
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
+        "temperature_c": null,
+        "timestamp": "2026-11-16T19:00:00Z"
+      },
       "W_Ridge_N_Twin_20261116_103005.jpg": {
         "run_id": "01a1e551-c566-791b-9b0f-794b67662948",
         "temperature_c": null,
@@ -254,36 +274,19 @@
         "run_id": "01a1e551-c566-791b-9b0f-794b67662948",
         "temperature_c": null,
         "timestamp": "2026-11-16T18:00:04Z"
-      },
-      "W_Ridge_N_Twin_20261116_100003.jpg": {
-        "run_id": "01a1e551-c566-791b-9b0f-794b67662948",
-        "temperature_c": null,
-        "timestamp": "2026-11-16T18:00:03Z"
-      },
-      "W_Ridge_N_Twin_20261116_100002.jpg": {
-        "run_id": "01a1e551-c566-791b-9b0f-794b67662948",
-        "temperature_c": null,
-        "timestamp": "2026-11-16T18:00:02Z"
-      },
-      "W_Ridge_N_Twin_20261116_093003.jpg": {
-        "run_id": "01a1e551-c566-791b-9b0f-794b67662948",
-        "temperature_c": null,
-        "timestamp": "2026-11-16T17:30:03Z"
-      },
-      "W_Ridge_N_Twin_20261116_093002.jpg": {
-        "run_id": "01a1e551-c566-791b-9b0f-794b67662948",
-        "temperature_c": null,
-        "timestamp": "2026-11-16T17:30:02Z"
       }
     },
-    "status": "Working; 3 newer pictures waiting for the people check",
-    "newest_capture": "2026-11-16T19:30:05Z",
-    "waiting": 3,
-    "oldest_waiting_capture": "2026-11-16T20:02:30Z"
+    "status": "Working",
+    "newest_capture": "2026-11-16T20:02:33Z",
+    "waiting": 0,
+    "oldest_waiting_capture": null
   },
   "NWHighPoint": {
     "images": [
       "NWHighPoint_latest.jpg",
+      "NWHighPoint_20261116_120248.jpg",
+      "NWHighPoint_20261116_120247.jpg",
+      "NWHighPoint_20261116_120245.jpg",
       "NWHighPoint_20261116_113004.jpg",
       "NWHighPoint_20261116_113003.jpg",
       "NWHighPoint_20261116_113001.jpg",
@@ -293,16 +296,28 @@
       "NWHighPoint_20261116_103003.jpg",
       "NWHighPoint_20261116_103002.jpg",
       "NWHighPoint_20261116_103000.jpg",
-      "NWHighPoint_20261116_100003.jpg",
-      "NWHighPoint_20261116_100002.jpg",
-      "NWHighPoint_20261116_100000.jpg",
-      "NWHighPoint_20261116_093005.jpg"
+      "NWHighPoint_20261116_100003.jpg"
     ],
     "metadata": {
       "NWHighPoint_latest.jpg": {
-        "run_id": "01a1e588-e0c9-7806-a0b9-098e201149e3",
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
         "temperature_c": null,
-        "timestamp": "2026-11-16T19:30:04Z"
+        "timestamp": "2026-11-16T20:02:48Z"
+      },
+      "NWHighPoint_20261116_120248.jpg": {
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
+        "temperature_c": null,
+        "timestamp": "2026-11-16T20:02:48Z"
+      },
+      "NWHighPoint_20261116_120247.jpg": {
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
+        "temperature_c": null,
+        "timestamp": "2026-11-16T20:02:47Z"
+      },
+      "NWHighPoint_20261116_120245.jpg": {
+        "run_id": "01a1e5a4-6d9a-755a-a010-abd0cdefb6b1",
+        "temperature_c": null,
+        "timestamp": "2026-11-16T20:02:45Z"
       },
       "NWHighPoint_20261116_113004.jpg": {
         "run_id": "01a1e588-e0c9-7806-a0b9-098e201149e3",
@@ -353,27 +368,12 @@
         "run_id": "01a1e537-2408-799e-abe9-1b581726d8eb",
         "temperature_c": null,
         "timestamp": "2026-11-16T18:00:03Z"
-      },
-      "NWHighPoint_20261116_100002.jpg": {
-        "run_id": "01a1e537-2408-799e-abe9-1b581726d8eb",
-        "temperature_c": null,
-        "timestamp": "2026-11-16T18:00:02Z"
-      },
-      "NWHighPoint_20261116_100000.jpg": {
-        "run_id": "01a1e537-2408-799e-abe9-1b581726d8eb",
-        "temperature_c": null,
-        "timestamp": "2026-11-16T18:00:00Z"
-      },
-      "NWHighPoint_20261116_093005.jpg": {
-        "run_id": "01a1e51b-9608-70c2-a424-1f927fe5c981",
-        "temperature_c": null,
-        "timestamp": "2026-11-16T17:30:05Z"
       }
     },
-    "status": "Working; 3 newer pictures waiting for the people check",
-    "newest_capture": "2026-11-16T19:30:04Z",
-    "waiting": 3,
-    "oldest_waiting_capture": "2026-11-16T20:02:45Z"
+    "status": "Working",
+    "newest_capture": "2026-11-16T20:02:48Z",
+    "waiting": 0,
+    "oldest_waiting_capture": null
   },
   "woods_cam_001": {
     "images": [
