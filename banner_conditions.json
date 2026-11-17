@@ -1,6 +1,6 @@
 {
-  "event_id": "c7c6f633-dcfa-5375-9411-4d6f15258d4e",
-  "last_updated": "2026-11-17T20:36:00Z",
+  "event_id": "44f284a9-5de2-548a-af28-651f9cc70744",
+  "last_updated": "2026-11-17T20:48:00Z",
   "sites": [
     {
       "aqi": [],
@@ -17,7 +17,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-17T20:28:31.186059Z",
+      "as_of": "2026-11-17T20:35:38.011188Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -39,7 +39,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-17T20:10:51.472565Z",
+      "as_of": "2026-11-17T20:30:53.040154Z",
       "dropped": [],
       "elev_ft": [
         4731
@@ -59,7 +59,7 @@
       "wind": []
     },
     {
-      "as_of": "2026-11-17T20:00:41.074450Z",
+      "as_of": "2026-11-17T20:30:40.798174Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -68,15 +68,19 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        36
+        37
       ]
     },
     {
-      "as_of": "2026-11-17T20:19:17.452635Z",
-      "dropped": [],
+      "as_of": "2026-11-17T20:39:27.013372Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "46.6 F disagrees with another sensor here (spread 10.5 F, over 6.7 F) and is furthest from the other locations: 10.8 F off their median of 35.8 F, 10 locations adjusted to 3990 ft at 2.27 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
-        3980,
-        3990
+        3980
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -88,12 +92,12 @@
       ],
       "stale": false,
       "temp_f": [
-        39
+        36
       ],
       "wind": [
         {
-          "dir_deg": 1,
-          "mph": 0
+          "dir_deg": 91,
+          "mph": 1
         }
       ]
     },
@@ -101,7 +105,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-17T20:00:36.704354Z",
+      "as_of": "2026-11-17T20:30:35.603018Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -110,17 +114,17 @@
       "label": "Forest Lands Ridge",
       "stale": false,
       "temp_f": [
-        38
+        37
       ],
       "wind": [
         {
-          "dir_deg": 0,
-          "mph": 0
+          "dir_deg": 216,
+          "mph": 2
         }
       ]
     },
     {
-      "as_of": "2026-11-17T20:12:09.999927Z",
+      "as_of": "2026-11-17T20:38:13.280540Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -132,14 +136,14 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        39
+        40
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-17T20:15:35.649520Z",
+      "observed_at": "2026-11-17T20:35:35.495946Z",
       "snow_in": 0.8
     },
     {
