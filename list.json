@@ -276,9 +276,9 @@
         "timestamp": "2026-11-16T22:30:03Z"
       }
     },
-    "status": "Working; 2 newer pictures waiting for the people check",
+    "status": "Working; 3 newer pictures waiting for the people check",
     "newest_capture": "2026-11-17T00:30:02Z",
-    "waiting": 2,
+    "waiting": 3,
     "oldest_waiting_capture": "2026-11-17T00:30:03Z"
   },
   "NWHighPoint": {
@@ -472,6 +472,7 @@
   "woods_cam_003": {
     "images": [
       "Woods_Cam_003_latest.jpg",
+      "Woods_Cam_003_20261116_170119.jpg",
       "Woods_Cam_003_20261116_160112.jpg",
       "Woods_Cam_003_20261116_150112.jpg",
       "Woods_Cam_003_20261116_140112.jpg",
@@ -483,14 +484,18 @@
       "Woods_Cam_003_20261116_080112.jpg",
       "Woods_Cam_003_20261116_070112.jpg",
       "Woods_Cam_003_20261115_170112.jpg",
-      "Woods_Cam_003_20261115_160112.jpg",
-      "Woods_Cam_003_20261115_150112.jpg"
+      "Woods_Cam_003_20261115_160112.jpg"
     ],
     "metadata": {
       "Woods_Cam_003_latest.jpg": {
-        "run_id": "01a1e692-4b76-75a4-abe3-41877b53536b",
+        "run_id": "01a1e6d7-2d8d-7092-b053-4b5e909e3225",
         "temperature_c": null,
-        "timestamp": "2026-11-17T00:01:12Z"
+        "timestamp": "2026-11-17T01:01:19Z"
+      },
+      "Woods_Cam_003_20261116_170119.jpg": {
+        "run_id": "01a1e6d7-2d8d-7092-b053-4b5e909e3225",
+        "temperature_c": null,
+        "timestamp": "2026-11-17T01:01:19Z"
       },
       "Woods_Cam_003_20261116_160112.jpg": {
         "run_id": "01a1e692-4b76-75a4-abe3-41877b53536b",
@@ -551,15 +556,10 @@
         "run_id": "01a1e16c-7263-748f-aa08-cf99f3cb6782",
         "temperature_c": null,
         "timestamp": "2026-11-16T00:01:12Z"
-      },
-      "Woods_Cam_003_20261115_150112.jpg": {
-        "run_id": "01a1e143-3a56-7dba-a80a-e4a64ab6255a",
-        "temperature_c": null,
-        "timestamp": "2026-11-15T23:01:12Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-17T00:01:12Z",
+    "newest_capture": "2026-11-17T01:01:19Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
