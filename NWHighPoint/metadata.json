@@ -1,24 +1,4 @@
 {
-  "NWHighPoint_20261117_040002.jpg": {
-    "run_id": "01a1e913-62a8-756b-8e2c-c04af48d9b8f",
-    "temperature_c": null,
-    "timestamp": "2026-11-17T12:00:02Z"
-  },
-  "NWHighPoint_20261117_040003.jpg": {
-    "run_id": "01a1e913-62a8-756b-8e2c-c04af48d9b8f",
-    "temperature_c": null,
-    "timestamp": "2026-11-17T12:00:03Z"
-  },
-  "NWHighPoint_20261117_043001.jpg": {
-    "run_id": "01a1e94a-7e6b-773b-869d-b9a76b25b9bb",
-    "temperature_c": null,
-    "timestamp": "2026-11-17T12:30:01Z"
-  },
-  "NWHighPoint_20261117_043002.jpg": {
-    "run_id": "01a1e92e-f088-734c-92e7-ad8929d0a111",
-    "temperature_c": null,
-    "timestamp": "2026-11-17T12:30:02Z"
-  },
   "NWHighPoint_20261117_043003.jpg": {
     "run_id": "01a1e92e-f088-734c-92e7-ad8929d0a111",
     "temperature_c": null,
@@ -28,6 +8,11 @@
     "run_id": "01a1e94a-7e6b-773b-869d-b9a76b25b9bb",
     "temperature_c": null,
     "timestamp": "2026-11-17T13:00:00Z"
+  },
+  "NWHighPoint_20261117_050001.jpg": {
+    "run_id": "01a1e99d-2834-719d-b69b-82c085f94fb2",
+    "temperature_c": null,
+    "timestamp": "2026-11-17T13:00:01Z"
   },
   "NWHighPoint_20261117_050002.jpg": {
     "run_id": "01a1e981-9a0d-7585-af1b-1ef3bb02611b",
@@ -64,9 +49,24 @@
     "temperature_c": null,
     "timestamp": "2026-11-17T14:00:03Z"
   },
-  "NWHighPoint_latest.jpg": {
-    "run_id": "01a1e981-9a0d-7585-af1b-1ef3bb02611b",
+  "NWHighPoint_20261117_063000.jpg": {
+    "run_id": "01a1e99d-2834-719d-b69b-82c085f94fb2",
     "temperature_c": null,
-    "timestamp": "2026-11-17T14:00:03Z"
+    "timestamp": "2026-11-17T14:30:00Z"
+  },
+  "NWHighPoint_20261117_063001.jpg": {
+    "run_id": "01a1e99d-2834-719d-b69b-82c085f94fb2",
+    "temperature_c": null,
+    "timestamp": "2026-11-17T14:30:01Z"
+  },
+  "NWHighPoint_20261117_063002.jpg": {
+    "run_id": "01a1e99d-2834-719d-b69b-82c085f94fb2",
+    "temperature_c": null,
+    "timestamp": "2026-11-17T14:30:02Z"
+  },
+  "NWHighPoint_latest.jpg": {
+    "run_id": "01a1e99d-2834-719d-b69b-82c085f94fb2",
+    "temperature_c": null,
+    "timestamp": "2026-11-17T14:30:02Z"
   }
 }
