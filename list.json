@@ -472,6 +472,7 @@
   "woods_cam_003": {
     "images": [
       "Woods_Cam_003_latest.jpg",
+      "Woods_Cam_003_20261117_100113.jpg",
       "Woods_Cam_003_20261117_090112.jpg",
       "Woods_Cam_003_20261117_080113.jpg",
       "Woods_Cam_003_20261117_070112.jpg",
@@ -483,14 +484,18 @@
       "Woods_Cam_003_20261116_120112.jpg",
       "Woods_Cam_003_20261116_110113.jpg",
       "Woods_Cam_003_20261116_100112.jpg",
-      "Woods_Cam_003_20261116_090112.jpg",
-      "Woods_Cam_003_20261116_080112.jpg"
+      "Woods_Cam_003_20261116_090112.jpg"
     ],
     "metadata": {
       "Woods_Cam_003_latest.jpg": {
-        "run_id": "01a1ea46-2a97-7c94-955b-9580b6ae30a2",
+        "run_id": "01a1ea7d-4844-7d67-951e-ed67c62cd23a",
         "temperature_c": null,
-        "timestamp": "2026-11-17T17:01:12Z"
+        "timestamp": "2026-11-17T18:01:13Z"
+      },
+      "Woods_Cam_003_20261117_100113.jpg": {
+        "run_id": "01a1ea7d-4844-7d67-951e-ed67c62cd23a",
+        "temperature_c": null,
+        "timestamp": "2026-11-17T18:01:13Z"
       },
       "Woods_Cam_003_20261117_090112.jpg": {
         "run_id": "01a1ea46-2a97-7c94-955b-9580b6ae30a2",
@@ -551,17 +556,12 @@
         "run_id": "01a1e512-66c4-7ffe-acda-80ea89f97c14",
         "temperature_c": null,
         "timestamp": "2026-11-16T17:01:12Z"
-      },
-      "Woods_Cam_003_20261116_080112.jpg": {
-        "run_id": "01a1e4e9-1275-78da-b0cc-b140e6ac4fdf",
-        "temperature_c": null,
-        "timestamp": "2026-11-16T16:01:12Z"
       }
     },
-    "status": "Working; 1 newer picture waiting for the people check",
-    "newest_capture": "2026-11-17T17:01:12Z",
-    "waiting": 1,
-    "oldest_waiting_capture": "2026-11-17T18:01:13Z"
+    "status": "Working",
+    "newest_capture": "2026-11-17T18:01:13Z",
+    "waiting": 0,
+    "oldest_waiting_capture": null
   },
   "bowman_ridge_high_pt": {
     "images": [
