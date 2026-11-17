@@ -1,23 +1,39 @@
 {
-  "event_id": "9a3f81ae-d800-50e5-9b9f-5f33e561a6e5",
-  "last_updated": "2026-11-17T21:46:00Z",
+  "event_id": "0e29390f-efc0-5416-83ee-010d97161086",
+  "last_updated": "2026-11-17T21:56:00Z",
   "sites": [
     {
-      "aqi": [],
-      "as_of": "2026-11-14T15:30:58.352926Z",
-      "dropped": [],
+      "aqi": [
+        0
+      ],
+      "as_of": "2026-11-17T21:47:18.829427Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "aqi",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "fog",
+          "reason": "another device of the same unit is counted instead"
+        }
+      ],
       "elev_ft": [
-        398,
         3281
       ],
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
-      "stale": true,
-      "temp_f": []
+      "stale": false,
+      "temp_f": [
+        42
+      ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-17T21:35:37.228571Z",
+      "as_of": "2026-11-17T21:48:30.256673Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -39,7 +55,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-17T21:30:52.484202Z",
+      "as_of": "2026-11-17T21:40:50.799954Z",
       "dropped": [],
       "elev_ft": [
         4731
@@ -72,7 +88,7 @@
       ]
     },
     {
-      "as_of": "2026-11-17T21:39:50.745336Z",
+      "as_of": "2026-11-17T21:39:55.587032Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -88,7 +104,7 @@
       ],
       "stale": false,
       "temp_f": [
-        44
+        42
       ],
       "wind": [
         {
@@ -139,12 +155,12 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-17T21:35:34.919065Z",
+      "observed_at": "2026-11-17T21:40:50.799954Z",
       "snow_in": 0.8
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-17T21:28:30.492763Z",
+      "observed_at": "2026-11-17T21:48:30.256673Z",
       "snow_in": 1.3
     }
   ],
