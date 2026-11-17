@@ -1,6 +1,6 @@
 {
-  "event_id": "d70059be-cffa-554b-957e-3ff6d626a9af",
-  "last_updated": "2026-11-17T20:56:00Z",
+  "event_id": "c9efc1e9-422a-5529-bd1f-959feb4425f1",
+  "last_updated": "2026-11-17T21:08:00Z",
   "sites": [
     {
       "aqi": [],
@@ -17,7 +17,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-17T20:48:31.004339Z",
+      "as_of": "2026-11-17T20:58:17.640182Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -72,15 +72,11 @@
       ]
     },
     {
-      "as_of": "2026-11-17T20:39:27.013372Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "46.6 F disagrees with another sensor here (spread 10.5 F, over 6.7 F) and is furthest from the other locations: 10.8 F off their median of 35.8 F, 10 locations adjusted to 3990 ft at 2.27 F per 1000 ft"
-        }
-      ],
+      "as_of": "2026-11-17T21:01:12Z",
+      "dropped": [],
       "elev_ft": [
-        3980
+        3980,
+        3990
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -92,12 +88,12 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        44
       ],
       "wind": [
         {
-          "dir_deg": 91,
-          "mph": 1
+          "dir_deg": 1,
+          "mph": 0
         }
       ]
     },
@@ -143,7 +139,7 @@
   "snow_bands": [
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-17T20:40:51.062361Z",
+      "observed_at": "2026-11-17T20:55:35.176272Z",
       "snow_in": 0.8
     },
     {
