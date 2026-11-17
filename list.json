@@ -2,6 +2,8 @@
   "bowman_mtn": {
     "images": [
       "Bowman_Mtn_latest.jpg",
+      "Bowman_Mtn_20261117_083840.jpg",
+      "Bowman_Mtn_20261117_083003.jpg",
       "Bowman_Mtn_20261117_080003.jpg",
       "Bowman_Mtn_20261117_073003.jpg",
       "Bowman_Mtn_20261117_070003.jpg",
@@ -12,15 +14,23 @@
       "Bowman_Mtn_20261117_030003.jpg",
       "Bowman_Mtn_20261116_210003.jpg",
       "Bowman_Mtn_20261116_203003.jpg",
-      "Bowman_Mtn_20261116_200003.jpg",
-      "Bowman_Mtn_20261116_193002.jpg",
-      "Bowman_Mtn_20261116_190003.jpg"
+      "Bowman_Mtn_20261116_200003.jpg"
     ],
     "metadata": {
       "Bowman_Mtn_latest.jpg": {
-        "run_id": "01a1e9ff-705d-7bd4-86cb-436cd23a20a8",
+        "run_id": "01a1ea28-c69c-7bcd-9064-55547eafdb33",
         "temperature_c": null,
-        "timestamp": "2026-11-17T16:00:03Z"
+        "timestamp": "2026-11-17T16:38:40Z"
+      },
+      "Bowman_Mtn_20261117_083840.jpg": {
+        "run_id": "01a1ea28-c69c-7bcd-9064-55547eafdb33",
+        "temperature_c": null,
+        "timestamp": "2026-11-17T16:38:40Z"
+      },
+      "Bowman_Mtn_20261117_083003.jpg": {
+        "run_id": "01a1ea28-c69c-7bcd-9064-55547eafdb33",
+        "temperature_c": null,
+        "timestamp": "2026-11-17T16:30:03Z"
       },
       "Bowman_Mtn_20261117_080003.jpg": {
         "run_id": "01a1e9ff-705d-7bd4-86cb-436cd23a20a8",
@@ -76,20 +86,10 @@
         "run_id": "01a1e76c-e44d-7492-905a-e49f8a60fc36",
         "temperature_c": null,
         "timestamp": "2026-11-17T04:00:03Z"
-      },
-      "Bowman_Mtn_20261116_193002.jpg": {
-        "run_id": "01a1e751-5606-7617-839f-a11fabd8446f",
-        "temperature_c": null,
-        "timestamp": "2026-11-17T03:30:02Z"
-      },
-      "Bowman_Mtn_20261116_190003.jpg": {
-        "run_id": "01a1e735-c830-75e4-ac23-9e332235e398",
-        "temperature_c": null,
-        "timestamp": "2026-11-17T03:00:03Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-17T16:00:03Z",
+    "newest_capture": "2026-11-17T16:38:40Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
@@ -276,10 +276,10 @@
         "timestamp": "2026-11-17T14:00:03Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 3 newer pictures waiting for the people check",
     "newest_capture": "2026-11-17T16:00:05Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 3,
+    "oldest_waiting_capture": "2026-11-17T16:30:01Z"
   },
   "NWHighPoint": {
     "images": [
@@ -370,10 +370,10 @@
         "timestamp": "2026-11-17T14:00:03Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 3 newer pictures waiting for the people check",
     "newest_capture": "2026-11-17T16:00:03Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 3,
+    "oldest_waiting_capture": "2026-11-17T16:30:00Z"
   },
   "woods_cam_001": {
     "images": [
