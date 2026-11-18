@@ -2,6 +2,7 @@
   "bowman_mtn": {
     "images": [
       "Bowman_Mtn_latest.jpg",
+      "Bowman_Mtn_20261117_160840.jpg",
       "Bowman_Mtn_20261117_153839.jpg",
       "Bowman_Mtn_20261117_150840.jpg",
       "Bowman_Mtn_20261117_143840.jpg",
@@ -13,14 +14,18 @@
       "Bowman_Mtn_20261117_113840.jpg",
       "Bowman_Mtn_20261117_110839.jpg",
       "Bowman_Mtn_20261117_103839.jpg",
-      "Bowman_Mtn_20261117_100840.jpg",
-      "Bowman_Mtn_20261117_093839.jpg"
+      "Bowman_Mtn_20261117_100840.jpg"
     ],
     "metadata": {
       "Bowman_Mtn_latest.jpg": {
-        "run_id": "01a1eba9-a593-7fad-a676-8283bf446dfd",
+        "run_id": "01a1ebc5-337e-7d0d-a958-77242a4d664e",
         "temperature_c": null,
-        "timestamp": "2026-11-17T23:38:39Z"
+        "timestamp": "2026-11-18T00:08:40Z"
+      },
+      "Bowman_Mtn_20261117_160840.jpg": {
+        "run_id": "01a1ebc5-337e-7d0d-a958-77242a4d664e",
+        "temperature_c": null,
+        "timestamp": "2026-11-18T00:08:40Z"
       },
       "Bowman_Mtn_20261117_153839.jpg": {
         "run_id": "01a1eba9-a593-7fad-a676-8283bf446dfd",
@@ -81,15 +86,10 @@
         "run_id": "01a1ea7b-71d9-7b00-88a5-9afa39cc786a",
         "temperature_c": null,
         "timestamp": "2026-11-17T18:08:40Z"
-      },
-      "Bowman_Mtn_20261117_093839.jpg": {
-        "run_id": "01a1ea5f-e33b-70e9-90c1-1b6227bdc09e",
-        "temperature_c": null,
-        "timestamp": "2026-11-17T17:38:39Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-17T23:38:39Z",
+    "newest_capture": "2026-11-18T00:08:40Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
@@ -558,10 +558,10 @@
         "timestamp": "2026-11-16T22:01:12Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 1 newer picture waiting for the people check",
     "newest_capture": "2026-11-17T23:01:13Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 1,
+    "oldest_waiting_capture": "2026-11-18T00:01:12Z"
   },
   "bowman_ridge_high_pt": {
     "images": [
