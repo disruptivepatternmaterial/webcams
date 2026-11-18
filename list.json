@@ -558,10 +558,10 @@
         "timestamp": "2026-11-16T23:01:12Z"
       }
     },
-    "status": "Working; 1 newer picture withheld, a person was seen",
+    "status": "Working; 1 newer picture waiting for the people check",
     "newest_capture": "2026-11-18T00:01:12Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 1,
+    "oldest_waiting_capture": "2026-11-18T01:01:13Z"
   },
   "bowman_ridge_high_pt": {
     "images": [
