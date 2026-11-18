@@ -190,6 +190,7 @@
   "w_ridge_n_twin": {
     "images": [
       "W_Ridge_N_Twin_latest.jpg",
+      "W_Ridge_N_Twin_20261118_080000.jpg",
       "W_Ridge_N_Twin_20261118_073001.jpg",
       "W_Ridge_N_Twin_20261118_070002.jpg",
       "W_Ridge_N_Twin_20261117_210003.jpg",
@@ -201,14 +202,18 @@
       "W_Ridge_N_Twin_20261117_200003.jpg",
       "W_Ridge_N_Twin_20261117_200002.jpg",
       "W_Ridge_N_Twin_20261117_200001.jpg",
-      "W_Ridge_N_Twin_20261117_193002.jpg",
-      "W_Ridge_N_Twin_20261117_193001.jpg"
+      "W_Ridge_N_Twin_20261117_193002.jpg"
     ],
     "metadata": {
       "W_Ridge_N_Twin_latest.jpg": {
-        "run_id": "01a1eefa-3fcc-7cb9-aa8e-071ba68e65cc",
+        "run_id": "01a1ef15-ceb6-733e-bf09-a0f3b720c8e3",
         "temperature_c": null,
-        "timestamp": "2026-11-18T15:30:01Z"
+        "timestamp": "2026-11-18T16:00:00Z"
+      },
+      "W_Ridge_N_Twin_20261118_080000.jpg": {
+        "run_id": "01a1ef15-ceb6-733e-bf09-a0f3b720c8e3",
+        "temperature_c": null,
+        "timestamp": "2026-11-18T16:00:00Z"
       },
       "W_Ridge_N_Twin_20261118_073001.jpg": {
         "run_id": "01a1eefa-3fcc-7cb9-aa8e-071ba68e65cc",
@@ -269,21 +274,17 @@
         "run_id": "01a1ec66-db8d-77b2-8c37-c0b3b3388449",
         "temperature_c": null,
         "timestamp": "2026-11-18T03:30:02Z"
-      },
-      "W_Ridge_N_Twin_20261117_193001.jpg": {
-        "run_id": "01a1ec82-6ad2-7faa-92ad-5f6049059aaf",
-        "temperature_c": null,
-        "timestamp": "2026-11-18T03:30:01Z"
       }
     },
-    "status": "Working; 1 newer picture waiting for the people check",
-    "newest_capture": "2026-11-18T15:30:01Z",
-    "waiting": 1,
-    "oldest_waiting_capture": "2026-11-18T16:00:00Z"
+    "status": "Working",
+    "newest_capture": "2026-11-18T16:00:00Z",
+    "waiting": 0,
+    "oldest_waiting_capture": null
   },
   "NWHighPoint": {
     "images": [
       "NWHighPoint_latest.jpg",
+      "NWHighPoint_20261118_080000.jpg",
       "NWHighPoint_20261118_073001.jpg",
       "NWHighPoint_20261118_070231.jpg",
       "NWHighPoint_20261117_210003.jpg",
@@ -295,14 +296,18 @@
       "NWHighPoint_20261117_200003.jpg",
       "NWHighPoint_20261117_200002.jpg",
       "NWHighPoint_20261117_200001.jpg",
-      "NWHighPoint_20261117_193002.jpg",
-      "NWHighPoint_20261117_193001.jpg"
+      "NWHighPoint_20261117_193002.jpg"
     ],
     "metadata": {
       "NWHighPoint_latest.jpg": {
-        "run_id": "01a1eefa-3fcc-7cb9-aa8e-071ba68e65cc",
+        "run_id": "01a1ef15-ceb6-733e-bf09-a0f3b720c8e3",
         "temperature_c": null,
-        "timestamp": "2026-11-18T15:30:01Z"
+        "timestamp": "2026-11-18T16:00:00Z"
+      },
+      "NWHighPoint_20261118_080000.jpg": {
+        "run_id": "01a1ef15-ceb6-733e-bf09-a0f3b720c8e3",
+        "temperature_c": null,
+        "timestamp": "2026-11-18T16:00:00Z"
       },
       "NWHighPoint_20261118_073001.jpg": {
         "run_id": "01a1eefa-3fcc-7cb9-aa8e-071ba68e65cc",
@@ -363,17 +368,12 @@
         "run_id": "01a1ec66-db8d-77b2-8c37-c0b3b3388449",
         "temperature_c": null,
         "timestamp": "2026-11-18T03:30:02Z"
-      },
-      "NWHighPoint_20261117_193001.jpg": {
-        "run_id": "01a1ec66-db8d-77b2-8c37-c0b3b3388449",
-        "temperature_c": null,
-        "timestamp": "2026-11-18T03:30:01Z"
       }
     },
-    "status": "Working; 1 newer picture waiting for the people check",
-    "newest_capture": "2026-11-18T15:30:01Z",
-    "waiting": 1,
-    "oldest_waiting_capture": "2026-11-18T16:00:00Z"
+    "status": "Working",
+    "newest_capture": "2026-11-18T16:00:00Z",
+    "waiting": 0,
+    "oldest_waiting_capture": null
   },
   "woods_cam_001": {
     "images": [
@@ -558,10 +558,10 @@
         "timestamp": "2026-11-17T00:01:12Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 1 newer picture waiting for the people check",
     "newest_capture": "2026-11-18T15:01:12Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 1,
+    "oldest_waiting_capture": "2026-11-18T16:01:13Z"
   },
   "bowman_ridge_high_pt": {
     "images": [
