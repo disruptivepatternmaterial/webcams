@@ -1,6 +1,6 @@
 {
-  "event_id": "f8c022f5-fce4-5785-add4-295f5f145889",
-  "last_updated": "2026-11-19T19:22:00Z",
+  "event_id": "0744e188-eed4-5c81-a2ec-fb94b04c3c89",
+  "last_updated": "2026-11-19T19:34:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,11 +33,11 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-19T19:07:58.949641Z",
+      "as_of": "2026-11-19T19:27:58.648633Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "35.6 F disagrees with another sensor here (spread 7.9 F, over 6.7 F) and is furthest from the other locations: 5.8 F off their median of 41.4 F, 12 locations adjusted to 4721 ft at 2.01 F per 1000 ft"
+          "reason": "35.8 F disagrees with another sensor here (spread 7.7 F, over 6.7 F) and is furthest from the other locations: 5.5 F off their median of 41.3 F, 12 locations adjusted to 4721 ft at 2.01 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "as_of": "2026-11-19T19:02:17.358640Z",
+      "as_of": "2026-11-19T19:25:15.499862Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -108,7 +108,7 @@
       ],
       "stale": false,
       "temp_f": [
-        44
+        43
       ],
       "wind": [
         {
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "as_of": "2026-11-19T19:12:49.753595Z",
+      "as_of": "2026-11-19T19:23:55.060952Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -158,7 +158,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        37
+        41
       ]
     }
   ],
@@ -170,12 +170,12 @@
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-19T19:10:19.566782Z",
+      "observed_at": "2026-11-19T19:25:15.499862Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-19T19:07:58.949641Z",
+      "observed_at": "2026-11-19T19:27:58.648633Z",
       "snow_in": 1.4
     }
   ],
