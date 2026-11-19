@@ -284,6 +284,8 @@
   "NWHighPoint": {
     "images": [
       "NWHighPoint_latest.jpg",
+      "NWHighPoint_20261119_051542.jpg",
+      "NWHighPoint_20261119_051539.jpg",
       "NWHighPoint_20261118_190001.jpg",
       "NWHighPoint_20261118_183000.jpg",
       "NWHighPoint_20261118_180001.jpg",
@@ -294,15 +296,23 @@
       "NWHighPoint_20261118_153001.jpg",
       "NWHighPoint_20261118_150734.jpg",
       "NWHighPoint_20261118_150732.jpg",
-      "NWHighPoint_20261118_150000.jpg",
-      "NWHighPoint_20261118_143000.jpg",
-      "NWHighPoint_20261118_140001.jpg"
+      "NWHighPoint_20261118_150000.jpg"
     ],
     "metadata": {
       "NWHighPoint_latest.jpg": {
-        "run_id": "01a1f172-3a26-776e-99e2-e05d6a562c3f",
+        "run_id": "01a1f397-951e-7dc9-a5e6-20bc1b4fd705",
         "temperature_c": null,
-        "timestamp": "2026-11-19T03:00:01Z"
+        "timestamp": "2026-11-19T13:15:42Z"
+      },
+      "NWHighPoint_20261119_051542.jpg": {
+        "run_id": "01a1f397-951e-7dc9-a5e6-20bc1b4fd705",
+        "temperature_c": null,
+        "timestamp": "2026-11-19T13:15:42Z"
+      },
+      "NWHighPoint_20261119_051539.jpg": {
+        "run_id": "01a1f397-951e-7dc9-a5e6-20bc1b4fd705",
+        "temperature_c": null,
+        "timestamp": "2026-11-19T13:15:39Z"
       },
       "NWHighPoint_20261118_190001.jpg": {
         "run_id": "01a1f172-3a26-776e-99e2-e05d6a562c3f",
@@ -358,22 +368,12 @@
         "run_id": "01a1f095-c3a3-75a5-bd90-740fbef0ff6e",
         "temperature_c": null,
         "timestamp": "2026-11-18T23:00:00Z"
-      },
-      "NWHighPoint_20261118_143000.jpg": {
-        "run_id": "01a1f07a-3547-71e8-943b-98d73c82633f",
-        "temperature_c": null,
-        "timestamp": "2026-11-18T22:30:00Z"
-      },
-      "NWHighPoint_20261118_140001.jpg": {
-        "run_id": "01a1f05f-91e5-70ab-918b-612cad391112",
-        "temperature_c": null,
-        "timestamp": "2026-11-18T22:00:01Z"
       }
     },
-    "status": "Working; 2 newer pictures waiting for the people check",
-    "newest_capture": "2026-11-19T03:00:01Z",
-    "waiting": 2,
-    "oldest_waiting_capture": "2026-11-19T13:15:39Z"
+    "status": "Working",
+    "newest_capture": "2026-11-19T13:15:42Z",
+    "waiting": 0,
+    "oldest_waiting_capture": null
   },
   "woods_cam_001": {
     "images": [
