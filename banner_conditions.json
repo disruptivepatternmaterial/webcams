@@ -1,6 +1,6 @@
 {
-  "event_id": "b6747671-56d4-5ac9-aff1-ff994adc710c",
-  "last_updated": "2026-11-19T21:50:00Z",
+  "event_id": "870b363d-d0d7-5def-8c6e-56892e5c4cf2",
+  "last_updated": "2026-11-19T21:52:00Z",
   "sites": [
     {
       "aqi": [
@@ -20,7 +20,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-19T21:35:02.793347Z",
+      "as_of": "2026-11-19T21:47:56.995330Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -42,7 +42,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-19T21:30:25.039241Z",
+      "as_of": "2026-11-19T21:40:17.601566Z",
       "dropped": [],
       "elev_ft": [
         4731
@@ -75,10 +75,14 @@
       ]
     },
     {
-      "as_of": "2026-11-19T21:25:14.096797Z",
-      "dropped": [],
+      "as_of": "2026-11-19T21:43:33.575387Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "47.2 F disagrees with another sensor here (spread 7.7 F, over 6.7 F) and is furthest from the other locations: 8.4 F off their median of 38.8 F, 12 locations adjusted to 3980 ft at 2.52 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
-        3980,
         3990
       ],
       "id": "forest_lands_high_point",
@@ -91,7 +95,7 @@
       ],
       "stale": false,
       "temp_f": [
-        46
+        40
       ],
       "wind": [
         {
@@ -129,7 +133,7 @@
       ]
     },
     {
-      "as_of": "2026-11-19T21:23:53.944910Z",
+      "as_of": "2026-11-19T21:43:48.502648Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -141,7 +145,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        38
+        37
       ]
     }
   ],
@@ -153,12 +157,12 @@
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-19T21:25:14.096797Z",
+      "observed_at": "2026-11-19T21:40:17.601566Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-19T21:27:57.233573Z",
+      "observed_at": "2026-11-19T21:47:56.995330Z",
       "snow_in": 1.4
     }
   ],
