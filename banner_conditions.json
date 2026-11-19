@@ -1,6 +1,6 @@
 {
-  "event_id": "47195192-5ae1-5e7c-a8d8-8a16c3a7f498",
-  "last_updated": "2026-11-19T21:54:00Z",
+  "event_id": "2e941f6b-5ed5-520a-b4f4-2b29a27b1308",
+  "last_updated": "2026-11-19T22:06:00Z",
   "sites": [
     {
       "aqi": [
@@ -20,7 +20,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-19T21:47:56.995330Z",
+      "as_of": "2026-11-19T21:57:43.427666Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -75,14 +75,10 @@
       ]
     },
     {
-      "as_of": "2026-11-19T21:43:33.575387Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "47.2 F disagrees with another sensor here (spread 7.7 F, over 6.7 F) and is furthest from the other locations: 8.4 F off their median of 38.8 F, 12 locations adjusted to 3980 ft at 2.52 F per 1000 ft"
-        }
-      ],
+      "as_of": "2026-11-19T22:01:12Z",
+      "dropped": [],
       "elev_ft": [
+        3980,
         3990
       ],
       "id": "forest_lands_high_point",
@@ -95,7 +91,7 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        38
       ],
       "wind": [
         {
@@ -108,7 +104,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-19T21:35:51.751591Z",
+      "as_of": "2026-11-19T21:55:51.470394Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -133,7 +129,7 @@
       ]
     },
     {
-      "as_of": "2026-11-19T21:43:48.502648Z",
+      "as_of": "2026-11-19T21:53:53.662442Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -145,19 +141,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        37
+        36
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-19T21:35:51.751591Z",
+      "observed_at": "2026-11-19T21:55:51.470394Z",
       "snow_in": 0.4
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-19T21:40:17.601566Z",
+      "observed_at": "2026-11-19T21:55:13.809317Z",
       "snow_in": 0.0
     },
     {
