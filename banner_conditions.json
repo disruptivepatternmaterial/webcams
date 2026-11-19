@@ -1,12 +1,12 @@
 {
-  "event_id": "3c5a6b1e-93eb-52cf-a61c-2b15be60eaa4",
-  "last_updated": "2026-11-19T02:54:00Z",
+  "event_id": "244da6df-e8f6-591c-8fe3-8c0d3a20a4e6",
+  "last_updated": "2026-11-19T03:06:00Z",
   "sites": [
     {
       "aqi": [
-        3
+        0
       ],
-      "as_of": "2026-11-19T02:01:04.940911Z",
+      "as_of": "2026-11-19T03:00:54Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,12 +28,12 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        34
+        32
       ]
     },
     {
       "aqi": [],
-      "as_of": "2026-11-19T02:48:10.155231Z",
+      "as_of": "2026-11-19T02:57:56.697844Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        29
+        30
       ],
       "wind": []
     },
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "as_of": "2026-11-19T02:35:16.903326Z",
+      "as_of": "2026-11-19T03:01:12Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -108,8 +108,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 314,
-          "mph": 2
+          "dir_deg": 1,
+          "mph": 1
         }
       ]
     },
@@ -117,7 +117,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-19T02:36:05.205591Z",
+      "as_of": "2026-11-19T02:56:05.008541Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "as_of": "2026-11-19T02:37:57.746798Z",
+      "as_of": "2026-11-19T02:53:57.696613Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -154,19 +154,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        32
+        33
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-19T02:36:05.205591Z",
+      "observed_at": "2026-11-19T02:56:05.008541Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-19T02:40:30.615808Z",
+      "observed_at": "2026-11-19T02:55:16.777855Z",
       "snow_in": 0.0
     },
     {
