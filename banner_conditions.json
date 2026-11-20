@@ -1,6 +1,6 @@
 {
-  "event_id": "99e673cb-4841-5511-9bdc-4960e4501cd4",
-  "last_updated": "2026-11-20T22:40:00Z",
+  "event_id": "f39fed01-3bed-5493-8ff6-a90239ff5c71",
+  "last_updated": "2026-11-20T22:52:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-20T22:27:39.854427Z",
+      "as_of": "2026-11-20T22:47:39.616612Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        37
+        38
       ],
       "wind": []
     },
@@ -57,7 +57,7 @@
       "aqi": [
         10
       ],
-      "as_of": "2026-11-20T22:10:01.166549Z",
+      "as_of": "2026-11-20T22:40:00.585166Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -72,7 +72,7 @@
       ],
       "stale": false,
       "temp_f": [
-        34
+        35
       ],
       "wind": [
         {
@@ -95,11 +95,15 @@
       ]
     },
     {
-      "as_of": "2026-11-20T22:24:58.685091Z",
-      "dropped": [],
+      "as_of": "2026-11-20T22:35:18.888724Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "43.0 F disagrees with another sensor here (spread 7.7 F, over 6.7 F) and is furthest from the other locations: 7.0 F off their median of 35.9 F, 12 locations adjusted to 3990 ft at 2.64 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
-        3980,
-        3990
+        3980
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -111,12 +115,12 @@
       ],
       "stale": false,
       "temp_f": [
-        38
+        35
       ],
       "wind": [
         {
-          "dir_deg": 91,
-          "mph": 2
+          "dir_deg": 1,
+          "mph": 0
         }
       ]
     },
@@ -124,7 +128,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-20T22:15:34.482865Z",
+      "as_of": "2026-11-20T22:35:34.260760Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -168,17 +172,17 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-20T22:15:34.482865Z",
+      "observed_at": "2026-11-20T22:35:34.260760Z",
       "snow_in": 0.8
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-20T22:24:58.685091Z",
+      "observed_at": "2026-11-20T22:40:00.585166Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-20T22:27:39.854427Z",
+      "observed_at": "2026-11-20T22:47:39.616612Z",
       "snow_in": 2.0
     }
   ],
