@@ -1,26 +1,13 @@
 {
-  "event_id": "4aa68863-1b5b-5798-9fde-66b7ec1f9d8e",
-  "last_updated": "2026-11-20T18:54:00Z",
+  "event_id": "66e67bcc-b44f-57ca-a9ea-ca551ab2b6c2",
+  "last_updated": "2026-11-20T19:06:00Z",
   "sites": [
     {
       "aqi": [
         8
       ],
       "as_of": "2026-11-20T18:01:16.769170Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "aqi",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "fog",
-          "reason": "another device of the same unit is counted instead"
-        }
-      ],
+      "dropped": [],
       "elev_ft": [
         3281
       ],
@@ -33,7 +20,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-20T18:47:42.502197Z",
+      "as_of": "2026-11-20T18:57:28.932688Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -95,7 +82,7 @@
       ]
     },
     {
-      "as_of": "2026-11-20T18:33:27.609389Z",
+      "as_of": "2026-11-20T19:01:13Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -111,12 +98,12 @@
       ],
       "stale": false,
       "temp_f": [
-        34
+        36
       ],
       "wind": [
         {
-          "dir_deg": 57,
-          "mph": 4
+          "dir_deg": 36,
+          "mph": 2
         }
       ]
     },
@@ -124,7 +111,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-20T18:35:37.232857Z",
+      "as_of": "2026-11-20T18:55:36.992670Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -149,7 +136,7 @@
       ]
     },
     {
-      "as_of": "2026-11-20T18:24:38.645807Z",
+      "as_of": "2026-11-20T18:53:42.905261Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -161,19 +148,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        31
+        32
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-20T18:35:37.232857Z",
+      "observed_at": "2026-11-20T18:55:36.992670Z",
       "snow_in": 0.8
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-20T18:40:03.467996Z",
+      "observed_at": "2026-11-20T18:55:00.986940Z",
       "snow_in": 0.0
     },
     {
