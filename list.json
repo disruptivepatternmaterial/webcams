@@ -182,10 +182,10 @@
         "timestamp": "2026-11-09T23:30:01Z"
       }
     },
-    "status": "Working",
+    "status": "Working; 20 newer pictures waiting for the people check",
     "newest_capture": "2026-11-11T16:30:00Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 20,
+    "oldest_waiting_capture": "2026-11-20T03:00:03Z"
   },
   "w_ridge_n_twin": {
     "images": [
