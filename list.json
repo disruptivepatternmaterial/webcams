@@ -472,6 +472,8 @@
   "woods_cam_003": {
     "images": [
       "Woods_Cam_003_latest.jpg",
+      "Woods_Cam_003_20261120_090122.jpg",
+      "Woods_Cam_003_20261120_080122.jpg",
       "Woods_Cam_003_20261119_160112.jpg",
       "Woods_Cam_003_20261119_150113.jpg",
       "Woods_Cam_003_20261119_140112.jpg",
@@ -482,15 +484,23 @@
       "Woods_Cam_003_20261119_090113.jpg",
       "Woods_Cam_003_20261119_080113.jpg",
       "Woods_Cam_003_20261119_070113.jpg",
-      "Woods_Cam_003_20261118_170113.jpg",
-      "Woods_Cam_003_20261118_160112.jpg",
-      "Woods_Cam_003_20261118_150113.jpg"
+      "Woods_Cam_003_20261118_170113.jpg"
     ],
     "metadata": {
       "Woods_Cam_003_latest.jpg": {
-        "run_id": "01a1f605-9b1c-727e-ac30-81a5d39e3291",
+        "run_id": "01a1f982-5a74-7be3-bea6-17d56a98e615",
         "temperature_c": null,
-        "timestamp": "2026-11-20T00:01:12Z"
+        "timestamp": "2026-11-20T17:01:22Z"
+      },
+      "Woods_Cam_003_20261120_090122.jpg": {
+        "run_id": "01a1f982-5a74-7be3-bea6-17d56a98e615",
+        "temperature_c": null,
+        "timestamp": "2026-11-20T17:01:22Z"
+      },
+      "Woods_Cam_003_20261120_080122.jpg": {
+        "run_id": "01a1f982-5a74-7be3-bea6-17d56a98e615",
+        "temperature_c": null,
+        "timestamp": "2026-11-20T16:01:22Z"
       },
       "Woods_Cam_003_20261119_160112.jpg": {
         "run_id": "01a1f605-9b1c-727e-ac30-81a5d39e3291",
@@ -546,20 +556,10 @@
         "run_id": "01a1f124-24dc-7935-bff5-a3f5c014e006",
         "temperature_c": null,
         "timestamp": "2026-11-19T01:01:13Z"
-      },
-      "Woods_Cam_003_20261118_160112.jpg": {
-        "run_id": "01a1f0ed-0724-7a5a-82c0-c60f34f834cd",
-        "temperature_c": null,
-        "timestamp": "2026-11-19T00:01:12Z"
-      },
-      "Woods_Cam_003_20261118_150113.jpg": {
-        "run_id": "01a1f0a8-22b5-761e-82db-f9c0292c5419",
-        "temperature_c": null,
-        "timestamp": "2026-11-18T23:01:13Z"
       }
     },
-    "status": "Working; 1 newer picture withheld, a person was seen",
-    "newest_capture": "2026-11-20T00:01:12Z",
+    "status": "Working",
+    "newest_capture": "2026-11-20T17:01:22Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
