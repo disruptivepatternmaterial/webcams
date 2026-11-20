@@ -1,6 +1,6 @@
 {
-  "event_id": "e2a7da3b-e5b2-504f-b16b-1051750b1a16",
-  "last_updated": "2026-11-20T18:38:00Z",
+  "event_id": "86bf691b-4b75-5ab2-95cf-5a3ae57c4ad2",
+  "last_updated": "2026-11-20T18:50:00Z",
   "sites": [
     {
       "aqi": [
@@ -33,7 +33,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-20T18:27:42.773189Z",
+      "as_of": "2026-11-20T18:34:47.883800Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +49,7 @@
       ],
       "stale": false,
       "temp_f": [
-        31
+        33
       ],
       "wind": []
     },
@@ -57,23 +57,22 @@
       "aqi": [
         11
       ],
-      "as_of": "2026-11-20T18:10:04.034219Z",
+      "as_of": "2026-11-20T18:30:13.131820Z",
       "dropped": [],
       "elev_ft": [
-        4163,
-        4731
+        4163
       ],
       "id": "n_twin_approach",
       "label": "N Twin Approach",
       "snow_elev_ft": [
-        4718
+        4163
       ],
       "snow_in": [
         0
       ],
       "stale": false,
       "temp_f": [
-        32
+        33
       ],
       "wind": [
         {
@@ -83,7 +82,7 @@
       ]
     },
     {
-      "as_of": "2026-11-20T18:00:01.632314Z",
+      "as_of": "2026-11-20T18:30:01.291666Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -92,11 +91,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        32
+        35
       ]
     },
     {
-      "as_of": "2026-11-20T18:25:01.300656Z",
+      "as_of": "2026-11-20T18:33:27.609389Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -125,7 +124,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-20T18:15:37.470393Z",
+      "as_of": "2026-11-20T18:35:37.232857Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -169,7 +168,7 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-20T18:15:37.470393Z",
+      "observed_at": "2026-11-20T18:35:37.232857Z",
       "snow_in": 0.8
     },
     {
@@ -189,7 +188,7 @@
       "location": "N Twin West Ridge"
     },
     {
-      "elev_ft": 4718,
+      "elev_ft": 4163,
       "location": "N Twin Approach"
     },
     {
