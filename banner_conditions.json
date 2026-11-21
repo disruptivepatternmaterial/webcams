@@ -1,6 +1,6 @@
 {
-  "event_id": "0ab51dc7-95f1-5b18-b186-d889a79a011b",
-  "last_updated": "2026-11-21T19:52:00Z",
+  "event_id": "13e6f64f-6f67-5284-93f0-d7e9ff475a18",
+  "last_updated": "2026-11-21T20:04:00Z",
   "sites": [
     {
       "aqi": [],
@@ -17,7 +17,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-21T19:47:25.389835Z",
+      "as_of": "2026-11-21T19:57:11.653989Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -33,7 +33,7 @@
       ],
       "stale": false,
       "temp_f": [
-        39
+        40
       ],
       "wind": []
     },
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "as_of": "2026-11-21T19:29:47.337629Z",
+      "as_of": "2026-11-21T19:59:47.078706Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -75,19 +75,15 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        44
+        43
       ]
     },
     {
-      "as_of": "2026-11-21T19:45:18.712215Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "49.6 F disagrees with another sensor here (spread 8.8 F, over 6.7 F) and is furthest from the other locations: 8.0 F off their median of 41.7 F, 11 locations adjusted to 3990 ft at 2.01 F per 1000 ft"
-        }
-      ],
+      "as_of": "2026-11-21T20:01:13Z",
+      "dropped": [],
       "elev_ft": [
-        3980
+        3980,
+        3990
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -99,7 +95,7 @@
       ],
       "stale": false,
       "temp_f": [
-        41
+        47
       ],
       "wind": [
         {
@@ -112,7 +108,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-21T19:35:20.026567Z",
+      "as_of": "2026-11-21T19:55:19.640750Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -137,7 +133,7 @@
       ]
     },
     {
-      "as_of": "2026-11-21T19:42:26.692082Z",
+      "as_of": "2026-11-21T19:53:30.244239Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -149,19 +145,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        32
+        31
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-21T19:35:20.026567Z",
+      "observed_at": "2026-11-21T19:55:19.640750Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-21T19:39:46.719903Z",
+      "observed_at": "2026-11-21T19:54:45.818144Z",
       "snow_in": 0.0
     },
     {
