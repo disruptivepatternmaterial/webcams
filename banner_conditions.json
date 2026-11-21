@@ -1,6 +1,6 @@
 {
-  "event_id": "ad3b7f9b-1bee-5eee-a636-73999ebdfaf7",
-  "last_updated": "2026-11-21T22:52:00Z",
+  "event_id": "1668bcd3-fd39-56a5-bae6-fb36503aec64",
+  "last_updated": "2026-11-21T23:06:00Z",
   "sites": [
     {
       "aqi": [],
@@ -17,7 +17,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-21T22:47:23.168344Z",
+      "as_of": "2026-11-21T22:57:09.568741Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -41,7 +41,7 @@
       "aqi": [
         14
       ],
-      "as_of": "2026-11-21T22:39:44.537490Z",
+      "as_of": "2026-11-21T22:59:57.065443Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "as_of": "2026-11-21T22:29:45.560816Z",
+      "as_of": "2026-11-21T22:59:45.331699Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -75,14 +75,18 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        39
+        38
       ]
     },
     {
-      "as_of": "2026-11-21T22:46:45.299067Z",
-      "dropped": [],
+      "as_of": "2026-11-21T23:01:13Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "71.3 F disagrees with another sensor here (spread 33.6 F, over 6.7 F) and is furthest from the other locations: 33.5 F off their median of 37.8 F, 11 locations adjusted to 3980 ft at 2.77 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
-        3980,
         3990
       ],
       "id": "forest_lands_high_point",
@@ -95,7 +99,7 @@
       ],
       "stale": false,
       "temp_f": [
-        37
+        38
       ],
       "wind": [
         {
@@ -108,7 +112,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-21T22:35:17.602321Z",
+      "as_of": "2026-11-21T22:55:17.428782Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -133,7 +137,7 @@
       ]
     },
     {
-      "as_of": "2026-11-21T22:46:25.173638Z",
+      "as_of": "2026-11-21T22:53:28.614439Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -152,12 +156,12 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-21T22:35:17.602321Z",
+      "observed_at": "2026-11-21T22:55:17.428782Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-21T22:39:44.537490Z",
+      "observed_at": "2026-11-21T22:54:43.873856Z",
       "snow_in": 0.0
     },
     {
