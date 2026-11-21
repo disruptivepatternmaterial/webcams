@@ -1,39 +1,23 @@
 {
-  "event_id": "f58ef9a0-6578-5eed-81bc-45d2738740f6",
-  "last_updated": "2026-11-20T23:56:00Z",
+  "event_id": "022cd15b-8cc5-55a6-833e-207c8e70af18",
+  "last_updated": "2026-11-21T00:08:00Z",
   "sites": [
     {
-      "aqi": [
-        8
-      ],
+      "aqi": [],
       "as_of": "2026-11-20T21:05:10.743320Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "aqi",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "fog",
-          "reason": "another device of the same unit is counted instead"
-        }
-      ],
+      "dropped": [],
       "elev_ft": [
+        398,
         3281
       ],
       "id": "bowman_mtn",
       "label": "Bowman Mtn",
-      "stale": false,
-      "temp_f": [
-        36
-      ]
+      "stale": true,
+      "temp_f": []
     },
     {
       "aqi": [],
-      "as_of": "2026-11-20T23:47:38.958339Z",
+      "as_of": "2026-11-20T23:57:25.382287Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -49,7 +33,7 @@
       ],
       "stale": false,
       "temp_f": [
-        35
+        34
       ],
       "wind": []
     },
@@ -82,7 +66,7 @@
       ]
     },
     {
-      "as_of": "2026-11-20T23:29:58.562003Z",
+      "as_of": "2026-11-20T23:59:58.075574Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -91,11 +75,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        36
+        35
       ]
     },
     {
-      "as_of": "2026-11-20T23:35:47.425385Z",
+      "as_of": "2026-11-21T00:01:13Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -111,12 +95,12 @@
       ],
       "stale": false,
       "temp_f": [
-        38
+        34
       ],
       "wind": [
         {
-          "dir_deg": 91,
-          "mph": 1
+          "dir_deg": 47,
+          "mph": 4
         }
       ]
     },
@@ -124,7 +108,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-20T23:35:33.602880Z",
+      "as_of": "2026-11-20T23:55:33.321609Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -149,7 +133,7 @@
       ]
     },
     {
-      "as_of": "2026-11-20T23:24:36.185959Z",
+      "as_of": "2026-11-20T23:54:35.899361Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -161,19 +145,19 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        32
+        31
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-20T23:35:33.602880Z",
-      "snow_in": 0.8
+      "observed_at": "2026-11-20T23:55:33.321609Z",
+      "snow_in": 0.6
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-20T23:39:59.909056Z",
+      "observed_at": "2026-11-20T23:54:57.714848Z",
       "snow_in": 0.0
     },
     {
