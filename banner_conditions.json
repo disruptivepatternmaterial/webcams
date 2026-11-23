@@ -1,6 +1,6 @@
 {
-  "event_id": "6c8ad83d-c429-5268-ad6b-148d2aa269c0",
-  "last_updated": "2026-11-23T16:08:00Z",
+  "event_id": "3bd106bb-8878-5c8a-9cd1-28c361c0efac",
+  "last_updated": "2026-11-23T16:20:00Z",
   "sites": [
     {
       "aqi": [],
@@ -19,7 +19,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T15:56:46.515590Z",
+      "as_of": "2026-11-23T16:09:11.589048Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -29,6 +29,7 @@
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
       "snow_elev_ft": [
+        4724,
         4888
       ],
       "snow_in": [
@@ -40,8 +41,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 201,
-          "mph": 25
+          "dir_deg": 191,
+          "mph": 13
         }
       ]
     },
@@ -49,7 +50,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T15:59:39.235663Z",
+      "as_of": "2026-11-23T16:09:25.559383Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -68,8 +69,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 122,
-          "mph": 7
+          "dir_deg": 32,
+          "mph": 8
         }
       ]
     },
@@ -87,7 +88,7 @@
       ]
     },
     {
-      "as_of": "2026-11-23T16:01:13Z",
+      "as_of": "2026-11-23T16:06:28.846819Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -107,7 +108,7 @@
       ],
       "wind": [
         {
-          "dir_deg": 1,
+          "dir_deg": 329,
           "mph": 2
         }
       ]
@@ -116,7 +117,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T15:54:48.815967Z",
+      "as_of": "2026-11-23T16:01:25.677428Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -131,17 +132,17 @@
       ],
       "stale": false,
       "temp_f": [
-        33
+        34
       ],
       "wind": [
         {
-          "dir_deg": 149,
-          "mph": 10
+          "dir_deg": 156,
+          "mph": 14
         }
       ]
     },
     {
-      "as_of": "2026-11-23T15:35:10.463923Z",
+      "as_of": "2026-11-23T16:05:10.235031Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -165,18 +166,22 @@
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-23T15:54:27.816774Z",
+      "observed_at": "2026-11-23T16:09:25.559383Z",
       "snow_in": 0.4
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-23T15:49:11.832241Z",
+      "observed_at": "2026-11-23T16:09:11.589048Z",
       "snow_in": 0.0
     }
   ],
   "snow_sensors": [
     {
       "elev_ft": 4888,
+      "location": "N Twin West Ridge"
+    },
+    {
+      "elev_ft": 4724,
       "location": "N Twin West Ridge"
     },
     {
@@ -190,10 +195,6 @@
     {
       "elev_ft": 3379,
       "location": "Forest Lands Ridge"
-    },
-    {
-      "elev_ft": null,
-      "location": "N Twin West Ridge"
     }
   ]
 }
