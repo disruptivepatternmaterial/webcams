@@ -1,6 +1,6 @@
 {
-  "event_id": "f8b06c66-0791-565a-b1ef-a872ce2be221",
-  "last_updated": "2026-11-23T20:00:00Z",
+  "event_id": "1d2b5455-3677-544c-ab7d-fc4bb66a00a5",
+  "last_updated": "2026-11-23T20:08:00Z",
   "sites": [
     {
       "aqi": [],
@@ -19,16 +19,12 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T19:49:08.862233Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "41.2 F disagrees with another sensor here (spread 7.0 F, over 6.7 F) and is furthest from the other locations: 3.3 F off their median of 37.9 F, 11 locations adjusted to 4764 ft at 2.27 F per 1000 ft"
-        }
-      ],
+      "as_of": "2026-11-23T19:57:43.322002Z",
+      "dropped": [],
       "elev_ft": [
         4642,
-        4721
+        4721,
+        4764
       ],
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
@@ -40,7 +36,7 @@
       ],
       "stale": false,
       "temp_f": [
-        35
+        37
       ],
       "wind": [
         {
@@ -53,7 +49,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T19:39:23.098357Z",
+      "as_of": "2026-11-23T19:59:37.326692Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -68,7 +64,7 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        37
       ],
       "wind": [
         {
@@ -78,7 +74,7 @@
       ]
     },
     {
-      "as_of": "2026-11-23T19:29:20.274588Z",
+      "as_of": "2026-11-23T19:59:20.226487Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -91,7 +87,7 @@
       ]
     },
     {
-      "as_of": "2026-11-23T19:48:13.541584Z",
+      "as_of": "2026-11-23T20:01:13Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -107,7 +103,7 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        41
       ],
       "wind": [
         {
@@ -120,7 +116,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T19:34:46.167861Z",
+      "as_of": "2026-11-23T19:54:45.977109Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -164,12 +160,12 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-23T19:34:46.167861Z",
+      "observed_at": "2026-11-23T19:54:45.977109Z",
       "snow_in": 1.6
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-23T19:39:23.098357Z",
+      "observed_at": "2026-11-23T19:54:25.280062Z",
       "snow_in": 0.6
     },
     {
