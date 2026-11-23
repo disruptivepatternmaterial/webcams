@@ -2,6 +2,8 @@
   "bowman_mtn": {
     "images": [
       "Bowman_Mtn_latest.jpg",
+      "Bowman_Mtn_20261122_170010.jpg",
+      "Bowman_Mtn_20261122_170008.jpg",
       "Bowman_Mtn_20261122_164908.jpg",
       "Bowman_Mtn_20261122_164907.jpg",
       "Bowman_Mtn_20261122_164906.jpg",
@@ -12,15 +14,23 @@
       "Bowman_Mtn_20261122_143003.jpg",
       "Bowman_Mtn_20261122_140003.jpg",
       "Bowman_Mtn_20261122_133002.jpg",
-      "Bowman_Mtn_20261122_130002.jpg",
-      "Bowman_Mtn_20261122_123002.jpg",
-      "Bowman_Mtn_20261122_120002.jpg"
+      "Bowman_Mtn_20261122_130002.jpg"
     ],
     "metadata": {
       "Bowman_Mtn_latest.jpg": {
-        "run_id": "01a205a0-34ba-7123-879f-e426a69de7fe",
+        "run_id": "01a205ad-f1ff-7060-b30c-cfb1ca9379f2",
         "temperature_c": null,
-        "timestamp": "2026-11-23T00:49:08Z"
+        "timestamp": "2026-11-23T01:00:10Z"
+      },
+      "Bowman_Mtn_20261122_170010.jpg": {
+        "run_id": "01a205ad-f1ff-7060-b30c-cfb1ca9379f2",
+        "temperature_c": null,
+        "timestamp": "2026-11-23T01:00:10Z"
+      },
+      "Bowman_Mtn_20261122_170008.jpg": {
+        "run_id": "01a205ad-f1ff-7060-b30c-cfb1ca9379f2",
+        "temperature_c": null,
+        "timestamp": "2026-11-23T01:00:08Z"
       },
       "Bowman_Mtn_20261122_164908.jpg": {
         "run_id": "01a205a0-34ba-7123-879f-e426a69de7fe",
@@ -76,20 +86,10 @@
         "run_id": "01a204df-da67-792e-98b8-11e3717ae3d3",
         "temperature_c": null,
         "timestamp": "2026-11-22T21:00:02Z"
-      },
-      "Bowman_Mtn_20261122_123002.jpg": {
-        "run_id": "01a204b6-a2a0-739f-a5dc-c2c29fbdb2c5",
-        "temperature_c": null,
-        "timestamp": "2026-11-22T20:30:02Z"
-      },
-      "Bowman_Mtn_20261122_120002.jpg": {
-        "run_id": "01a2049b-2843-7d4a-b06f-21014772bda1",
-        "temperature_c": null,
-        "timestamp": "2026-11-22T20:00:02Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-23T00:49:08Z",
+    "newest_capture": "2026-11-23T01:00:10Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
