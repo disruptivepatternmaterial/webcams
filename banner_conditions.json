@@ -1,6 +1,6 @@
 {
-  "event_id": "a3bdaff4-073b-545f-bf90-420f7db62799",
-  "last_updated": "2026-11-23T00:08:00Z",
+  "event_id": "068544cd-d8aa-55b4-a5c4-53c447fe0ddb",
+  "last_updated": "2026-11-23T00:20:00Z",
   "sites": [
     {
       "aqi": [],
@@ -19,7 +19,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-22T23:56:52.166278Z",
+      "as_of": "2026-11-23T00:09:23.448169Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -28,16 +28,21 @@
       ],
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
-      "snow_elev_ft": [],
-      "snow_in": [],
+      "snow_elev_ft": [
+        4724,
+        4888
+      ],
+      "snow_in": [
+        0
+      ],
       "stale": false,
       "temp_f": [
         29
       ],
       "wind": [
         {
-          "dir_deg": 182,
-          "mph": 20
+          "dir_deg": 185,
+          "mph": 17
         }
       ]
     },
@@ -45,7 +50,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-22T23:59:48.355743Z",
+      "as_of": "2026-11-23T00:09:36.391383Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -64,8 +69,8 @@
       ],
       "wind": [
         {
-          "dir_deg": 308,
-          "mph": 3
+          "dir_deg": 0,
+          "mph": 1
         }
       ]
     },
@@ -112,7 +117,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-22T23:54:59.913605Z",
+      "as_of": "2026-11-23T00:01:27.693982Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -127,17 +132,17 @@
       ],
       "stale": false,
       "temp_f": [
-        34
+        33
       ],
       "wind": [
         {
-          "dir_deg": 169,
-          "mph": 2
+          "dir_deg": 165,
+          "mph": 4
         }
       ]
     },
     {
-      "as_of": "2026-11-22T23:35:18.286914Z",
+      "as_of": "2026-11-23T00:05:18.076501Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -149,7 +154,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        33
+        32
       ]
     }
   ],
@@ -161,11 +166,24 @@
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-22T23:54:37.410782Z",
+      "observed_at": "2026-11-23T00:09:36.391383Z",
+      "snow_in": 0.0
+    },
+    {
+      "band_ft": 5000,
+      "observed_at": "2026-11-23T00:09:23.448169Z",
       "snow_in": 0.0
     }
   ],
   "snow_sensors": [
+    {
+      "elev_ft": 4888,
+      "location": "N Twin West Ridge"
+    },
+    {
+      "elev_ft": 4724,
+      "location": "N Twin West Ridge"
+    },
     {
       "elev_ft": 4163,
       "location": "N Twin Approach"
@@ -177,10 +195,6 @@
     {
       "elev_ft": 3379,
       "location": "Forest Lands Ridge"
-    },
-    {
-      "elev_ft": null,
-      "location": "N Twin West Ridge"
     }
   ]
 }
