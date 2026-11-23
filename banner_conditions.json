@@ -1,6 +1,6 @@
 {
-  "event_id": "769d1eba-59e6-5930-bee8-c10914888af3",
-  "last_updated": "2026-11-23T19:38:00Z",
+  "event_id": "2650a683-93f0-5c92-ac79-1c8eea95bfa5",
+  "last_updated": "2026-11-23T19:50:00Z",
   "sites": [
     {
       "aqi": [],
@@ -19,12 +19,16 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T19:29:09.177499Z",
-      "dropped": [],
+      "as_of": "2026-11-23T19:34:01.258530Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "41.2 F disagrees with another sensor here (spread 7.0 F, over 6.7 F) and is furthest from the other locations: 4.4 F off their median of 36.8 F, 11 locations adjusted to 4764 ft at 2.01 F per 1000 ft"
+        }
+      ],
       "elev_ft": [
         4642,
-        4721,
-        4764
+        4721
       ],
       "id": "n_twin_west_ridge",
       "label": "N Twin West Ridge",
@@ -36,7 +40,7 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        35
       ],
       "wind": [
         {
@@ -49,7 +53,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T19:29:37.218508Z",
+      "as_of": "2026-11-23T19:39:23.098357Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -116,7 +120,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-23T19:14:46.596575Z",
+      "as_of": "2026-11-23T19:34:46.167861Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -141,7 +145,7 @@
       ]
     },
     {
-      "as_of": "2026-11-23T19:10:39.622705Z",
+      "as_of": "2026-11-23T19:35:08.479811Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -160,12 +164,12 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-23T19:14:46.596575Z",
+      "observed_at": "2026-11-23T19:34:46.167861Z",
       "snow_in": 1.6
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-23T19:24:26.078954Z",
+      "observed_at": "2026-11-23T19:39:23.098357Z",
       "snow_in": 0.6
     },
     {
