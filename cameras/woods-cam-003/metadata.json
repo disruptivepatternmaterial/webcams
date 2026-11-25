@@ -1,10 +1,4 @@
 {
-  "Woods_Cam_003_20261123_140113-1014.jpg": {
-    "content_sha256": "860f11c3f70f6a771973969978b334ca2c3c7998495318eef7268440726a3bf6",
-    "source_path": "woods-cam-003/2026-11-23/20261123T220113Z-1014.jpg",
-    "temperature_c": null,
-    "timestamp": "2026-11-23T22:01:13Z"
-  },
   "Woods_Cam_003_20261123_150113-1015.jpg": {
     "content_sha256": "5ef8032559fc8b972c3635860bd05d1a32c9933b2fd031ab35cc79c7bd9734bb",
     "source_path": "woods-cam-003/2026-11-23/20261123T230113Z-1015.jpg",
@@ -78,11 +72,18 @@
     "temperature_c": null,
     "timestamp": "2026-11-25T16:01:13Z"
   },
-  "Woods_Cam_003_latest.jpg": {
-    "content_sha256": "332a654cc65ab8c48b5edb417544245edfb77890a24f83505c410f103c3fc0ab",
-    "run_id": "01a21341-1aab-7434-9a4f-b77a8cc2383e",
-    "source_path": "woods-cam-003/2026-11-25/20261125_080113_trailcam.jpg",
+  "Woods_Cam_003_20261125_090113.jpg": {
+    "content_sha256": "c478877fafa8cc9c525db8c2d2db87e57a28899158cc0e0e310bde99fcf7bef6",
+    "run_id": "01a21384-ec6b-7603-99da-1362851b57a9",
+    "source_path": "woods-cam-003/2026-11-25/20261125_090113_trailcam.jpg",
     "temperature_c": null,
-    "timestamp": "2026-11-25T16:01:13Z"
+    "timestamp": "2026-11-25T17:01:13Z"
+  },
+  "Woods_Cam_003_latest.jpg": {
+    "content_sha256": "c478877fafa8cc9c525db8c2d2db87e57a28899158cc0e0e310bde99fcf7bef6",
+    "run_id": "01a21384-ec6b-7603-99da-1362851b57a9",
+    "source_path": "woods-cam-003/2026-11-25/20261125_090113_trailcam.jpg",
+    "temperature_c": null,
+    "timestamp": "2026-11-25T17:01:13Z"
   }
 }
