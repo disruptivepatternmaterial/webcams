@@ -1007,40 +1007,11 @@
             timeEl.textContent = bits.length ? "(" + bits.join(" and ") + ")" : "";
         }
 
-        // Base URL/path must point at the webcams directory (with trailing slash) so list.json and
-        // image paths resolve correctly when the page is opened with or without trailing slash.
-        function basePath() {
-            let p = window.location.pathname;
-            if (p.endsWith("/index.html")) {
-                return p.slice(0, -"index.html".length);
-            }
-            if (p.endsWith("/")) {
-                return p;
-            }
-            const lastSlash = p.lastIndexOf("/");
-            return lastSlash >= 0 ? p.slice(0, lastSlash + 1) : "/";
-        }
-        function assetUrl(relativePath) {
-            return new URL(relativePath, window.location.href).href;
-        }
-
-        let siteContent = null;
-        let siteContentPromise = null;
-
-        function contentBasePath() {
-            return basePath();
-        }
-
-        function contentAssetUrl(relativePath) {
-            return assetUrl(relativePath);
-        }
-
-        function siteContentUrl() {
-            return assetUrl("site-content.json");
-        }
+        // site-content.json writes {base} for the page's own directory.
+        const basePath = new URL(".", window.location.href).pathname;
 
         function expandContentHtml(html) {
-            return String(html || "").replace(/\{base\}/g, contentBasePath());
+            return String(html || "").replace(/\{base\}/g, basePath);
         }
 
         function renderParagraphs(paragraphs) {
@@ -1049,29 +1020,17 @@
             }).join("");
         }
 
-        async function loadSiteContent() {
-            if (siteContent) return siteContent;
-            if (!siteContentPromise) {
-                siteContentPromise = fetch(siteContentUrl() + "?t=" + Date.now(), { cache: "no-store" })
-                    .then(function(response) {
-                        if (!response.ok) throw new Error("site-content.json " + response.status);
-                        return response.json();
-                    })
-                    .then(function(data) {
-                        siteContent = data;
-                        return data;
-                    })
-                    .catch(function(error) {
-                        console.warn("site-content.json unavailable; using baked-in defaults", error);
-                        return null;
-                    });
-            }
-            return siteContentPromise;
-        }
+        const siteContentPromise = fetch("site-content.json?t=" + Date.now(), { cache: "no-store" })
+            .then(function(response) {
+                if (!response.ok) throw new Error("site-content.json " + response.status);
+                return response.json();
+            })
+            .catch(function(error) {
+                console.warn("site-content.json unavailable; using baked-in defaults", error);
+                return {};
+            });
 
         function applySiteContent(content) {
-            if (!content) return;
-
             if (content.pageTitle) {
                 document.title = content.pageTitle;
                 document.getElementById("page-title").textContent = content.pageTitle;
@@ -1105,7 +1064,7 @@
             if (highlight) {
                 const imageEl = document.getElementById("sidebar-highlight-image");
                 if (highlight.linkUrl) document.getElementById("sidebar-highlight-link").href = highlight.linkUrl;
-                if (highlight.imageSrc) imageEl.src = contentAssetUrl(highlight.imageSrc);
+                if (highlight.imageSrc) imageEl.src = highlight.imageSrc;
                 if (highlight.imageAlt) imageEl.alt = highlight.imageAlt;
                 if (highlight.captionHtml) {
                     document.getElementById("sidebar-highlight-caption").innerHTML = expandContentHtml(highlight.captionHtml);
@@ -1113,31 +1072,7 @@
             }
         }
 
-        function getCameraMeta(content, cameraName) {
-            const cameras = (content && content.cameras) || {};
-            return cameras[cameraName] || {};
-        }
-
-        async function loadCameraSlots() {
-            try {
-                const response = await fetch(assetUrl("camera-slots.json?t=" + Date.now()), { cache: "no-store" });
-                if (!response.ok) throw new Error("camera-slots.json " + response.status);
-                return await response.json();
-            } catch (error) {
-                console.error("camera-slots.json unavailable; cannot render camera cards", error);
-                throw error;
-            }
-        }
-
-        function getCameraOrder(slots) {
-            if (!Array.isArray(slots) || !slots.length) {
-                throw new Error("camera-slots.json has no camera slots");
-            }
-            return slots.slice()
-                .sort(function(a, b) { return a.slot - b.slot; })
-                .map(function(entry) { return entry.camera; });
-        }
-
+        // Root list.json and the published image folders still use these names.
         function cameraPageFolder(cameraData, cameraName) {
             const legacyFolders = {
                 "reconyx-bowman-mtn": "bowman_mtn",
@@ -1151,17 +1086,6 @@
                 : (legacyFolders[cameraName] || cameraName);
         }
 
-        function getCameraDisplayNames(content) {
-            return (content && content.cameraDisplayNames) || {};
-        }
-
-        function getWindyLinkLabel(content) {
-            return (content && content.windyLinkLabel) || "Link to weather station on Windy.com";
-        }
-        function buildImageUrl(cameraName, filename, meta, refreshToken) {
-            const base = basePath() + cameraName + "/" + filename;
-            return base + "?v=" + encodeURIComponent(meta.timestamp || refreshToken);
-        }
         // The page treats banner_conditions.json as offline once its last_updated is
         // more than 3 hours old. Each reading's own freshness is the read path's rule.
         const BANNER_MAX_AGE_HOURS = 3;
@@ -1202,24 +1126,11 @@
             });
         }
 
-        function initGeneralInfoTabs() {
-            document.querySelectorAll("#general-info-section .info-tab").forEach(function(btn) {
-                btn.addEventListener("click", function() {
-                    activateInfoTab(this.getAttribute("data-tab"));
-                });
-            });
-        }
-
         function pacificDateString(d) {
             return new Intl.DateTimeFormat("en-CA", {
                 timeZone: "America/Los_Angeles",
                 year: "numeric", month: "2-digit", day: "2-digit"
             }).format(d);
-        }
-
-        function pacificTomorrowDateString() {
-            // Pacific calendar day for ~24h from now (DST-safe enough for a daily product).
-            return pacificDateString(new Date(Date.now() + 24 * 3600 * 1000));
         }
 
         // NWAC danger for today (falls back to tomorrow's when today's product
@@ -1424,10 +1335,9 @@
 
         function renderForecastTable() {
             if (!forecastShown) return;
-            const shown = forecastShown;
             const nowMs = Date.now();
-            renderElevationForecast(shown.todayDay, shown.tomDay, function(band) {
-                return todaySnowOnGround(band, bannerSnowBands, shown.snodas, nowMs);
+            renderElevationForecast(forecastShown.todayDay, forecastShown.tomDay, function(band) {
+                return todaySnowOnGround(band, bannerSnowBands, forecastShown.snodas, nowMs);
             });
         }
 
@@ -1442,23 +1352,21 @@
 
         async function loadTwinsForecast() {
             try {
-                const response = await fetch(assetUrl("twins_forecast.json?t=" + Date.now()), { cache: "no-store" });
+                const response = await fetch("twins_forecast.json?t=" + Date.now(), { cache: "no-store" });
                 if (!response.ok) { renderForecastEmpty(); return; }
                 const data = await response.json();
-                const generated = data && data.generated_at ? new Date(data.generated_at) : null;
-                if (!generated || isNaN(generated.getTime())) { renderForecastEmpty(); return; }
-                const ageH = (Date.now() - generated.getTime()) / 3600000;
-                if (ageH > FORECAST_MAX_AGE_HOURS) { renderForecastEmpty(); return; }
+                const generatedMs = Date.parse(data.generated_at);
+                if (!Number.isFinite(generatedMs) || (Date.now() - generatedMs) / 3600000 > FORECAST_MAX_AGE_HOURS) {
+                    renderForecastEmpty();
+                    return;
+                }
 
-                const byDate = {};
-                (Array.isArray(data.days) ? data.days : []).forEach((d) => {
-                    if (d && d.date) byDate[d.date] = d;
-                });
+                const days = Array.isArray(data.days) ? data.days : [];
                 const today = pacificDateString(new Date());
-                const tomorrow = pacificTomorrowDateString();
-                const todayDay = byDate[today];
+                const tomorrow = pacificDateString(new Date(Date.now() + 24 * 3600 * 1000));
+                const todayDay = days.find((d) => d && d.date === today);
                 if (!todayDay) { renderForecastEmpty(); return; }
-                const tomDay = byDate[tomorrow] || null;
+                const tomDay = days.find((d) => d && d.date === tomorrow) || null;
                 renderAvalanche(todayDay, tomDay);
                 forecastShown = { todayDay: todayDay, tomDay: tomDay, snodas: data.snodas };
                 renderForecastTable();
@@ -1645,7 +1553,7 @@
                 renderForecastTable();
             };
             try {
-                const response = await fetch(assetUrl("banner_conditions.json?t=" + Date.now()), { cache: "no-store" });
+                const response = await fetch("banner_conditions.json?t=" + Date.now(), { cache: "no-store" });
                 if (!response.ok) { renderEmpty(); return; }
                 const data = await response.json();
                 if (!data || !Array.isArray(data.sites)) { renderEmpty(); return; }
@@ -1668,7 +1576,7 @@
 
         async function renderBestOfCarousel(parentEl, refreshToken) {
             try {
-                const response = await fetch(assetUrl("best-of/list.json?t=" + refreshToken), { cache: "no-store" });
+                const response = await fetch("best-of/list.json?t=" + refreshToken, { cache: "no-store" });
                 if (!response.ok) return;
                 const files = (await response.json()).images || [];
                 if (!files.length) return;
@@ -1695,7 +1603,7 @@
                     `;
                     const img = card.querySelector("img");
                     img.addEventListener("click", function() {
-                        openModal([{ filename: filename, url: url, infoText: createImageInfoText({}) }], 0);
+                        openModal([{ url: url, infoText: "Image" }], 0);
                     });
                     track.appendChild(card);
                 });
@@ -1749,48 +1657,53 @@
         async function loadCameras() {
             const camerasContainer = document.getElementById("cameras");
             const bestOfMount = document.getElementById("best-of-mount");
-            const content = await loadSiteContent();
+            const content = await siteContentPromise;
             applySiteContent(content);
             loadBannerConditions();
             loadTwinsForecast();
-            cameraDisplayNames = getCameraDisplayNames(content);
-            const windyLinkLabel = getWindyLinkLabel(content);
+            const displayNames = content.cameraDisplayNames || {};
+            const windyLinkLabel = content.windyLinkLabel || "Link to weather station on Windy.com";
             try {
                 const refreshToken = Date.now().toString();
-                const listUrl = assetUrl("list.json?t=" + refreshToken);
-                const response = await fetch(listUrl, { cache: "no-store" });
+                const response = await fetch("list.json?t=" + refreshToken, { cache: "no-store" });
                 if (!response.ok) {
                     throw new Error("list.json " + response.status + " " + response.statusText);
                 }
                 const cameraData = await response.json();
                 camerasContainer.innerHTML = "";
                 bestOfMount.innerHTML = "";
-                const cameraOrder = getCameraOrder(await loadCameraSlots());
+                const slotsResponse = await fetch("camera-slots.json?t=" + Date.now(), { cache: "no-store" });
+                if (!slotsResponse.ok) throw new Error("camera-slots.json " + slotsResponse.status);
+                const slots = await slotsResponse.json();
+                if (!Array.isArray(slots) || !slots.length) throw new Error("camera-slots.json has no camera slots");
+                const cameraOrder = slots.slice()
+                    .sort(function(a, b) { return a.slot - b.slot; })
+                    .map(function(entry) { return entry.camera; });
                 let newestCaptureIso = null;
                 for (const cameraName of cameraOrder) {
                     const cameraFolder = cameraPageFolder(cameraData, cameraName);
                     // A camera missing from list.json is shown as missing, not silently dropped.
                     const data = cameraData[cameraFolder] || { images: [], metadata: {}, status: "Missing from list.json", waiting: 0 };
-                    const cameraMeta = getCameraMeta(content, cameraName);
+                    const cameraMeta = (content.cameras || {})[cameraName] || {};
                     const statusText = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Status unknown");
-                    const displayTitle = formatCameraName(cameraName);
+                    const displayTitle = displayNames[cameraName]
+                        || cameraName.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
                     const elevLabel = extractCameraElevLabel(cameraMeta.description);
 
-                    const allImages = data.images || [];
-                    const actualImages = allImages.filter(img => !img.toLowerCase().includes("latest"));
+                    const actualImages = (data.images || []).filter(img => !img.toLowerCase().includes("latest"));
+                    const images = actualImages.map(function(fn) {
+                        const meta = (data.metadata || {})[fn] || {};
+                        return {
+                            url: cameraFolder + "/" + fn + "?v=" + encodeURIComponent(meta.timestamp || refreshToken),
+                            infoText: meta.timestamp ? formatPacificTime(meta.timestamp).replace(", ", " at ") : "Image",
+                            timestamp: meta.timestamp
+                        };
+                    });
                     const isWarn = isCameraWarningStatus(statusText) || actualImages.length === 0 || (Number(data.waiting) || 0) >= 3;
-                    const newestMeta = actualImages.length > 0 ? getMetadata(data.metadata, actualImages[0]) : null;
-                    const newestIso = data.newest_capture || (newestMeta && newestMeta.timestamp) || null;
+                    const newestIso = data.newest_capture || (images.length && images[0].timestamp) || null;
                     if (newestIso && (!newestCaptureIso || newestIso > newestCaptureIso)) newestCaptureIso = newestIso;
                     const newestLabel = formatCardTime(newestIso);
                     const pillLabel = (elevLabel ? (displayTitle + " · " + elevLabel) : displayTitle) + (newestLabel ? " · " + newestLabel : "");
-                    const allImagesForModal = actualImages.map(function(fn) {
-                        return {
-                            filename: fn,
-                            url: buildImageUrl(cameraFolder, fn, getMetadata(data.metadata, fn), refreshToken),
-                            infoText: createImageInfoText(getMetadata(data.metadata, fn))
-                        };
-                    });
 
                     const card = document.createElement("div");
                     card.className = "camera-card";
@@ -1800,10 +1713,8 @@
 
                     if (actualImages.length > 0) {
                         const latestImage = actualImages[0];
-                        const latestMeta = getMetadata(data.metadata, latestImage);
-                        const imgUrl = buildImageUrl(cameraFolder, latestImage, latestMeta, refreshToken);
                         const imgEl = document.createElement("img");
-                        imgEl.src = imgUrl;
+                        imgEl.src = images[0].url;
                         imgEl.alt = displayTitle;
                         imgEl.loading = "eager";
                         imgEl.onerror = function() {
@@ -1815,7 +1726,7 @@
                         };
                         viewport.appendChild(imgEl);
                         viewport.onclick = function() {
-                            openModal(allImagesForModal, 0);
+                            openModal(images, 0);
                         };
                     } else {
                         const empty = document.createElement("div");
@@ -1839,19 +1750,17 @@
                     desc.textContent = cameraMeta.description || "";
                     overlay.appendChild(desc);
 
-                    const gridImages = actualImages.slice(1, 7);
-                    if (gridImages.length > 0) {
+                    if (actualImages.length > 1) {
                         const thumbsWrap = document.createElement("div");
                         thumbsWrap.className = "camera-hover-thumbs";
-                        gridImages.forEach(function(filename, idx) {
+                        actualImages.slice(1, 7).forEach(function(filename, idx) {
                             const tImg = document.createElement("img");
-                            tImg.src = buildImageUrl(cameraFolder, filename, getMetadata(data.metadata, filename), refreshToken);
+                            tImg.src = images[idx + 1].url;
                             tImg.alt = filename;
                             tImg.loading = "lazy";
                             tImg.onclick = function(e) {
                                 e.stopPropagation();
-                                const modalIndex = actualImages.indexOf(filename);
-                                openModal(allImagesForModal, modalIndex >= 0 ? modalIndex : idx + 1);
+                                openModal(images, idx + 1);
                             };
                             thumbsWrap.appendChild(tImg);
                         });
@@ -1895,85 +1804,57 @@
             }
         }
 
-        function getMetadata(metadata, filename) {
-            return (metadata && metadata[filename]) || {};
-        }
-
-        function createImageInfoText(meta) {
-            return meta.timestamp ? formatPacificTime(meta.timestamp).replace(", ", " at ") : "Image";
-        }
-
-        let cameraDisplayNames = {};
-        function formatCameraName(name) {
-            if (cameraDisplayNames[name]) return cameraDisplayNames[name];
-            return name.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-        }
-
         function openModal(imagesArray, currentIndex) {
-            const modal = document.getElementById("imageModal");
             const modalImg = document.getElementById("modalImage");
             const modalInfo = document.getElementById("modalInfo");
             const prevBtn = document.getElementById("modalPrev");
             const nextBtn = document.getElementById("modalNext");
-
-            modal._modalState = { images: imagesArray, index: currentIndex };
+            let index = currentIndex;
 
             function showAtIndex(i) {
-                const entry = imagesArray[i];
-                if (!entry) return;
-                modalImg.src = entry.url;
-                modalInfo.textContent = entry.infoText;
-                modal._modalState.index = i;
-                prevBtn.style.display = imagesArray.length > 1 ? "flex" : "none";
-                nextBtn.style.display = imagesArray.length > 1 ? "flex" : "none";
+                index = i;
+                modalImg.src = imagesArray[i].url;
+                modalInfo.textContent = imagesArray[i].infoText;
             }
 
+            prevBtn.style.display = imagesArray.length > 1 ? "flex" : "none";
+            nextBtn.style.display = imagesArray.length > 1 ? "flex" : "none";
             prevBtn.onclick = function(e) {
                 e.stopPropagation();
-                const idx = modal._modalState.index;
-                const next = idx <= 0 ? imagesArray.length - 1 : idx - 1;
-                showAtIndex(next);
+                showAtIndex(index <= 0 ? imagesArray.length - 1 : index - 1);
             };
             nextBtn.onclick = function(e) {
                 e.stopPropagation();
-                const idx = modal._modalState.index;
-                const next = idx >= imagesArray.length - 1 ? 0 : idx + 1;
-                showAtIndex(next);
+                showAtIndex(index >= imagesArray.length - 1 ? 0 : index + 1);
             };
 
             showAtIndex(currentIndex);
-            modal.classList.add("active");
+            document.getElementById("imageModal").classList.add("active");
             document.body.style.overflow = "hidden";
         }
 
         function closeModal() {
-            const modal = document.getElementById("imageModal");
-            modal.classList.remove("active");
+            document.getElementById("imageModal").classList.remove("active");
             document.body.style.overflow = "auto";
         }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            const modal = document.getElementById("imageModal");
-            const closeBtn = document.querySelector(".modal-close");
-            closeBtn.onclick = closeModal;
-            modal.onclick = function(event) {
-                if (event.target === modal) {
-                    closeModal();
-                }
-            };
-            document.addEventListener("keydown", function(event) {
-                const modal = document.getElementById("imageModal");
-                if (event.key === "Escape") {
-                    closeModal();
-                } else if (modal.classList.contains("active") && modal._modalState) {
-                    if (event.key === "ArrowLeft") {
-                        document.getElementById("modalPrev").click();
-                    } else if (event.key === "ArrowRight") {
-                        document.getElementById("modalNext").click();
-                    }
-                }
+        const modal = document.getElementById("imageModal");
+        document.querySelector(".modal-close").onclick = closeModal;
+        modal.onclick = function(event) {
+            if (event.target === modal) closeModal();
+        };
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            } else if (modal.classList.contains("active")) {
+                if (event.key === "ArrowLeft") document.getElementById("modalPrev").click();
+                else if (event.key === "ArrowRight") document.getElementById("modalNext").click();
+            }
+        });
+        document.querySelectorAll("#general-info-section .info-tab").forEach(function(btn) {
+            btn.addEventListener("click", function() {
+                activateInfoTab(this.getAttribute("data-tab"));
             });
-            initGeneralInfoTabs();
         });
 
         loadCameras();
