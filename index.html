@@ -33,131 +33,6 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.35);
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
-        .cameras {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 24px;
-            margin-bottom: 28px;
-        }
-        .camera-section {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(8px);
-            border-radius: 15px;
-            padding: 18px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
-        }
-        .camera-section:hover { transform: translateY(-5px); }
-        .camera-title {
-            font-size: 1.8em;
-            color: #333;
-            margin-bottom: 8px;
-            text-align: center;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 6px;
-        }
-        .latest-image-wrapper {
-            margin-bottom: 12px;
-        }
-        .latest-image-container {
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-            border: 3px solid #667eea;
-            width: 100%;
-            max-height: 600px;
-        }
-        .latest-image-container img {
-            width: 100%;
-            height: auto;
-            max-height: 600px;
-            object-fit: contain;
-            display: block;
-        }
-        .latest-image-container:hover { transform: scale(1.01); }
-        .images-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 12px;
-            margin-top: 12px;
-        }
-        .image-container {
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            aspect-ratio: 16/9;
-            cursor: pointer;
-        }
-        .image-container:hover { transform: scale(1.05); z-index: 10; }
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .images-divider {
-            margin: 12px 0;
-            border: none;
-            border-top: 2px solid #ddd;
-        }
-        .images-text-block {
-            margin-top: 12px;
-            font-size: 0.76em;
-            color: #333;
-            text-align: left;
-            padding: 15px;
-            line-height: 1.8;
-            background-color: rgba(249, 249, 249, 0.95);
-            border-radius: 8px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .windy-link {
-            display: block;
-            margin-top: 10px;
-            margin-left: 15px;
-            font-size: 0.76em;
-            color: #667eea;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .windy-link:hover {
-            color: #764ba2;
-            text-decoration: underline;
-        }
-        .general-info-section {
-            grid-column: 1 / -1;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(8px);
-            border-radius: 15px;
-            padding: 18px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin-top: 0;
-        }
-        .general-info-title {
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 15px;
-            text-align: center;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-        .general-info-inner {
-            display: grid;
-            grid-template-columns: 1fr minmax(280px, 380px);
-            gap: 24px;
-            align-items: start;
-        }
-        @media (max-width: 900px) {
-            .general-info-inner {
-                grid-template-columns: 1fr;
-            }
-        }
         .general-info-text {
             font-size: 0.9em;
             color: #333;
@@ -166,27 +41,6 @@
             line-height: 1.8;
             background-color: rgba(249, 249, 249, 0.95);
             border-radius: 8px;
-        }
-        .general-info-image-card {
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            border: 3px solid #667eea;
-            background: #f9f9f9;
-        }
-        .general-info-image-card img {
-            width: 100%;
-            height: auto;
-            display: block;
-            vertical-align: top;
-        }
-        .general-info-image-caption {
-            padding: 10px 12px;
-            font-size: 0.85em;
-            color: #555;
-            text-align: center;
-            background: linear-gradient(180deg, transparent 0%, rgba(102, 126, 234, 0.08) 100%);
         }
         .info-tabs {
             display: flex;
@@ -246,25 +100,6 @@
             text-align: center;
             background: linear-gradient(180deg, transparent 0%, rgba(102, 126, 234, 0.08) 100%);
         }
-        .camera-status {
-            font-size: 0.9em;
-            color: #333;
-            margin-bottom: 8px;
-        }
-        .camera-status--warning { color: #b4532d; }
-        .latest-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #667eea;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 5px;
-            font-size: 0.75em;
-            font-weight: bold;
-            z-index: 15;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        }
         .loading {
             text-align: center;
             color: white;
@@ -288,37 +123,6 @@
             backdrop-filter: blur(6px);
             border-radius: 10px;
             font-size: 1.1em;
-        }
-        .banner-conditions-block.clickable { cursor: pointer; }
-        .banner-conditions-block .value { font-weight: bold; }
-        .banner-conditions-block .time { font-size: 0.9em; opacity: 0.95; }
-        .banner-conditions-block .experimental {
-            display: inline-block;
-            margin-right: 10px;
-            padding: 2px 8px;
-            font-size: 0.75em;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            background: rgba(102, 126, 234, 0.5);
-            border-radius: 4px;
-        }
-        .hero-subhead {
-            /* Own row under the title: as inline-block it slid up beside the
-               h1 once the text got short enough to fit. */
-            display: table;
-            text-align: center;
-            color: white;
-            max-width: 900px;
-            margin: 0 auto 14px;
-            padding: 10px 20px;
-            font-size: 1.05em;
-            line-height: 1.45;
-            background: rgba(0, 0, 0, 0.45);
-            backdrop-filter: blur(8px);
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.35);
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         .banner-stats {
             display: flex;
@@ -354,10 +158,6 @@
             line-height: 1.25;
             max-width: 11rem;
             opacity: 0.92;
-        }
-        .banner-stat.banner-forecast {
-            min-width: 140px;
-            max-width: 220px;
         }
         /* Avalanche tile: only present while NWAC publishes a forecast for the
            zone (roughly late Nov to mid Apr). Danger words are NWAC's own. */
@@ -400,7 +200,6 @@
             margin-right: 4px;
         }
         .banner-site-row.banner-site-fog { color: #ffd54f; font-weight: 700; }
-        .banner-conditions-block .banner-time { display: block; margin-top: 8px; font-size: 0.85em; opacity: 0.9; }
         .support-bar {
             text-align: center;
             color: white;
@@ -494,31 +293,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .charts-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-        }
-        .chart-card {
-            background: rgba(255,255,255,0.7);
-            border-radius: 8px;
-            padding: 10px;
-        }
-        .chart-card h4 {
-            font-size: 0.95em;
-            color: #333;
-            margin-bottom: 8px;
-        }
-        .chart-wrap {
-            position: relative;
-            height: 260px;
-            width: 100%;
-        }
-        .chart-note {
-            margin-top: 8px;
-            font-size: 0.82em;
-            color: #666;
-        }
         .page-info-section {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(8px);
@@ -526,10 +300,6 @@
             padding: 18px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             margin-bottom: 28px;
-        }
-        @media (max-width: 900px) {
-            .charts-grid { grid-template-columns: 1fr; }
-            .best-of-track { grid-auto-columns: minmax(220px, 1fr); }
         }
         .footer {
             text-align: center;
@@ -623,20 +393,10 @@
             from { transform: scale(0.8); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
-        @media (max-width: 1400px) {
-            .cameras { grid-template-columns: repeat(3, 1fr); }
-        }
-        @media (max-width: 1200px) {
-            .cameras { grid-template-columns: repeat(2, 1fr); }
-        }
         @media (max-width: 768px) {
-            .cameras { grid-template-columns: 1fr; }
-            .images-grid { grid-template-columns: 1fr; }
             .modal-content { padding: 10px; }
             .modal-image { max-height: 80vh; }
         }
-
-        /* ---- Two-column workspace + Elevation Forecast + Compact Camera Rail ---- */
         .main-layout {
             display: grid;
             grid-template-columns: minmax(0, 1fr) 268px;
@@ -745,7 +505,7 @@
             color: #fff;
             text-align: left;
         }
-        .elev-forecast-Block[hidden], .elev-forecast-block[hidden] { display: none; }
+        .elev-forecast-block[hidden] { display: none; }
         .elev-forecast-header {
             display: flex;
             justify-content: space-between;
@@ -1225,13 +985,9 @@
         </div>
     </div>
     <script>
-        // Use relative URLs - browser resolves from document location. Works on GitHub Pages, local dev, any path.
         function formatPacificTime(isoString) {
             if (!isoString) return "";
-            try {
-                const d = new Date(isoString);
-                return d.toLocaleString("en-US", { timeZone: "America/Los_Angeles", dateStyle: "medium", timeStyle: "short" });
-            } catch (e) { return isoString; }
+            return new Date(isoString).toLocaleString("en-US", { timeZone: "America/Los_Angeles", dateStyle: "medium", timeStyle: "short" });
         }
 
         let bannerSensorsUpdatedIso = null;
@@ -1243,7 +999,6 @@
 
         function renderBannerUpdatedLine() {
             const timeEl = document.getElementById("banner-conditions-time");
-            if (!timeEl) return;
             const bits = [];
             const s = formatPacificTime(bannerSensorsUpdatedIso);
             const f = formatPacificTime(bannerForecastUpdatedIso);
@@ -1251,7 +1006,6 @@
             if (f) bits.push("forecast updated " + f + " PT");
             timeEl.textContent = bits.length ? "(" + bits.join(" and ") + ")" : "";
         }
-
 
         // Base URL/path must point at the webcams directory (with trailing slash) so list.json and
         // image paths resolve correctly when the page is opened with or without trailing slash.
@@ -1265,9 +1019,6 @@
             }
             const lastSlash = p.lastIndexOf("/");
             return lastSlash >= 0 ? p.slice(0, lastSlash + 1) : "/";
-        }
-        function baseUrl() {
-            return window.location.origin + basePath();
         }
         function assetUrl(relativePath) {
             return new URL(relativePath, window.location.href).href;
@@ -1321,56 +1072,43 @@
         function applySiteContent(content) {
             if (!content) return;
 
-            const pageTitle = document.getElementById("page-title");
             if (content.pageTitle) {
                 document.title = content.pageTitle;
-                if (pageTitle) pageTitle.textContent = content.pageTitle;
+                document.getElementById("page-title").textContent = content.pageTitle;
             }
 
-            const supportCopy = document.getElementById("support-bar-copy");
-            const supportLink = document.getElementById("support-bar-link");
-            if (supportCopy && content.supportBar && content.supportBar.copy) {
-                supportCopy.textContent = content.supportBar.copy;
-            }
-            if (supportLink && content.supportBar) {
-                if (content.supportBar.linkUrl) supportLink.href = content.supportBar.linkUrl;
-                if (content.supportBar.linkLabel) supportLink.textContent = content.supportBar.linkLabel;
+            const supportBar = content.supportBar;
+            if (supportBar) {
+                const supportLink = document.getElementById("support-bar-link");
+                if (supportBar.copy) document.getElementById("support-bar-copy").textContent = supportBar.copy;
+                if (supportBar.linkUrl) supportLink.href = supportBar.linkUrl;
+                if (supportBar.linkLabel) supportLink.textContent = supportBar.linkLabel;
             }
 
-            const general = content.infoTabs && content.infoTabs.general;
-            const thanks = content.infoTabs && content.infoTabs.thanks;
-            const nerdy = content.infoTabs && content.infoTabs.nerdy;
-            const generalEl = document.getElementById("panel-general-content");
-            const thanksEl = document.getElementById("panel-thanks-content");
-            const nerdyEl = document.getElementById("panel-nerdy-content");
-            if (generalEl && general) generalEl.innerHTML = renderParagraphs(general.paragraphs);
-            if (thanksEl && thanks) {
-                thanksEl.innerHTML =
-                    "<p>" + expandContentHtml(thanks.intro || "") + "</p>" +
-                    "<ul>" + (thanks.items || []).map(function(item) {
+            const tabs = content.infoTabs || {};
+            if (tabs.general) document.getElementById("panel-general-content").innerHTML = renderParagraphs(tabs.general.paragraphs);
+            if (tabs.thanks) {
+                document.getElementById("panel-thanks-content").innerHTML =
+                    "<p>" + expandContentHtml(tabs.thanks.intro) + "</p>" +
+                    "<ul>" + (tabs.thanks.items || []).map(function(item) {
                         return "<li>" + expandContentHtml(item) + "</li>";
                     }).join("") + "</ul>";
             }
-            if (nerdyEl && nerdy) nerdyEl.innerHTML = renderParagraphs(nerdy.paragraphs);
+            if (tabs.nerdy) document.getElementById("panel-nerdy-content").innerHTML = renderParagraphs(tabs.nerdy.paragraphs);
 
             document.querySelectorAll(".info-tab").forEach(function(btn) {
-                const tabKey = btn.getAttribute("data-tab");
-                const tab = content.infoTabs && content.infoTabs[tabKey];
+                const tab = tabs[btn.getAttribute("data-tab")];
                 if (tab && tab.label) btn.textContent = tab.label;
             });
 
             const highlight = content.sidebarHighlight;
             if (highlight) {
-                const linkEl = document.getElementById("sidebar-highlight-link");
                 const imageEl = document.getElementById("sidebar-highlight-image");
-                const captionEl = document.getElementById("sidebar-highlight-caption");
-                if (linkEl && highlight.linkUrl) linkEl.href = highlight.linkUrl;
-                if (imageEl) {
-                    if (highlight.imageSrc) imageEl.src = contentAssetUrl(highlight.imageSrc);
-                    if (highlight.imageAlt) imageEl.alt = highlight.imageAlt;
-                }
-                if (captionEl && highlight.captionHtml) {
-                    captionEl.innerHTML = expandContentHtml(highlight.captionHtml);
+                if (highlight.linkUrl) document.getElementById("sidebar-highlight-link").href = highlight.linkUrl;
+                if (highlight.imageSrc) imageEl.src = contentAssetUrl(highlight.imageSrc);
+                if (highlight.imageAlt) imageEl.alt = highlight.imageAlt;
+                if (highlight.captionHtml) {
+                    document.getElementById("sidebar-highlight-caption").innerHTML = expandContentHtml(highlight.captionHtml);
                 }
             }
         }
@@ -1422,13 +1160,8 @@
         }
         function buildImageUrl(cameraName, filename, meta, refreshToken) {
             const base = basePath() + cameraName + "/" + filename;
-            const version = (meta && (meta.timestamp || meta.extracted_timestamp))
-                ? encodeURIComponent(meta.timestamp || meta.extracted_timestamp)
-                : encodeURIComponent(refreshToken || Date.now().toString());
-            return base + "?v=" + version;
+            return base + "?v=" + encodeURIComponent(meta.timestamp || refreshToken);
         }
-        const bannerHistory = [];
-        const BANNER_HISTORY_LIMIT = 48;
         // The page treats banner_conditions.json as offline once its last_updated is
         // more than 3 hours old. Each reading's own freshness is the read path's rule.
         const BANNER_MAX_AGE_HOURS = 3;
@@ -1437,37 +1170,6 @@
         // longest run from its scheduled start to its end (3.4 min, 147 runs to
         // 2026-11-05) and the longest GitHub Pages build (8.3 min, the last 92).
         const FORECAST_MAX_AGE_HOURS = 6.5 + 3.4 / 60 + 8.3 / 60;
-        const BANNER_HISTORY_STORAGE_KEY = "webcam_banner_history_v1";
-        let bannerLatest = null;
-        let chartsRender = null;
-        let aqiChartInstance = null;
-        let tempChartInstance = null;
-
-        function loadBannerHistoryFromStorage() {
-            try {
-                const raw = localStorage.getItem(BANNER_HISTORY_STORAGE_KEY);
-                if (!raw) return;
-                const parsed = JSON.parse(raw);
-                if (!Array.isArray(parsed)) return;
-                bannerHistory.splice(0, bannerHistory.length, ...parsed.slice(-BANNER_HISTORY_LIMIT));
-            } catch (e) {}
-        }
-
-        function persistBannerHistory() {
-            try {
-                localStorage.setItem(BANNER_HISTORY_STORAGE_KEY, JSON.stringify(bannerHistory));
-            } catch (e) {}
-        }
-
-        function updateChartHistoryNote() {
-            const note = document.getElementById("chart-history-note");
-            if (!note) return;
-            const n = bannerHistory.length;
-            note.textContent = n < 2
-                ? "History builds from each banner update while this page is open (need at least 2 points for a trend line)."
-                : "Showing " + n + " stored banner readings (this browser, last " + BANNER_HISTORY_LIMIT + " updates).";
-        }
-
         // Data fidelity: a numeric 0 from a sensor is real data; null / unknown
         // / unavailable / non-finite values render as "—" but never as 0.
         function bannerNumeric(value) {
@@ -1487,166 +1189,37 @@
             if (hours < 1) return "";
             return hours < 48 ? " " + hours + "h" : " " + Math.floor(hours / 24) + "d";
         }
-        function updateBannerHistory(nextState) {
-            if (!nextState || !nextState.lastUpdated) return;
-            const bucket = nextState.lastUpdated.slice(0, 16);
-            const last = bannerHistory[bannerHistory.length - 1];
-            if (last && last.bucket === bucket) return;
-            bannerHistory.push({
-                bucket: bucket,
-                label: formatPacificTime(nextState.lastUpdated),
-                bowmanAqi: nextState.bowmanAqi,
-                ntwinAqi: nextState.ntwinAqi,
-                bowmanTempF: nextState.bowmanTempF,
-                ntwinTempF: nextState.ntwinTempF,
-                groundTempF: nextState.groundTempF
-            });
-            if (bannerHistory.length > BANNER_HISTORY_LIMIT) {
-                bannerHistory.splice(0, bannerHistory.length - BANNER_HISTORY_LIMIT);
-            }
-            persistBannerHistory();
-            updateChartHistoryNote();
-        }
-
-        function destroyCharts() {
-            if (aqiChartInstance) {
-                aqiChartInstance.destroy();
-                aqiChartInstance = null;
-            }
-            if (tempChartInstance) {
-                tempChartInstance.destroy();
-                tempChartInstance = null;
-            }
-            chartsRender = null;
-        }
-
-        function ensureChartsRenderer() {
-            if (chartsRender) return chartsRender;
-            const aqiCanvas = document.getElementById("chart-aqi");
-            const tempCanvas = document.getElementById("chart-temps");
-            if (!aqiCanvas || !tempCanvas || typeof Chart === "undefined") return null;
-
-            destroyCharts();
-
-            const chartOptions = {
-                responsive: true,
-                maintainAspectRatio: false,
-                interaction: { mode: "index", intersect: false },
-                plugins: { legend: { position: "bottom" } },
-                scales: {
-                    x: { ticks: { maxRotation: 45, autoSkip: true, maxTicksLimit: 8 } }
-                }
-            };
-
-            aqiChartInstance = new Chart(aqiCanvas, {
-                type: "line",
-                data: { labels: [], datasets: [
-                    { label: "Bowman AQI", data: [], borderColor: "#667eea", tension: 0.2, spanGaps: true },
-                    { label: "N Twin AQI", data: [], borderColor: "#764ba2", tension: 0.2, spanGaps: true }
-                ] },
-                options: Object.assign({}, chartOptions, { scales: Object.assign({}, chartOptions.scales, { y: { beginAtZero: true } }) })
-            });
-
-            tempChartInstance = new Chart(tempCanvas, {
-                type: "line",
-                data: { labels: [], datasets: [
-                    { label: "Bowman Air Temp (F)", data: [], borderColor: "#3b82f6", tension: 0.2, spanGaps: true },
-                    { label: "N Twin Air Temp (F)", data: [], borderColor: "#0ea5e9", tension: 0.2, spanGaps: true },
-                    { label: "Dailey Ground Temp (F)", data: [], borderColor: "#f59e0b", tension: 0.2, spanGaps: true }
-                ] },
-                options: chartOptions
-            });
-
-            chartsRender = function() {
-                const labels = bannerHistory.map(function(p) { return p.label || p.bucket; });
-                aqiChartInstance.data.labels = labels;
-                aqiChartInstance.data.datasets[0].data = bannerHistory.map(function(p) { return p.bowmanAqi; });
-                aqiChartInstance.data.datasets[1].data = bannerHistory.map(function(p) { return p.ntwinAqi; });
-                aqiChartInstance.update("none");
-
-                tempChartInstance.data.labels = labels;
-                tempChartInstance.data.datasets[0].data = bannerHistory.map(function(p) { return p.bowmanTempF; });
-                tempChartInstance.data.datasets[1].data = bannerHistory.map(function(p) { return p.ntwinTempF; });
-                tempChartInstance.data.datasets[2].data = bannerHistory.map(function(p) { return p.groundTempF; });
-                tempChartInstance.update("none");
-            };
-            return chartsRender;
-        }
-
-        function renderChartsTab() {
-            const render = ensureChartsRenderer();
-            if (!render) return;
-            requestAnimationFrame(function() {
-                render();
-                if (aqiChartInstance) aqiChartInstance.resize();
-                if (tempChartInstance) tempChartInstance.resize();
-            });
-        }
 
         function activateInfoTab(tabName) {
             const section = document.getElementById("general-info-section");
-            if (!section) return;
-            const target = tabName || "general";
             section.querySelectorAll(".info-tab").forEach(function(btn) {
-                const active = btn.getAttribute("data-tab") === target;
+                const active = btn.getAttribute("data-tab") === tabName;
                 btn.classList.toggle("active", active);
                 btn.setAttribute("aria-selected", active ? "true" : "false");
             });
             section.querySelectorAll(".info-panel").forEach(function(panel) {
-                panel.classList.toggle("active", panel.id === "panel-" + target);
+                panel.classList.toggle("active", panel.id === "panel-" + tabName);
             });
-            if (target === "charts") renderChartsTab();
         }
 
         function initGeneralInfoTabs() {
-            const section = document.getElementById("general-info-section");
-            if (!section || section._tabsBound) return;
-            section.querySelectorAll(".info-tab").forEach(function(btn) {
+            document.querySelectorAll("#general-info-section .info-tab").forEach(function(btn) {
                 btn.addEventListener("click", function() {
                     activateInfoTab(this.getAttribute("data-tab"));
                 });
             });
-            section._tabsBound = true;
-            updateChartHistoryNote();
         }
-
-        function setupBannerClickHandler() {
-            const banner = document.getElementById("banner-conditions");
-            if (!banner || banner._chartClickBound) return;
-            banner.addEventListener("click", function() {
-                activateInfoTab("charts");
-                const section = document.getElementById("general-info-section");
-                if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
-            });
-            banner._chartClickBound = true;
-        }
-
 
         function pacificDateString(d) {
-            try {
-                return new Intl.DateTimeFormat("en-CA", {
-                    timeZone: "America/Los_Angeles",
-                    year: "numeric", month: "2-digit", day: "2-digit"
-                }).format(d instanceof Date ? d : new Date(d));
-            } catch (e) { return ""; }
+            return new Intl.DateTimeFormat("en-CA", {
+                timeZone: "America/Los_Angeles",
+                year: "numeric", month: "2-digit", day: "2-digit"
+            }).format(d);
         }
 
         function pacificTomorrowDateString() {
             // Pacific calendar day for ~24h from now (DST-safe enough for a daily product).
             return pacificDateString(new Date(Date.now() + 24 * 3600 * 1000));
-        }
-
-        function formatForecastLabel(prefix, day) {
-            const act = (day && day.activity === "ski") ? "ski" : "hike";
-            const band = (day && day.band_ft != null) ? day.band_ft : 5000;
-            return prefix + " " + act + ", " + band + " ft";
-        }
-
-        function formatForecastScore(day) {
-            const s = day
-                ? (day.score != null ? day.score : (day.hike_hi != null ? day.hike_hi : day.hike_lo))
-                : null;
-            return s == null ? "—" : (String(s) + "/10");
         }
 
         // NWAC danger for today (falls back to tomorrow's when today's product
@@ -1656,7 +1229,6 @@
             const tile = document.getElementById("stat-avalanche");
             const valueEl = document.getElementById("stat-avalanche-value");
             const synEl = document.getElementById("stat-avalanche-syn");
-            if (!tile || !valueEl || !synEl) return;
             const pick = [todayDay, tomDay].map((d) => d && d.avalanche).find((a) => a && a.valid === true);
             tile.className = "banner-stat banner-avalanche";
             if (!pick) { tile.hidden = true; valueEl.textContent = "—"; synEl.textContent = ""; return; }
@@ -1746,9 +1318,7 @@
         // Today's snow on the ground, whichever forecast day is today when the page
         // draws: the band's sensors as the boxes show them now (each reading kept by
         // the read path's freshness check on its own time), else SNODAS, else the
-        // model's value for the day. A forecast file without `snodas` predates this:
-        // it keeps its own SNODAS or model depth, and a measured depth only ever
-        // comes from the boxes.
+        // model's value for the day.
         function todaySnowOnGround(band, snowBands, snodas, nowMs) {
             const measured = (Array.isArray(snowBands) ? snowBands : []).find(function(entry) {
                 return entry && entry.band_ft === band.elev_ft && bannerNumeric(entry.snow_in) !== null;
@@ -1756,11 +1326,6 @@
             if (measured) {
                 return { snow_in: measured.snow_in, snow_source: "measured",
                          snow_note: "Measured " + formatPacificTime(measured.observed_at) };
-            }
-            if (snodas === undefined) {
-                return band.snow_source === "measured"
-                    ? { snow_in: null, snow_source: null, snow_note: "" }
-                    : { snow_in: band.snow_in, snow_source: band.snow_source, snow_note: "" };
             }
             const snodasDepth = snodas && snodas.snow_in && snodasCurrent(snodas.date, nowMs)
                 ? bannerNumeric(snodas.snow_in[String(band.elev_ft)])
@@ -1818,7 +1383,6 @@
         function renderElevationForecast(todayDay, tomDay, todayGround) {
             const section = document.getElementById("elev-forecast");
             const grid = document.getElementById("elev-grid");
-            if (!section || !grid) return;
             const todayBands = (todayDay && Array.isArray(todayDay.bands)) ? todayDay.bands : [];
             const tomBands = (tomDay && Array.isArray(tomDay.bands)) ? tomDay.bands : [];
             if (!todayBands.length) {
@@ -1837,17 +1401,13 @@
                     (tomSub ? '<span class="elev-col-sub">' + tomSub + "</span>" : "") +
                 "</div>";
 
-            const elevations = todayBands.map(function(b) { return b.elev_ft; });
-            elevations.forEach(function(elev) {
-                const bToday = todayBands.find(function(b) { return b.elev_ft === elev; }) || null;
-                const bTom = tomBands.find(function(b) { return b.elev_ft === elev; }) || null;
-                const shownToday = (bToday && todayGround) ? Object.assign({}, bToday, todayGround(bToday)) : bToday;
-                const label = (bToday && bToday.label) ? bToday.label : (elev === 6000 ? "6000+ ft" : (elev + " ft"));
+            todayBands.forEach(function(bToday) {
+                const bTom = tomBands.find(function(b) { return b.elev_ft === bToday.elev_ft; });
                 html +=
                     '<div class="elev-band-label">' +
-                        '<span class="elev-band-ft">' + label + "</span>" +
+                        '<span class="elev-band-ft">' + bToday.label + "</span>" +
                     "</div>" +
-                    renderElevationCell(shownToday, todayDay) +
+                    renderElevationCell(Object.assign({}, bToday, todayGround(bToday)), todayDay) +
                     renderElevationCell(bTom, tomDay || todayDay);
             });
             grid.innerHTML = html;
@@ -1857,7 +1417,6 @@
         // The forecast gateway's summary, exactly as the job published it.
         function renderForecastSummary(summary) {
             const el = document.getElementById("elev-summary");
-            if (!el) return;
             const text = typeof summary === "string" ? summary.trim() : "";
             el.textContent = text;
             el.hidden = !text;
@@ -1872,30 +1431,16 @@
             });
         }
 
-        function renderForecastEmpty(staleText) {
+        function renderForecastEmpty() {
             forecastShown = null;
             renderAvalanche(null, null);
             renderElevationForecast(null, null);
             renderForecastSummary(null);
-            const todayEl = document.getElementById("stat-hike-today");
-            const tomEl = document.getElementById("stat-hike-tomorrow");
-            const todaySyn = document.getElementById("stat-hike-today-syn");
-            const tomSyn = document.getElementById("stat-hike-tomorrow-syn");
-            if (todayEl) todayEl.textContent = staleText || "—";
-            if (tomEl) tomEl.textContent = staleText ? "" : "—";
-            if (todaySyn) todaySyn.textContent = "";
-            if (tomSyn) tomSyn.textContent = "";
             bannerForecastUpdatedIso = null;
             renderBannerUpdatedLine();
         }
 
         async function loadTwinsForecast() {
-            const todayLabelEl = document.getElementById("stat-hike-today-label");
-            const tomLabelEl = document.getElementById("stat-hike-tomorrow-label");
-            const todayEl = document.getElementById("stat-hike-today");
-            const tomEl = document.getElementById("stat-hike-tomorrow");
-            const todaySyn = document.getElementById("stat-hike-today-syn");
-            const tomSyn = document.getElementById("stat-hike-tomorrow-syn");
             try {
                 const response = await fetch(assetUrl("twins_forecast.json?t=" + Date.now()), { cache: "no-store" });
                 if (!response.ok) { renderForecastEmpty(); return; }
@@ -1903,7 +1448,7 @@
                 const generated = data && data.generated_at ? new Date(data.generated_at) : null;
                 if (!generated || isNaN(generated.getTime())) { renderForecastEmpty(); return; }
                 const ageH = (Date.now() - generated.getTime()) / 3600000;
-                if (ageH > FORECAST_MAX_AGE_HOURS) { renderForecastEmpty("Forecast stale"); return; }
+                if (ageH > FORECAST_MAX_AGE_HOURS) { renderForecastEmpty(); return; }
 
                 const byDate = {};
                 (Array.isArray(data.days) ? data.days : []).forEach((d) => {
@@ -1912,26 +1457,8 @@
                 const today = pacificDateString(new Date());
                 const tomorrow = pacificTomorrowDateString();
                 const todayDay = byDate[today];
-                if (!todayDay) { renderForecastEmpty("Forecast stale"); return; }
+                if (!todayDay) { renderForecastEmpty(); return; }
                 const tomDay = byDate[tomorrow] || null;
-
-                if (todayLabelEl) todayLabelEl.textContent = formatForecastLabel("Today", todayDay);
-                if (todayEl) todayEl.textContent = formatForecastScore(todayDay);
-                if (todaySyn) {
-                    todaySyn.textContent = todayDay.synopsis || "";
-                    todaySyn.classList.toggle("red-flag", !!todayDay.red_flag);
-                }
-                if (tomDay) {
-                    if (tomLabelEl) tomLabelEl.textContent = formatForecastLabel("Tomorrow", tomDay);
-                    if (tomEl) tomEl.textContent = formatForecastScore(tomDay);
-                    if (tomSyn) {
-                        tomSyn.textContent = tomDay.synopsis || "";
-                        tomSyn.classList.toggle("red-flag", !!tomDay.red_flag);
-                    }
-                } else {
-                    if (tomEl) tomEl.textContent = "—";
-                    if (tomSyn) tomSyn.textContent = "";
-                }
                 renderAvalanche(todayDay, tomDay);
                 forecastShown = { todayDay: todayDay, tomDay: tomDay, snodas: data.snodas };
                 renderForecastTable();
@@ -2017,7 +1544,6 @@
                 dailey_prairie: "ztCDXPlq"
             };
             const wrap = document.getElementById("banner-sites");
-            if (!wrap) return;
             wrap.innerHTML = "";
             sites.forEach(function(site) {
                 const card = document.createElement("div");
@@ -2101,7 +1627,6 @@
         // registry adds or moves is listed here without a page change.
         function renderElevationFooter(sensors) {
             const footer = document.getElementById("elev-footer");
-            if (!footer) return;
             const names = (Array.isArray(sensors) ? sensors : []).map(function(s) {
                 const elev = bannerNumeric(s && s.elev_ft);
                 return s.location + (elev === null ? "" : " (" + elev + " ft)");
@@ -2111,17 +1636,9 @@
                 + " 24h = forecast new snow or rain for that day.";
         }
 
-        // Chart history keeps its original five series (and its localStorage
-        // shape): a point only when the location shows a single value.
-        function singleValue(site, key) {
-            const values = site && Array.isArray(site[key]) ? site[key] : [];
-            return values.length === 1 ? bannerNumeric(values[0]) : null;
-        }
-
         async function loadBannerConditions() {
             const renderEmpty = () => {
-                const wrap = document.getElementById("banner-sites");
-                if (wrap) wrap.innerHTML = "";
+                document.getElementById("banner-sites").innerHTML = "";
                 bannerSensorsUpdatedIso = null;
                 renderBannerUpdatedLine();
                 bannerSnowBands = null;
@@ -2144,30 +1661,16 @@
                 renderBannerUpdatedLine();
                 bannerSnowBands = fileCurrent && Array.isArray(data.snow_bands) ? data.snow_bands : null;
                 renderForecastTable();
-
-                const byId = {};
-                sites.forEach(function(s) { byId[s.id] = s; });
-                bannerLatest = {
-                    bowmanAqi: singleValue(byId.bowman_mtn, "aqi"),
-                    ntwinAqi: singleValue(byId.n_twin_west_ridge, "aqi"),
-                    bowmanTempF: singleValue(byId.bowman_mtn, "temp_f"),
-                    ntwinTempF: singleValue(byId.n_twin_west_ridge, "temp_f"),
-                    groundTempF: singleValue(byId.dailey_prairie, "ground_temp_f"),
-                    lastUpdated: data.last_updated
-                };
-                updateBannerHistory(bannerLatest);
             } catch (e) {
                 renderEmpty();
             }
         }
 
         async function renderBestOfCarousel(parentEl, refreshToken) {
-            if (!parentEl) return;
             try {
                 const response = await fetch(assetUrl("best-of/list.json?t=" + refreshToken), { cache: "no-store" });
                 if (!response.ok) return;
-                const listData = await response.json();
-                const files = Array.isArray(listData) ? listData : (Array.isArray(listData.images) ? listData.images : []);
+                const files = (await response.json()).images || [];
                 if (!files.length) return;
 
                 const section = document.createElement("section");
@@ -2185,7 +1688,6 @@
                 files.forEach(function(filename) {
                     const card = document.createElement("article");
                     card.className = "best-of-card";
-                    const meta = getMetadata({}, filename);
                     const url = "best-of/" + filename + "?v=" + encodeURIComponent(refreshToken);
                     card.innerHTML = `
                         <img src="${url}" alt="${filename}" loading="lazy">
@@ -2193,7 +1695,7 @@
                     `;
                     const img = card.querySelector("img");
                     img.addEventListener("click", function() {
-                        openModal([{ filename: filename, url: url, infoText: createImageInfoText(meta, filename) }], 0);
+                        openModal([{ filename: filename, url: url, infoText: createImageInfoText({}) }], 0);
                     });
                     track.appendChild(card);
                 });
@@ -2231,9 +1733,7 @@
         // Short Pacific time for a card: "Nov 9, 6:30 AM".
         function formatCardTime(isoString) {
             if (!isoString) return "";
-            try {
-                return new Date(isoString).toLocaleString("en-US", { timeZone: "America/Los_Angeles", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
-            } catch (e) { return ""; }
+            return new Date(isoString).toLocaleString("en-US", { timeZone: "America/Los_Angeles", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
         }
 
         // What an empty card says: when the people check last passed nothing, and how many wait.
@@ -2264,7 +1764,7 @@
                 }
                 const cameraData = await response.json();
                 camerasContainer.innerHTML = "";
-                if (bestOfMount) bestOfMount.innerHTML = "";
+                bestOfMount.innerHTML = "";
                 const cameraOrder = getCameraOrder(await loadCameraSlots());
                 let newestCaptureIso = null;
                 for (const cameraName of cameraOrder) {
@@ -2272,8 +1772,6 @@
                     // A camera missing from list.json is shown as missing, not silently dropped.
                     const data = cameraData[cameraFolder] || { images: [], metadata: {}, status: "Missing from list.json", waiting: 0 };
                     const cameraMeta = getCameraMeta(content, cameraName);
-                    // The status comes from list.json (regenerate_list.py writes it from the folders);
-                    // the old default "Working" said so even on an empty card.
                     const statusText = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Status unknown");
                     const displayTitle = formatCameraName(cameraName);
                     const elevLabel = extractCameraElevLabel(cameraMeta.description);
@@ -2290,7 +1788,7 @@
                         return {
                             filename: fn,
                             url: buildImageUrl(cameraFolder, fn, getMetadata(data.metadata, fn), refreshToken),
-                            infoText: createImageInfoText(getMetadata(data.metadata, fn), fn)
+                            infoText: createImageInfoText(getMetadata(data.metadata, fn))
                         };
                     });
 
@@ -2385,9 +1883,7 @@
                     camerasContainer.appendChild(card);
                 }
 
-                if (bestOfMount) {
-                    await renderBestOfCarousel(bestOfMount, refreshToken);
-                }
+                await renderBestOfCarousel(bestOfMount, refreshToken);
 
                 document.getElementById("lastUpdate").textContent = newestCaptureIso
                     ? (formatPacificTime(newestCaptureIso) + " PT (newest picture)")
@@ -2400,28 +1896,11 @@
         }
 
         function getMetadata(metadata, filename) {
-            // Try direct lookup first
-            if (metadata && metadata[filename]) {
-                return metadata[filename];
-            }
-
-            // Try matching by date/time pattern (for old filenames with image numbers)
-            const dateMatch = filename.match(/(\d{8}_\d{6})/);
-            if (dateMatch && metadata) {
-                const datePattern = dateMatch[1];
-                for (const key in metadata) {
-                    if (key.includes(datePattern)) {
-                        return metadata[key];
-                    }
-                }
-            }
-
-            return {};
+            return (metadata && metadata[filename]) || {};
         }
 
-        function createImageInfoText(meta, filename) {
-            const timestamp = meta && (meta.timestamp || meta.extracted_timestamp);
-            return timestamp ? formatPacificTime(timestamp).replace(", ", " at ") : "Image";
+        function createImageInfoText(meta) {
+            return meta.timestamp ? formatPacificTime(meta.timestamp).replace(", ", " at ") : "Image";
         }
 
         let cameraDisplayNames = {};
