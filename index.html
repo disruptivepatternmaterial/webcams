@@ -1400,19 +1400,6 @@
                 .map(function(entry) { return entry.camera; });
         }
 
-        function cameraPageFolder(cameraData, cameraName) {
-            const legacyFolders = {
-                "reconyx-bowman-mtn": "bowman_mtn",
-                "gardepro-north-twin-camp": "n_twin",
-                "gardepro-north-twin-west-ridge": "w_ridge_n_twin",
-                "gardepro-forest-lands-cross-over": "NWHighPoint",
-                "woods-cam-003": "woods_cam_003"
-            };
-            return Object.prototype.hasOwnProperty.call(cameraData, cameraName)
-                ? cameraName
-                : (legacyFolders[cameraName] || cameraName);
-        }
-
         function getCameraDisplayNames(content) {
             return (content && content.cameraDisplayNames) || {};
         }
@@ -1421,7 +1408,7 @@
             return (content && content.windyLinkLabel) || "Link to weather station on Windy.com";
         }
         function buildImageUrl(cameraName, filename, meta, refreshToken) {
-            const base = basePath() + cameraName + "/" + filename;
+            const base = basePath() + "cameras/" + cameraName + "/" + filename;
             const version = (meta && (meta.timestamp || meta.extracted_timestamp))
                 ? encodeURIComponent(meta.timestamp || meta.extracted_timestamp)
                 : encodeURIComponent(refreshToken || Date.now().toString());
@@ -2268,9 +2255,8 @@
                 const cameraOrder = getCameraOrder(await loadCameraSlots());
                 let newestCaptureIso = null;
                 for (const cameraName of cameraOrder) {
-                    const cameraFolder = cameraPageFolder(cameraData, cameraName);
                     // A camera missing from list.json is shown as missing, not silently dropped.
-                    const data = cameraData[cameraFolder] || { images: [], metadata: {}, status: "Missing from list.json", waiting: 0 };
+                    const data = cameraData[cameraName] || { images: [], metadata: {}, status: "Missing from list.json", waiting: 0 };
                     const cameraMeta = getCameraMeta(content, cameraName);
                     // The status comes from list.json (regenerate_list.py writes it from the folders);
                     // the old default "Working" said so even on an empty card.
@@ -2289,7 +2275,7 @@
                     const allImagesForModal = actualImages.map(function(fn) {
                         return {
                             filename: fn,
-                            url: buildImageUrl(cameraFolder, fn, getMetadata(data.metadata, fn), refreshToken),
+                            url: buildImageUrl(cameraName, fn, getMetadata(data.metadata, fn), refreshToken),
                             infoText: createImageInfoText(getMetadata(data.metadata, fn), fn)
                         };
                     });
@@ -2303,7 +2289,7 @@
                     if (actualImages.length > 0) {
                         const latestImage = actualImages[0];
                         const latestMeta = getMetadata(data.metadata, latestImage);
-                        const imgUrl = buildImageUrl(cameraFolder, latestImage, latestMeta, refreshToken);
+                        const imgUrl = buildImageUrl(cameraName, latestImage, latestMeta, refreshToken);
                         const imgEl = document.createElement("img");
                         imgEl.src = imgUrl;
                         imgEl.alt = displayTitle;
@@ -2347,7 +2333,7 @@
                         thumbsWrap.className = "camera-hover-thumbs";
                         gridImages.forEach(function(filename, idx) {
                             const tImg = document.createElement("img");
-                            tImg.src = buildImageUrl(cameraFolder, filename, getMetadata(data.metadata, filename), refreshToken);
+                            tImg.src = buildImageUrl(cameraName, filename, getMetadata(data.metadata, filename), refreshToken);
                             tImg.alt = filename;
                             tImg.loading = "lazy";
                             tImg.onclick = function(e) {
