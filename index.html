@@ -1072,19 +1072,15 @@
             }
         }
 
-        // Root list.json and the published image folders still use these names.
-        function cameraPageFolder(cameraData, cameraName) {
-            const legacyFolders = {
-                "reconyx-bowman-mtn": "bowman_mtn",
-                "gardepro-north-twin-camp": "n_twin",
-                "gardepro-north-twin-west-ridge": "w_ridge_n_twin",
-                "gardepro-forest-lands-cross-over": "NWHighPoint",
-                "woods-cam-003": "woods_cam_003"
-            };
-            return Object.prototype.hasOwnProperty.call(cameraData, cameraName)
-                ? cameraName
-                : (legacyFolders[cameraName] || cameraName);
-        }
+        // Root list.json lists a camera under its slot key, with images in
+        // cameras/<slot key>/, or under its legacy name, with images in that folder.
+        const legacyFolders = {
+            "reconyx-bowman-mtn": "bowman_mtn",
+            "gardepro-north-twin-camp": "n_twin",
+            "gardepro-north-twin-west-ridge": "w_ridge_n_twin",
+            "gardepro-forest-lands-cross-over": "NWHighPoint",
+            "woods-cam-003": "woods_cam_003"
+        };
 
         // The page treats banner_conditions.json as offline once its last_updated is
         // more than 3 hours old. Each reading's own freshness is the read path's rule.
@@ -1681,9 +1677,10 @@
                     .map(function(entry) { return entry.camera; });
                 let newestCaptureIso = null;
                 for (const cameraName of cameraOrder) {
-                    const cameraFolder = cameraPageFolder(cameraData, cameraName);
+                    const listedBySlot = Object.prototype.hasOwnProperty.call(cameraData, cameraName);
+                    const imageDir = listedBySlot ? "cameras/" + cameraName : legacyFolders[cameraName];
                     // A camera missing from list.json is shown as missing, not silently dropped.
-                    const data = cameraData[cameraFolder] || { images: [], metadata: {}, status: "Missing from list.json", waiting: 0 };
+                    const data = cameraData[listedBySlot ? cameraName : legacyFolders[cameraName]] || { images: [], metadata: {}, status: "Missing from list.json", waiting: 0 };
                     const cameraMeta = (content.cameras || {})[cameraName] || {};
                     const statusText = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Status unknown");
                     const displayTitle = displayNames[cameraName]
@@ -1694,7 +1691,7 @@
                     const images = actualImages.map(function(fn) {
                         const meta = (data.metadata || {})[fn] || {};
                         return {
-                            url: cameraFolder + "/" + fn + "?v=" + encodeURIComponent(meta.timestamp || refreshToken),
+                            url: imageDir + "/" + fn + "?v=" + encodeURIComponent(meta.timestamp || refreshToken),
                             infoText: meta.timestamp ? formatPacificTime(meta.timestamp).replace(/, (?=[^,]*$)/, " at ") : "Image",
                             timestamp: meta.timestamp
                         };
