@@ -1,12 +1,12 @@
 {
-  "event_id": "6e1833cb-ad0f-54f8-b485-d44a63343864",
-  "last_updated": "2026-11-25T04:46:00Z",
+  "event_id": "464f4eac-6bb9-5466-85ce-cac1fa0ceb8e",
+  "last_updated": "2026-11-25T07:20:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T04:01:47.814217Z",
+      "as_of": "2026-11-25T07:01:07.879710Z",
       "dropped": [],
       "elev_ft": [
         3281
@@ -22,7 +22,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T04:33:36.990144Z",
+      "as_of": "2026-11-25T07:08:41.856118Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -40,12 +40,12 @@
       ],
       "stale": false,
       "temp_f": [
-        35
+        34
       ],
       "wind": [
         {
-          "dir_deg": 156,
-          "mph": 2
+          "dir_deg": 177,
+          "mph": 15
         }
       ]
     },
@@ -53,7 +53,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T04:39:00.106044Z",
+      "as_of": "2026-11-25T07:08:58.587886Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -68,17 +68,17 @@
       ],
       "stale": false,
       "temp_f": [
-        38
+        37
       ],
       "wind": [
         {
-          "dir_deg": 135,
-          "mph": 6
+          "dir_deg": 186,
+          "mph": 7
         }
       ]
     },
     {
-      "as_of": "2026-11-25T04:29:01.136997Z",
+      "as_of": "2026-11-25T07:08:12.019572Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -87,11 +87,11 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        38
+        37
       ]
     },
     {
-      "as_of": "2026-11-25T04:24:04.941881Z",
+      "as_of": "2026-11-25T07:05:12.945865Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -107,12 +107,12 @@
       ],
       "stale": false,
       "temp_f": [
-        37
+        36
       ],
       "wind": [
         {
-          "dir_deg": 181,
-          "mph": 16
+          "dir_deg": 27,
+          "mph": 7
         }
       ]
     },
@@ -120,7 +120,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T04:34:22.712352Z",
+      "as_of": "2026-11-25T07:00:58.531612Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -135,46 +135,46 @@
       ],
       "stale": false,
       "temp_f": [
-        41
+        39
       ],
       "wind": [
         {
-          "dir_deg": 124,
-          "mph": 13
+          "dir_deg": 160,
+          "mph": 17
         }
       ]
     },
     {
-      "as_of": "2026-11-25T04:34:49.961185Z",
+      "as_of": "2026-11-25T07:04:48.386570Z",
       "dropped": [],
       "elev_ft": [
         3166
       ],
       "ground_temp_f": [
-        39
+        40
       ],
       "id": "dailey_prairie",
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        40
+        39
       ]
     }
   ],
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-25T04:34:22.712352Z",
+      "observed_at": "2026-11-25T06:54:21.124888Z",
       "snow_in": 3.5
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-25T04:39:00.106044Z",
+      "observed_at": "2026-11-25T07:08:58.587886Z",
       "snow_in": 0.0
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-25T04:28:43.874235Z",
+      "observed_at": "2026-11-25T07:08:41.856118Z",
       "snow_in": 0.8
     }
   ],
