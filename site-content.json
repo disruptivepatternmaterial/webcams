@@ -41,54 +41,38 @@
     "linkUrl": "https://youtu.be/Jfb9JlRkU7U?t=1110",
     "captionHtml": "N Twin — <a href=\"https://youtu.be/Jfb9JlRkU7U?t=1110\" target=\"_blank\" rel=\"noopener noreferrer\">MBHC&nbsp;Baked (1991)</a>: “the hardcore looking for the steeps, the backcountry…”"
   },
-  "_cameraOrderNote": "bowman_ridge_high_pt (Reconyx) is left out of cameraOrder until the camera is fully installed. Its cameraDisplayNames and cameras entries are kept, so adding it back here is the only change needed to show it.",
-  "cameraOrder": [
-    "bowman_mtn",
-    "n_twin",
-    "w_ridge_n_twin",
-    "NWHighPoint",
-    "woods_cam_003"
-  ],
   "cameraDisplayNames": {
-    "NWHighPoint": "Westward View",
-    "woods_cam_001": "Bowman Ridge (woods_cam_001, retired 2026-10-12)",
-    "bowman_ridge_high_pt": "Bowman Ridge High Point",
-    "woods_cam_003": "Bowman Ridge"
+    "reconyx-bowman-mtn": "Bowman Mtn",
+    "gardepro-north-twin-west-ridge": "W Ridge N Twin",
+    "gardepro-forest-lands-cross-over": "Westward View",
+    "woods-cam-003": "Bowman Ridge",
+    "gardepro-north-twin-camp": "N Twin"
   },
   "cameras": {
-    "bowman_mtn": {
+    "reconyx-bowman-mtn": {
       "description": "Bowman Mountain: about 3200 feet, facing Baker and the Twins",
       "windyUrl": "https://www.windy.com/station/pws-4ks5xFmh?48.720,-122.062,13,p:temp",
       "defaultStatus": "Working"
     },
-    "n_twin": {
-      "description": "N Twin: about 4200 feet, along the logging road up to the N Twin NW Ridge.",
-      "windyUrl": "https://www.windy.com/station/pws-A1QVv3Du?48.720,-122.062,13,p:temp",
-      "defaultStatus": "Cell Unstable"
-    },
-    "w_ridge_n_twin": {
+    "gardepro-north-twin-west-ridge": {
       "description": "W Ridge N Twin: about 4600 feet. Trail camera on West Ridge looking toward N Twin skin up track.",
       "windyUrl": "https://www.windy.com/station/pws-UpjK9hSq?radar,48.722,-122.007,13,p:temp",
       "defaultStatus": "Working"
     },
-    "NWHighPoint": {
+    "gardepro-forest-lands-cross-over": {
       "description": "Westward View: about 3900 feet along Bowman Ridge looking towards Vancouver, BC (the valley West of Dailey Prairie)",
       "windyUrl": "https://www.windy.com/station/pws-fwWd6XAK?48.705,-122.048,13,p:temp",
       "defaultStatus": "Working"
     },
-    "woods_cam_001": {
-      "description": "Bowman Ridge: about 4000 feet looking towards Twins and Baker above Middle Fork Borrow Pit.",
-      "windyUrl": "https://www.windy.com/station/pws-wOvn2H1z?48.695,-122.054,13,p:temp",
-      "defaultStatus": "On the Bench"
-    },
-    "bowman_ridge_high_pt": {
-      "defaultStatus": "Working",
-      "description": "Bowman Ridge High Point: Reconyx Connect cellular camera."
-    },
-    "woods_cam_003": {
+    "woods-cam-003": {
       "description": "Bowman Ridge: about 4000 feet looking towards Twins and Baker above Middle Fork Borrow Pit.",
       "windyUrl": "https://www.windy.com/station/pws-wOvn2H1z?48.695,-122.054,13,p:temp",
       "defaultStatus": "Working"
+    },
+    "gardepro-north-twin-camp": {
+      "description": "N Twin: about 4200 feet, along the logging road up to the N Twin NW Ridge.",
+      "windyUrl": "https://www.windy.com/station/pws-A1QVv3Du?48.720,-122.062,13,p:temp",
+      "defaultStatus": "Cell Unstable"
     }
   },
   "windyLinkLabel": "Link to weather station on Windy.com"
