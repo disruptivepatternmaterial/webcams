@@ -381,6 +381,9 @@
             letter-spacing: 0.02em;
             text-transform: uppercase;
         }
+        a.banner-site-name { cursor: pointer; }
+        a.banner-site-name:hover,
+        a.banner-site-name:focus-visible { text-decoration: underline; }
         .banner-site-row {
             display: block;
             margin-top: 2px;
@@ -1377,7 +1380,23 @@
             return cameras[cameraName] || {};
         }
 
-        function getCameraOrder(content) {
+        async function loadCameraSlots() {
+            try {
+                const response = await fetch(assetUrl("camera-slots.json?t=" + Date.now()), { cache: "no-store" });
+                if (!response.ok) throw new Error("camera-slots.json " + response.status);
+                return await response.json();
+            } catch (error) {
+                console.warn("camera-slots.json unavailable; using site-content.json order", error);
+                return null;
+            }
+        }
+
+        function getCameraOrder(content, slots) {
+            if (Array.isArray(slots) && slots.length) {
+                return slots.slice()
+                    .sort(function(a, b) { return a.slot - b.slot; })
+                    .map(function(entry) { return entry.camera; });
+            }
             return (content && content.cameraOrder) || [
                 "bowman_mtn", "n_twin", "w_ridge_n_twin", "NWHighPoint", "woods_cam_001"
             ];
@@ -2238,7 +2257,7 @@
                 const cameraData = await response.json();
                 camerasContainer.innerHTML = "";
                 if (bestOfMount) bestOfMount.innerHTML = "";
-                const cameraOrder = getCameraOrder(content);
+                const cameraOrder = getCameraOrder(content, await loadCameraSlots());
                 let newestCaptureIso = null;
                 for (const cameraName of cameraOrder) {
                     // A camera missing from list.json is shown as missing, not silently dropped.
