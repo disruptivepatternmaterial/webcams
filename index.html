@@ -1386,20 +1386,18 @@
                 if (!response.ok) throw new Error("camera-slots.json " + response.status);
                 return await response.json();
             } catch (error) {
-                console.warn("camera-slots.json unavailable; using site-content.json order", error);
-                return null;
+                console.error("camera-slots.json unavailable; cannot render camera cards", error);
+                throw error;
             }
         }
 
-        function getCameraOrder(content, slots) {
-            if (Array.isArray(slots) && slots.length) {
-                return slots.slice()
-                    .sort(function(a, b) { return a.slot - b.slot; })
-                    .map(function(entry) { return entry.camera; });
+        function getCameraOrder(slots) {
+            if (!Array.isArray(slots) || !slots.length) {
+                throw new Error("camera-slots.json has no camera slots");
             }
-            return (content && content.cameraOrder) || [
-                "bowman_mtn", "n_twin", "w_ridge_n_twin", "NWHighPoint", "woods_cam_001"
-            ];
+            return slots.slice()
+                .sort(function(a, b) { return a.slot - b.slot; })
+                .map(function(entry) { return entry.camera; });
         }
 
         function cameraPageFolder(cameraData, cameraName) {
@@ -1416,10 +1414,7 @@
         }
 
         function getCameraDisplayNames(content) {
-            return (content && content.cameraDisplayNames) || {
-                "NWHighPoint": "Westward View",
-                "woods_cam_001": "Bowman Ridge"
-            };
+            return (content && content.cameraDisplayNames) || {};
         }
 
         function getWindyLinkLabel(content) {
@@ -2270,17 +2265,17 @@
                 const cameraData = await response.json();
                 camerasContainer.innerHTML = "";
                 if (bestOfMount) bestOfMount.innerHTML = "";
-                const cameraOrder = getCameraOrder(content, await loadCameraSlots());
+                const cameraOrder = getCameraOrder(await loadCameraSlots());
                 let newestCaptureIso = null;
                 for (const cameraName of cameraOrder) {
                     const cameraFolder = cameraPageFolder(cameraData, cameraName);
                     // A camera missing from list.json is shown as missing, not silently dropped.
                     const data = cameraData[cameraFolder] || { images: [], metadata: {}, status: "Missing from list.json", waiting: 0 };
-                    const cameraMeta = getCameraMeta(content, cameraFolder);
+                    const cameraMeta = getCameraMeta(content, cameraName);
                     // The status comes from list.json (regenerate_list.py writes it from the folders);
                     // the old default "Working" said so even on an empty card.
                     const statusText = (data.status != null && data.status !== "") ? data.status : (cameraMeta.defaultStatus || "Status unknown");
-                    const displayTitle = formatCameraName(cameraFolder);
+                    const displayTitle = formatCameraName(cameraName);
                     const elevLabel = extractCameraElevLabel(cameraMeta.description);
 
                     const allImages = data.images || [];
@@ -2487,10 +2482,7 @@
             return displayText;
         }
 
-        let cameraDisplayNames = {
-            "NWHighPoint": "Westward View",
-            "woods_cam_001": "Bowman Ridge"
-        };
+        let cameraDisplayNames = {};
         function formatCameraName(name) {
             if (cameraDisplayNames[name]) return cameraDisplayNames[name];
             return name.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
