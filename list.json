@@ -1,472 +1,151 @@
 {
-  "bowman_mtn": {
+  "reconyx-bowman-mtn": {
     "images": [
       "Bowman_Mtn_latest.jpg",
-      "Bowman_Mtn_20261124_205054.jpg",
-      "Bowman_Mtn_20261124_202054.jpg",
-      "Bowman_Mtn_20261124_195054.jpg",
-      "Bowman_Mtn_20261124_192054.jpg",
-      "Bowman_Mtn_20261124_185054.jpg",
-      "Bowman_Mtn_20261124_182055.jpg",
-      "Bowman_Mtn_20261124_180700.jpg",
-      "Bowman_Mtn_20261124_180659.jpg",
-      "Bowman_Mtn_20261124_180658.jpg",
-      "Bowman_Mtn_20261124_175054.jpg",
-      "Bowman_Mtn_20261124_174328.jpg",
-      "Bowman_Mtn_20261124_174327.jpg",
-      "Bowman_Mtn_20261124_172054.jpg"
+      "Bowman_Mtn_20261125_063000.jpg",
+      "Bowman_Mtn_20261125_060000.jpg",
+      "Bowman_Mtn_20261125_053000.jpg",
+      "Bowman_Mtn_20261124_180000.jpg",
+      "Bowman_Mtn_20261124_173000.jpg",
+      "Bowman_Mtn_20261124_170000.jpg",
+      "Bowman_Mtn_20261124_163000.jpg",
+      "Bowman_Mtn_20261124_160000.jpg",
+      "Bowman_Mtn_20261124_153000.jpg",
+      "Bowman_Mtn_20261124_150000.jpg",
+      "Bowman_Mtn_20261124_143000.jpg",
+      "Bowman_Mtn_20261124_140000.jpg",
+      "Bowman_Mtn_20261124_133000.jpg"
     ],
     "metadata": {
       "Bowman_Mtn_latest.jpg": {
-        "run_id": "01a21124-499f-70ef-a147-25c485e14ad4",
+        "content_sha256": "f10088e1be905e2e7c5f306466bde950eb6f9bcd9dc3c0669f667ccf9f75825a",
+        "run_id": "01a212ed-9d66-7373-b328-58949332ccc2",
+        "source_path": "reconyx-bowman-mtn/2026-11-25/20261125_063000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-25T04:50:54Z"
+        "timestamp": "2026-11-25T14:30:00Z"
       },
-      "Bowman_Mtn_20261124_205054.jpg": {
-        "run_id": "01a21124-499f-70ef-a147-25c485e14ad4",
+      "Bowman_Mtn_20261125_063000.jpg": {
+        "content_sha256": "f10088e1be905e2e7c5f306466bde950eb6f9bcd9dc3c0669f667ccf9f75825a",
+        "run_id": "01a212ed-9d66-7373-b328-58949332ccc2",
+        "source_path": "reconyx-bowman-mtn/2026-11-25/20261125_063000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-25T04:50:54Z"
+        "timestamp": "2026-11-25T14:30:00Z"
       },
-      "Bowman_Mtn_20261124_202054.jpg": {
-        "run_id": "01a21124-499f-70ef-a147-25c485e14ad4",
+      "Bowman_Mtn_20261125_060000.jpg": {
+        "content_sha256": "6ddc8d38561cf89bd3bb479d66c47d0b5a15177279a6302afda462c9fd947fa2",
+        "run_id": "01a212ed-9d66-7373-b328-58949332ccc2",
+        "source_path": "reconyx-bowman-mtn/2026-11-25/20261125_060000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-25T04:20:54Z"
+        "timestamp": "2026-11-25T14:00:00Z"
       },
-      "Bowman_Mtn_20261124_195054.jpg": {
-        "run_id": "01a21124-499f-70ef-a147-25c485e14ad4",
+      "Bowman_Mtn_20261125_053000.jpg": {
+        "content_sha256": "a136495c88129ecf022da4367c289a3af37f0b75d44c92ba6924aae5da340162",
+        "run_id": "01a212ed-9d66-7e07-bee4-8a757d60f59b",
+        "source_path": "reconyx-bowman-mtn/2026-11-25/20261125_053000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-25T03:50:54Z"
+        "timestamp": "2026-11-25T13:30:00Z"
       },
-      "Bowman_Mtn_20261124_192054.jpg": {
-        "run_id": "01a21075-eabd-7a8c-8146-402288ca89ea",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T03:20:54Z"
-      },
-      "Bowman_Mtn_20261124_185054.jpg": {
-        "run_id": "01a2105a-6fe3-7650-99ee-cbd2c3a96f7a",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:50:54Z"
-      },
-      "Bowman_Mtn_20261124_182055.jpg": {
-        "run_id": "01a2103e-f4ed-75e9-b2a7-0abf248cbf2e",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:20:55Z"
-      },
-      "Bowman_Mtn_20261124_180700.jpg": {
-        "run_id": "01a21031-37c4-7d86-aae1-df438eea8975",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:07:00Z"
-      },
-      "Bowman_Mtn_20261124_180659.jpg": {
-        "run_id": "01a21031-37c4-7d86-aae1-df438eea8975",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:06:59Z"
-      },
-      "Bowman_Mtn_20261124_180658.jpg": {
-        "run_id": "01a21031-37c4-7d86-aae1-df438eea8975",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:06:58Z"
-      },
-      "Bowman_Mtn_20261124_175054.jpg": {
-        "run_id": "01a21024-ddbe-7729-8fc5-64ee4bbd22eb",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T01:50:54Z"
-      },
-      "Bowman_Mtn_20261124_174328.jpg": {
-        "run_id": "01a21024-ddbe-7729-8fc5-64ee4bbd22eb",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T01:43:28Z"
-      },
-      "Bowman_Mtn_20261124_174327.jpg": {
-        "run_id": "01a21024-ddbe-7729-8fc5-64ee4bbd22eb",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T01:43:27Z"
-      },
-      "Bowman_Mtn_20261124_172054.jpg": {
-        "run_id": "01a21024-ddbe-7b38-8c5e-250dd1626bfc",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T01:20:54Z"
-      }
-    },
-    "status": "Working",
-    "newest_capture": null,
-    "waiting": 0,
-    "oldest_waiting_capture": null
-  },
-  "n_twin": {
-    "images": [
-      "N_Twin_latest.jpg",
-      "N_Twin_20261124_190002.jpg",
-      "N_Twin_20261124_183001.jpg",
-      "N_Twin_20261124_181050.jpg",
-      "N_Twin_20261124_181047.jpg",
-      "N_Twin_20261124_180616.jpg",
-      "N_Twin_20261124_180000.jpg",
-      "N_Twin_20261124_174706.jpg",
-      "N_Twin_20261124_174541.jpg",
-      "N_Twin_20261124_174300.jpg",
-      "N_Twin_20261124_174257.jpg",
-      "N_Twin_20261124_170001.jpg",
-      "N_Twin_20261124_164052.jpg",
-      "N_Twin_20261124_163558.jpg"
-    ],
-    "metadata": {
-      "N_Twin_latest.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T03:00:02Z"
-      },
-      "N_Twin_20261124_190002.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T03:00:02Z"
-      },
-      "N_Twin_20261124_183001.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:30:01Z"
-      },
-      "N_Twin_20261124_181050.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:10:50Z"
-      },
-      "N_Twin_20261124_181047.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:10:47Z"
-      },
-      "N_Twin_20261124_180616.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:06:16Z"
-      },
-      "N_Twin_20261124_180000.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
+      "Bowman_Mtn_20261124_180000.jpg": {
+        "content_sha256": "8e9eacd423a78e68ae50621a8836e10720cc53b6e2172cef8c4066b8b2b55d54",
+        "run_id": "01a2102a-ce58-7ae8-adc1-446a9e6444bd",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_180000_trailcam.jpg",
         "temperature_c": null,
         "timestamp": "2026-11-25T02:00:00Z"
       },
-      "N_Twin_20261124_174706.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
+      "Bowman_Mtn_20261124_173000.jpg": {
+        "content_sha256": "c256ab0cc0061c7cd582fc4082b9ff73306f8b14a750b11d865cf9d498dbee67",
+        "run_id": "01a21024-f151-7d4b-af76-b2700c91c685",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_173000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-25T01:47:06Z"
+        "timestamp": "2026-11-25T01:30:00Z"
       },
-      "N_Twin_20261124_174541.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
+      "Bowman_Mtn_20261124_170000.jpg": {
+        "content_sha256": "c3f34da193efe068ca1ad9c8a4c76ef96f74ba230735cd50b5847c32e0e17617",
+        "run_id": "01a21024-f151-7af0-b01a-40f42ecfcbc7",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_170000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-25T01:45:41Z"
+        "timestamp": "2026-11-25T01:00:00Z"
       },
-      "N_Twin_20261124_174300.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
+      "Bowman_Mtn_20261124_163000.jpg": {
+        "content_sha256": "bf82d560f7b4f9eaa979f48179c7e40288cca8f4aae4ea445d0fc9fb1cd991f9",
+        "run_id": "01a21024-f151-79ec-8b68-00dcf316394c",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_163000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-25T01:43:00Z"
+        "timestamp": "2026-11-25T00:30:00Z"
       },
-      "N_Twin_20261124_174257.jpg": {
-        "run_id": "01a21124-49a8-7527-8407-7cab55db9b73",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T01:42:57Z"
-      },
-      "N_Twin_20261124_170001.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T01:00:01Z"
-      },
-      "N_Twin_20261124_164052.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T00:40:52Z"
-      },
-      "N_Twin_20261124_163558.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T00:35:58Z"
-      }
-    },
-    "status": "Working",
-    "newest_capture": "2026-11-25T03:00:02Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
-  },
-  "w_ridge_n_twin": {
-    "images": [
-      "W_Ridge_N_Twin_latest.jpg",
-      "W_Ridge_N_Twin_20261124_163002.jpg",
-      "W_Ridge_N_Twin_20261124_160000.jpg",
-      "W_Ridge_N_Twin_20261124_153002.jpg",
-      "W_Ridge_N_Twin_20261124_150331.jpg",
-      "W_Ridge_N_Twin_20261124_150328.jpg",
-      "W_Ridge_N_Twin_20261124_150000.jpg",
-      "W_Ridge_N_Twin_20261124_143001.jpg",
-      "W_Ridge_N_Twin_20261124_140001.jpg",
-      "W_Ridge_N_Twin_20261124_133000.jpg",
-      "W_Ridge_N_Twin_20261124_131243.jpg",
-      "W_Ridge_N_Twin_20261124_131240.jpg",
-      "W_Ridge_N_Twin_20261124_130143.jpg",
-      "W_Ridge_N_Twin_20261124_130001.jpg"
-    ],
-    "metadata": {
-      "W_Ridge_N_Twin_latest.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T00:30:02Z"
-      },
-      "W_Ridge_N_Twin_20261124_163002.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T00:30:02Z"
-      },
-      "W_Ridge_N_Twin_20261124_160000.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
+      "Bowman_Mtn_20261124_160000.jpg": {
+        "content_sha256": "5c97261fa9fe76d430f9fe31d2f8766e5d12cae308b6e1658b560f18fb8c8127",
+        "run_id": "01a21024-f151-79ec-8b68-00dcf316394c",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_160000_trailcam.jpg",
         "temperature_c": null,
         "timestamp": "2026-11-25T00:00:00Z"
       },
-      "W_Ridge_N_Twin_20261124_153002.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T23:30:02Z"
-      },
-      "W_Ridge_N_Twin_20261124_150331.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T23:03:31Z"
-      },
-      "W_Ridge_N_Twin_20261124_150328.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T23:03:28Z"
-      },
-      "W_Ridge_N_Twin_20261124_150000.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T23:00:00Z"
-      },
-      "W_Ridge_N_Twin_20261124_143001.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T22:30:01Z"
-      },
-      "W_Ridge_N_Twin_20261124_140001.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T22:00:01Z"
-      },
-      "W_Ridge_N_Twin_20261124_133000.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T21:30:00Z"
-      },
-      "W_Ridge_N_Twin_20261124_131243.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T21:12:43Z"
-      },
-      "W_Ridge_N_Twin_20261124_131240.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T21:12:40Z"
-      },
-      "W_Ridge_N_Twin_20261124_130143.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T21:01:43Z"
-      },
-      "W_Ridge_N_Twin_20261124_130001.jpg": {
-        "run_id": "01a21024-ddb4-7cd2-92ba-339499b78cfa",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T21:00:01Z"
-      }
-    },
-    "status": "Working",
-    "newest_capture": "2026-11-25T00:30:02Z",
-    "waiting": 0,
-    "oldest_waiting_capture": null
-  },
-  "NWHighPoint": {
-    "images": [
-      "NWHighPoint_latest.jpg",
-      "NWHighPoint_20261124_200000.jpg",
-      "NWHighPoint_20261124_193001.jpg",
-      "NWHighPoint_20261124_190000.jpg",
-      "NWHighPoint_20261124_183001.jpg",
-      "NWHighPoint_20261124_180002.jpg",
-      "NWHighPoint_20261124_173001.jpg",
-      "NWHighPoint_20261124_163001.jpg",
-      "NWHighPoint_20261124_162935.jpg",
-      "NWHighPoint_20261124_153000.jpg",
-      "NWHighPoint_20261124_150000.jpg",
-      "NWHighPoint_20261124_143001.jpg",
-      "NWHighPoint_20261124_141731.jpg",
-      "NWHighPoint_20261124_141728.jpg"
-    ],
-    "metadata": {
-      "NWHighPoint_latest.jpg": {
-        "run_id": "01a21124-49a8-726f-a801-786ad33d77f3",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T04:00:00Z"
-      },
-      "NWHighPoint_20261124_200000.jpg": {
-        "run_id": "01a21124-49a8-726f-a801-786ad33d77f3",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T04:00:00Z"
-      },
-      "NWHighPoint_20261124_193001.jpg": {
-        "run_id": "01a21124-49a8-726f-a801-786ad33d77f3",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T03:30:01Z"
-      },
-      "NWHighPoint_20261124_190000.jpg": {
-        "run_id": "01a21057-b078-7522-b80d-1bf537e6a255",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T03:00:00Z"
-      },
-      "NWHighPoint_20261124_183001.jpg": {
-        "run_id": "01a2103c-358e-7890-ada6-de227b977b91",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:30:01Z"
-      },
-      "NWHighPoint_20261124_180002.jpg": {
-        "run_id": "01a21024-ddb4-76f6-a80d-beca9620b077",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T02:00:02Z"
-      },
-      "NWHighPoint_20261124_173001.jpg": {
-        "run_id": "01a21024-ddb4-7c87-8f30-46fe7a52dd55",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T01:30:01Z"
-      },
-      "NWHighPoint_20261124_163001.jpg": {
-        "run_id": "01a20fce-4ad7-7188-97d6-3b8fc3016597",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T00:30:01Z"
-      },
-      "NWHighPoint_20261124_162935.jpg": {
-        "run_id": "01a20fce-4ad7-7188-97d6-3b8fc3016597",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T00:29:35Z"
-      },
-      "NWHighPoint_20261124_153000.jpg": {
-        "run_id": "01a20f97-5556-7c6f-b438-1137bb8f8217",
+      "Bowman_Mtn_20261124_153000.jpg": {
+        "content_sha256": "1344b56fa462f37bdfbd0823bcd3b8a95677cdc10b826b84986ae738f56e9d9f",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_153000_trailcam.jpg",
         "temperature_c": null,
         "timestamp": "2026-11-24T23:30:00Z"
       },
-      "NWHighPoint_20261124_150000.jpg": {
-        "run_id": "01a20f7b-da8e-7f47-b1de-6e16ed18a668",
+      "Bowman_Mtn_20261124_150000.jpg": {
+        "content_sha256": "c3a25f8f2b4bf420afebb0c7c5642ed97a72af68d721fe57eb3de7a6e89d6002",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_150000_trailcam.jpg",
         "temperature_c": null,
         "timestamp": "2026-11-24T23:00:00Z"
       },
-      "NWHighPoint_20261124_143001.jpg": {
-        "run_id": "01a20f60-5f8e-769d-8a2f-7044b1734255",
+      "Bowman_Mtn_20261124_143000.jpg": {
+        "content_sha256": "98dfea4c371eafb29017445050b0ab27a9601e463126a54f43ef1e18d9546fa0",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_143000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-24T22:30:01Z"
+        "timestamp": "2026-11-24T22:30:00Z"
       },
-      "NWHighPoint_20261124_141731.jpg": {
-        "run_id": "01a20f60-5f8e-769d-8a2f-7044b1734255",
+      "Bowman_Mtn_20261124_140000.jpg": {
+        "content_sha256": "7972f2fc951a0ea27991e4d2c7029a7b37b0018b67cf2f4fe35173ae51c2a070",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_140000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-24T22:17:31Z"
+        "timestamp": "2026-11-24T22:00:00Z"
       },
-      "NWHighPoint_20261124_141728.jpg": {
-        "run_id": "01a20f60-5f8e-769d-8a2f-7044b1734255",
+      "Bowman_Mtn_20261124_133000.jpg": {
+        "content_sha256": "d7bc8fa69a46a7a63889ab56cf64cd5e24e7ce755a74a56a130447c35da519a4",
+        "source_path": "reconyx-bowman-mtn/2026-11-24/20261124_133000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-24T22:17:28Z"
+        "timestamp": "2026-11-24T21:30:00Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-25T04:00:00Z",
+    "newest_capture": "2026-11-25T14:30:00Z",
     "waiting": 0,
     "oldest_waiting_capture": null
   },
-  "woods_cam_003": {
-    "images": [
-      "Woods_Cam_003_latest.jpg",
-      "Woods_Cam_003_20261124_160113.jpg",
-      "Woods_Cam_003_20261124_150113.jpg",
-      "Woods_Cam_003_20261124_140113.jpg",
-      "Woods_Cam_003_20261124_130113.jpg",
-      "Woods_Cam_003_20261124_120113.jpg",
-      "Woods_Cam_003_20261124_110113.jpg",
-      "Woods_Cam_003_20261124_100114.jpg",
-      "Woods_Cam_003_20261124_090113.jpg",
-      "Woods_Cam_003_20261124_080113.jpg",
-      "Woods_Cam_003_20261123_160114.jpg",
-      "Woods_Cam_003_20261123_150113.jpg",
-      "Woods_Cam_003_20261123_140113.jpg",
-      "Woods_Cam_003_20261123_130113.jpg"
-    ],
-    "metadata": {
-      "Woods_Cam_003_latest.jpg": {
-        "run_id": "01a20fc5-2218-7735-a1e9-d73bdfc876d9",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T00:01:13Z"
-      },
-      "Woods_Cam_003_20261124_160113.jpg": {
-        "run_id": "01a20fc5-2218-7735-a1e9-d73bdfc876d9",
-        "temperature_c": null,
-        "timestamp": "2026-11-25T00:01:13Z"
-      },
-      "Woods_Cam_003_20261124_150113.jpg": {
-        "run_id": "01a20f9b-e9bc-7514-b7f9-3869876d82e3",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T23:01:13Z"
-      },
-      "Woods_Cam_003_20261124_140113.jpg": {
-        "run_id": "01a20f64-f41f-7bac-bcab-2298dd0b8206",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T22:01:13Z"
-      },
-      "Woods_Cam_003_20261124_130113.jpg": {
-        "run_id": "01a20f2d-fec5-7fdb-9b84-ba4bcd86f5d2",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T21:01:13Z"
-      },
-      "Woods_Cam_003_20261124_120113.jpg": {
-        "run_id": "01a20ef7-08f8-76d8-bc12-ea424da7dd1f",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T20:01:13Z"
-      },
-      "Woods_Cam_003_20261124_110113.jpg": {
-        "run_id": "01a20eb3-40ae-7fc0-b425-5e01a633c020",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T19:01:13Z"
-      },
-      "Woods_Cam_003_20261124_100114.jpg": {
-        "run_id": "01a20e8a-07c6-718f-970e-2bf0219ba58e",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T18:01:14Z"
-      },
-      "Woods_Cam_003_20261124_090113.jpg": {
-        "run_id": "01a20e53-1050-70ca-be17-3e7f3552eb1f",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T17:01:13Z"
-      },
-      "Woods_Cam_003_20261124_080113.jpg": {
-        "run_id": "01a20e1c-19c5-7c7e-aea2-ba09553d9413",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T16:01:13Z"
-      },
-      "Woods_Cam_003_20261123_160114.jpg": {
-        "run_id": "01a20aac-b5bf-7ea2-99cc-3cf08a922887",
-        "temperature_c": null,
-        "timestamp": "2026-11-24T00:01:14Z"
-      },
-      "Woods_Cam_003_20261123_150113.jpg": {
-        "run_id": "01a20a75-c084-7311-ba64-85364a4408d6",
-        "temperature_c": null,
-        "timestamp": "2026-11-23T23:01:13Z"
-      },
-      "Woods_Cam_003_20261123_140113.jpg": {
-        "run_id": "01a20a3e-cb3c-759c-9b6a-2b8a34132ee0",
-        "temperature_c": null,
-        "timestamp": "2026-11-23T22:01:13Z"
-      },
-      "Woods_Cam_003_20261123_130113.jpg": {
-        "run_id": "01a20a07-d673-73b1-9c41-2ffde5d7e673",
-        "temperature_c": null,
-        "timestamp": "2026-11-23T21:01:13Z"
-      }
-    },
-    "status": "Working",
+  "gardepro-north-twin-camp": {
+    "images": [],
+    "metadata": {},
+    "status": "No picture has passed the people check since 2026-04-19T14:00:03Z; 6914 waiting",
     "newest_capture": null,
-    "waiting": 0,
-    "oldest_waiting_capture": null
+    "waiting": 6914,
+    "oldest_waiting_capture": "2026-04-19T14:00:03Z"
+  },
+  "gardepro-north-twin-west-ridge": {
+    "images": [],
+    "metadata": {},
+    "status": "No picture has passed the people check since 2026-07-25T14:05:56Z; 9996 waiting",
+    "newest_capture": null,
+    "waiting": 9996,
+    "oldest_waiting_capture": "2026-07-25T14:05:56Z"
+  },
+  "gardepro-forest-lands-cross-over": {
+    "images": [],
+    "metadata": {},
+    "status": "No picture has passed the people check since 2026-04-28T04:16:13Z; 9747 waiting",
+    "newest_capture": null,
+    "waiting": 9747,
+    "oldest_waiting_capture": "2026-04-28T04:16:13Z"
+  },
+  "woods-cam-003": {
+    "images": [],
+    "metadata": {},
+    "status": "No picture has passed the people check since 2026-10-13T20:29:06Z; 394 waiting",
+    "newest_capture": null,
+    "waiting": 394,
+    "oldest_waiting_capture": "2026-10-13T20:29:06Z"
   }
 }
