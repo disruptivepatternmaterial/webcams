@@ -1695,7 +1695,7 @@
                         const meta = (data.metadata || {})[fn] || {};
                         return {
                             url: cameraFolder + "/" + fn + "?v=" + encodeURIComponent(meta.timestamp || refreshToken),
-                            infoText: meta.timestamp ? formatPacificTime(meta.timestamp).replace(", ", " at ") : "Image",
+                            infoText: meta.timestamp ? formatPacificTime(meta.timestamp).replace(/, (?=[^,]*$)/, " at ") : "Image",
                             timestamp: meta.timestamp
                         };
                     });
