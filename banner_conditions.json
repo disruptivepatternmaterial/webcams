@@ -1,13 +1,26 @@
 {
-  "event_id": "62ce7631-08d1-54f8-915f-e48287ae0516",
-  "last_updated": "2026-11-25T22:58:00Z",
+  "event_id": "0599bdc0-43fa-538b-9e94-954ab84e5bf1",
+  "last_updated": "2026-11-25T23:10:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T22:01:06.080678Z",
-      "dropped": [],
+      "as_of": "2026-11-25T23:03:18Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "aqi",
+          "reason": "another device of the same unit is counted instead"
+        },
+        {
+          "measurement": "fog",
+          "reason": "another device of the same unit is counted instead"
+        }
+      ],
       "elev_ft": [
         3281
       ],
@@ -15,14 +28,14 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        42
+        43
       ]
     },
     {
       "aqi": [
         5
       ],
-      "as_of": "2026-11-25T22:48:29.902284Z",
+      "as_of": "2026-11-25T22:57:01.094102Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -53,7 +66,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T22:38:47.790655Z",
+      "as_of": "2026-11-25T22:59:10.505115Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -78,7 +91,7 @@
       ]
     },
     {
-      "as_of": "2026-11-25T22:48:03.524750Z",
+      "as_of": "2026-11-25T22:58:50.882477Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -91,11 +104,11 @@
       ]
     },
     {
-      "as_of": "2026-11-25T22:32:30.114424Z",
+      "as_of": "2026-11-25T22:53:53.314522Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "71.3 F disagrees with another sensor here (spread 31.4 F, over 6.7 F) and is furthest from the other locations: 31.5 F off their median of 39.9 F, 12 locations adjusted to 3980 ft at 2.64 F per 1000 ft"
+          "reason": "71.3 F disagrees with another sensor here (spread 31.4 F, over 6.7 F) and is furthest from the other locations: 31.5 F off their median of 39.8 F, 12 locations adjusted to 3980 ft at 2.77 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -115,7 +128,7 @@
       ],
       "wind": [
         {
-          "dir_deg": 91,
+          "dir_deg": 181,
           "mph": 3
         }
       ]
@@ -124,7 +137,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T22:34:09.624723Z",
+      "as_of": "2026-11-25T22:54:09.424491Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -168,12 +181,12 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-25T22:34:09.624723Z",
+      "observed_at": "2026-11-25T22:54:09.424491Z",
       "snow_in": 3.5
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-25T22:38:47.790655Z",
+      "observed_at": "2026-11-25T22:53:53.314522Z",
       "snow_in": 0.8
     },
     {
