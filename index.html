@@ -373,6 +373,8 @@
         .banner-stat.banner-site { min-width: 96px; }
         .banner-site-name {
             display: block;
+            color: inherit;
+            text-decoration: none;
             font-size: 0.72em;
             font-weight: 700;
             opacity: 0.92;
@@ -1977,6 +1979,16 @@
             return row;
         }
         function renderBannerSites(sites) {
+            // Windy PWS ids from weather.device_locations.windy_station_id, one per site.
+            const windyStations = {
+                bowman_mtn: "4ks5xFmh",
+                n_twin_west_ridge: "UpjK9hSq",
+                n_twin_approach: "A1QVv3Du",
+                s_twin_approach: "XHfrDM3v",
+                forest_lands_high_point: "wOvn2H1z",
+                forest_lands_ridge: "fwWd6XAK",
+                dailey_prairie: "ztCDXPlq"
+            };
             const wrap = document.getElementById("banner-sites");
             if (!wrap) return;
             wrap.innerHTML = "";
@@ -1984,7 +1996,13 @@
                 const card = document.createElement("div");
                 card.className = "banner-stat banner-site";
 
-                const name = document.createElement("span");
+                const windyStation = windyStations[site.id];
+                const name = document.createElement(windyStation ? "a" : "span");
+                if (windyStation) {
+                    name.href = "https://www.windy.com/station/pws-" + windyStation;
+                    name.target = "_blank";
+                    name.rel = "noopener noreferrer";
+                }
                 name.className = "banner-site-name";
                 name.textContent = site.label || site.id || "—";
                 const elevations = bannerValues(site.elev_ft);
