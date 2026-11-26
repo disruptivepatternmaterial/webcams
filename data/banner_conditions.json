@@ -1,6 +1,6 @@
 {
-  "event_id": "6b1cd924-b5c3-5f94-843f-0b652ec4edda",
-  "last_updated": "2026-11-26T16:56:00Z",
+  "event_id": "d38c1e82-ee65-5774-8dc4-ba722dce60d4",
+  "last_updated": "2026-11-26T17:08:00Z",
   "sites": [
     {
       "aqi": [
@@ -35,7 +35,7 @@
       "aqi": [
         1
       ],
-      "as_of": "2026-11-26T16:48:16.202804Z",
+      "as_of": "2026-11-26T16:56:46.629056Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -83,7 +83,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T16:38:35.476514Z",
+      "as_of": "2026-11-26T16:58:55.337634Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "as_of": "2026-11-26T14:47:54.936222Z",
+      "as_of": "2026-11-26T16:58:40.158317Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -117,16 +117,14 @@
       "label": "S Twin Approach",
       "stale": false,
       "temp_f": [
-        37
+        38
       ]
     },
     {
-      "as_of": "2026-11-26T16:23:42.356309Z",
+      "as_of": "2026-11-26T17:03:15Z",
       "dropped": [],
       "elev_ft": [
-        3980,
-        3990,
-        4003
+        3980
       ],
       "id": "forest_lands_high_point",
       "label": "Forest Lands High Point",
@@ -137,14 +135,16 @@
         1
       ],
       "stale": false,
-      "temp_f": [],
+      "temp_f": [
+        38
+      ],
       "wind": []
     },
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T16:33:56.828088Z",
+      "as_of": "2026-11-26T16:53:56.651917Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -188,13 +188,13 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-26T16:33:56.828088Z",
+      "observed_at": "2026-11-26T16:53:56.651917Z",
       "snow_in": 3.1
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-26T16:38:35.476514Z",
-      "snow_in": 1.4
+      "observed_at": "2026-11-26T16:53:42.055374Z",
+      "snow_in": 1.3
     },
     {
       "band_ft": 5000,
