@@ -1,12 +1,12 @@
 {
-  "event_id": "9d5bc370-25f5-533e-8867-e252839c468a",
-  "last_updated": "2026-11-26T01:00:00Z",
+  "event_id": "9065419a-e687-5e46-8527-716432bce32c",
+  "last_updated": "2026-11-26T01:10:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T00:01:36.446257Z",
+      "as_of": "2026-11-26T01:00:53Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,14 +28,14 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        43
+        42
       ]
     },
     {
       "aqi": [
         31
       ],
-      "as_of": "2026-11-26T00:48:28.587916Z",
+      "as_of": "2026-11-26T00:56:59.504982Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -63,10 +63,8 @@
       ]
     },
     {
-      "aqi": [
-        0
-      ],
-      "as_of": "2026-11-26T00:38:46.490555Z",
+      "aqi": [],
+      "as_of": "2026-11-26T00:59:09.436384Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -81,14 +79,9 @@
       ],
       "stale": false,
       "temp_f": [
-        40
+        39
       ],
-      "wind": [
-        {
-          "dir_deg": 17,
-          "mph": 4
-        }
-      ]
+      "wind": []
     },
     {
       "as_of": "2026-11-26T00:28:49.620873Z",
@@ -105,12 +98,7 @@
     },
     {
       "as_of": "2026-11-26T00:23:52.385810Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "71.3 F disagrees with another sensor here (spread 31.4 F, over 6.7 F) and is furthest from the other locations: 30.8 F off their median of 40.5 F, 12 locations adjusted to 3980 ft at 1.87 F per 1000 ft"
-        }
-      ],
+      "dropped": [],
       "elev_ft": [
         3990
       ],
@@ -137,7 +125,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T00:34:08.433292Z",
+      "as_of": "2026-11-26T00:54:08.031276Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -181,13 +169,13 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-26T00:34:08.433292Z",
+      "observed_at": "2026-11-26T00:54:08.031276Z",
       "snow_in": 3.5
     },
     {
       "band_ft": 4000,
       "observed_at": "2026-11-26T00:38:46.490555Z",
-      "snow_in": 0.9
+      "snow_in": 1.0
     },
     {
       "band_ft": 5000,
