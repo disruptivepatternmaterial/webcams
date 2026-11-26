@@ -1,26 +1,13 @@
 {
-  "event_id": "9d9c278a-42b2-5832-a9fe-0a3a50a08a52",
-  "last_updated": "2026-11-26T05:56:00Z",
+  "event_id": "e7351d7e-fc88-515a-9720-4fd6158cccba",
+  "last_updated": "2026-11-26T06:08:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T05:01:27Z",
-      "dropped": [
-        {
-          "measurement": "air_temperature_f",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "aqi",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "fog",
-          "reason": "another device of the same unit is counted instead"
-        }
-      ],
+      "as_of": "2026-11-26T06:00:58Z",
+      "dropped": [],
       "elev_ft": [
         3281
       ],
@@ -28,14 +15,14 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        40
+        39
       ]
     },
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T05:48:24.872416Z",
+      "as_of": "2026-11-26T05:56:55.732696Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -53,7 +40,7 @@
       ],
       "stale": false,
       "temp_f": [
-        33
+        34
       ],
       "wind": [
         {
@@ -64,7 +51,7 @@
     },
     {
       "aqi": [],
-      "as_of": "2026-11-26T05:38:43.118976Z",
+      "as_of": "2026-11-26T05:59:06.690251Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -79,12 +66,12 @@
       ],
       "stale": false,
       "temp_f": [
-        36
+        37
       ],
       "wind": []
     },
     {
-      "as_of": "2026-11-26T04:48:00.250857Z",
+      "as_of": "2026-11-26T05:58:46.430397Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -97,7 +84,7 @@
       ]
     },
     {
-      "as_of": "2026-11-26T05:23:49.300574Z",
+      "as_of": "2026-11-26T05:53:48.955131Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -120,7 +107,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T05:34:04.652249Z",
+      "as_of": "2026-11-26T05:54:04.480178Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -164,12 +151,12 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-26T05:34:04.652249Z",
+      "observed_at": "2026-11-26T05:54:04.480178Z",
       "snow_in": 3.5
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-26T05:38:43.118976Z",
+      "observed_at": "2026-11-26T05:53:48.955131Z",
       "snow_in": 1.0
     },
     {
