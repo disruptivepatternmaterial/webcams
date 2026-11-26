@@ -1,11 +1,4 @@
 {
-  "reconyx-bowman-mtn_20261126_060000.jpg": {
-    "content_sha256": "32b92d04f17a52da006b6f290e05fd47f398ae42b9c9d6f77cfe6bd552c8849b",
-    "run_id": "01a217e4-2fee-7b98-b60a-f6ab2ae2715d",
-    "source_path": "reconyx-bowman-mtn/2026-11-26/20261126_060000_trailcam.jpg",
-    "temperature_c": null,
-    "timestamp": "2026-11-26T14:00:00Z"
-  },
   "reconyx-bowman-mtn_20261126_063000.jpg": {
     "content_sha256": "af1a711f2e59518c8ae3a4f6ef6d7b4bc144f0709f0d9d044cec57556fff281c",
     "run_id": "01a217ff-dcc6-7c67-bacf-1ccce7b03ee2",
@@ -90,11 +83,18 @@
     "temperature_c": null,
     "timestamp": "2026-11-26T20:00:00Z"
   },
-  "reconyx-bowman-mtn_latest.jpg": {
-    "content_sha256": "9a3282440b0812b14b483804c2e3d5dc303830834baa761404b10698c039a975",
-    "run_id": "01a2192e-49aa-7722-a97e-de19095cbb94",
-    "source_path": "reconyx-bowman-mtn/2026-11-26/20261126_120000_trailcam.jpg",
+  "reconyx-bowman-mtn_20261126_120200.jpg": {
+    "content_sha256": "e0d390812b7cdfb8fcddd8d52fc51e4e4853c2036299a37d35637095c1de0782",
+    "run_id": "01a2193c-111f-7ccd-ba26-211cdc1c89b6",
+    "source_path": "reconyx-bowman-mtn/2026-11-26/20261126_120248_trailcam.jpg",
     "temperature_c": null,
-    "timestamp": "2026-11-26T20:00:00Z"
+    "timestamp": "2026-11-26T20:02:48Z"
+  },
+  "reconyx-bowman-mtn_latest.jpg": {
+    "content_sha256": "e0d390812b7cdfb8fcddd8d52fc51e4e4853c2036299a37d35637095c1de0782",
+    "run_id": "01a2193c-111f-7ccd-ba26-211cdc1c89b6",
+    "source_path": "reconyx-bowman-mtn/2026-11-26/20261126_120248_trailcam.jpg",
+    "temperature_c": null,
+    "timestamp": "2026-11-26T20:02:48Z"
   }
 }
