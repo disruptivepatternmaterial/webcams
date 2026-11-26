@@ -1,6 +1,6 @@
 {
-  "event_id": "c3314ddf-8bf5-5860-ad4a-ad8caaa8260f",
-  "last_updated": "2026-11-26T09:46:00Z",
+  "event_id": "9c6fc859-48e5-5356-9c2c-a75f7bdb6f07",
+  "last_updated": "2026-11-26T09:56:00Z",
   "sites": [
     {
       "aqi": [
@@ -35,7 +35,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T09:33:16.086363Z",
+      "as_of": "2026-11-26T09:48:22.134013Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -157,7 +157,7 @@
       ]
     },
     {
-      "as_of": "2026-11-26T09:34:33.831720Z",
+      "as_of": "2026-11-26T09:48:31.381047Z",
       "dropped": [],
       "elev_ft": [
         3166
@@ -169,7 +169,7 @@
       "label": "Dailey Prairie",
       "stale": false,
       "temp_f": [
-        39
+        38
       ]
     }
   ],
@@ -186,7 +186,7 @@
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-26T09:28:21.824551Z",
+      "observed_at": "2026-11-26T09:48:22.134013Z",
       "snow_in": 1.6
     }
   ],
