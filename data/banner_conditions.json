@@ -1,12 +1,12 @@
 {
-  "event_id": "1ddbbf24-fc1c-5696-8dd4-322e41edf8c6",
-  "last_updated": "2026-11-25T23:58:00Z",
+  "event_id": "8947c8ff-25b0-5852-8f15-e05f3b9c3d1c",
+  "last_updated": "2026-11-26T00:08:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T23:03:21.377767Z",
+      "as_of": "2026-11-26T00:01:32Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -35,7 +35,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T23:48:29.109055Z",
+      "as_of": "2026-11-25T23:57:00.366823Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -66,7 +66,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T23:38:46.807243Z",
+      "as_of": "2026-11-25T23:59:10.002310Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "as_of": "2026-11-25T23:08:03.337008Z",
+      "as_of": "2026-11-25T23:58:49.963569Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -108,7 +108,7 @@
       "dropped": [
         {
           "measurement": "air_temperature_f",
-          "reason": "71.3 F disagrees with another sensor here (spread 31.4 F, over 6.7 F) and is furthest from the other locations: 31.4 F off their median of 39.9 F, 12 locations adjusted to 3980 ft at 2.77 F per 1000 ft"
+          "reason": "71.3 F disagrees with another sensor here (spread 31.4 F, over 6.7 F) and is furthest from the other locations: 31.2 F off their median of 40.2 F, 12 locations adjusted to 3980 ft at 2.38 F per 1000 ft"
         }
       ],
       "elev_ft": [
@@ -137,7 +137,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-25T23:34:09.231677Z",
+      "as_of": "2026-11-25T23:54:08.703891Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -181,7 +181,7 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-25T23:34:09.231677Z",
+      "observed_at": "2026-11-25T23:54:08.703891Z",
       "snow_in": 3.5
     },
     {
