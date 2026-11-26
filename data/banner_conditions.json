@@ -1,12 +1,12 @@
 {
-  "event_id": "b17d132e-5111-54bf-a919-dc9811f65e2d",
-  "last_updated": "2026-11-26T09:00:00Z",
+  "event_id": "064b50be-ee76-5ccc-815f-b509329adf9e",
+  "last_updated": "2026-11-26T09:10:00Z",
   "sites": [
     {
       "aqi": [
-        0
+        "fog"
       ],
-      "as_of": "2026-11-26T08:01:46.657541Z",
+      "as_of": "2026-11-26T09:01:15Z",
       "dropped": [
         {
           "measurement": "air_temperature_f",
@@ -28,15 +28,20 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        39
+        38
       ]
     },
     {
       "aqi": [
         "fog"
       ],
-      "as_of": "2026-11-26T08:48:22.284356Z",
-      "dropped": [],
+      "as_of": "2026-11-26T09:02:59.529000Z",
+      "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "another device of the same unit is counted instead"
+        }
+      ],
       "elev_ft": [
         4642,
         4721,
@@ -53,7 +58,7 @@
       ],
       "stale": false,
       "temp_f": [
-        33
+        34
       ],
       "wind": [
         {
@@ -66,7 +71,7 @@
       "aqi": [
         "fog"
       ],
-      "as_of": "2026-11-26T08:38:40.721067Z",
+      "as_of": "2026-11-26T08:59:05.131383Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -104,7 +109,7 @@
       ]
     },
     {
-      "as_of": "2026-11-26T08:23:47.321532Z",
+      "as_of": "2026-11-26T08:53:47.019379Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -127,7 +132,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-26T08:34:02.766272Z",
+      "as_of": "2026-11-26T08:54:02.273480Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -171,12 +176,12 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-26T08:34:02.766272Z",
+      "observed_at": "2026-11-26T08:54:02.273480Z",
       "snow_in": 3.5
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-26T08:38:40.721067Z",
+      "observed_at": "2026-11-26T08:53:47.019379Z",
       "snow_in": 1.0
     },
     {
