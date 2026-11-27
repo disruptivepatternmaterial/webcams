@@ -931,6 +931,13 @@
             line-height: 1.4;
             white-space: pre-line;
         }
+        @media (min-width: 1440px) {
+            .elev-grid { font-size: 1.2em; }
+            .elev-cell { grid-template-columns: 68px 1fr; padding: 9px 12px; }
+        }
+        @media (max-width: 720px) {
+            .elev-cell { grid-template-columns: 1fr; gap: 6px; padding: 6px 8px; }
+        }
         .left-column .support-bar {
             display: flex;
             align-items: center;
@@ -1166,7 +1173,7 @@
                     </div>
                     <div id="elev-grid" class="elev-grid"></div>
                     <div id="elev-footer" class="elev-footer">
-                        On ground is the snow depth in that cell. 24h is that column's forecast new snow and rain for that calendar day.
+                        On ground is the snow depth in that cell. Day is that column's forecast new snow and rain for that calendar day.
                     </div>
                     <p id="elev-summary" class="elev-summary" hidden></p>
                 </section>
@@ -1730,19 +1737,30 @@
                 || dateText === new Date(nowMs - dayMs).toISOString().slice(0, 10);
         }
 
+        // "10 PM Nov 25": the analysis time, in Pacific time.
+        function formatSnodasTime(isoString) {
+            const d = new Date(isoString);
+            if (isNaN(d.getTime())) return isoString;
+            return d.toLocaleString("en-US", { timeZone: "America/Los_Angeles", hour: "numeric" })
+                + " " + d.toLocaleString("en-US", { timeZone: "America/Los_Angeles", month: "short", day: "numeric" });
+        }
+
         // Today's snow on the ground, whichever forecast day is today when the page
         // draws: the band's sensors as the boxes show them now (each reading kept by
         // the read path's freshness check on its own time), else SNODAS, else the
         // model's value for the day. A forecast file without `snodas` predates this:
         // it keeps its own SNODAS or model depth, and a measured depth only ever
         // comes from the boxes.
+        // A band the job marked `sensor_withheld` disagreed with SNODAS and the model
+        // beyond the grid check's cutoff, so its sensor depth is not put back.
         function todaySnowOnGround(band, snowBands, snodas, nowMs) {
-            const measured = (Array.isArray(snowBands) ? snowBands : []).find(function(entry) {
+            const withheld = Array.isArray(band.snow_check) && band.snow_check.indexOf("sensor_withheld") !== -1;
+            const measured = withheld ? null : (Array.isArray(snowBands) ? snowBands : []).find(function(entry) {
                 return entry && entry.band_ft === band.elev_ft && bannerNumeric(entry.snow_in) !== null;
             });
             if (measured) {
                 return { snow_in: measured.snow_in, snow_source: "measured",
-                         snow_note: "Measured " + formatPacificTime(measured.observed_at) };
+                         snow_note: "24-hour median to " + formatPacificTime(measured.observed_at) };
             }
             if (snodas === undefined) {
                 return band.snow_source === "measured"
@@ -1753,7 +1771,10 @@
                 ? bannerNumeric(snodas.snow_in[String(band.elev_ft)])
                 : null;
             if (snodasDepth !== null) {
-                return { snow_in: snodasDepth, snow_source: "snodas", snow_note: "SNODAS analysis of " + snodas.date };
+                const note = snodas.valid_at
+                    ? "SNODAS, " + formatSnodasTime(snodas.valid_at)
+                    : "SNODAS analysis of " + snodas.date;
+                return { snow_in: snodasDepth, snow_source: "snodas", snow_note: note };
             }
             const model = bannerNumeric(band.model_snow_in);
             return { snow_in: model, snow_source: model === null ? null : "model", snow_note: "" };
@@ -1766,8 +1787,13 @@
             return word + " ~" + day.snow_level_ft + " ft";
         }
 
-        function renderElevationCell(band, day) {
+        // A today cell marked `source_switch` also shows the model's own depth for
+        // today, so tomorrow's model depth reads as its continuation.
+        function renderElevationCell(band, day, isToday) {
             if (!band) return '<div class="elev-cell"></div>';
+            const modelToday = isToday && Array.isArray(band.snow_check) && band.snow_check.indexOf("source_switch") !== -1
+                ? bannerNumeric(band.model_snow_in)
+                : null;
             const act = (day && day.activity === "ski") ? "Ski" : "Hike";
             const scoreVal = (day && day.activity === "ski" && band.ski != null) ? band.ski : band.hike;
             const bg = scoreBgColor(scoreVal);
@@ -1795,8 +1821,13 @@
                             "</span>" +
                         "</div>" +
                         '<div class="elev-metrics-row">' +
-                            '<span class="elev-falling"><span class="elev-falling-label">24h:</span>' + fallingStr + "</span>" +
+                            '<span class="elev-falling"><span class="elev-falling-label">Day:</span>' + fallingStr + "</span>" +
                         "</div>" +
+                        (modelToday !== null
+                            ? '<div class="elev-metrics-row">' +
+                                  '<span class="elev-falling"><span class="elev-falling-label">Model today:</span>' + fmtInches(modelToday) + "</span>" +
+                              "</div>"
+                            : "") +
                     "</div>" +
                 "</div>"
             );
@@ -1834,7 +1865,7 @@
                     '<div class="elev-band-label">' +
                         '<span class="elev-band-ft">' + label + "</span>" +
                     "</div>" +
-                    renderElevationCell(shownToday, todayDay) +
+                    renderElevationCell(shownToday, todayDay, true) +
                     renderElevationCell(bTom, tomDay || todayDay);
             });
             grid.innerHTML = html;
@@ -2093,7 +2124,7 @@
                 const elev = bannerNumeric(sensor && sensor.elev_ft);
                 return elev === null ? [] : [sensor.location + " (" + elev + " ft)"];
             });
-            footer.textContent = "On ground is the snow depth in that cell. 24h is that column's forecast new snow and rain for that calendar day."
+            footer.textContent = "On ground is the snow depth in that cell. Day is that column's forecast new snow and rain for that calendar day."
                 + (names.length ? " Snow-depth sensors: " + names.join(", ") + "." : "");
         }
 
