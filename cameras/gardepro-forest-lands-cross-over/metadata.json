@@ -1,11 +1,4 @@
 {
-  "gardepro-forest-lands-cross-over_20261127_083000_3.jpg": {
-    "content_sha256": "155422a6b66dbc641dd9f401b1c85ea7578a1eb24db72d82d03e8e3e1b5ad8a1",
-    "run_id": "01a21d8a-5b39-71b8-9f1d-49395d552bee",
-    "source_path": "gardepro-forest-lands-cross-over/2026-11-27/20261127_083059_trailcam.jpg",
-    "temperature_c": null,
-    "timestamp": "2026-11-27T16:30:59Z"
-  },
   "gardepro-forest-lands-cross-over_20261127_090000.jpg": {
     "content_sha256": "bc507ca2efb801453ce0997f7519896943659d5b5bfd12b6d528b194f6eee757",
     "run_id": "01a21da5-ea25-7c6e-b415-bb4e607bd0f0",
@@ -90,11 +83,18 @@
     "temperature_c": null,
     "timestamp": "2026-11-27T21:00:01Z"
   },
-  "gardepro-forest-lands-cross-over_latest.jpg": {
-    "content_sha256": "bfe9d82cb7dbe5df79bccc72569ebef92d278bb5fdedb929f051a1989f5de87c",
-    "run_id": "01a21e81-7157-7b7f-8639-ffac0936baf0",
-    "source_path": "gardepro-forest-lands-cross-over/2026-11-27/20261127_130001_trailcam.jpg",
+  "gardepro-forest-lands-cross-over_20261127_133000.jpg": {
+    "content_sha256": "f35e817cf7c3e869dba2f658079067df311307a025f032171df5e66a777000d9",
+    "run_id": "01a21e9c-ff3e-75b3-8e0f-dc25a37e17ba",
+    "source_path": "gardepro-forest-lands-cross-over/2026-11-27/20261127_133001_trailcam.jpg",
     "temperature_c": null,
-    "timestamp": "2026-11-27T21:00:01Z"
+    "timestamp": "2026-11-27T21:30:01Z"
+  },
+  "gardepro-forest-lands-cross-over_latest.jpg": {
+    "content_sha256": "f35e817cf7c3e869dba2f658079067df311307a025f032171df5e66a777000d9",
+    "run_id": "01a21e9c-ff3e-75b3-8e0f-dc25a37e17ba",
+    "source_path": "gardepro-forest-lands-cross-over/2026-11-27/20261127_133001_trailcam.jpg",
+    "temperature_c": null,
+    "timestamp": "2026-11-27T21:30:01Z"
   }
 }
