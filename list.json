@@ -2,6 +2,7 @@
   "reconyx-bowman-mtn": {
     "images": [
       "reconyx-bowman-mtn_latest.jpg",
+      "reconyx-bowman-mtn_20261127_090000.jpg",
       "reconyx-bowman-mtn_20261127_083000.jpg",
       "reconyx-bowman-mtn_20261127_080000.jpg",
       "reconyx-bowman-mtn_20261127_073000.jpg",
@@ -13,16 +14,22 @@
       "reconyx-bowman-mtn_20261126_183000.jpg",
       "reconyx-bowman-mtn_20261126_180000.jpg",
       "reconyx-bowman-mtn_20261126_173000.jpg",
-      "reconyx-bowman-mtn_20261126_170000.jpg",
-      "reconyx-bowman-mtn_20261126_163000.jpg"
+      "reconyx-bowman-mtn_20261126_170000.jpg"
     ],
     "metadata": {
       "reconyx-bowman-mtn_latest.jpg": {
-        "content_sha256": "edb932598a7e0fca3a34030550f9e4330e0cdc1b618b42bbdfc8f203ba3ef53a",
-        "run_id": "01a21d94-7539-736e-8c30-d9c9e9448c60",
-        "source_path": "reconyx-bowman-mtn/2026-11-27/20261127_083000_trailcam.jpg",
+        "content_sha256": "346fc7bf35a95d7754eb4f697eb1c46b6943c93e5c595cf5ff520cf6d57b1afb",
+        "run_id": "01a21db0-04ce-7a55-84dc-417a17d503c6",
+        "source_path": "reconyx-bowman-mtn/2026-11-27/20261127_090000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-27T16:30:00Z"
+        "timestamp": "2026-11-27T17:00:00Z"
+      },
+      "reconyx-bowman-mtn_20261127_090000.jpg": {
+        "content_sha256": "346fc7bf35a95d7754eb4f697eb1c46b6943c93e5c595cf5ff520cf6d57b1afb",
+        "run_id": "01a21db0-04ce-7a55-84dc-417a17d503c6",
+        "source_path": "reconyx-bowman-mtn/2026-11-27/20261127_090000_trailcam.jpg",
+        "temperature_c": null,
+        "timestamp": "2026-11-27T17:00:00Z"
       },
       "reconyx-bowman-mtn_20261127_083000.jpg": {
         "content_sha256": "edb932598a7e0fca3a34030550f9e4330e0cdc1b618b42bbdfc8f203ba3ef53a",
@@ -107,17 +114,10 @@
         "source_path": "reconyx-bowman-mtn/2026-11-26/20261126_170000_trailcam.jpg",
         "temperature_c": null,
         "timestamp": "2026-11-27T01:00:00Z"
-      },
-      "reconyx-bowman-mtn_20261126_163000.jpg": {
-        "content_sha256": "372e866d5ae30172553b18e4405d8ac6e2c81eede70c409c1afe92b227ba1241",
-        "run_id": "01a21a25-641b-7851-a6a8-65f407443d1a",
-        "source_path": "reconyx-bowman-mtn/2026-11-26/20261126_163000_trailcam.jpg",
-        "temperature_c": null,
-        "timestamp": "2026-11-27T00:30:00Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-27T16:30:00Z"
+    "newest_capture": "2026-11-27T17:00:00Z"
   },
   "gardepro-north-twin-camp": {
     "images": [
