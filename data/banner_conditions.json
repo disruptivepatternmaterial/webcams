@@ -1,22 +1,13 @@
 {
-  "event_id": "08003b75-be3e-5dc2-bb0f-0936fbe13ce4",
-  "last_updated": "2026-11-27T17:28:00Z",
+  "event_id": "995c114d-8046-5154-820c-119972f329fc",
+  "last_updated": "2026-11-27T17:40:00Z",
   "sites": [
     {
       "aqi": [
         0
       ],
       "as_of": "2026-11-27T16:03:03Z",
-      "dropped": [
-        {
-          "measurement": "aqi",
-          "reason": "another device of the same unit is counted instead"
-        },
-        {
-          "measurement": "fog",
-          "reason": "another device of the same unit is counted instead"
-        }
-      ],
+      "dropped": [],
       "elev_ft": [
         3281
       ],
@@ -31,7 +22,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-27T17:10:22.255846Z",
+      "as_of": "2026-11-27T17:27:57.559939Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -62,7 +53,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-27T17:08:18.084077Z",
+      "as_of": "2026-11-27T17:28:52.558765Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -87,7 +78,7 @@
       ]
     },
     {
-      "as_of": "2026-11-27T17:07:40.809131Z",
+      "as_of": "2026-11-27T17:28:26.188329Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -178,12 +169,12 @@
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-27T17:08:18.084077Z",
+      "observed_at": "2026-11-27T17:23:26.842166Z",
       "snow_in": 2.2
     },
     {
       "band_ft": 5000,
-      "observed_at": "2026-11-27T17:07:57.815665Z",
+      "observed_at": "2026-11-27T17:27:57.559939Z",
       "snow_in": 2.4
     }
   ],
