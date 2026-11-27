@@ -1,11 +1,4 @@
 {
-  "gardepro-north-twin-camp_20261126_163000.jpg": {
-    "content_sha256": "920dc76fd59ce6426fcdedd9130e01b70173c13e519de5af441695e4c8579f68",
-    "run_id": "01a21a36-d820-78f7-aa11-881d72e8c2f4",
-    "source_path": "gardepro-north-twin-camp/2026-11-26/20261126_163001_trailcam.jpg",
-    "temperature_c": null,
-    "timestamp": "2026-11-27T00:30:01Z"
-  },
   "gardepro-north-twin-camp_20261126_170000.jpg": {
     "content_sha256": "09c4b7c8da6cf157e680acb95a767d6a04fd9c66eb6a2b00852152a6852b45e1",
     "run_id": "01a21a36-d820-78f7-aa11-881d72e8c2f4",
@@ -90,11 +83,18 @@
     "temperature_c": null,
     "timestamp": "2026-11-27T18:00:01Z"
   },
-  "gardepro-north-twin-camp_latest.jpg": {
-    "content_sha256": "23d3e3b524f923687c4168101bc087a40809bfba2ebc624fca7d9fa4804bd007",
-    "run_id": "01a21ddd-0890-74de-aa79-fb65cfeb8772",
-    "source_path": "gardepro-north-twin-camp/2026-11-27/20261127_100001_trailcam.jpg",
+  "gardepro-north-twin-camp_20261127_103000.jpg": {
+    "content_sha256": "753e4de28dfe3328be57c20d455f9dcdd74892f56e98da68b058c2daa7023f04",
+    "run_id": "01a21df7-abcd-7b36-b2b1-1e32f08e093f",
+    "source_path": "gardepro-north-twin-camp/2026-11-27/20261127_103000_trailcam.jpg",
     "temperature_c": null,
-    "timestamp": "2026-11-27T18:00:01Z"
+    "timestamp": "2026-11-27T18:30:00Z"
+  },
+  "gardepro-north-twin-camp_latest.jpg": {
+    "content_sha256": "753e4de28dfe3328be57c20d455f9dcdd74892f56e98da68b058c2daa7023f04",
+    "run_id": "01a21df7-abcd-7b36-b2b1-1e32f08e093f",
+    "source_path": "gardepro-north-twin-camp/2026-11-27/20261127_103000_trailcam.jpg",
+    "temperature_c": null,
+    "timestamp": "2026-11-27T18:30:00Z"
   }
 }
