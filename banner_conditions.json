@@ -1,13 +1,17 @@
 {
-  "event_id": "6069a9db-01ac-5f01-a830-ce6ffd377289",
-  "last_updated": "2026-11-27T04:58:00Z",
+  "event_id": "8498ab21-6d6f-587a-95fa-edc19fc72edd",
+  "last_updated": "2026-11-27T05:10:00Z",
   "sites": [
     {
       "aqi": [
-        "fog"
+        4
       ],
-      "as_of": "2026-11-27T03:01:19.064948Z",
+      "as_of": "2026-11-27T05:03:16Z",
       "dropped": [
+        {
+          "measurement": "air_temperature_f",
+          "reason": "another device of the same unit is counted instead"
+        },
         {
           "measurement": "aqi",
           "reason": "another device of the same unit is counted instead"
@@ -24,14 +28,14 @@
       "label": "Bowman Mtn",
       "stale": false,
       "temp_f": [
-        38
+        36
       ]
     },
     {
       "aqi": [
         "fog"
       ],
-      "as_of": "2026-11-27T04:48:07.048117Z",
+      "as_of": "2026-11-27T04:56:36.742075Z",
       "dropped": [],
       "elev_ft": [
         4642,
@@ -62,7 +66,7 @@
       "aqi": [
         "fog"
       ],
-      "as_of": "2026-11-27T04:38:26.615735Z",
+      "as_of": "2026-11-27T04:58:54.045114Z",
       "dropped": [],
       "elev_ft": [
         4163
@@ -87,7 +91,7 @@
       ]
     },
     {
-      "as_of": "2026-11-27T04:47:47.304011Z",
+      "as_of": "2026-11-27T04:58:33.205159Z",
       "dropped": [],
       "elev_ft": [
         3750
@@ -100,7 +104,7 @@
       ]
     },
     {
-      "as_of": "2026-11-27T04:49:41.145917Z",
+      "as_of": "2026-11-27T05:01:14Z",
       "dropped": [],
       "elev_ft": [
         3980,
@@ -129,7 +133,7 @@
       "aqi": [
         0
       ],
-      "as_of": "2026-11-27T04:33:48.295148Z",
+      "as_of": "2026-11-27T04:53:48.221886Z",
       "dropped": [],
       "elev_ft": [
         3379
@@ -173,12 +177,12 @@
   "snow_bands": [
     {
       "band_ft": 3000,
-      "observed_at": "2026-11-27T04:33:48.295148Z",
+      "observed_at": "2026-11-27T04:53:48.221886Z",
       "snow_in": 0.4
     },
     {
       "band_ft": 4000,
-      "observed_at": "2026-11-27T04:38:26.615735Z",
+      "observed_at": "2026-11-27T04:53:34.503150Z",
       "snow_in": 1.4
     },
     {
