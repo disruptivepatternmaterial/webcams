@@ -1,11 +1,4 @@
 {
-  "gardepro-north-twin-west-ridge_20261127_173600.jpg": {
-    "content_sha256": "d46451798db0929f73460667f4dc31ff8c72d5ad587deca0cc1322a5b0b5ffb9",
-    "run_id": "01a22130-83a1-7965-b29a-029757854fcb",
-    "source_path": "gardepro-north-twin-west-ridge/2026-11-27/20261127_173624_trailcam.jpg",
-    "temperature_c": null,
-    "timestamp": "2026-11-28T01:36:24Z"
-  },
   "gardepro-north-twin-west-ridge_20261127_180000.jpg": {
     "content_sha256": "544eedcef023da47db4d7168cf0cd48ed6fd56d4c57981bcbca120f91a338160",
     "run_id": "01a22130-83a1-7965-b29a-029757854fcb",
@@ -90,11 +83,18 @@
     "temperature_c": null,
     "timestamp": "2026-11-28T18:00:00Z"
   },
-  "gardepro-north-twin-west-ridge_latest.jpg": {
-    "content_sha256": "b763349b779c2d4466db57eafde27d47f5dd8c4305ce8ad078dee97900b1af97",
-    "run_id": "01a22302-e3f7-772b-adf1-6e171fefb332",
-    "source_path": "gardepro-north-twin-west-ridge/2026-11-28/20261128_100000_trailcam.jpg",
+  "gardepro-north-twin-west-ridge_20261128_103000.jpg": {
+    "content_sha256": "2ac420d4189e4d17f59081f565796d9bfe4d9e0af4512725669faff564035852",
+    "run_id": "01a2231e-8df2-7932-bd9f-6cf642fcc49d",
+    "source_path": "gardepro-north-twin-west-ridge/2026-11-28/20261128_103001_trailcam.jpg",
     "temperature_c": null,
-    "timestamp": "2026-11-28T18:00:00Z"
+    "timestamp": "2026-11-28T18:30:01Z"
+  },
+  "gardepro-north-twin-west-ridge_latest.jpg": {
+    "content_sha256": "2ac420d4189e4d17f59081f565796d9bfe4d9e0af4512725669faff564035852",
+    "run_id": "01a2231e-8df2-7932-bd9f-6cf642fcc49d",
+    "source_path": "gardepro-north-twin-west-ridge/2026-11-28/20261128_103001_trailcam.jpg",
+    "temperature_c": null,
+    "timestamp": "2026-11-28T18:30:01Z"
   }
 }
