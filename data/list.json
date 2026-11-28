@@ -242,6 +242,7 @@
   "gardepro-north-twin-west-ridge": {
     "images": [
       "gardepro-north-twin-west-ridge_latest.jpg",
+      "gardepro-north-twin-west-ridge_20261128_073000.jpg",
       "gardepro-north-twin-west-ridge_20261128_070000.jpg",
       "gardepro-north-twin-west-ridge_20261127_200000.jpg",
       "gardepro-north-twin-west-ridge_20261127_193000.jpg",
@@ -253,16 +254,22 @@
       "gardepro-north-twin-west-ridge_20261127_163000.jpg",
       "gardepro-north-twin-west-ridge_20261127_160000.jpg",
       "gardepro-north-twin-west-ridge_20261127_153000.jpg",
-      "gardepro-north-twin-west-ridge_20261127_150000.jpg",
-      "gardepro-north-twin-west-ridge_20261127_143000.jpg"
+      "gardepro-north-twin-west-ridge_20261127_150000.jpg"
     ],
     "metadata": {
       "gardepro-north-twin-west-ridge_latest.jpg": {
-        "content_sha256": "ec4afb4aa6ab4a9c9ed715fde8107dea4cc11650ed766f57f87ea73bbac40320",
-        "run_id": "01a2225d-c736-7efb-9a0b-b201fef70bd1",
-        "source_path": "gardepro-north-twin-west-ridge/2026-11-28/20261128_070006_trailcam.jpg",
+        "content_sha256": "b0f375f7987cf0a17c0ec9c79cd8ecd84e54ab64f91a9a4c9b52f008c36fc383",
+        "run_id": "01a22279-7347-7532-a64c-a63246d6419d",
+        "source_path": "gardepro-north-twin-west-ridge/2026-11-28/20261128_073000_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-28T15:00:06Z"
+        "timestamp": "2026-11-28T15:30:00Z"
+      },
+      "gardepro-north-twin-west-ridge_20261128_073000.jpg": {
+        "content_sha256": "b0f375f7987cf0a17c0ec9c79cd8ecd84e54ab64f91a9a4c9b52f008c36fc383",
+        "run_id": "01a22279-7347-7532-a64c-a63246d6419d",
+        "source_path": "gardepro-north-twin-west-ridge/2026-11-28/20261128_073000_trailcam.jpg",
+        "temperature_c": null,
+        "timestamp": "2026-11-28T15:30:00Z"
       },
       "gardepro-north-twin-west-ridge_20261128_070000.jpg": {
         "content_sha256": "ec4afb4aa6ab4a9c9ed715fde8107dea4cc11650ed766f57f87ea73bbac40320",
@@ -347,21 +354,15 @@
         "source_path": "gardepro-north-twin-west-ridge/2026-11-27/20261127_150001_trailcam.jpg",
         "temperature_c": null,
         "timestamp": "2026-11-27T23:00:01Z"
-      },
-      "gardepro-north-twin-west-ridge_20261127_143000.jpg": {
-        "content_sha256": "02fc1eb4d6f4d6767e0da52da5e840db587a468f3bcde48afd38268f31fb7bc6",
-        "run_id": "01a22130-83a1-7965-b29a-029757854fcb",
-        "source_path": "gardepro-north-twin-west-ridge/2026-11-27/20261127_143002_trailcam.jpg",
-        "temperature_c": null,
-        "timestamp": "2026-11-27T22:30:02Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-28T15:00:00Z"
+    "newest_capture": "2026-11-28T15:30:00Z"
   },
   "gardepro-forest-lands-cross-over": {
     "images": [
       "gardepro-forest-lands-cross-over_latest.jpg",
+      "gardepro-forest-lands-cross-over_20261128_073000.jpg",
       "gardepro-forest-lands-cross-over_20261128_070000.jpg",
       "gardepro-forest-lands-cross-over_20261127_190000.jpg",
       "gardepro-forest-lands-cross-over_20261127_183000.jpg",
@@ -373,16 +374,22 @@
       "gardepro-forest-lands-cross-over_20261127_150000.jpg",
       "gardepro-forest-lands-cross-over_20261127_143000.jpg",
       "gardepro-forest-lands-cross-over_20261127_140000.jpg",
-      "gardepro-forest-lands-cross-over_20261127_133000.jpg",
-      "gardepro-forest-lands-cross-over_20261127_130000.jpg"
+      "gardepro-forest-lands-cross-over_20261127_133000.jpg"
     ],
     "metadata": {
       "gardepro-forest-lands-cross-over_latest.jpg": {
-        "content_sha256": "cd9b921597b023e3f6a5240eb2f09c8db9284a3ff36fd642a18fd7590d8854b8",
-        "run_id": "01a2225d-c736-7efb-9a0b-b201fef70bd1",
-        "source_path": "gardepro-forest-lands-cross-over/2026-11-28/20261128_070013_trailcam.jpg",
+        "content_sha256": "b369c599a446da6d9b43ef16bd3fd4daee08247b76c4206971e5f94fdf6fadec",
+        "run_id": "01a22279-7347-7532-a64c-a63246d6419d",
+        "source_path": "gardepro-forest-lands-cross-over/2026-11-28/20261128_073001_trailcam.jpg",
         "temperature_c": null,
-        "timestamp": "2026-11-28T15:00:13Z"
+        "timestamp": "2026-11-28T15:30:01Z"
+      },
+      "gardepro-forest-lands-cross-over_20261128_073000.jpg": {
+        "content_sha256": "b369c599a446da6d9b43ef16bd3fd4daee08247b76c4206971e5f94fdf6fadec",
+        "run_id": "01a22279-7347-7532-a64c-a63246d6419d",
+        "source_path": "gardepro-forest-lands-cross-over/2026-11-28/20261128_073001_trailcam.jpg",
+        "temperature_c": null,
+        "timestamp": "2026-11-28T15:30:01Z"
       },
       "gardepro-forest-lands-cross-over_20261128_070000.jpg": {
         "content_sha256": "cd9b921597b023e3f6a5240eb2f09c8db9284a3ff36fd642a18fd7590d8854b8",
@@ -467,17 +474,10 @@
         "source_path": "gardepro-forest-lands-cross-over/2026-11-27/20261127_133001_trailcam.jpg",
         "temperature_c": null,
         "timestamp": "2026-11-27T21:30:01Z"
-      },
-      "gardepro-forest-lands-cross-over_20261127_130000.jpg": {
-        "content_sha256": "bfe9d82cb7dbe5df79bccc72569ebef92d278bb5fdedb929f051a1989f5de87c",
-        "run_id": "01a21e81-7157-7b7f-8639-ffac0936baf0",
-        "source_path": "gardepro-forest-lands-cross-over/2026-11-27/20261127_130001_trailcam.jpg",
-        "temperature_c": null,
-        "timestamp": "2026-11-27T21:00:01Z"
       }
     },
     "status": "Working",
-    "newest_capture": "2026-11-28T15:00:00Z"
+    "newest_capture": "2026-11-28T15:30:00Z"
   },
   "woods-cam-003": {
     "images": [
